@@ -1,0 +1,47 @@
+#service {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(78,78,227,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#service-text h3 {
+  font-size: 2em;
+}
+
+#service-img  {
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  #service-text {
+    max-width: 30%;
+    text-align: center;
+  }
+  
+  #service-text h3 {
+    font-size: 2em;
+  }
+  
+  #service-img {
+    max-width: 70%;
+    display: block;
+    opacity: 0.5;
+  }
+}
+
+button {
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

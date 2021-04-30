@@ -1,0 +1,19 @@
+@keyframes slidein {
+    from {
+      margin-left: -150%;
+      /* width: 100%; */
+    }
+  
+    to {
+      margin-right: 0%;
+      /* width: 100%; */
+    }
+  }
+  
+  /* The element to apply the animation to */
+  .bike {
+    width: 100px;
+    margin-top: 15px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
