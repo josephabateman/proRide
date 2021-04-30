@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import servicesData from '../data/services'
+import { Accordion, Card } from 'react-bootstrap';
 
 //figure out how to toggle back to video with button click
 function ShowServices() {
@@ -11,7 +12,7 @@ function ShowServices() {
 
    return (
      <div>
-      <button id="serviceButton" type="button" className="btn-lg btn-primary d-block mx-auto" onClick={() => revealServices(<div><CollapsingServices /> {serviceButton.remove()}</div>)}>
+      <button id="serviceButton" type="button" className="btn-lg btn-primary d-block mx-auto" onClick={() => revealServices(<div><ReactCollapsingServices /> {serviceButton.remove()}</div>)}>
       Explore Our Services
       </button>
       {video}
@@ -23,44 +24,38 @@ function ShowServices() {
 //   return str.replace(/[()\s+]/g,'')
 // }
 
+function ReactCollapsingServices() {
 
-function CollapsingServices() {
- return (   
+  return (
+    <div>
+      <Accordion>
 
-<div className="panel-group p-3" id="accordion" role="tablist" aria-multiselectable="false">
+        {servicesData.map((service, key) => (
+          
+          <Card key={key}>
+          <Accordion.Toggle as={Card.Header} eventKey={`card-${key}`}>
+            {service.name}
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey={`card-${key}`}>
+            <Card.Body>
+            <div className="card-body">
+              <a href={service.flyer}  target="_blank">
+                  <button type="button" className="btn btn-outline-info">More info (printable pdf)</button>
+                </a>
+                {service.flyer2 ? <a href={service.flyer2}  target="_blank">
+                  <button type="button" className="btn btn-outline-info">Extra info (printable pdf)</button>
+                </a> : ''}
+              <h3>{service.header}</h3>
+              {service.description}
+            </div>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        ))}
 
-  {servicesData.map((service, key) => (
-    <div className="border-bottom p-1" key={key}>
-
-    <div className="panel panel-default" id={`heading${key}`}>
-      <h5 className="mb-4 panel-title">
-        <a id={service.name} className="service-name btn btn-link collapsed d-block" data-parent="#accordion" href={`#collapse${key}`} data-toggle="collapse" data-target={`#collapse${key}`} aria-expanded="false" aria-controls={`collapse${key}`}>
-        <span id={`scroll-to-${service.name}`} className="d-block service-icons"><i className={service.fontAwesomeIcon}></i></span>
-          {service.name}
-        </a>
-      </h5>
+      </Accordion>
     </div>
-
-    <div id={`collapse${key}`} className="collapse" aria-labelledby={`heading${key}`} data-parent="#accordion">
-      <div className="card-body">
-        <a href={service.flyer}  target="_blank">
-            <button type="button" className="btn btn-outline-info">More info (printable pdf)</button>
-          </a>
-          {service.flyer2 ? <a href={service.flyer2}  target="_blank">
-            <button type="button" className="btn btn-outline-info">Extra info (printable pdf)</button>
-          </a> : ''}
-        <h3>{service.header}</h3>
-        {service.description}
-        {/* <img className="service-images w-100 rounded mx-auto d-block" src={service.img} /> */}
-      </div>
-    </div>
-
-  </div>
-  ))}
-  
-</div>
-
- )
+  ) 
 }
 
 function Home() {

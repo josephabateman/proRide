@@ -4,6 +4,7 @@ import Home from './Home'
 import About from './About'
 import AboutPhil from './AboutPhil'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css'
 
 function NavBar() {
