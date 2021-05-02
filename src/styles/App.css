@@ -5,23 +5,94 @@ body {
 
 html { scroll-behavior: smooth; } 
 
-@media screen and (min-width: 900px) {
-    .service-images {
-        max-width: 60%;
-    }
-    #serviceInfoText {
-        margin: 20px 100px;
-    }
-    a {
-        margin-left: 30px;
-    }
+img {
+    width: 100%;
+    height: auto;
 }
 
-.logo {
+.home-tiles {
+    margin-bottom: 10px; 
+    color: white;
+    padding-top: 50px;
+    /* min-height: 450px;
+    min-width: 40px; */
+}
+
+.home-tiles h1, h2, h3 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+#welcome {
+    background: rgb(91,153,254);
+    background: linear-gradient(257deg, rgba(91,153,254,1) 16%, rgba(39,146,196,1) 45%, rgba(0,212,255,1) 100%);
+}
+
+#range-of-services {
+    background: rgb(91,153,254);
+    background: linear-gradient(108deg, rgba(91,153,254,1) 0%, rgba(39,196,111,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+#video-container {
+    display: block;
+    padding: 20px 0;
+    
+}
+.video-container {
+    min-width: 400px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 20px;
+}
+
+.flex-split {
+    background: rgb(34,96,198);
+    background: linear-gradient(108deg, rgba(34,96,198,1) 0%, rgba(39,115,196,1) 0%, rgba(0,212,255,1) 100%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* min-height: 450px; */
+    min-width: 300px;
+}
+
+/* #book-session {
+    
+} */
+
+.logo > * {
     text-align: left;
+    font-size: 2em;
 }
 
 #logo-b {
+    margin-top: -15px;
     font-size: 0.7em;
 }
 
@@ -37,12 +108,8 @@ p {
 padding: 0 20px;
 }
 
-h3, h4 {
-    font-weight: 100;
-}
-
   /* services */
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+/* @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 .panel-title > a:before {
     float: right !important;
     font-family: FontAwesome;
@@ -57,8 +124,55 @@ h3, h4 {
 .panel-title > a:active, 
 .panel-title > a:focus  {
     text-decoration:none;
+} */
+
+.card-header:hover {
+    background-color: #1277c9;
+    color: white;
+    cursor: pointer;
 }
 
 .card-header {
     margin: 5px;
+    font-size: 2em;
+}
+
+.service-icons {
+    padding-right: 10px;   
+}
+
+@media only screen and (max-width: 800px) {
+    .column {
+        margin: 0 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+  }
+
+/* button */
+a.button4 {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    margin: 15px 0 30px 0;
+}
+a.button4:hover{
+    border-color: rgba(255,255,255,1);
+}
+@media all and (max-width:30em){
+a.button4 {
+    display: block;
+    margin: 0.2em auto;
+    }
 }
