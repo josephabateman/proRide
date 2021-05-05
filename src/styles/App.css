@@ -186,9 +186,9 @@ a.button {
 a.button:hover {
   border-color: rgba(255, 255, 255, 1);
 }
-@media all and (max-width: 30em) {
+/* @media all and (max-width: 30em) {
   a.button {
     display: block;
     margin: 0.2em auto;
   }
-}
+} */
