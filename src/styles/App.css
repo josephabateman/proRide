@@ -12,26 +12,33 @@ img {
 
 .home-tiles {
     margin-bottom: 10px; 
-    color: white;
     padding-top: 50px;
     /* min-height: 450px;
     min-width: 40px; */
 }
 
-.home-tiles h1, h2, h3 {
+/* .home-tiles h1, h2, h3 {
     font-weight: 300;
-}
+} */
 
 h1 {
     font-size: 4em;
 }
 
-#welcome {
+.full-screen-info {
+    color: white;
+    margin-bottom: 10px; 
+}
+.full-screen-info > h1, h3 {
+    font-weight: 300;
+}
+
+.blue-gradient {
     background: rgb(91,153,254);
     background: linear-gradient(257deg, rgba(91,153,254,1) 16%, rgba(39,146,196,1) 45%, rgba(0,212,255,1) 100%);
 }
 
-#range-of-services {
+.green-gradient {
     background: rgb(91,153,254);
     background: linear-gradient(108deg, rgba(91,153,254,1) 0%, rgba(39,196,111,1) 0%, rgba(0,212,255,1) 100%);
 }
@@ -73,8 +80,6 @@ h1 {
 }
 
 .flex-split {
-    background: rgb(34,96,198);
-    background: linear-gradient(108deg, rgba(34,96,198,1) 0%, rgba(39,115,196,1) 0%, rgba(0,212,255,1) 100%);
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -151,7 +156,7 @@ padding: 0 20px;
   }
 
 /* button */
-a.button4 {
+a.button {
     display: inline-block;
     padding: 0.3em 1.2em;
     margin:0 0.1em 0.1em 0;
@@ -167,11 +172,11 @@ a.button4 {
     transition: all 0.2s;
     margin: 15px 0 30px 0;
 }
-a.button4:hover{
+a.button:hover{
     border-color: rgba(255,255,255,1);
 }
 @media all and (max-width:30em){
-a.button4 {
+a.button {
     display: block;
     margin: 0.2em auto;
     }

@@ -1,26 +1,29 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './Home/Home'
-import About from './About'
-import AboutPhil from './AboutPhil'
-import ContactForm from './ContactForm'
-import NavBar from './NavBar'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home/Home";
+import About from "./About/About";
+import AboutPhil from "./About/AboutPhil";
+import ContactForm from "./ContactForm";
+import Services from "./Services/Services";
+import NavBar from "./NavBar";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/App.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/App.css";
 
 function Footer() {
-  const date = new Date()
+  const date = new Date();
 
   return (
     <div>
       <footer className="footer pt-5 pb-2 sticky-bottom">
         <div className="container">
-          <span className="text-muted text-center">©ProRide Coaching {date.getFullYear()}</span>
+          <span className="text-muted text-center">
+            ©ProRide Coaching {date.getFullYear()}
+          </span>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 function App() {
@@ -30,6 +33,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/services">
+          <Services />
         </Route>
         <Route exact path="/contact">
           <ContactForm />

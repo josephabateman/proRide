@@ -1,0 +1,9 @@
+/* 
+
+COMMENTS:
+To comment something out or make active, highlight section and use 
+        Ctrl+ /  (Windows) 
+        Command⌘ + / (Mac)
+It will be green if just a comment and will be colourful if active code
+
+*/
