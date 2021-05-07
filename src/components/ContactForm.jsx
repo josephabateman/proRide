@@ -1,25 +1,35 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, InputGroup, FormControl } from "react-bootstrap";
 
 function ContactForm() {
   return (
-    <div>
-      <Form>
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
+    <div className="d-flex justify-content-center">
+      <Form className="col-lg-8 col-md-10 m-2">
+        <InputGroup className="mb-3">
+          <InputGroup.Prepend>
+            <InputGroup.Text>First and last name</InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl />
+          {/* <FormControl /> */}
+        </InputGroup>
 
-        <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+        <InputGroup className="mb-3" controlId="formBasicEmail">
+          <InputGroup.Prepend>
+            <InputGroup.Text>Email address</InputGroup.Text>
+          </InputGroup.Prepend>
+          <Form.Control type="email" />
+          {/* <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text> */}
+        </InputGroup>
+
+        <InputGroup className="mb-3">
+          <InputGroup.Prepend>
+            <InputGroup.Text>Message</InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl as="textarea" aria-label="With textarea" />
+        </InputGroup>
+
         <Button variant="primary" type="submit">
           Submit
         </Button>
