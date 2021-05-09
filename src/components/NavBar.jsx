@@ -31,7 +31,7 @@ function NavBar() {
             {/* <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/aboutPhil">About Phil</Nav.Link> */}
             <NavDropdown title="About" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/about">About ProRide</NavDropdown.Item>
+              <NavDropdown.Item href="/aboutProRide">About ProRide</NavDropdown.Item>
               <NavDropdown.Item href="/aboutPhil">About Phil</NavDropdown.Item>
               <NavDropdown.Divider />
               {/* <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}

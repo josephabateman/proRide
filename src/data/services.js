@@ -15,13 +15,12 @@ const servicesData = [
       "https://static.wixstatic.com/media/0583da_eab05d723e4a48d895ce92d3d95ee0a3~mv2.jpg/v1/crop/x_7,y_24,w_710,h_694/fill/w_598,h_576,al_c,q_80,usm_0.66_1.00_0.01/77fb10c75a797b3b8b6b37501e3ee3d5--striders-motocross.webp",
     header:
       "A fun way to help early years children develop coordination, concentration and balance skills",
+    header2:
+      "Develop confidence and coordination with a Balance Bike Taster Day",
     featured: true,
     flyer: balanceBikeDaysFlyer,
     description: (
       <div>
-        <h4>
-          Develop confidence and coordination with a Balance Bike Taster Day
-        </h4>
         <p>
           Our Balance Bike Taster days are a great way to see how Early Years
           children respond to balance biking and how quickly they develop their
