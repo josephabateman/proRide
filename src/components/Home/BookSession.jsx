@@ -3,9 +3,9 @@ import { Dropdown } from "react-bootstrap";
 
 function BookSession() {
   return (
-    <div id="book-session" className="green-gradient flex-split home-tiles">
+    <div id="book-session">
       <h2>Book on to a club</h2>
-      <Dropdown>
+      <Dropdown className="green-gradient">
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
           Choose a club location
         </Dropdown.Toggle>

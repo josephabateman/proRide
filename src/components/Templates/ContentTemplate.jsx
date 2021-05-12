@@ -5,13 +5,22 @@ import ScrollToTop from "react-scroll-to-top";
 function ContentTemplate(props) {
   return (
     <div>
-      <ScrollToTop smooth />
       {window.scrollTo(0, 0)}
+      <ScrollToTop smooth />
       <Card>
-        <Card.Header as="h5">{props.header}</Card.Header>
-        <div className="d-flex justify-content-center">
+        <Card.Header className="blue-gradient full-screen-info" as="h2">
+          {props.header}
+        </Card.Header>
+
+        <img
+          className="svg green-gradient"
+          src={props.img}
+          alt={props.imgDescription}
+        />
+        {props.img2 ? <img src={props.img2} alt={props.img2Description} /> : ""}
+        <div className="d-flex justify-content-center text-left">
           <Card.Body className="col-lg-8 col-md-10">
-            <Card.Title>{props.header2}</Card.Title>
+            <Card.Title as="h3">{props.header2}</Card.Title>
             {props.description}
             {props.flyer ? (
               <a href={props.flyer} target="_blank">
@@ -24,12 +33,6 @@ function ContentTemplate(props) {
               <a href={props.flyer2} target="_blank">
                 <Button variant="secondary">Extra info (printable pdf)</Button>
               </a>
-            ) : (
-              ""
-            )}
-            <img src={props.img} alt={props.imgDescription} />
-            {props.img2 ? (
-              <img src={props.img2} alt={props.img2Description} />
             ) : (
               ""
             )}

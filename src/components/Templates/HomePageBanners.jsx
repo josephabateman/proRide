@@ -7,7 +7,7 @@ function HomePageBanners(props) {
 
   return (
     <div className={`${props.color} full-screen-info`}>
-      <h1>{props.title}</h1>
+      {props.title ? <h1>{props.title}</h1> : ""}
       <h3>{props.description}</h3>
       {props.buttonText != undefined ? (
         <a href={props.buttonLink} className="button" style={button5}>
@@ -16,7 +16,15 @@ function HomePageBanners(props) {
       ) : (
         ""
       )}
-      <img alt={props.imageDescription} src={props.imageSrc} />
+      {props.imageSrc ? (
+        <img
+          className="content-template-img"
+          alt={props.imageDescription}
+          src={props.imageSrc}
+        />
+      ) : (
+        ""
+      )}
       {props.videoSrc != undefined ? (
         <div className="video-container">
           <iframe

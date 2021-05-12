@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
 import AboutPhil from "./About/AboutPhil";
-import ContactForm from "./ContactForm";
+import ContactForm from "./Contact/ContactForm";
 import Services from "./Services/Services";
 import NavBar from "./NavBar";
 import servicesData from "../data/services";
-import ContentTemplate from "./ContentTemplate";
+import ContentTemplate from "./Templates/ContentTemplate";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
@@ -55,23 +55,12 @@ function App() {
         <Route exact path="/aboutPhil">
           <AboutPhil />
         </Route>
-        {/* change the 1 beneath to a variable passed in from button click */}
-        {/* <Route
-          exact
-          path={`/${mappedData[servicePageKey][0].name.replace(/\s/g, "")}`}
-        >
-          <ContentTemplate
-            header={mappedData[servicePageKey][0].name}
-            header2={mappedData[servicePageKey][0].header2}
-            description={mappedData[servicePageKey][0].description}
-            flyer={mappedData[servicePageKey][0].flyer}
-            flyer2={mappedData[servicePageKey][0].flyer2}
-          />
-        </Route> */}
         {servicesData.map((service, key) => {
           return (
-            <Route exact path={`/${service.name.replace(/\s/g, "")}`}>
+            <Route key={key} exact path={`/${service.name.replace(/\s/g, "")}`}>
               <ContentTemplate
+                key={key}
+                img={service.img}
                 className="content-div"
                 header={service.name}
                 header2={service.header2}

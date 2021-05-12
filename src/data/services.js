@@ -8,11 +8,23 @@ import TasterDays from "../static/flyers/taster days brochure.pdf";
 import TrainingAndCompetitions from "../static/flyers/Training & Competition Day flyer.pdf";
 import DraftAgenda from "../static/flyers/View Draft Agenda pdf.pdf";
 
+// import wideField from "../static/images/wide_shot_field.png";
+// import twoKids from "../static/images/two_kids.png";
+// import assembly from "../static/images/assembly.png";
+
+import svg1 from "../static/images/svg/1.svg";
+import svg2 from "../static/images/svg/2.svg";
+import svg3 from "../static/images/svg/3.svg";
+import svg4 from "../static/images/svg/4.svg";
+import svg5 from "../static/images/svg/5.svg";
+import svg6 from "../static/images/svg/6.svg";
+import svg7 from "../static/images/svg/7.svg";
+import svg8 from "../static/images/svg/8.svg";
+
 const servicesData = [
   {
     name: "Balance Biking Days",
-    img:
-      "https://static.wixstatic.com/media/0583da_eab05d723e4a48d895ce92d3d95ee0a3~mv2.jpg/v1/crop/x_7,y_24,w_710,h_694/fill/w_598,h_576,al_c,q_80,usm_0.66_1.00_0.01/77fb10c75a797b3b8b6b37501e3ee3d5--striders-motocross.webp",
+    img: svg1,
     header:
       "A fun way to help early years children develop coordination, concentration and balance skills",
     header2:
@@ -58,16 +70,15 @@ const servicesData = [
   },
   {
     name: "KS1 Taster Days",
-    img:
-      "https://static.wixstatic.com/media/0583da_2a23f2f85f5a47a299fc9f9a689e3e26~mv2.png/v1/crop/x_76,y_1,w_294,h_282/fill/w_412,h_389,al_c,lg_1,q_85/Untitled12.webp",
+    img: svg2,
     header:
       "Fun interactive sessions for KS1 to stimulate interest, develop confidence and gain new skills through games and challenges.",
+    header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
     featured: false,
     //wrong flyer
     flyer: TasterDays,
     description: (
       <div>
-        <p>Get your kids pedaling with a ProRide Cycling Taster Day</p>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
@@ -128,8 +139,7 @@ const servicesData = [
   },
   {
     name: "KS2 Taster Days",
-    img:
-      "https://static.wixstatic.com/media/0583da_de3a829e6ebf4b0d898df710ded5ad81~mv2_d_3264_2448_s_4_2.jpg/v1/crop/x_1842,y_252,w_1422,h_1372/fill/w_614,h_576,al_c,q_80,usm_0.66_1.00_0.01/0583da_de3a829e6ebf4b0d898df710ded5ad81~mv2_d_3264_2448_s_4_2.webp",
+    img: svg3,
     header:
       "A great way to encourage children to cycle more and sample cycle racing in a safe, controlled environment.",
     featured: false,
@@ -197,8 +207,7 @@ const servicesData = [
   },
   {
     name: "Staff Training (CPD)",
-    img:
-      "https://static.wixstatic.com/media/11062b_21b1d0912b4749d2bafc19d001719e66~mv2.jpeg/v1/crop/x_1517,y_39,w_5713,h_5713/fill/w_576,h_576,al_c,q_80,usm_0.66_1.00_0.01/Work%20Presentation.webp",
+    img: svg4,
     header:
       "Our CPD workshops are designed to support teachers and other staff who want to run their own sessions and programs in their school. We provide one-day courses for EYFS, KS1 and KS2.",
     featured: true,
@@ -242,15 +251,15 @@ const servicesData = [
   },
   {
     name: "Whole School Days",
-    img:
-      "https://static.wixstatic.com/media/0583da_ff93cf3464ad4b718fea7aeb8d8e87bc~mv2.jpg/v1/crop/x_91,y_0,w_446,h_446/fill/w_533,h_535,al_c,lg_1,q_80/2794591382.webp",
+    img: svg5,
     header:
       "Ideal for smaller schools, our Whole School Program ensures every child gets to take part in all inclusive, age related fun session",
+    header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
+
     featured: false,
     flyer: TrainingAndCompetitions,
     description: (
       <div>
-        <p>Get your kids pedaling with a ProRide Cycling Taster Day</p>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
@@ -310,8 +319,7 @@ const servicesData = [
   },
   {
     name: "Learn-to-Ride Program (Freewheelerz)",
-    img:
-      "https://static.wixstatic.com/media/0583da_8e33945dfdca4f81852fa6949ee477a1~mv2.jpg/v1/crop/x_30,y_0,w_218,h_209/fill/w_301,h_293,al_c,lg_1,q_80/278_209__1_IMG_48241.webp",
+    img: svg6,
     header:
       "Our Learn to ride program, Freewheelers is designed to teach kids to ride a bike in 10 weeks using special convertible bikes. The course can be delivered by one of our instructors or by your own staff after training.",
     featured: false,
@@ -363,8 +371,7 @@ const servicesData = [
   },
   {
     name: "After-School Clubs",
-    img:
-      "https://static.wixstatic.com/media/0583da_d84b1d629b3f47ed9332b7fa62fc52f7.jpg/v1/crop/x_436,y_0,w_2392,h_2448/fill/w_612,h_596,al_c,q_85,usm_0.66_1.00_0.01/Whingate%20Armley_0775_JPG.webp",
+    img: svg7,
     header:
       "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
     featured: false,
@@ -421,8 +428,7 @@ const servicesData = [
   },
   {
     name: "Competition Days",
-    img:
-      "https://static.wixstatic.com/media/0583da_70ac16b227e241e494562d64f806b70d.jpg/v1/crop/x_72,y_4,w_569,h_547/fill/w_602,h_576,al_c,lg_1,q_80/SAMPLED_2294512_740_600___.webp",
+    img: svg8,
     header:
       "We provide everything from a School-based KS2 Competition with race training prior to competition, to fully organised Trust-wide or regional inter-school competitions and -tournaments.",
     featured: false,
@@ -461,8 +467,7 @@ const servicesData = [
   },
   {
     name: "Road Safety Training",
-    img:
-      "https://cyclingsolutions.info/wp-content/uploads/2019/05/Børnecykling_topfoto_Mikkel-Østergaard_1080-440.jpg",
+    img: svg1,
     // img: "https://static.wixstatic.com/media/0583da_42dd4d30d252402c818d43c70c5896fa.jpg/v1/crop/x_56,y_0,w_249,h_239/fill/w_349,h_326,al_c,lg_1,q_80/20141020_join_us_cycle_training_hr_14138.webp",
     header:
       "Our Road Safety program covers basic traffic awareness and road safety for children in years 5 and 6. The 2-day course is part on-site and part on local roads and delivered by qualified Bikeability instructors.",

@@ -17,16 +17,7 @@ const homePageBanners = [
     buttonLink: "/services",
     imageDescription: "Range of services",
     imageSrc: ProrideImg2,
-  },
-  // {
-  //   title: "View Our Range Of Services",
-  //   color: "green-gradient",
-  //   description: "Making cycling in school fun",
-  //   buttonText: "Learn More",
-  //   buttonLink: "/services",
-  //   imageDescription: "Range of services",
-  //   imageSrc: ProrideImg2,
-  // },
+  }
 ];
 
 export default homePageBanners;

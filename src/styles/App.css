@@ -18,14 +18,32 @@ footer {
   width: 100%;
 }
 
+.logo {
+  width: 10em;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
-.home-tiles {
-  margin-bottom: 10px;
-  padding-top: 50px;
+.content-template-img {
+  width: 100%;
+}
+
+.service-card-img {
+  height: 100px;
+  object-fit: cover;
+}
+
+.service-card-img-taller {
+  height: 250px;
+  object-fit: cover;
+}
+
+.svg {
+  height: 300px;
+  object-fit: cover;
 }
 
 h1 {
@@ -37,8 +55,10 @@ h1 {
   margin-bottom: 10px;
 }
 .full-screen-info > h1,
-h3 {
-  font-weight: 300;
+h2,
+h3,
+h4 {
+  font-weight: 400;
 }
 
 .blue-gradient {
@@ -63,7 +83,7 @@ h3 {
 
 #video-container {
   display: block;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 .video-container {
   position: relative;
@@ -78,34 +98,6 @@ h3 {
   height: 100%;
   border: 0;
 }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  margin: 20px;
-}
-
-.flex-split {
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  /* min-height: 450px; */
-  min-width: 300px;
-}
-
-/* #book-session {
-    
-} */
 
 .logo > * {
   text-align: left;
@@ -123,52 +115,6 @@ button {
 
 .list-group-item {
   padding: 1.3em;
-}
-
-p {
-  padding: 0 20px;
-}
-
-/* services */
-/* @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-.panel-title > a:before {
-    float: right !important;
-    font-family: FontAwesome;
-    content:"\f068";
-    padding-left: 10px;
-}
-.panel-title > a.collapsed:before {
-    float: right !important;
-    content:"\f067"; 
-}
-.panel-title > a:hover, 
-.panel-title > a:active, 
-.panel-title > a:focus  {
-    text-decoration:none;
-} */
-
-.card-header:hover {
-  background-color: #1277c9;
-  color: white;
-  cursor: pointer;
-}
-
-.card-header {
-  margin: 5px;
-  font-size: 2em;
-}
-
-.service-icons {
-  padding-right: 10px;
-}
-
-@media only screen and (max-width: 800px) {
-  .column {
-    margin: 0 10px;
-  }
-  h1 {
-    font-size: 2em;
-  }
 }
 
 /* button */
@@ -191,9 +137,9 @@ a.button {
 a.button:hover {
   border-color: rgba(255, 255, 255, 1);
 }
-/* @media all and (max-width: 30em) {
-  a.button {
-    display: block;
-    margin: 0.2em auto;
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
   }
-} */
+}

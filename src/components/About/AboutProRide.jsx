@@ -1,6 +1,6 @@
 import React from "react";
 import aboutProRideData from "../../data/aboutProRideData";
-import ContentTemplate from "../ContentTemplate";
+import ContentTemplate from "../Templates/ContentTemplate";
 
 function AboutProRide() {
   return (

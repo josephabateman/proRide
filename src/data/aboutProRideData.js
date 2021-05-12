@@ -1,3 +1,5 @@
+import twoKids from "../static/images/two_kids.png";
+
 const aboutData = {
   header: "About ProRide",
   description: (
@@ -33,8 +35,7 @@ const aboutData = {
       </p>
     </>
   ),
-  img:
-    "https://static.wixstatic.com/media/0583da_ca68997c26da49b0985563dc25fd6bc9~mv2_d_3264_2448_s_4_2.jpg/v1/crop/x_813,y_514,w_2451,h_1836/fill/w_488,h_488,al_c,q_80,usm_0.66_1.00_0.01/0583da_ca68997c26da49b0985563dc25fd6bc9~mv2_d_3264_2448_s_4_2.jpg",
+  img: twoKids,
   imgDescription: "kid on bike",
 };
 
