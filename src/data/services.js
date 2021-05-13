@@ -41,7 +41,7 @@ const servicesData = [
           they are weaving in and out of cones, ducking under limbos and flying
           over ramps. Before long and within the session the same children are
           beginning to balance and freewheel as they continue to grow in
-          confidence.
+          confidence
         </p>
         <p>
           Each Taster Day offers multiple sessions (4-6 in a school day)
