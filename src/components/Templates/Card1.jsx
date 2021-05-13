@@ -8,25 +8,30 @@ function Card1(props) {
   };
   return (
     <div>
-      {/* <Card style={{ width: "19rem" }}> */}
-      <img className={props.className} src={props.img} />
-      <div>
-        <h2 className="pt-3">{props.title}</h2>
-        <hr/>
-        <p>{props.text}</p>
-        <Link
-          className="text-decoration-none"
-          to={`/${props.title.replace(/[()\s+]/g, "")}`}
+      <Link
+        className="text-decoration-none"
+        to={`/${props.title.replace(/[()\s+]/g, "")}`}
+      >
+        {/* <Card style={{ width: "19rem" }}> */}
+        <img className={props.className} src={props.img} />
+        <div>
+          <h2 className="pt-3">{props.title}</h2>
+          {/* <hr /> */}
+          <p>{props.text}</p>
+
+          <a href={props.buttonLink} className="button" style={button5}>
+            Learn More
+          </a>
+        </div>
+        {/* <button
           className="button"
           style={button5}
+          className="text-decoration-none"
         >
           Learn More
-        </Link>
-        {/* <a href={props.buttonLink} className="button" style={button5}>
-          {props.buttonText}
-        </a> */}
-      </div>
-      {/* </Card> */}
+        </button> */}
+        {/* </Card> */}
+      </Link>
     </div>
   );
 }

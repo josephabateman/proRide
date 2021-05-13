@@ -11,11 +11,9 @@ function CardSingleBanner(props) {
     <div className={`${props.color} full-screen-info`}>
       <Container>
         <Row>
-          <Col md={12} lg={6} className="align-self-center">
+          <Col md={6} className="align-self-center">
             <h1 className="display-4">{props.title}</h1>
             <h4 className="font-weight-light">{props.description}</h4>
-          </Col>
-          <Col>
             <Link
               className="text-decoration-none"
               to={`/${props.title.replace(/[()\s+]/g, "")}`}
@@ -24,7 +22,15 @@ function CardSingleBanner(props) {
             >
               Learn More
             </Link>
-            <img src={props.img} />
+          </Col>
+          <Col>
+            <img
+              className="my-2"
+              style={{
+                height: 300,
+              }}
+              src={props.img}
+            />
           </Col>
         </Row>
       </Container>

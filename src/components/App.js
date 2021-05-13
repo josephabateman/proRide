@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <div>
-      <footer className="footer pt-5 pb-2">
+      <footer className="footer pt-5 pb-2 bg-light">
         <div className="container">
           <span className="text-muted text-center">
             ©ProRide Coaching {date.getFullYear()}

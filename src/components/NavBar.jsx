@@ -2,18 +2,9 @@ import React from "react";
 import {
   Navbar,
   Nav,
-  NavDropdown,
-  Container,
-  Row,
-  Col,
-  Dropdown,
-  ButtonGroup,
-  Button,
-  // Form,
-  // FormControl,
-  // Button,
+  NavDropdown
 } from "react-bootstrap";
-import servicesData from "../data/services";
+// import servicesData from "../data/services";
 import logo from "../static/images/logo.png";
 
 function NavBar() {

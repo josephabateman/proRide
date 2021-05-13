@@ -125,7 +125,7 @@ function ServicesCards() {
         <Row>
           <Col className="px-0">
             <CardSingleBanner
-            img={servicesData[3].img}
+              img={servicesData[3].img}
               title={servicesData[3].name}
               description={servicesData[3].header}
               color="green-gradient"
