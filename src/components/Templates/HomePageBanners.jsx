@@ -7,8 +7,8 @@ function HomePageBanners(props) {
 
   return (
     <div className={`${props.color} full-screen-info`}>
-      {props.title ? <h1>{props.title}</h1> : ""}
-      <h3>{props.description}</h3>
+      {props.title ? <h1 className="display-4">{props.title}</h1> : ""}
+      <h3 className="font-weight-light">{props.description}</h3>
       {props.buttonText != undefined ? (
         <a href={props.buttonLink} className="button" style={button5}>
           {props.buttonText}

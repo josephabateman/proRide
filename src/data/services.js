@@ -21,6 +21,9 @@ import svg6 from "../static/images/svg/6.svg";
 import svg7 from "../static/images/svg/7.svg";
 import svg8 from "../static/images/svg/8.svg";
 
+import proRide1 from "../static/images/specific-service-images/1.jpg";
+import proRide2 from "../static/images/specific-service-images/2.JPEG";
+
 const servicesData = [
   {
     name: "Balance Biking Days",
@@ -31,8 +34,10 @@ const servicesData = [
       "Develop confidence and coordination with a Balance Bike Taster Day",
     featured: true,
     flyer: balanceBikeDaysFlyer,
-    description: (
-      <div>
+    proRideImg: proRide1,
+    proRideImg2: proRide2,
+    text1: (
+      <>
         <p>
           Our Balance Bike Taster days are a great way to see how Early Years
           children respond to balance biking and how quickly they develop their
@@ -41,7 +46,7 @@ const servicesData = [
           they are weaving in and out of cones, ducking under limbos and flying
           over ramps. Before long and within the session the same children are
           beginning to balance and freewheel as they continue to grow in
-          confidence
+          confidence.
         </p>
         <p>
           Each Taster Day offers multiple sessions (4-6 in a school day)
@@ -51,6 +56,10 @@ const servicesData = [
           stopping, and turning through a series of fun activities in an
           action-packed session.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Sessions can take place indoors or out depending on weather and are
           suitable for all levels of ability from absolute beginners to
@@ -64,7 +73,7 @@ const servicesData = [
           school club or investing in equipment and training or running a
           Freewheelerz Learn to Ride Course.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-balance-scale-left",
   },
@@ -77,8 +86,8 @@ const servicesData = [
     featured: false,
     //wrong flyer
     flyer: TasterDays,
-    description: (
-      <div>
+    text1: (
+      <>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
@@ -100,6 +109,10 @@ const servicesData = [
           will be taking part. Based on this information, we put together a plan
           for the day for your approval.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Taster days usually consist of 4 sessions - 2 in the morning and 2 in
           the afternoon. The sessions vary in content depending on the age and
@@ -132,7 +145,7 @@ const servicesData = [
           one's can either borrow one of our balance/pedal bikes or bring in
           their own.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-cookie-bite",
     //the ks1 and ks2 flyer is same
@@ -145,8 +158,8 @@ const servicesData = [
     featured: false,
     flyer:
       "https://ea67bc9c-a6b0-438e-82a8-d0e4df398e62.filesusr.com/ugd/0583da_5af40c0aa624483ea7edd16ef5eec163.pdf",
-    description: (
-      <div>
+    text1: (
+      <>
         <h3>Get your kids pedaling with a ProRide Cycling Taster Day</h3>
         <p>
           Cycling is a great activity for children in so many ways, yet for
@@ -169,6 +182,10 @@ const servicesData = [
           will be taking part. Based on this information, we put together a plan
           for the day for your approval.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Taster days usually consist of 4 sessions - 2 in the morning and 2 in
           the afternoon. The sessions vary in content depending on the age and
@@ -190,7 +207,7 @@ const servicesData = [
         <p>
           Children bring in their own bikes and helmets, but spares can be
           provided by prior arrangement. Helmets can be supplied.
-        </p>{" "}
+        </p>
         ​<h4>Whole School Taster Days</h4>
         <p>
           For smaller schools, we operate a program that combines the above
@@ -201,7 +218,7 @@ const servicesData = [
           one's can either borrow one of our balance/pedal bikes or bring in
           their own.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-cookie",
   },
@@ -213,8 +230,8 @@ const servicesData = [
     featured: true,
     flyer: CPDCourse,
     flyer2: DraftAgenda,
-    description: (
-      <div>
+    text1: (
+      <>
         <h4>Run your own sessions with our one-day CDP Instructor courses</h4>
         <p>
           Our one-day training courses are designed for teachers and school
@@ -230,6 +247,10 @@ const servicesData = [
           deliver a wide range of activities including games, challenges and
           races.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Trainees learn how to tailor the program to different group sizes and
           abilities and how to prepare for and organise sessions on the school
@@ -242,10 +263,10 @@ const servicesData = [
         </p>
         <p>
           A detailed training manual containing sample session plans, activity
-          descriptions and lots of helpful hints and tips is delivered with each
+          text1s and lots of helpful hints and tips is delivered with each
           course.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-user-tie",
   },
@@ -258,8 +279,8 @@ const servicesData = [
 
     featured: false,
     flyer: TrainingAndCompetitions,
-    description: (
-      <div>
+    text1: (
+      <>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
@@ -281,6 +302,10 @@ const servicesData = [
           will be taking part. Based on this information, we put together a plan
           for the day for your approval.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Taster days usually consist of 4 sessions - 2 in the morning and 2 in
           the afternoon. The sessions vary in content depending on the age and
@@ -313,7 +338,7 @@ const servicesData = [
           one's can either borrow one of our balance/pedal bikes or bring in
           their own.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-school",
   },
@@ -324,8 +349,8 @@ const servicesData = [
       "Our Learn to ride program, Freewheelers is designed to teach kids to ride a bike in 10 weeks using special convertible bikes. The course can be delivered by one of our instructors or by your own staff after training.",
     featured: false,
     flyer: FreewheelerzFlyer,
-    description: (
-      <div>
+    text1: (
+      <>
         <h4>Our new Freewheelerz Learn to Ride program for EYFS.</h4>​
         <p>
           Think how amazing it would be if every child in your school could be
@@ -345,6 +370,10 @@ const servicesData = [
           into a full 10-week course resulting in most children being able to
           ride independently by the end.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           The course follows a structured program that each week sees the
           children progress steadily from initially sitting and walking to
@@ -365,7 +394,7 @@ const servicesData = [
           For more information on getting started with the program, choose one
           of the options below to continue.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-graduation-cap",
   },
@@ -376,8 +405,8 @@ const servicesData = [
       "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
     featured: false,
     flyer: SchoolClubs,
-    description: (
-      <div>
+    text1: (
+      <>
         <h3>School Clubs</h3>
         <p>
           We offer clubs for all ages and abilities, from Early Years balance
@@ -394,7 +423,10 @@ const servicesData = [
           may prefer a mixed-age club where sessions can be split into higher
           and lower abilities or by age with a coach working in each group.
         </p>
-        ​
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Bookings are usually made by parents/guardians using our online
           booking and payment system and where possible encouraged to set up a
@@ -422,7 +454,7 @@ const servicesData = [
           If you have any questions or wish to arrange a club for your school,
           please contact us or email admin@proridecoaching.co.uk.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-users",
   },
@@ -434,8 +466,8 @@ const servicesData = [
     featured: false,
     flyer: IterSchoolCompetitions,
     flyer2: TrainingAndCompetitions,
-    description: (
-      <div>
+    text1: (
+      <>
         <h3>School Competitions</h3>
         <p>
           Pro-Ride provide two programs aimed at competitive cycle racing, these
@@ -446,10 +478,14 @@ const servicesData = [
           <li>KS2 inter-school competition.</li>
         </ul>
         <p>
-          Both programs can be run on an individual or team basis and are
-          offered as road, track or off-road options depending on facilities and
-          time of year.
+          Both programs can be run on an inidual or team basis and are offered
+          as road, track or off-road options depending on facilities and time of
+          year.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <h4>KS2 Training & Competition Day</h4>​
         <p>
           This one-day event is designed for one KS2 class (usually year 5 or 6)
@@ -461,7 +497,7 @@ const servicesData = [
           each race and totaled at the end where the winners are presented with
           certificates, medals, and/or a trophy.
         </p>
-      </div>
+      </>
     ),
     fontAwesomeIcon: "fas fa-biking",
   },
@@ -473,7 +509,7 @@ const servicesData = [
       "Our Road Safety program covers basic traffic awareness and road safety for children in years 5 and 6. The 2-day course is part on-site and part on local roads and delivered by qualified Bikeability instructors.",
     featured: false,
     flyer: TrainingAndCompetitions,
-    description: "",
+    text1: "",
     fontAwesomeIcon: "fas fa-user-md",
   },
 ];

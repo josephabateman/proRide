@@ -4,10 +4,10 @@ import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
 import AboutPhil from "./About/AboutPhil";
 import ContactForm from "./Contact/ContactForm";
-import Services from "./Services/Services";
+import ServicesPage from "./Services/ServicesPage";
 import NavBar from "./NavBar";
 import servicesData from "../data/services";
-import ContentTemplate from "./Templates/ContentTemplate";
+import SpecificService from "./Services/SpecificService";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
@@ -44,7 +44,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/services">
-          <Services />
+          <ServicesPage />
         </Route>
         <Route exact path="/contact">
           <ContactForm />
@@ -58,13 +58,16 @@ function App() {
         {servicesData.map((service, key) => {
           return (
             <Route key={key} exact path={`/${service.name.replace(/\s/g, "")}`}>
-              <ContentTemplate
+              <SpecificService
                 key={key}
+                proRideImg={service.proRideImg}
+                proRideImg2={service.proRideImg2}
                 img={service.img}
                 className="content-div"
                 header={service.name}
                 header2={service.header2}
-                description={service.description}
+                text1={service.text1}
+                text2={service.text2}
                 flyer={service.flyer}
                 flyer2={service.flyer2}
               />

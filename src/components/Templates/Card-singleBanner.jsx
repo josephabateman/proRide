@@ -15,9 +15,8 @@ function CardSingleBanner(props) {
             <h1 className="display-4">{props.title}</h1>
             <h4 className="font-weight-light">{props.description}</h4>
             <Link
-              className="text-decoration-none"
+              className="button text-decoration-none"
               to={`/${props.title.replace(/[()\s+]/g, "")}`}
-              className="button"
               style={button5}
             >
               Learn More

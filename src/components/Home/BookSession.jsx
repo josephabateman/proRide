@@ -4,7 +4,7 @@ import { Dropdown } from "react-bootstrap";
 function BookSession() {
   return (
     <div id="book-session">
-      <h2>Book on to a club</h2>
+      <h3 className="font-weight-light">Book on to a club</h3>
       <Dropdown className="green-gradient">
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
           Choose a club location

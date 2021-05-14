@@ -1,11 +1,11 @@
 import React from "react";
 import aboutProRideData from "../../data/aboutProRideData";
-import ContentTemplate from "../Templates/ContentTemplate";
+import SpecificService from "../Services/SpecificService";
 
 function AboutProRide() {
   return (
     <div>
-      <ContentTemplate
+      <SpecificService
         header={aboutProRideData.header}
         description={aboutProRideData.description}
         img={aboutProRideData.img}

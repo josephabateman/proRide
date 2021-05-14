@@ -12,7 +12,6 @@ function Card1(props) {
         className="text-decoration-none"
         to={`/${props.title.replace(/[()\s+]/g, "")}`}
       >
-        {/* <Card style={{ width: "19rem" }}> */}
         <img className={props.className} src={props.img} />
         <div>
           <h2 className="pt-3">{props.title}</h2>
@@ -23,14 +22,6 @@ function Card1(props) {
             Learn More
           </a>
         </div>
-        {/* <button
-          className="button"
-          style={button5}
-          className="text-decoration-none"
-        >
-          Learn More
-        </button> */}
-        {/* </Card> */}
       </Link>
     </div>
   );

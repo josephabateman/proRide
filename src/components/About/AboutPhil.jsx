@@ -1,12 +1,12 @@
 import React from "react";
 import aboutPhilData from "../../data/aboutPhilData";
-import ContentTemplate from "../Templates/ContentTemplate";
+import SpecificService from "../Services/SpecificService";
 import HomePageBanners from "../Templates/HomePageBanners";
 
 function AboutPhil() {
   return (
     <div>
-      <ContentTemplate
+      <SpecificService
         header={aboutPhilData.header}
         description={aboutPhilData.description}
       />
