@@ -6,6 +6,7 @@ import {
   Route,
   Switch,
   useLocation,
+  Link,
 } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
