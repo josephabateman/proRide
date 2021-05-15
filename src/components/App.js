@@ -1,4 +1,6 @@
 import React from "react";
+import { useParams } from "react-router";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -33,6 +35,37 @@ function Footer() {
   );
 }
 
+function User() {
+  let { id } = useParams();
+  return <h2>User {id}</h2>;
+}
+
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
+function QueryScreen() {
+  let query = useQuery();
+  return (
+    <div>
+      <div>
+        <h2>Accounts</h2>
+        <ul>
+          <li>
+            <Link to="/account?name=foo">Foo User</Link>
+          </li>
+          <li>
+            <Link to="/account?name=bar">Bar User</Link>
+          </li>
+          <li>
+            <Link to="/account?name=baz">Baz User</Link>
+          </li>
+        </ul>
+        <User name={query.get("name")} />
+      </div>
+    </div>
+  );
+}
+
 function App() {
   //   <Link to="/aboutProRide">
   //   <AboutProRide />
@@ -43,11 +76,16 @@ function App() {
         <NavBar />
 
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/services" component={ServicesPage} />
-          <Route path="/contact" component={ContactForm} />
-          <Route path="/aboutProRide" component={AboutProRide} />
-          <Route path="/aboutPhil" component={AboutPhil} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/services" component={ServicesPage} />
+          <Route exact path="/contact" component={ContactForm} />
+          <Route exact path="/aboutProRide" component={AboutProRide} />
+          <Route exact path="/aboutPhil" component={AboutPhil} />
+
+          <Route path="/:id" children={<User />} />
+
+          <QueryScreen />
+
           {servicesData.map((service, key) => {
             return (
               <Route
