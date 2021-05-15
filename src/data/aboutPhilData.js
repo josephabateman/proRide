@@ -1,6 +1,6 @@
 const aboutData = {
   header: "About Phil",
-  description: (
+  text1: (
     <>
       <p>
         Phil started racing as a junior in 1977 winning his first opne road race
@@ -13,7 +13,12 @@ const aboutData = {
         Britain a bronze medal at the National Road Race Championships and a win
         against top professionals in the 1988 Pro-am Tour of Lancashire.
       </p>
-      <p>
+     
+    </>
+  ),
+  text2: (
+    <>
+     <p>
         During his career, Phil won over 50 road races, five Yellow Jerseys and
         represented Team GB at three world championships and the 1988 Olympic
         Games in Seoul, Korea.

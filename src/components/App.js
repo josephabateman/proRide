@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
 import AboutPhil from "./About/AboutPhil";
@@ -7,7 +7,7 @@ import ContactForm from "./Contact/ContactForm";
 import ServicesPage from "./Services/ServicesPage";
 import NavBar from "./NavBar";
 import servicesData from "../data/services";
-import SpecificService from "./Services/SpecificService";
+import SpecificServiceSecond from "./Services/SpecificServiceSecond";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
@@ -28,55 +28,48 @@ function Footer() {
   );
 }
 
-// const mappedData = servicesData.map((service, key) => {
-//   return [service, key];
-// });
-
-// const servicePageKey = sessionStorage.getItem("servicePageKey");
-// console.log(servicePageKey);
-
 function App() {
+  //   <Link to="/aboutProRide">
+  //   <AboutProRide />
+  // </Link>
   return (
+    <>
     <Router>
       <NavBar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/services">
-          <ServicesPage />
-        </Route>
-        <Route exact path="/contact">
-          <ContactForm />
-        </Route>
-        <Route exact path="/aboutProRide">
-          <AboutProRide />
-        </Route>
-        <Route exact path="/aboutPhil">
-          <AboutPhil />
-        </Route>
-        {servicesData.map((service, key) => {
-          return (
-            <Route key={key} exact path={`/${service.name.replace(/\s/g, "")}`}>
-              <SpecificService
+      
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/services" component={ServicesPage} />
+          <Route exact path="/contact" component={ContactForm} />
+          <Route exact path="/aboutProRide" component={AboutProRide} />
+          <Route exact path="/aboutPhil" component={AboutPhil} />
+          {servicesData.map((service, key) => {
+            return (
+              <Route
                 key={key}
-                proRideImg={service.proRideImg}
-                proRideImg2={service.proRideImg2}
-                img={service.img}
-                className="content-div"
-                header={service.name}
-                header2={service.header2}
-                text1={service.text1}
-                text2={service.text2}
-                flyer={service.flyer}
-                flyer2={service.flyer2}
-              />
-            </Route>
-          );
-        })}
-      </Switch>
+                exact
+                path={`/${service.name.replace(/\s/g, "")}`}
+              >
+                <SpecificServiceSecond
+                  key={key}
+                  proRideImg={service.proRideImg}
+                  proRideImg2={service.proRideImg2}
+                  img={service.img}
+                  className="content-div"
+                  header={service.name}
+                  header2={service.header2}
+                  text1={service.text1}
+                  text2={service.text2}
+                  flyer={service.flyer}
+                  flyer2={service.flyer2}
+                />
+              </Route>
+            );
+          })}
+        </Switch>
+      </Router>
       <Footer />
-    </Router>
+    </>
   );
 }
 

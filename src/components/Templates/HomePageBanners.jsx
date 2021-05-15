@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HomePageBanners(props) {
   const button5 = {
@@ -10,9 +11,9 @@ function HomePageBanners(props) {
       {props.title ? <h1 className="display-4">{props.title}</h1> : ""}
       <h3 className="font-weight-light">{props.description}</h3>
       {props.buttonText != undefined ? (
-        <a href={props.buttonLink} className="button" style={button5}>
+        <Link to={props.buttonLink} className="button" style={button5}>
           {props.buttonText}
-        </a>
+        </Link>
       ) : (
         ""
       )}

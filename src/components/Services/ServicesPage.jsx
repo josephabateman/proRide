@@ -1,88 +1,14 @@
 import React from "react";
 import servicesData from "../../data/services";
 // import ContentTemplate from "../ContentTemplate";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Card1 from "../Templates/Card1";
 import CardSingleBanner from "../Templates/Card-singleBanner";
-
-// function ServiceLinks() {
-//   return (
-//     <div>
-//       {/* shadow box with links */}
-
-//       <Container fluid>
-//         <Row>
-//           {servicesData.map((service, key) => {
-//             return (
-//               <Col
-//                 key={key}
-//                 className="shadow p-3 m-2 bg-white rounded font-weight-light"
-//               >
-//                 <Link
-//                   className="text-decoration-none"
-//                   to={`/${service.name.replace(/[()\s+]/g, "")}`}
-//                 >
-//                   {service.name}
-//                 </Link>
-//               </Col>
-//             );
-//           })}
-//         </Row>
-//       </Container>
-//     </div>
-//   );
-// }
-
-// function ServicesCards() {
-//   return (
-//     <div>
-//       {/* cards */}
-//       <Container fluid>
-//         <CardGroup>
-//           <Row>
-//             {servicesData.map((service, key) => (
-//               <Col lg={3} sm={6} key={key}>
-//                 <Card className="full-screen-info">
-//                   <Card.Img
-//                     className="content-template-img"
-//                     variant="top"
-//                     src={service.img}
-//                   />
-
-//                   <Card.Body
-//                     className={
-//                       key % 2 == 0 ? "blue-gradient" : "green-gradient"
-//                     }
-//                   >
-//                     <Card.Title as="h3">{service.name}</Card.Title>
-//                     <Card.Text>{service.header}</Card.Text>
-//                   </Card.Body>
-//                   <Card.Footer>
-//                     <Link to={`/${service.name.replace(/[()\s+]/g, "")}`}>
-//                       <Button variant="outline-primary">
-//                         <small>More info</small>
-//                       </Button>
-//                     </Link>
-//                   </Card.Footer>
-//                 </Card>
-//               </Col>
-//             ))}
-//           </Row>
-//         </CardGroup>
-//       </Container>
-//     </div>
-//   );
-// }
 
 function ServicesCards() {
   return (
     <div>
       <Container fluid>
-        {/* <Row> */}
-        {/* <Col lg={2} className="d-none d-lg-block">
-            <ServiceLinks />
-          </Col> */}
-        {/* <Col> */}
         <Row className="row justify-content-center">
           {servicesData.map((service, key) =>
             key > 1 && key < 5 ? (
@@ -149,8 +75,6 @@ function ServicesCards() {
             )
           )}
         </Row>
-        {/* </Col> */}
-        {/* </Row> */}
       </Container>
     </div>
   );

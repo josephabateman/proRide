@@ -2,7 +2,7 @@ import twoKids from "../static/images/two_kids.png";
 
 const aboutData = {
   header: "About ProRide",
-  description: (
+  text1: (
     <>
       <p>
         Pro-Ride Coaching was set up in 2014 by ex-teacher and former Olympic
@@ -17,6 +17,10 @@ const aboutData = {
         with both children and staff and by the end of the year over 3,000
         children had taken part in a Pro-Ride session.
       </p>
+    </>
+  ),
+  text2: (
+    <>
       <p>
         Based in Yorkshire, Phil expanded the service to include the whole of
         the north of England the following year and expanded the range of
