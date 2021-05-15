@@ -36,44 +36,12 @@ function Footer() {
   );
 }
 
-function User() {
-  let { id } = useParams();
-  return <h2>User {id}</h2>;
-}
-
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
-function QueryScreen() {
-  let query = useQuery();
-  return (
-    <div>
-      <div>
-        <h2>Accounts</h2>
-        <ul>
-          <li>
-            <Link to="/account?name=foo">Foo User</Link>
-          </li>
-          <li>
-            <Link to="/account?name=bar">Bar User</Link>
-          </li>
-          <li>
-            <Link to="/account?name=baz">Baz User</Link>
-          </li>
-        </ul>
-        <User name={query.get("name")} />
-      </div>
-    </div>
-  );
-}
-
 function App() {
-  //   <Link to="/aboutProRide">
-  //   <AboutProRide />
-  // </Link>
   return (
     <>
       <Router>
+      <QueryParamsDemo />
+
         <NavBar />
 
         <Switch>
@@ -82,10 +50,6 @@ function App() {
           <Route exact path="/contact" component={ContactForm} />
           <Route exact path="/aboutProRide" component={AboutProRide} />
           <Route exact path="/aboutPhil" component={AboutPhil} />
-
-          <Route path="/:id" children={<User />} />
-
-          <QueryScreen />
 
           {servicesData.map((service, key) => {
             return (
@@ -114,6 +78,55 @@ function App() {
       </Router>
       <Footer />
     </>
+  );
+}
+
+// A custom hook that builds on useLocation to parse
+// the query string for you.
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
+
+function QueryParamsDemo() {
+  let query = useQuery();
+
+  return (
+    <div>
+      <div>
+        <h2>Accounts</h2>
+        <ul>
+          <li>
+            <Link to="/account?name=netflix">Netflix</Link>
+          </li>
+          <li>
+            <Link to="/account?name=zillow-group">Zillow Group</Link>
+          </li>
+          <li>
+            <Link to="/account?name=yahoo">Yahoo</Link>
+          </li>
+          <li>
+            <Link to="/account?name=modus-create">Modus Create</Link>
+          </li>
+        </ul>
+
+        <Child name={query.get("name")} />
+      </div>
+    </div>
+  );
+}
+
+function Child({ name }) {
+  return (
+    <div>
+      {name ? (
+        <h3>
+          The <code>name</code> in the query string is &quot;{name}
+          &quot;
+        </h3>
+      ) : (
+        <h3>There is no name in the query string</h3>
+      )}
+    </div>
   );
 }
 
