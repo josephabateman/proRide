@@ -48,7 +48,7 @@ function NavBar() {
                 </Row>
               </Container>
             </NavDropdown> */}
-            <NavDropdown.Divider />
+            {/* <NavDropdown.Divider /> */}
             {/* <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
             <Nav.Link>
               <Link to="/contact">Contact</Link>
@@ -56,13 +56,13 @@ function NavBar() {
             {/* <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/aboutPhil">About Phil</Nav.Link> */}
             <NavDropdown title="About" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <Link to="/aboutProRide">About ProRide</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/aboutPhil">About Phil</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
+              <Link className="d-block pl-3" to="/aboutProRide">
+                About ProRide
+              </Link>
+              <Link className="d-block pl-3 pt-2" to="/aboutPhil">
+                About Phil
+              </Link>
+              {/* <NavDropdown.Divider /> */}
               {/* <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
             </NavDropdown>
           </Nav>

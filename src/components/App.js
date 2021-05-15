@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
 import AboutPhil from "./About/AboutPhil";
@@ -37,7 +37,7 @@ function App() {
     <Router>
       <NavBar />
       
-        <Switch>
+        {/* <Switch> */}
           <Route exact path="/" component={Home} />
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/contact" component={ContactForm} />
@@ -66,7 +66,7 @@ function App() {
               </Route>
             );
           })}
-        </Switch>
+        {/* </Switch> */}
       </Router>
       <Footer />
     </>
