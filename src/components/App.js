@@ -1,13 +1,6 @@
 import React from "react";
-import { useParams } from "react-router";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-  Link,
-} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
 import AboutPhil from "./About/AboutPhil";
@@ -40,8 +33,6 @@ function App() {
   return (
     <>
       <Router>
-      <QueryParamsDemo />
-
         <NavBar />
 
         <Switch>
@@ -78,55 +69,6 @@ function App() {
       </Router>
       <Footer />
     </>
-  );
-}
-
-// A custom hook that builds on useLocation to parse
-// the query string for you.
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
-
-function QueryParamsDemo() {
-  let query = useQuery();
-
-  return (
-    <div>
-      <div>
-        <h2>Accounts</h2>
-        <ul>
-          <li>
-            <Link to="/account?name=netflix">Netflix</Link>
-          </li>
-          <li>
-            <Link to="/account?name=zillow-group">Zillow Group</Link>
-          </li>
-          <li>
-            <Link to="/account?name=yahoo">Yahoo</Link>
-          </li>
-          <li>
-            <Link to="/account?name=modus-create">Modus Create</Link>
-          </li>
-        </ul>
-
-        <Child name={query.get("name")} />
-      </div>
-    </div>
-  );
-}
-
-function Child({ name }) {
-  return (
-    <div>
-      {name ? (
-        <h3>
-          The <code>name</code> in the query string is &quot;{name}
-          &quot;
-        </h3>
-      ) : (
-        <h3>There is no name in the query string</h3>
-      )}
-    </div>
   );
 }
 
