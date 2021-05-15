@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from "react-router-dom";
 import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
 import AboutPhil from "./About/AboutPhil";
@@ -38,11 +43,11 @@ function App() {
         <NavBar />
 
         <Switch>
-          <Route exact path="/" component={Home} children={<ServicesPage />} />
-          <Route exact path="/services" component={ServicesPage} />
-          <Route exact path="/contact" component={ContactForm} />
-          <Route exact path="/aboutProRide" component={AboutProRide} />
-          <Route exact path="/aboutPhil" component={AboutPhil} />
+          <Route path="/" component={Home} />
+          <Route path="/services" component={ServicesPage} />
+          <Route path="/contact" component={ContactForm} />
+          <Route path="/aboutProRide" component={AboutProRide} />
+          <Route path="/aboutPhil" component={AboutPhil} />
           {servicesData.map((service, key) => {
             return (
               <Route
