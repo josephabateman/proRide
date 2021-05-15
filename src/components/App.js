@@ -34,11 +34,11 @@ function App() {
   // </Link>
   return (
     <>
-    <Router>
-      <NavBar />
-      
-        {/* <Switch> */}
-          <Route exact path="/" component={Home} />
+      <Router>
+        <NavBar />
+
+        <Switch>
+          <Route exact path="/" component={Home} children={<ServicesPage />} />
           <Route exact path="/services" component={ServicesPage} />
           <Route exact path="/contact" component={ContactForm} />
           <Route exact path="/aboutProRide" component={AboutProRide} />
@@ -66,7 +66,7 @@ function App() {
               </Route>
             );
           })}
-        {/* </Switch> */}
+        </Switch>
       </Router>
       <Footer />
     </>
