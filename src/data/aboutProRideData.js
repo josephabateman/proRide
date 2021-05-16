@@ -1,4 +1,24 @@
-import twoKids from "../static/images/two_kids.png";
+//data from line 23 on
+
+function importAll(r) {
+  let importedFile = {};
+  r.keys().forEach((item) => {
+    importedFile[item.replace("./", "")] = r(item);
+  });
+  return importedFile;
+}
+
+const specific_service_images = importAll(
+  require.context(
+    "../static/images/specific_service_images",
+    false,
+    /\.(png|jpe?g|JPEG|svg)$/
+  )
+);
+
+function fileName(folder, fileName) {
+  return folder[fileName].default;
+}
 
 const aboutData = {
   header: "About ProRide",
@@ -39,7 +59,8 @@ const aboutData = {
       </p>
     </>
   ),
-  img: twoKids,
+  img: fileName(specific_service_images, "two_kids_blue_tarmac.jpg"),
+  img2: fileName(specific_service_images, "phil_with_three_kids.jpg"),
   imgDescription: "kid on bike",
 };
 

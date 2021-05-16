@@ -17,11 +17,10 @@ function Card1(props) {
           <h2 className="pt-3">{props.title}</h2>
           {/* <hr /> */}
           <p>{props.text}</p>
-
-          <a href={props.buttonLink} className="button" style={button5}>
-            Learn More
-          </a>
         </div>
+      </Link>
+      <Link to={`/${props.title.replace(/[()\s+]/g, "")}`} className="button" style={button5}>
+        Learn More
       </Link>
     </div>
   );

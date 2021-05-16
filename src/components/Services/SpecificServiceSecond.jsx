@@ -13,7 +13,7 @@ function SpecificServiceSecond(props) {
     <div>
       {window.scrollTo(0, 0)}
       <ScrollToTop smooth />
-      <img src={props.img} className="service-card-img-taller green-gradient" />
+      <img src={props.img} className="service-card-img green-gradient" />
 
       <Container>
         <Row>
@@ -46,12 +46,12 @@ function SpecificServiceSecond(props) {
             )}
           </Col>
 
-          <Col xs={12} md={6}>
-            <Image src={props.proRideImg} rounded />
-          </Col>
-          <Col xs={12} md={6} className="m-md-0 mt-4">
-            <Image src={props.proRideImg2} rounded />
-          </Col>
+            <Col xs={12} md={6}>
+              <Image src={props.proRideImg} rounded />
+            </Col>
+            <Col xs={12} md={6} className="m-md-0 mt-4">
+              <Image src={props.proRideImg2} rounded />
+            </Col>
 
           <Col className="mt-5 text-left" xs={12}>
             {props.text2}

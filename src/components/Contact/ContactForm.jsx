@@ -13,7 +13,7 @@ function ContactForm() {
           {/* <FormControl /> */}
         </InputGroup>
 
-        <InputGroup className="mb-3" controlId="formBasicEmail">
+        <InputGroup className="mb-3">
           <InputGroup.Prepend>
             <InputGroup.Text>Email address</InputGroup.Text>
           </InputGroup.Prepend>

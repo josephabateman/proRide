@@ -1,5 +1,24 @@
-import ProrideImg1 from "../static/images/proride-kids-1.png";
-import ProrideImg2 from "../static/images/proride-kids-2.png";
+//data from line 23 on
+
+function importAll(r) {
+  let importedFile = {};
+  r.keys().forEach((item) => {
+    importedFile[item.replace("./", "")] = r(item);
+  });
+  return importedFile;
+}
+
+const proRideImages = importAll(
+  require.context(
+    "../static/images",
+    false,
+    /\.(png|jpe?g|JPEG|svg)$/
+  )
+);
+
+function fileName(folder, fileName) {
+  return folder[fileName].default;
+}
 
 const fullScreenBanners = [
   {
@@ -7,7 +26,7 @@ const fullScreenBanners = [
     color: "blue-gradient",
     description: "Making cycling in school fun",
     imageDescription: "phil bateman coaching in schools",
-    imageSrc: ProrideImg1,
+    imageSrc: fileName(proRideImages, 'proride-kids-1.png'),
   },
   
 ];
@@ -20,7 +39,7 @@ const collapsingBanners = [
     buttonText: "Learn More",
     buttonLink: "/services",
     imageDescription: "Range of services",
-    imageSrc: ProrideImg2,
+    imageSrc: fileName(proRideImages, 'proride-kids-2.png'),
   },
   // {
   //   color: "blue-gradient",

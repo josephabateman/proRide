@@ -1,41 +1,43 @@
-//need to import all from the directory
-import balanceBikeDaysFlyer from "../static/flyers/balance bike days flyer.pdf";
-import CPDCourse from "../static/flyers/CPD Course Title- Pro Ride Cycling Instructor Workshop (1 day) flyer.pdf";
-import FreewheelerzFlyer from "../static/flyers/Freewheelerz flyer.pdf";
-import IterSchoolCompetitions from "../static/flyers/INTER-SCHOOL COMPETITIONS flyer.pdf";
-import SchoolClubs from "../static/flyers/School Clubs flyer.pdf";
-import TasterDays from "../static/flyers/taster days brochure.pdf";
-import TrainingAndCompetitions from "../static/flyers/Training & Competition Day flyer.pdf";
-import DraftAgenda from "../static/flyers/View Draft Agenda pdf.pdf";
+//data from line 29 on
 
-// import wideField from "../static/images/wide_shot_field.png";
-// import twoKids from "../static/images/two_kids.png";
-// import assembly from "../static/images/assembly.png";
+function importAll(r) {
+  let importedFile = {};
+  r.keys().forEach((item) => {
+    importedFile[item.replace("./", "")] = r(item);
+  });
+  return importedFile;
+}
 
-import svg1 from "../static/images/svg/1.svg";
-import svg2 from "../static/images/svg/2.svg";
-import svg3 from "../static/images/svg/3.svg";
-import svg4 from "../static/images/svg/4.svg";
-import svg5 from "../static/images/svg/5.svg";
-import svg6 from "../static/images/svg/6.svg";
-import svg7 from "../static/images/svg/7.svg";
-import svg8 from "../static/images/svg/8.svg";
+const flyers = importAll(
+  require.context("../static/flyers", false, /\.(pdf)$/)
+);
+const svg = importAll(
+  require.context("../static/images/svg", false, /\.(png|jpe?g|svg)$/)
+);
+const specificServiceImages = importAll(
+  require.context(
+    "../static/images/specific_service_images",
+    false,
+    /\.(png|jpe?g|jpg|svg)$/
+  )
+);
 
-import proRide1 from "../static/images/specific-service-images/1.jpg";
-import proRide2 from "../static/images/specific-service-images/2.JPEG";
+function fileName(folder, fileName) {
+  return folder[fileName].default;
+}
 
 const servicesData = [
   {
     name: "Balance Biking Days",
-    img: svg1,
+    img: fileName(svg, "1.svg"),
     header:
       "A fun way to help early years children develop coordination, concentration and balance skills",
     header2:
       "Develop confidence and coordination with a Balance Bike Taster Day",
     featured: true,
-    flyer: balanceBikeDaysFlyer,
-    proRideImg: proRide1,
-    proRideImg2: proRide2,
+    flyer: fileName(flyers, "balance bike days flyer.pdf"),
+    proRideImg: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
+    proRideImg2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
     text1: (
       <>
         <p>
@@ -79,13 +81,13 @@ const servicesData = [
   },
   {
     name: "KS1 Taster Days",
-    img: svg2,
+    img: fileName(svg, "2.svg"),
     header:
       "Fun interactive sessions for KS1 to stimulate interest, develop confidence and gain new skills through games and challenges.",
     header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
     featured: false,
     //wrong flyer
-    flyer: TasterDays,
+    flyer: fileName(flyers, "taster days brochure.pdf"),
     text1: (
       <>
         <p>
@@ -147,12 +149,14 @@ const servicesData = [
         </p>
       </>
     ),
+    proRideImg: fileName(specificServiceImages, "girl_2_ramp_young.jpg"),
+    proRideImg2: fileName(specificServiceImages, "ramp_young_kids.jpg"),
     fontAwesomeIcon: "fas fa-cookie-bite",
     //the ks1 and ks2 flyer is same
   },
   {
     name: "KS2 Taster Days",
-    img: svg3,
+    img: fileName(svg, "3.svg"),
     header:
       "A great way to encourage children to cycle more and sample cycle racing in a safe, controlled environment.",
     featured: false,
@@ -220,16 +224,21 @@ const servicesData = [
         </p>
       </>
     ),
+    proRideImg: fileName(specificServiceImages, "full_class_field.jpg"),
+    proRideImg2: fileName(specificServiceImages, "group_on_ramp.jpg"),
     fontAwesomeIcon: "fas fa-cookie",
   },
   {
     name: "Staff Training (CPD)",
-    img: svg4,
+    img: fileName(svg, "4.svg"),
     header:
       "Our CPD workshops are designed to support teachers and other staff who want to run their own sessions and programs in their school. We provide one-day courses for EYFS, KS1 and KS2.",
     featured: true,
-    flyer: CPDCourse,
-    flyer2: DraftAgenda,
+    flyer: fileName(
+      flyers,
+      "CPD Course Title- Pro Ride Cycling Instructor Workshop (1 day) flyer.pdf"
+    ),
+    flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
     text1: (
       <>
         <h4>Run your own sessions with our one-day CDP Instructor courses</h4>
@@ -268,17 +277,19 @@ const servicesData = [
         </p>
       </>
     ),
+    proRideImg: fileName(specificServiceImages, "finishing_line.jpg"),
+    proRideImg2: fileName(specificServiceImages, "starting_line_six_boys.jpg"),
     fontAwesomeIcon: "fas fa-user-tie",
   },
   {
     name: "Whole School Days",
-    img: svg5,
+    img: fileName(svg, "5.svg"),
     header:
       "Ideal for smaller schools, our Whole School Program ensures every child gets to take part in all inclusive, age related fun session",
     header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
 
     featured: false,
-    flyer: TrainingAndCompetitions,
+    flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
     text1: (
       <>
         <p>
@@ -340,15 +351,17 @@ const servicesData = [
         </p>
       </>
     ),
+    proRideImg: fileName(specificServiceImages, "assembly.jpg"),
+    proRideImg2: fileName(specificServiceImages, "kids_podium.jpg"),
     fontAwesomeIcon: "fas fa-school",
   },
   {
     name: "Learn-to-Ride Program (Freewheelerz)",
-    img: svg6,
+    img: fileName(svg, "6.svg"),
     header:
       "Our Learn to ride program, Freewheelers is designed to teach kids to ride a bike in 10 weeks using special convertible bikes. The course can be delivered by one of our instructors or by your own staff after training.",
     featured: false,
-    flyer: FreewheelerzFlyer,
+    flyer: fileName(flyers, "Freewheelerz flyer.pdf"),
     text1: (
       <>
         <h4>Our new Freewheelerz Learn to Ride program for EYFS.</h4>​
@@ -396,15 +409,17 @@ const servicesData = [
         </p>
       </>
     ),
+    proRideImg: fileName(specificServiceImages, "girl_ramp_young.jpg"),
+    proRideImg2: fileName(specificServiceImages, "ramp_young_kids.jpg"),
     fontAwesomeIcon: "fas fa-graduation-cap",
   },
   {
     name: "After-School Clubs",
-    img: svg7,
+    img: fileName(svg, "7.svg"),
     header:
       "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
     featured: false,
-    flyer: SchoolClubs,
+    flyer: fileName(flyers, "School Clubs flyer.pdf"),
     text1: (
       <>
         <h3>School Clubs</h3>
@@ -456,16 +471,18 @@ const servicesData = [
         </p>
       </>
     ),
+    proRideImg: fileName(specificServiceImages, "limbo_boy_2.jpg"),
+    proRideImg2: fileName(specificServiceImages, "limbo_rear_shot_young.jpg"),
     fontAwesomeIcon: "fas fa-users",
   },
   {
     name: "Competition Days",
-    img: svg8,
+    img: fileName(svg, "8.svg"),
     header:
       "We provide everything from a School-based KS2 Competition with race training prior to competition, to fully organised Trust-wide or regional inter-school competitions and -tournaments.",
     featured: false,
-    flyer: IterSchoolCompetitions,
-    flyer2: TrainingAndCompetitions,
+    flyer: fileName(flyers, "INTER-SCHOOL COMPETITIONS flyer.pdf"),
+    flyer2: fileName(flyers, "Training & Competition Day flyer.pdf"),
     text1: (
       <>
         <h3>School Competitions</h3>
@@ -499,18 +516,22 @@ const servicesData = [
         </p>
       </>
     ),
+    proRideImg: fileName(specificServiceImages, "awarding_certificate.jpg"),
+    proRideImg2: fileName(specificServiceImages, "kids_podium.jpg"),
     fontAwesomeIcon: "fas fa-biking",
   },
   {
     name: "Road Safety Training",
-    img: svg1,
+    img: fileName(svg, "1.svg"),
     // img: "https://static.wixstatic.com/media/0583da_42dd4d30d252402c818d43c70c5896fa.jpg/v1/crop/x_56,y_0,w_249,h_239/fill/w_349,h_326,al_c,lg_1,q_80/20141020_join_us_cycle_training_hr_14138.webp",
     header:
       "Our Road Safety program covers basic traffic awareness and road safety for children in years 5 and 6. The 2-day course is part on-site and part on local roads and delivered by qualified Bikeability instructors.",
     featured: false,
-    flyer: TrainingAndCompetitions,
+    flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
     text1: "",
     fontAwesomeIcon: "fas fa-user-md",
+    proRideImg: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
+    proRideImg2: fileName(specificServiceImages, "phil_coaching_hat.jpg"),
   },
 ];
 

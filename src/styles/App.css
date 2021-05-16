@@ -27,14 +27,15 @@ footer {
   width: 10em;
 }
 
-.img-circle {
-  /* border-radius: 50%; */
-  max-width: 400px;
-}
-
 .full-width-img {
   width: 100%;
   height: 300px;
+}
+
+.about-img {
+  width: auto;
+  max-height: 400px;
+  max-width: 300px;
 }
 
 img {

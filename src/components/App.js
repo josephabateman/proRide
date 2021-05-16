@@ -54,7 +54,6 @@ function App() {
                   proRideImg={service.proRideImg}
                   proRideImg2={service.proRideImg2}
                   img={service.img}
-                  className="content-div"
                   header={service.name}
                   header2={service.header2}
                   text1={service.text1}

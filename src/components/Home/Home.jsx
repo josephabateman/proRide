@@ -20,33 +20,11 @@ function Home() {
         />
       ))}
 
-      {/* <div class="row">
-        <div class="col-md-6">
-          {collapsingBanners.map((data, key) => (
-            <HomePageBanners
-              key={key}
-              color={data.color}
-              title={data.title}
-              description={data.description}
-              buttonText={data.buttonText}
-              buttonLink={data.buttonLink}
-              videoSrc={data.videoSrc}
-              imageDescription={data.imageDescription}
-              imageSrc={data.imageSrc}
-            />
-          ))}
-        </div>
-        <div class="col-md-6">
-          <BookSession />
-        </div>
-      </div> */}
-
-      <Container fluid>
+      <Container fluid className="px-0">
         <Row>
           {collapsingBanners.map((data, key) => (
-            <Col md={6}>
+            <Col md={6} key={key}>
               <HomePageBanners
-                key={key}
                 color={data.color}
                 title={data.title}
                 description={data.description}
@@ -65,11 +43,11 @@ function Home() {
         <Row className="row justify-content-center">
           <Col md={6}>
             <h3 className="font-weight-light">Watch our video</h3>
-            <div class="embed-responsive embed-responsive-16by9">
+            <div className="embed-responsive embed-responsive-16by9">
               <iframe
-                class="embed-responsive-item"
+                className="embed-responsive-item"
                 src="https://www.youtube.com/embed/KPvxQjljIgo"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </Col>

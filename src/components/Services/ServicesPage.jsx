@@ -12,7 +12,7 @@ function ServicesCards() {
         <Row className="row justify-content-center">
           {servicesData.map((service, key) =>
             key > 1 && key < 5 ? (
-              <Col lg={4} md={6} className="mb-5">
+              <Col lg={4} md={6} className="mb-5" key={key}>
                 <Card1
                   img={service.img}
                   className="service-card-img green-gradient shadow bg-white rounded font-weight-light"
@@ -32,6 +32,7 @@ function ServicesCards() {
               <Col
                 md={5}
                 className="mb-5 mx-4 shadow bg-white rounded font-weight-light"
+                key={key}
               >
                 <Card1
                   img={service.img}
@@ -62,7 +63,7 @@ function ServicesCards() {
         <Row>
           {servicesData.map((service, key) =>
             key > 5 ? (
-              <Col lg={4} md={6} className="my-5">
+              <Col lg={4} md={6} className="my-5" key={key}>
                 <Card1
                   img={service.img}
                   className="service-card-img blue-gradient shadow bg-white rounded font-weight-light"

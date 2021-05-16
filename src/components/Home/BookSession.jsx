@@ -11,9 +11,15 @@ function BookSession() {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">Bradford</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Leeds</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Doncaster</Dropdown.Item>
+          <Dropdown.Item href="#/action-1" key="1">
+            Bradford
+          </Dropdown.Item>
+          <Dropdown.Item href="#/action-2" key="2">
+            Leeds
+          </Dropdown.Item>
+          <Dropdown.Item href="#/action-3" key="3">
+            Doncaster
+          </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </div>
