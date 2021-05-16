@@ -8,8 +8,8 @@ function CollapsingBanners(props) {
 
   return (
     <div className={`${props.color} banner-text`}>
-      {props.title ? <h1 className="display-4">{props.title}</h1> : ""}
-      <h3 className="font-weight-light">{props.description}</h3>
+      {props.title ? <h1 className="display-5">{props.title}</h1> : ""}
+      <h5 className="font-weight-light">{props.description}</h5>
       {props.buttonText != undefined ? (
         <Link to={props.buttonLink} className="button" style={button5}>
           {props.buttonText}

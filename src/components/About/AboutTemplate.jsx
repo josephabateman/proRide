@@ -8,11 +8,11 @@ function AboutTemplate(props) {
     <div className="mx-md-5">
       
 
-      <Container fluid="md" className="text-left">
-        <h1 className="pt-3 display-4">{props.header}</h1>
+      <Container fluid="md" className="pl-2 text-left">
+        <h1 className="py-3 display-5 text-center">{props.header}</h1>
 
         <Row>
-          <Col className="mt-4 mb-4">
+          <Col>
             <Image src={props.img} rounded className="about-img float-md-left mr-md-5 d-block mx-auto m-3" />
             {/* <img
               className="about-img img-shadow rounded float-md-left mr-md-5 d-block mx-auto m-3"

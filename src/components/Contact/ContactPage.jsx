@@ -13,7 +13,7 @@ function ContactPage() {
         <Row>
           <Col>
             {" "}
-            <h1 className="display-5 text-left">Contact</h1>
+            <h1 className="display-5">Contact</h1>
           </Col>
         </Row>
         <Row className="mt-3 mb-3 justify-content-md-center d-none d-lg-block">

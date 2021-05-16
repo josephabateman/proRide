@@ -12,7 +12,7 @@ function HeaderText() {
       <Container>
         <Row className="mt-3">
           <Col md={5} lg={7}>
-            <h1 className="text-left display-3">Services</h1>
+            <h1 className="display-5">Our Services</h1>
           </Col>
           <Col md={7} lg={4} className="text-left">
             <h5 className="font-weight-light">

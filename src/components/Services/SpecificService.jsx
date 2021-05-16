@@ -15,10 +15,10 @@ function SpecificService(props) {
       <ScrollToTop smooth />
       <img src={props.img} className="service-card-img green-gradient" />
 
-      <Container>
+      <Container className='pl-2'>
         <Row>
           <Col xs={12}>
-            <h1 className="pt-3 display-4">{props.header}</h1>
+            <h1 className="py-3 display-5">{props.header}</h1>
           </Col>
           <Col xs={12} className="text-left">
             {props.text1}
