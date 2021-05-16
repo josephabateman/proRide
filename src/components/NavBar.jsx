@@ -1,16 +1,17 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Image } from "react-bootstrap";
 import logo from "../static/images/logo.png";
 
 function NavBar() {
   return (
     <div>
       <Navbar collapseOnSelect bg="light" expand="md">
-        <Nav.Link className="d-inline-block" href="#/">
-          <Navbar.Brand className="logo d-inline-block">
-            <img src={logo} />
-          </Navbar.Brand>
+        {/* <Navbar.Brand className="logo" href="#/"> */}
+        <Nav.Link href="#/" className="logo">
+          <Image src={logo} />
         </Nav.Link>
+
+        {/* </Navbar.Brand> */}
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
