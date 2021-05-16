@@ -410,7 +410,7 @@ const servicesData = [
       </>
     ),
     proRideImg: fileName(specificServiceImages, "girl_ramp_young.jpg"),
-    proRideImg2: fileName(specificServiceImages, "ramp_young_kids.jpg"),
+    proRideImg2: fileName(specificServiceImages, "older_kid_action.jpg"),
     fontAwesomeIcon: "fas fa-graduation-cap",
   },
   {
@@ -517,7 +517,7 @@ const servicesData = [
       </>
     ),
     proRideImg: fileName(specificServiceImages, "awarding_certificate.jpg"),
-    proRideImg2: fileName(specificServiceImages, "kids_podium.jpg"),
+    proRideImg2: fileName(specificServiceImages, "medal_award.jpg"),
     fontAwesomeIcon: "fas fa-biking",
   },
   {
@@ -530,7 +530,7 @@ const servicesData = [
     flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
     text1: "",
     fontAwesomeIcon: "fas fa-user-md",
-    proRideImg: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
+    proRideImg: fileName(specificServiceImages, "cones_two_kids.jpg"),
     proRideImg2: fileName(specificServiceImages, "phil_coaching_hat.jpg"),
   },
 ];

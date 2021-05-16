@@ -8,7 +8,7 @@ function CardSingleBanner(props) {
   };
 
   return (
-    <div className={`${props.color} full-screen-info`}>
+    <div className={`${props.color} banner-text`}>
       <Container>
         <Row>
           <Col md={6} className="align-self-center">

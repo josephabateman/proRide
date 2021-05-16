@@ -4,11 +4,11 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home/Home";
 import AboutProRide from "./About/AboutProRide";
 import AboutPhil from "./About/AboutPhil";
-import ContactForm from "./Contact/ContactForm";
+import ContactPage from "./Contact/ContactPage";
 import ServicesPage from "./Services/ServicesPage";
 import NavBar from "./NavBar";
 import servicesData from "../data/services";
-import SpecificServiceSecond from "./Services/SpecificServiceSecond";
+import SpecificService from "./Services/SpecificService";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
@@ -38,7 +38,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/services" component={ServicesPage} />
-          <Route exact path="/contact" component={ContactForm} />
+          <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/aboutProRide" component={AboutProRide} />
           <Route exact path="/aboutPhil" component={AboutPhil} />
 
@@ -49,7 +49,7 @@ function App() {
                 exact
                 path={`/${service.name.replace(/\s/g, "")}`}
               >
-                <SpecificServiceSecond
+                <SpecificService
                   key={key}
                   proRideImg={service.proRideImg}
                   proRideImg2={service.proRideImg2}

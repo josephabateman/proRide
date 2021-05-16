@@ -23,6 +23,22 @@ footer {
   width: 100%;
 }
 
+.social-media-cards {
+  min-height: 200px;
+}
+
+.banner-text {
+  color: white;
+  padding-top: 10px;
+}
+
+.collapsing-rows {
+  min-height: 450px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .logo {
   width: 10em;
 }
@@ -43,10 +59,6 @@ img {
   height: auto;
 }
 
-.content-template-img {
-  width: 100%;
-}
-
 .service-card-img {
   height: 100px;
   object-fit: cover;
@@ -65,11 +77,6 @@ img {
 p {
   font-size: large;
   line-height: 2;
-}
-
-.full-screen-info {
-  color: white;
-  margin-bottom: 10px;
 }
 
 .blue-gradient {

@@ -8,9 +8,9 @@ function importAll(r) {
   return importedFile;
 }
 
-const specific_service_images = importAll(
+const aboutProRide = importAll(
   require.context(
-    "../static/images/specific_service_images",
+    "../static/images/about_pro_ride",
     false,
     /\.(png|jpe?g|JPEG|svg)$/
   )
@@ -59,8 +59,8 @@ const aboutData = {
       </p>
     </>
   ),
-  img: fileName(specific_service_images, "two_kids_blue_tarmac.jpg"),
-  img2: fileName(specific_service_images, "phil_with_three_kids.jpg"),
+  img: fileName(aboutProRide, "phil_with_three_kids.jpg"),
+  img2: fileName(aboutProRide, "starting_line.jpg"),
   imgDescription: "kid on bike",
 };
 

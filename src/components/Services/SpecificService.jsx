@@ -4,7 +4,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function SpecificServiceSecond(props) {
+function SpecificService(props) {
   const button5 = {
     backgroundColor: "#4e9af1",
   };
@@ -46,12 +46,12 @@ function SpecificServiceSecond(props) {
             )}
           </Col>
 
-            <Col xs={12} md={6}>
-              <Image src={props.proRideImg} rounded />
-            </Col>
-            <Col xs={12} md={6} className="m-md-0 mt-4">
-              <Image src={props.proRideImg2} rounded />
-            </Col>
+          <Col xs={12} md={6}>
+            <Image src={props.proRideImg} rounded />
+          </Col>
+          <Col xs={12} md={6} className="m-md-0 mt-4">
+            <Image src={props.proRideImg2} rounded />
+          </Col>
 
           <Col className="mt-5 text-left" xs={12}>
             {props.text2}
@@ -65,4 +65,4 @@ function SpecificServiceSecond(props) {
   );
 }
 
-export default SpecificServiceSecond;
+export default SpecificService;

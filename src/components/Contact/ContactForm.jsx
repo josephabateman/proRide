@@ -3,9 +3,9 @@ import { Form, Button, InputGroup, FormControl } from "react-bootstrap";
 
 function ContactForm() {
   return (
-    <div className="d-flex justify-content-center">
-      <Form className="col-lg-8 col-md-10 m-2">
-        <InputGroup className="mb-3">
+    <>
+      <Form>
+        <InputGroup>
           <InputGroup.Prepend>
             <InputGroup.Text>First and last name</InputGroup.Text>
           </InputGroup.Prepend>
@@ -13,7 +13,7 @@ function ContactForm() {
           {/* <FormControl /> */}
         </InputGroup>
 
-        <InputGroup className="mb-3">
+        <InputGroup className="mt-3 mb-3">
           <InputGroup.Prepend>
             <InputGroup.Text>Email address</InputGroup.Text>
           </InputGroup.Prepend>
@@ -23,18 +23,20 @@ function ContactForm() {
           </Form.Text> */}
         </InputGroup>
 
-        <InputGroup className="mb-3">
+        <InputGroup>
           <InputGroup.Prepend>
             <InputGroup.Text>Message</InputGroup.Text>
           </InputGroup.Prepend>
           <FormControl as="textarea" aria-label="With textarea" />
         </InputGroup>
 
-        <Button variant="primary" type="submit">
+        <div className="d-flex justify-content-sm-start mt-3">
+        <Button variant="primary" type="submit" >
           Submit
         </Button>
+        </div>
       </Form>
-    </div>
+    </>
   );
 }
 
