@@ -24,7 +24,7 @@ function ServicesCards() {
             )
           )}
         </Row>
-        <h2 className="display-4">Explore our most popular services</h2>
+        <h2 className="display-5">Explore our most popular services</h2>
         <Row className="row justify-content-center mt-5">
           {servicesData.map((service, key) =>
             key < 2 ? (
@@ -57,7 +57,7 @@ function ServicesCards() {
           </Col>
         </Row>
         <hr />
-        <h2 className="display-4">Specialist services</h2>
+        <h2 className="display-5">Specialist services</h2>
 
         <Row>
           {servicesData.map((service, key) =>

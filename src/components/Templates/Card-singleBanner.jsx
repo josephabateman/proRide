@@ -12,8 +12,8 @@ function CardSingleBanner(props) {
       <Container>
         <Row>
           <Col md={6} className="align-self-center">
-            <h1 className="display-4">{props.title}</h1>
-            <h4 className="font-weight-light">{props.description}</h4>
+            <h1 className="display-5">{props.title}</h1>
+            <h5 className="font-weight-light">{props.description}</h5>
             <Link
               className="button text-decoration-none"
               to={`/${props.title.replace(/[()\s+]/g, "")}`}
