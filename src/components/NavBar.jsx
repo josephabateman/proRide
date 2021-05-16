@@ -6,12 +6,9 @@ function NavBar() {
   return (
     <div>
       <Navbar collapseOnSelect bg="light" expand="md">
-        {/* <Navbar.Brand className="logo" href="#/"> */}
-        <Nav.Link href="#/" className="logo">
+        <Navbar.Brand className="mr-auto" className="logo" href="#/">
           <Image src={logo} />
-        </Nav.Link>
-
-        {/* </Navbar.Brand> */}
+        </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
