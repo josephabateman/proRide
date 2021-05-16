@@ -1,10 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import ScrollToTop from "react-scroll-to-top";
 import ServicesCards from "./ServicesCards";
 
 function HeaderText() {
   return (
     <>
+      {window.scrollTo(0, 0)}
+      <ScrollToTop smooth />
+
       <Container>
         <Row className="mt-3">
           <Col md={5} lg={7}>

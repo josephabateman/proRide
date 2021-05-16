@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollToTop from "react-scroll-to-top";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -7,8 +6,7 @@ function AboutTemplate(props) {
 
   return (
     <div className="mx-md-5">
-      {window.scrollTo(0, 0)}
-      <ScrollToTop smooth />
+      
 
       <Container fluid="md" className="text-left">
         <h1 className="pt-3 display-4">{props.header}</h1>
