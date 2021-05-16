@@ -8,6 +8,7 @@ import ContactForm from "./ContactForm";
 function ContactPage() {
   return (
     <>
+    {window.scrollTo(0, 0)}
       <Container>
         <Row>
           <Col>

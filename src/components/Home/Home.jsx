@@ -1,5 +1,5 @@
 import React from "react";
-import BookSession from "./BookSession";
+// import BookSession from "./BookSession";
 import CollapsingBanners from "../Templates/CollapsingBanners";
 import { fullScreenBanners, collapsingBanners } from "../../data/homePageData";
 import { Container, Row, Col } from "react-bootstrap";
@@ -7,6 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 function Home() {
   return (
     <div>
+    {window.scrollTo(0, 0)}
       {fullScreenBanners.map((data, key) => (
         <CollapsingBanners
           key={key}

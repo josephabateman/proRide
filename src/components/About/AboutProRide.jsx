@@ -5,6 +5,7 @@ import data from "../../data/aboutProRideData";
 function AboutProRide() {
   return (
     <div>
+      {window.scrollTo(0, 0)}
       <AboutTemplate
         img={data.img}
         img2={data.img2}
