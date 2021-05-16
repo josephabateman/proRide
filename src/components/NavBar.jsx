@@ -6,8 +6,8 @@ function NavBar() {
   return (
     <div>
       <Navbar collapseOnSelect bg="light" expand="md">
-        <Nav.Link href="#/">
-          <Navbar.Brand className="logo">
+        <Nav.Link className="d-inline-block" href="#/">
+          <Navbar.Brand className="logo d-inline-block">
             <img src={logo} />
           </Navbar.Brand>
         </Nav.Link>
