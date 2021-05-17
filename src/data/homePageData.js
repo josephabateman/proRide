@@ -9,11 +9,7 @@ function importAll(r) {
 }
 
 const proRideImages = importAll(
-  require.context(
-    "../static/images",
-    false,
-    /\.(png|jpe?g|JPEG|svg)$/
-  )
+  require.context("../static/images", false, /\.(png|jpe?g|JPEG|svg)$/)
 );
 
 function fileName(folder, fileName) {
@@ -23,31 +19,23 @@ function fileName(folder, fileName) {
 const fullScreenBanners = [
   {
     title: "ProRide Coaching",
-    color: "blue-gradient",
+    color: "blue-gradient text-white pt-2",
     description: "Making cycling in school fun",
     imageDescription: "phil bateman coaching in schools",
-    imageSrc: fileName(proRideImages, 'proride-kids-1.png'),
+    imageSrc: fileName(proRideImages, "proride-kids-1.png"),
   },
-  
 ];
 
 const collapsingBanners = [
   {
     description: "View Our Range Of Services",
-    color: "green-gradient",
+    color: "green-gradient text-white pt-2",
     // description: "Making cycling in school fun",
     buttonText: "Learn More",
     buttonLink: "/services",
     imageDescription: "Range of services",
-    imageSrc: fileName(proRideImages, 'proride-kids-2.png'),
+    imageSrc: fileName(proRideImages, "proride-kids-2.png"),
   },
-  // {
-  //   color: "blue-gradient",
-  //   description: "Watch Our Video",
-  //   description: "Watch our Video",
-  //   videoSrc: "https://www.youtube.com/embed/KPvxQjljIgo"
-  // }
 ];
 
-
-export { fullScreenBanners, collapsingBanners }
+export { fullScreenBanners, collapsingBanners };

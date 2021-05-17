@@ -2,7 +2,7 @@ import React from "react";
 import servicesData from "../../data/services";
 import { Container, Row, Col } from "react-bootstrap";
 import ServiceCardTemplate from "./ServiceCardTemplate";
-import CardFullWidth from "../Home/CardFullWidth";
+import CardFullWidth from "../Services/CardFullWidth";
 
 function ServicesCards() {
   return (

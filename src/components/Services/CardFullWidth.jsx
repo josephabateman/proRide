@@ -8,7 +8,7 @@ function CardFullWidth(props) {
   };
 
   return (
-    <div className={`${props.color} banner-text`}>
+    <div className={`${props.color} text-white pt-2`}>
       <Container>
         <Row>
           <Col md={6} className="align-self-center">

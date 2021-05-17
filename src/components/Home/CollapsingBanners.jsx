@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import customStyling from "../../styles/custom-styling";
 
 function CollapsingBanners(props) {
   const button5 = {
@@ -7,11 +8,11 @@ function CollapsingBanners(props) {
   };
 
   return (
-    <div className={`${props.color} banner-text`}>
-      {props.title ? <h1 className="display-5">{props.title}</h1> : ""}
-      <h5 className="font-weight-light">{props.description}</h5>
+    <div className={props.cardContainerPreferences}>
+      {props.title ? <h1 className={customStyling.cardFullWidth.title}>{props.title}</h1> : ""}
+      <h5 className={customStyling.cardFullWidth.h5}>{props.description}</h5>
       {props.buttonText != undefined ? (
-        <Link to={props.buttonLink} className="button" style={button5}>
+        <Link to={props.buttonLink} className={customStyling.cardFullWidth.buttonStyle} style={button5}>
           {props.buttonText}
         </Link>
       ) : (
@@ -23,9 +24,8 @@ function CollapsingBanners(props) {
         ""
       )}
       {props.videoSrc != undefined ? (
-        <div className="video-container">
+        <div>
           <iframe
-            className="video"
             src={props.videoSrc}
             allowFullScreen
           ></iframe>

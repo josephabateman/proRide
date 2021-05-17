@@ -2,18 +2,18 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SocialMediaCardsDesktop from "./SocialMediaCardsDesktop";
 import SocialMediaCardsMobile from "./SocialMediaCardsMobile";
-
 import ContactForm from "./ContactForm";
+import customStyling from "../../styles/custom-styling";
 
 function ContactPage() {
   return (
     <>
-    {window.scrollTo(0, 0)}
+      {window.scrollTo(0, 0)}
       <Container>
-        <Row className="mt-3 mb-3 justify-content-md-center d-none d-lg-block">
+        <Row className={customStyling.contactPageStyles.firstRow}>
           <SocialMediaCardsDesktop />
         </Row>
-        <Row className="d-lg-none justify-content-center mt-3 mb-3">
+        <Row className={customStyling.contactPageStyles.secondRow}>
           <SocialMediaCardsMobile />
         </Row>
         <Row>

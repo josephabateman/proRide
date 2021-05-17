@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button, InputGroup, FormControl } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import customStyling from '../../styles/custom-styling'
 
 function ContactForm() {
   const service_id = "proridecoaching";
@@ -31,7 +32,7 @@ function ContactForm() {
           <Form.Control name="name" type="text" />
         </InputGroup>
 
-        <InputGroup className="mt-3 mb-3">
+        <InputGroup className={customStyling.contactFormStyles.emailInput}>
           <InputGroup.Prepend>
             <InputGroup.Text>Email address</InputGroup.Text>
           </InputGroup.Prepend>
@@ -49,8 +50,8 @@ function ContactForm() {
           />
         </InputGroup>
 
-        <div className="d-flex justify-content-sm-start mt-3">
-          <Button variant="primary" type="submit">
+        <div className={customStyling.contactFormStyles.buttonPosition}>
+          <Button variant={customStyling.contactFormStyles.buttonColor} type="submit">
             Submit
           </Button>
         </div>

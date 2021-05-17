@@ -2,6 +2,7 @@ import React from "react";
 import CollapsingBanners from "./CollapsingBanners";
 import { fullScreenBanners, collapsingBanners } from "../../data/homePageData";
 import { Container, Row, Col } from "react-bootstrap";
+import customStyling from "../../styles/custom-styling";
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
       {fullScreenBanners.map((data, key) => (
         <CollapsingBanners
           key={key}
-          color={data.color}
+          cardContainerPreferences={customStyling.cardFullWidth.cardContainerPreferences}
           title={data.title}
           description={data.description}
           buttonText={data.buttonText}
@@ -25,7 +26,7 @@ function Home() {
           {collapsingBanners.map((data, key) => (
             <Col md={6} key={key}>
               <CollapsingBanners
-                color={data.color}
+                cardContainerPreferences={data.color}
                 title={data.title}
                 description={data.description}
                 buttonText={data.buttonText}
