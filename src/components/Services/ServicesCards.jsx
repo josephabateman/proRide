@@ -1,8 +1,8 @@
 import React from "react";
 import servicesData from "../../data/services";
 import { Container, Row, Col } from "react-bootstrap";
-import Card1 from "../Templates/Card1";
-import CardSingleBanner from "../Templates/Card-singleBanner";
+import ServiceCardTemplate from "./ServiceCardTemplate";
+import CardFullWidth from "../Home/CardFullWidth";
 
 function ServicesCards() {
   return (
@@ -12,8 +12,8 @@ function ServicesCards() {
           {servicesData.map((service, key) =>
             key > 1 && key < 5 ? (
               <Col lg={4} md={6} className="mb-5" key={key}>
-                <Card1
-                  img={service.img}
+                <ServiceCardTemplate
+                  img={service.svg}
                   className="service-card-img green-gradient shadow bg-white rounded font-weight-light"
                   title={service.name}
                   text={service.header}
@@ -33,8 +33,8 @@ function ServicesCards() {
                 className="mb-5 mx-4 shadow bg-white rounded font-weight-light"
                 key={key}
               >
-                <Card1
-                  img={service.img}
+                <ServiceCardTemplate
+                  img={service.svg}
                   className="blue-gradient service-card-img-taller"
                   title={service.name}
                   text={service.header}
@@ -48,8 +48,8 @@ function ServicesCards() {
         <hr />
         <Row>
           <Col className="px-0">
-            <CardSingleBanner
-              img={servicesData[3].img}
+            <CardFullWidth
+              img={servicesData[3].svg}
               title={servicesData[3].name}
               description={servicesData[3].header}
               color="green-gradient"
@@ -63,8 +63,8 @@ function ServicesCards() {
           {servicesData.map((service, key) =>
             key > 5 ? (
               <Col lg={4} md={6} className="my-5" key={key}>
-                <Card1
-                  img={service.img}
+                <ServiceCardTemplate
+                  img={service.svg}
                   className="service-card-img blue-gradient shadow bg-white rounded font-weight-light"
                   title={service.name}
                   text={service.header}

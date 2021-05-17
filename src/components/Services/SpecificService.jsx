@@ -1,5 +1,4 @@
 import React from "react";
-// import { Card } from "react-bootstrap";
 import ScrollToTop from "react-scroll-to-top";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -15,7 +14,7 @@ function SpecificService(props) {
       <ScrollToTop smooth />
       <img src={props.img} className="service-card-img green-gradient" />
 
-      <Container className='pl-2'>
+      <Container className="pl-2">
         <Row>
           <Col xs={12}>
             <h1 className="py-3 display-5">{props.header}</h1>
@@ -47,10 +46,10 @@ function SpecificService(props) {
           </Col>
 
           <Col xs={12} md={6}>
-            <Image src={props.proRideImg} rounded />
+            <Image src={props.img} rounded />
           </Col>
           <Col xs={12} md={6} className="m-md-0 mt-4">
-            <Image src={props.proRideImg2} rounded />
+            <Image src={props.img2} rounded />
           </Col>
 
           <Col className="mt-5 text-left" xs={12}>

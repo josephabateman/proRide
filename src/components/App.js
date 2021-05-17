@@ -51,9 +51,9 @@ function App() {
               >
                 <SpecificService
                   key={key}
-                  proRideImg={service.proRideImg}
-                  proRideImg2={service.proRideImg2}
                   img={service.img}
+                  img2={service.img2}
+                  img={service.svg}
                   header={service.name}
                   header2={service.header2}
                   text1={service.text1}

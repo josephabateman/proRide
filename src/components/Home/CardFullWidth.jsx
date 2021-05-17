@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function CardSingleBanner(props) {
+function CardFullWidth(props) {
   const button5 = {
     backgroundColor: "#4e9af1",
   };
@@ -37,4 +37,4 @@ function CardSingleBanner(props) {
   );
 }
 
-export default CardSingleBanner;
+export default CardFullWidth;

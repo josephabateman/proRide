@@ -18,10 +18,7 @@ function CollapsingBanners(props) {
         ""
       )}
       {props.imageSrc ? (
-        <img
-          alt={props.imageDescription}
-          src={props.imageSrc}
-        />
+        <img alt={props.imageDescription} src={props.imageSrc} />
       ) : (
         ""
       )}

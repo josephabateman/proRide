@@ -1,6 +1,5 @@
 import React from "react";
-// import BookSession from "./BookSession";
-import CollapsingBanners from "../Templates/CollapsingBanners";
+import CollapsingBanners from "./CollapsingBanners";
 import { fullScreenBanners, collapsingBanners } from "../../data/homePageData";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -38,7 +37,6 @@ function Home() {
             </Col>
           ))}
           <Col md={6} className="mt-2 mt-md-0">
-            {/* <h3 className="font-weight-light">Watch our video</h3> */}
             <div className="embed-responsive embed-responsive-16by9">
               <iframe
                 className="embed-responsive-item"
@@ -47,13 +45,7 @@ function Home() {
               ></iframe>
             </div>
           </Col>
-          {/* <Col>
-            <BookSession />
-          </Col> */}
         </Row>
-        {/* <Row className="row justify-content-center">
-         
-        </Row> */}
       </Container>
     </div>
   );

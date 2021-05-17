@@ -10,12 +10,6 @@ function ContactPage() {
     <>
     {window.scrollTo(0, 0)}
       <Container>
-        <Row>
-          {/* <Col>
-            {" "}
-            <h1 className="display-5 text-sm-left">Contact</h1>
-          </Col> */}
-        </Row>
         <Row className="mt-3 mb-3 justify-content-md-center d-none d-lg-block">
           <SocialMediaCardsDesktop />
         </Row>
