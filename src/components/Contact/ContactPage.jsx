@@ -6,9 +6,11 @@ import ContactForm from "./ContactForm";
 import customStyling from "../../styles/custom-styling";
 
 function ContactPage() {
+
   return (
     <>
       {window.scrollTo(0, 0)}
+
       <Container>
         <Row className={customStyling.contactPageStyles.firstRow}>
           <SocialMediaCardsDesktop />
