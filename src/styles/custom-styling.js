@@ -1,9 +1,77 @@
 //Home Page
-const cardFullWidth = {
-  cardContainerPreferences: "blue-gradient text-white pt-2",
+const collapsingBanners = {
+  mainCard: "blue-gradient text-white pt-2",
+  container: "px-0",
   title: "display-5",
   h5: "font-weight-light",
-  buttonStyle: "button"
+  buttonStyle: "button",
+  rowContainerAfterMainBanner: "collapsing-rows",
+  minHeight_rowContainerAfterMainBanner: "450px",
+  row: "mt-2",
+  column: "p-0",
+};
+
+const promoVideo = {
+  container: "mt-2 mt-md-0",
+  src: "https://www.youtube.com/embed/KPvxQjljIgo",
+};
+
+//Services
+const serviceCardSmall = {
+  container: "text-decoration-none",
+  h2: "pt-3",
+  button: "button",
+};
+
+const serviceCardsFullPageWidth = {
+  container: "text-white pt-2",
+  color: "green-gradient",
+  title: "display-5",
+  h5: "font-weight-light",
+  column: "align-self-center",
+  buttonStyle: "button",
+  imgStyle: "my-2",
+  imgHeight: 300,
+};
+
+const servicesCardsCollection = {
+  subHeaderText: "display-5 mb-4",
+  firstRow: {
+    column: "my-3",
+    containerStyle:
+      "service-card-img green-gradient shadow bg-white rounded font-weight-light",
+  },
+  secondRow: {
+    containerStyle: "blue-gradient service-card-img-taller",
+  },
+  thirdRow: {
+    column: "px-0",
+  },
+  fourthRow: {
+    column: "my-3",
+    containerStyle:
+      "service-card-img blue-gradient shadow bg-white rounded font-weight-light",
+  },
+};
+
+const servicesPage = {
+  container: "mt-3",
+  title: "display-5",
+  h5Column: "text-left",
+  h5: "font-weight-light",
+};
+
+//Specific Services Pages
+const specificServicePage = {
+  svgImageStyle: "service-card-img green-gradient",
+  container: "pl-2",
+  title: "py-3 display-5",
+  text1: "text-left",
+  text2: "mt-5 text-left",
+  flyer1Col: "mb-5",
+  flyer1Style: "button mr-3",
+  flyer2Style: "button",
+  img2Col: "m-md-0 mt-4",
 };
 
 //about Pages (about Phil & about ProRide)
@@ -20,7 +88,7 @@ const aboutTemplateStyles = {
 const contactFormStyles = {
   emailInput: "mt-3 mb-3",
   buttonPosition: "d-flex justify-content-sm-start mt-3",
-  buttonColor: "primary",
+  buttonStyle: "button",
 };
 
 const contactPageStyles = {
@@ -39,8 +107,15 @@ const socialMediaCardsMobileStyles = {
   iconText: "d-none d-sm-block",
 };
 
+//don't touch these
 export default {
-  cardFullWidth,
+  serviceCardsFullPageWidth,
+  serviceCardSmall,
+  servicesCardsCollection,
+  servicesPage,
+  specificServicePage,
+  collapsingBanners,
+  promoVideo,
   aboutTemplateStyles,
   contactFormStyles,
   contactPageStyles,

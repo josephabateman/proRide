@@ -3,16 +3,13 @@ import { Link } from "react-router-dom";
 import customStyling from "../../styles/custom-styling";
 
 function CollapsingBanners(props) {
-  const button5 = {
-    backgroundColor: "#4e9af1",
-  };
 
   return (
     <div className={props.cardContainerPreferences}>
-      {props.title ? <h1 className={customStyling.cardFullWidth.title}>{props.title}</h1> : ""}
-      <h5 className={customStyling.cardFullWidth.h5}>{props.description}</h5>
+      {props.title ? <h1 className={customStyling.collapsingBanners.title}>{props.title}</h1> : ""}
+      <h5 className={customStyling.collapsingBanners.h5}>{props.description}</h5>
       {props.buttonText != undefined ? (
-        <Link to={props.buttonLink} className={customStyling.cardFullWidth.buttonStyle} style={button5}>
+        <Link to={props.buttonLink} className={customStyling.collapsingBanners.buttonStyle}>
           {props.buttonText}
         </Link>
       ) : (

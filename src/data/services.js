@@ -28,56 +28,6 @@ function fileName(folder, fileName) {
 
 const servicesData = [
   {
-    name: "Balance Biking Days",
-    svg: fileName(svg, "1.svg"),
-    header:
-      "A fun way to help early years children develop coordination, concentration and balance skills",
-    header2:
-      "Develop confidence and coordination with a Balance Bike Taster Day",
-    flyer: fileName(flyers, "balance bike days flyer.pdf"),
-    img: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
-    img2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
-    text1: (
-      <>
-        <p>
-          Our Balance Bike Taster days are a great way to see how Early Years
-          children respond to balance biking and how quickly they develop their
-          confidence and coordination. Within minutes children who have never
-          been on a bike before are walking confidently, sat on the saddle. Soon
-          they are weaving in and out of cones, ducking under limbos and flying
-          over ramps. Before long and within the session the same children are
-          beginning to balance and freewheel as they continue to grow in
-          confidence.
-        </p>
-        <p>
-          Each Taster Day offers multiple sessions (4-6 in a school day)
-          catering for up to 60 children in 30-45 minute sessions. Under the
-          watchful eye of a qualified instructor, each child as young as three
-          learns the basics of stepping, striding, balancing, starting and
-          stopping, and turning through a series of fun activities in an
-          action-packed session.
-        </p>
-      </>
-    ),
-    text2: (
-      <>
-        <p>
-          Sessions can take place indoors or out depending on weather and are
-          suitable for all levels of ability from absolute beginners to
-          confident pedlers. All equipment is provided including Strider balance
-          bikes and helmets.
-        </p>
-        <p>
-          Taster days are designed as a stand-alone activity day and as such are
-          suitable for use as a one-off experience but can be used to trial
-          balance biking as a regular activity, perhaps prior to starting a
-          school club or investing in equipment and training or running a
-          Freewheelerz Learn to Ride Course.
-        </p>
-      </>
-    ),
-  },
-  {
     name: "KS1 Taster Days",
     svg: fileName(svg, "2.svg"),
     header:
@@ -149,6 +99,56 @@ const servicesData = [
     img: fileName(specificServiceImages, "girl_2_ramp_young.jpg"),
     img2: fileName(specificServiceImages, "ramp_young_kids.jpg"),
     //the ks1 and ks2 flyer is same
+  },
+  {
+    name: "Balance Biking Days",
+    svg: fileName(svg, "1.svg"),
+    header:
+      "A fun way to help early years children develop coordination, concentration and balance skills",
+    header2:
+      "Develop confidence and coordination with a Balance Bike Taster Day",
+    flyer: fileName(flyers, "balance bike days flyer.pdf"),
+    img: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
+    img2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
+    text1: (
+      <>
+        <p>
+          Our Balance Bike Taster days are a great way to see how Early Years
+          children respond to balance biking and how quickly they develop their
+          confidence and coordination. Within minutes children who have never
+          been on a bike before are walking confidently, sat on the saddle. Soon
+          they are weaving in and out of cones, ducking under limbos and flying
+          over ramps. Before long and within the session the same children are
+          beginning to balance and freewheel as they continue to grow in
+          confidence.
+        </p>
+        <p>
+          Each Taster Day offers multiple sessions (4-6 in a school day)
+          catering for up to 60 children in 30-45 minute sessions. Under the
+          watchful eye of a qualified instructor, each child as young as three
+          learns the basics of stepping, striding, balancing, starting and
+          stopping, and turning through a series of fun activities in an
+          action-packed session.
+        </p>
+      </>
+    ),
+    text2: (
+      <>
+        <p>
+          Sessions can take place indoors or out depending on weather and are
+          suitable for all levels of ability from absolute beginners to
+          confident pedlers. All equipment is provided including Strider balance
+          bikes and helmets.
+        </p>
+        <p>
+          Taster days are designed as a stand-alone activity day and as such are
+          suitable for use as a one-off experience but can be used to trial
+          balance biking as a regular activity, perhaps prior to starting a
+          school club or investing in equipment and training or running a
+          Freewheelerz Learn to Ride Course.
+        </p>
+      </>
+    ),
   },
   {
     name: "KS2 Taster Days",

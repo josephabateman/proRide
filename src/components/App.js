@@ -52,7 +52,7 @@ function App() {
                   key={key}
                   img={service.img}
                   img2={service.img2}
-                  img={service.svg}
+                  svg={service.svg}
                   header={service.name}
                   header2={service.header2}
                   text1={service.text1}

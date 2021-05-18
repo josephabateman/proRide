@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Button, InputGroup, FormControl } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import customStyling from '../../styles/custom-styling'
+import customStyling from "../../styles/custom-styling";
 
 function ContactForm() {
   const service_id = "proridecoaching";
@@ -51,7 +51,10 @@ function ContactForm() {
         </InputGroup>
 
         <div className={customStyling.contactFormStyles.buttonPosition}>
-          <Button variant={customStyling.contactFormStyles.buttonColor} type="submit">
+          <Button
+            className={customStyling.contactFormStyles.buttonStyle}
+            type="submit"
+          >
             Submit
           </Button>
         </div>

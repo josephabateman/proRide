@@ -1,26 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import customStyling from "../../styles/custom-styling";
 
-function ServiceCardTemplate(props) {
-  const button5 = {
-    backgroundColor: "#4e9af1",
-  };
+function ServiceCardSmall(props) {
+
   return (
     <div>
       <Link
-        className="text-decoration-none"
+        className={customStyling.serviceCardSmall.container}
         to={`/${props.title.replace(/[()\s+]/g, "")}`}
       >
         <img className={props.className} src={props.img} />
         <div>
-          <h2 className="pt-3">{props.title}</h2>
+          <h2 className={customStyling.serviceCardSmall.h2}>{props.title}</h2>
           <p>{props.text}</p>
         </div>
       </Link>
       <Link
         to={`/${props.title.replace(/[()\s+]/g, "")}`}
-        className="button"
-        style={button5}
+        className={customStyling.serviceCardSmall.button}
       >
         Learn More
       </Link>
@@ -28,4 +26,4 @@ function ServiceCardTemplate(props) {
   );
 }
 
-export default ServiceCardTemplate;
+export default ServiceCardSmall;

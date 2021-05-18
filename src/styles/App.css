@@ -44,12 +44,6 @@ img {
   width: 10em;
 }
 
-.collapsing-rows {
-  min-height: 450px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
 /* services */
 .service-card-img {
   height: 100px;
@@ -89,8 +83,9 @@ img {
 }
 
 /* button */
-button {
+.button {
   margin: 0 10px 10px 0;
+  background-color: #4e9af1;
 }
 /* button */
 a.button {
