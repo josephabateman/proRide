@@ -1,35 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form, Button, InputGroup, FormControl } from "react-bootstrap";
-import SuccessPage from "./SuccessPage";
-import emailjs from "emailjs-com";
 import customStyling from "../../styles/custom-styling";
 
-function ContactForm() {
-  const [form, updateForm] = useState(false);
-
-  const service_id = "proridecoaching";
-  const template_id = "proridetemplate";
-  const user_id = "user_rhsl2oZqwgrD38edYovoz";
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm(service_id, template_id, e.target, user_id).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-    updateForm(true);
-    e.target.reset();
-  }
+function ContactForm(props) {
+ 
 
   return (
     <>
-      {!form ? (
-        <Form onSubmit={sendEmail}>
+        <Form onSubmit={props.onSubmit}>
           <InputGroup>
             <InputGroup.Prepend>
               <InputGroup.Text>First and last name</InputGroup.Text>
@@ -65,9 +43,6 @@ function ContactForm() {
             </Button>
           </div>
         </Form>
-      ) : (
-        <SuccessPage />
-      )}
     </>
   );
 }

@@ -6,7 +6,7 @@ import customStyling from '../../styles/custom-styling'
 function AboutTemplate(props) {
   return (
     <>
-      <Container fluid="md" className={customStyling.aboutTemplateStyles.container}>
+      <Container fluid="sm" className={customStyling.aboutTemplateStyles.container}>
         <h1 className={customStyling.aboutTemplateStyles.h1}>
           {props.header}
         </h1>
