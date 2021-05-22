@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import customStyling from "../../styles/custom-styling";
 
 function ServiceCardSmall(props) {
-
   return (
     <div>
       <Link

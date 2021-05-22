@@ -9,7 +9,7 @@ function ServicesCardsCollection() {
   return (
     <div>
       <Container fluid>
-        <Row>
+        <Row className={customStyling.servicesCardsCollection.firstRow.row}>
           {servicesData.map((service, key) =>
             key >= 0 && key <= 2 ? (
               <Col lg={4} md={6} className={customStyling.servicesCardsCollection.firstRow.column} key={key}>
@@ -26,7 +26,7 @@ function ServicesCardsCollection() {
           )}
         </Row>
         <h2 className={customStyling.servicesCardsCollection.subHeaderText}>Explore our most popular services</h2>
-        <Row>
+        <Row className={customStyling.servicesCardsCollection.secondRow.row}>
           {servicesData.map((service, key) =>
             key >= 3 && key <=4 ? (
               <Col
@@ -47,7 +47,7 @@ function ServicesCardsCollection() {
           )}
         </Row>
         <hr />
-        <Row>
+        <Row className={customStyling.servicesCardsCollection.thirdRow.row}>
           <Col className={customStyling.servicesCardsCollection.thirdRow.column}>
             <ServiceCardFullWidth
               img={servicesData[5].svg}
@@ -60,7 +60,7 @@ function ServicesCardsCollection() {
         <hr />
         <h2 className={customStyling.servicesCardsCollection.subHeaderText}>Specialist services</h2>
 
-        <Row>
+        <Row className={customStyling.servicesCardsCollection.fourthRow.row}>
           {servicesData.map((service, key) =>
             key > 5 ? (
               <Col lg={4} md={6} className={customStyling.servicesCardsCollection.fourthRow.column} key={key}>

@@ -37,17 +37,21 @@ const serviceCardsFullPageWidth = {
 const servicesCardsCollection = {
   subHeaderText: "display-5 mb-4",
   firstRow: {
+    row: "justify-content-center",
     column: "my-3",
     containerStyle:
       "service-card-img green-gradient shadow bg-white rounded font-weight-light",
   },
   secondRow: {
+    row: "justify-content-center",
     containerStyle: "blue-gradient service-card-img-taller",
   },
   thirdRow: {
+    row: "justify-content-center",
     column: "px-0",
   },
   fourthRow: {
+    row: "justify-content-center",
     column: "my-3",
     containerStyle:
       "service-card-img blue-gradient shadow bg-white rounded font-weight-light",
