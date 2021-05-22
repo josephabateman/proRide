@@ -27,7 +27,7 @@ const aboutData = {
     <>
       <p>
         Phil started racing as a junior in 1977 winning his first one road race
-        in Beverley near Hull. Following other local success including winning
+        in Beverley near Hull. Following other local success, including winning
         the Yorkshire Junior Championships in Halifax, Phil began to compete
         nationally finishing second in the Junior national time trial
         championships (BBAR) and later represented GB for the first time in the
