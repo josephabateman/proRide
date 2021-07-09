@@ -3,7 +3,7 @@ import React from "react";
 function PromoVideo(props) {
   return (
     <>
-      <div className="embed-responsive embed-responsive-16by9">
+      <div className="embed-responsive embed-responsive-16by9 equal-height">
         <iframe
           className="embed-responsive-item"
           src={props.src}
