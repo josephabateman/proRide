@@ -8,7 +8,7 @@ function CollapsingBanners(props) {
       className={props.cardContainerPreferences + " " + "equal-height"}
       style={{ display: "flex" }}
     >
-      <div style={{ marginTop: "auto", width: "100%" }}>
+      <div style={{ marginTop: "auto", width: "100%" }} className="img-large-mobile">
         {props.title ? (
           <h1 className={customStyling.collapsingBanners.title}>
             {props.title}

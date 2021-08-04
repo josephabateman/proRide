@@ -121,3 +121,18 @@ a.button {
 a.button:hover {
   border-color: rgba(255, 255, 255, 1);
 }
+
+@media only screen and (max-width: 768px) {
+  .img-large-mobile {
+    overflow: hidden;
+  }
+  .img-large-mobile img  {
+    transform: scale(2);   
+    object-fit: cover;
+    transform-origin: 30% 50%; 
+  }
+  .img-large-mobile h5, .img-large-mobile h1 {
+    position: relative;
+    z-index: 1;
+  }
+}
