@@ -5,17 +5,21 @@ import { Link } from "react-router-dom";
 import customStyling from "../../styles/custom-styling";
 
 function SpecificService(props) {
-
   return (
     <div>
       {window.scrollTo(0, 0)}
       <ScrollToTop smooth />
-      <img src={props.svg} className={customStyling.specificServicePage.svgImageStyle} />
+      <img
+        src={props.svg}
+        className={customStyling.specificServicePage.svgImageStyle}
+      />
 
       <Container className={customStyling.specificServicePage.container}>
         <Row>
           <Col xs={12}>
-            <h1 className={customStyling.specificServicePage.title}>{props.header}</h1>
+            <h1 className={customStyling.specificServicePage.title}>
+              {props.header}
+            </h1>
           </Col>
           <Col xs={12} className={customStyling.specificServicePage.text1}>
             {props.text1}
@@ -41,12 +45,14 @@ function SpecificService(props) {
             )}
           </Col>
 
-          <Col xs={12} md={6}>
-            <Image src={props.img} rounded />
+          <Col xs={10} md={5} className="rotatated-bg-green mb-5 ml-auto mr-auto m-md-auto">
+              <Image src={props.img} rounded />
+
           </Col>
-          <Col xs={12} md={6} className={customStyling.specificServicePage.img2Col}>
-            <Image src={props.img2} rounded />
+          <Col xs={10} md={5} className="rotatated-bg-blue m-auto">
+              <Image src={props.img2} rounded />
           </Col>
+
 
           <Col className={customStyling.specificServicePage.text2} xs={12}>
             {props.text2}

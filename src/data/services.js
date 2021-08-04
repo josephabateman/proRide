@@ -453,7 +453,7 @@ const servicesData = [
         </p>
         <p>
           If you have any questions or wish to arrange a club for your school,
-          please contact us or email admin@proridecoaching.co.uk.
+          please contact us or email <a href="mailto: admin@proridecoaching.co.uk">admin@proridecoaching.co.uk</a>.
         </p>
       </>
     ),

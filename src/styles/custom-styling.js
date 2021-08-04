@@ -74,8 +74,7 @@ const specificServicePage = {
   text2: "mt-5 text-left",
   flyer1Col: "mb-5",
   flyer1Style: "button mr-3",
-  flyer2Style: "button",
-  img2Col: "m-md-0 mt-4",
+  flyer2Style: "button"
 };
 
 //about Pages (about Phil & about ProRide)
