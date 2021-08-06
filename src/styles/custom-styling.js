@@ -81,8 +81,6 @@ const specificServicePage = {
 const aboutTemplateStyles = {
   container: "pl-2 text-left",
   h1: "py-3 display-5 text-center text-md-left",
-  image1: "about-img float-md-left mr-md-5 d-block mx-auto m-3",
-  image2: "about-img mb-5 float-md-right mx-md-4 d-block mx-auto",
   linkText: "text-info",
   img2AndText2Section: "mt-4 mb-4",
 };
