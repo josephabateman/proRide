@@ -35,6 +35,10 @@ const servicesData = [
     header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
     //wrong flyer
     flyer: fileName(flyers, "taster days brochure.pdf"),
+    dropdown1: "About",
+    dropdown2: "What happens at a Taster Day?",
+    dropdown3: "How does the day look?",
+    dropdown4: "Whole School Taster Days",
     text1: (
       <>
         <p>
@@ -51,7 +55,10 @@ const servicesData = [
           number of children taking part in the day which can vary from one
           class to four.
         </p>
-        <p>What happens at a Taster Day?</p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Once you have booked a date for your Taster Day, we get in touch 2
           weeks prior to the vist to find out more about your school and who
@@ -60,7 +67,7 @@ const servicesData = [
         </p>
       </>
     ),
-    text2: (
+    text3: (
       <>
         <p>
           Taster days usually consist of 4 sessions - 2 in the morning and 2 in
@@ -84,7 +91,10 @@ const servicesData = [
           Children bring in their own bikes and helmets, but spares can be
           provided by prior arrangement. Helmets can be supplied.
         </p>
-        <p>Whole School Taster Days</p>
+      </>
+    ),
+    text4: (
+      <>
         <p>
           For smaller schools, we operate a program that combines the above
           program with our balance bike taster. This enables every child in the
@@ -110,6 +120,10 @@ const servicesData = [
     flyer: fileName(flyers, "balance bike days flyer.pdf"),
     img: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
     img2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
+    dropdown1: "About the day",
+    dropdown2: "More info",
+    dropdown3: "Where does it take place?",
+    dropdown4: "Who's it for?",
     text1: (
       <>
         <p>
@@ -122,6 +136,10 @@ const servicesData = [
           beginning to balance and freewheel as they continue to grow in
           confidence.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Each Taster Day offers multiple sessions (4-6 in a school day)
           catering for up to 60 children in 30-45 minute sessions. Under the
@@ -132,7 +150,7 @@ const servicesData = [
         </p>
       </>
     ),
-    text2: (
+    text3: (
       <>
         <p>
           Sessions can take place indoors or out depending on weather and are
@@ -140,6 +158,10 @@ const servicesData = [
           confident pedlers. All equipment is provided including Strider balance
           bikes and helmets.
         </p>
+      </>
+    ),
+    text4: (
+      <>
         <p>
           Taster days are designed as a stand-alone activity day and as such are
           suitable for use as a one-off experience but can be used to trial
@@ -157,9 +179,12 @@ const servicesData = [
       "A great way to encourage children to cycle more and sample cycle racing in a safe, controlled environment.",
     flyer:
       "https://ea67bc9c-a6b0-438e-82a8-d0e4df398e62.filesusr.com/ugd/0583da_5af40c0aa624483ea7edd16ef5eec163.pdf",
+    dropdown1: "Get your kids pedaling with a ProRide Cycling Taster Day",
+    dropdown2: "What happens at a Taster Day?",
+    dropdown3: "Tell me more!",
+    dropdown4: "Whole School Taster Days",
     text1: (
       <>
-        <h3>Get your kids pedaling with a ProRide Cycling Taster Day</h3>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
@@ -174,7 +199,10 @@ const servicesData = [
           number of children taking part in the day which can vary from one
           class to four.
         </p>
-        <h4>What happens at a Taster Day?</h4>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Once you have booked a date for your Taster Day, we get in touch 2
           weeks prior to the vist to find out more about your school and who
@@ -183,7 +211,7 @@ const servicesData = [
         </p>
       </>
     ),
-    text2: (
+    text3: (
       <>
         <p>
           Taster days usually consist of 4 sessions - 2 in the morning and 2 in
@@ -207,7 +235,10 @@ const servicesData = [
           Children bring in their own bikes and helmets, but spares can be
           provided by prior arrangement. Helmets can be supplied.
         </p>
-        ​<h4>Whole School Taster Days</h4>
+      </>
+    ),
+    text4: (
+      <>
         <p>
           For smaller schools, we operate a program that combines the above
           program with our balance bike taster. This enables every child in the
@@ -232,9 +263,13 @@ const servicesData = [
       "CPD Course Title- Pro Ride Cycling Instructor Workshop (1 day) flyer.pdf"
     ),
     flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
+    dropdown1:
+      "Run your own sessions with our one-day CDP Instructor courses...",
+    dropdown2: "What happens on the day?",
+    dropdown3: "What do trainees learn?",
+    dropdown4: "How do you deliver the course?",
     text1: (
       <>
-        <h4>Run your own sessions with our one-day CDP Instructor courses</h4>
         <p>
           Our one-day training courses are designed for teachers and school
           staff who want to run their own sessions in school for
@@ -243,6 +278,10 @@ const servicesData = [
           KS1 and KS2. All are delivered on-site by arrangement and incorporate
           taster sessions.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           The workshop-style courses use a practical, hands-on approach to
           demonstrate how to set up a range of different cycling circuits and
@@ -251,19 +290,23 @@ const servicesData = [
         </p>
       </>
     ),
-    text2: (
+    text3: (
       <>
         <p>
           Trainees learn how to tailor the program to different group sizes and
           abilities and how to prepare for and organise sessions on the school
           site. Live "Taster" sessions using children from the host school help
           trainees to see the program in action and enable them to get alongside
-          the trainer first hand. The KS1/2 workshops are delivered mainly
-          outdoors with short classroom sessions covering elements of health &
-          safety and risk assessment, the EYFS course can be delivered in or
-          outdoors or a combination of both.
+          the trainer first hand.
         </p>
+      </>
+    ),
+    text4: (
+      <>
         <p>
+          The KS1/2 workshops are delivered mainly outdoors with short classroom
+          sessions covering elements of health & safety and risk assessment, the
+          EYFS course can be delivered in or outdoors or a combination of both.
           A detailed training manual containing sample session plans, activity
           text1s and lots of helpful hints and tips is delivered with each
           course.
@@ -280,6 +323,10 @@ const servicesData = [
       "Ideal for smaller schools, our Whole School Program ensures every child gets to take part in all inclusive, age related fun session",
     header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
     flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
+    dropdown1: "About the day...",
+    dropdown2: "What happens at a Taster Day?",
+    dropdown3: "More on Taster Days...",
+    dropdown4: "Whole School Taster Days",
     text1: (
       <>
         <p>
@@ -296,16 +343,19 @@ const servicesData = [
           number of children taking part in the day which can vary from one
           class to four.
         </p>
-        <h4>What happens at a Taster Day?</h4>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Once you have booked a date for your Taster Day, we get in touch 2
-          weeks prior to the vist to find out more about your school and who
+          weeks prior to the visit to find out more about your school and who
           will be taking part. Based on this information, we put together a plan
           for the day for your approval.
         </p>
       </>
     ),
-    text2: (
+    text3: (
       <>
         <p>
           Taster days usually consist of 4 sessions - 2 in the morning and 2 in
@@ -329,7 +379,10 @@ const servicesData = [
           Children bring in their own bikes and helmets, but spares can be
           provided by prior arrangement. Helmets can be supplied.
         </p>
-        <h4>Whole School Taster Days</h4>
+      </>
+    ),
+    text4: (
+      <>
         <p>
           For smaller schools, we operate a program that combines the above
           program with our balance bike taster. This enables every child in the
@@ -350,9 +403,12 @@ const servicesData = [
     header:
       "Our Learn to ride program, Freewheelers is designed to teach kids to ride a bike in 10 weeks using special convertible bikes. The course can be delivered by one of our instructors or by your own staff after training.",
     flyer: fileName(flyers, "Freewheelerz flyer.pdf"),
+    dropdown1: "Our new Freewheelerz Learn to Ride program for EYFS.",
+    dropdown2: "Tell me more!",
+    dropdown3: "About the course",
+    dropdown4: "What will the kids learn?",
     text1: (
       <>
-        <h4>Our new Freewheelerz Learn to Ride program for EYFS.</h4>​
         <p>
           Think how amazing it would be if every child in your school could be
           taught how to ride a bike in the first couple of years of them
@@ -365,6 +421,10 @@ const servicesData = [
           Days. Almost without exception, schools tell us how quickly the
           children take to the activity and want to continue with more sessions.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           For this reason, we have designed a program that uses the successful
           format and methods used in the taster days but builds progressively
@@ -373,7 +433,7 @@ const servicesData = [
         </p>
       </>
     ),
-    text2: (
+    text3: (
       <>
         <p>
           The course follows a structured program that each week sees the
@@ -384,6 +444,10 @@ const servicesData = [
           balance bike to pedal bike) to continue the course on a conventional
           pedal bike.
         </p>
+      </>
+    ),
+    text4: (
+      <>
         <p>
           The program encourages the children to learn through play and fun,
           exploring and learning at their own pace - there is no pressure to
@@ -406,9 +470,12 @@ const servicesData = [
     header:
       "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
     flyer: fileName(flyers, "School Clubs flyer.pdf"),
+    dropdown1: "School Clubs",
+    dropdown2: "Who is it for?",
+    dropdown3: "How does it work?",
+    dropdown4: "How do I book on?",
     text1: (
       <>
-        <h3>School Clubs</h3>
         <p>
           We offer clubs for all ages and abilities, from Early Years balance
           bike clubs for those who just want to have fun on two wheels (or learn
@@ -416,6 +483,10 @@ const servicesData = [
           children who want to try out cycle racing for the first time or
           develop their hobby and improve their technical skills.
         </p>
+      </>
+    ),
+    text2: (
+      <>
         <p>
           Our clubs can run independently for just one age group or be offered
           to the whole school as 3 consecutive key stage sessions on one day of
@@ -426,7 +497,7 @@ const servicesData = [
         </p>
       </>
     ),
-    text2: (
+    text3: (
       <>
         <p>
           Bookings are usually made by parents/guardians using our online
@@ -446,6 +517,10 @@ const servicesData = [
           form for schools to print and use to minimise administration if
           required.
         </p>
+      </>
+    ),
+    text4: (
+      <>
         <p>
           Parents/Carers are required to complete an application form detailing
           any special needs or medical conditions together with the arrangements
@@ -453,7 +528,11 @@ const servicesData = [
         </p>
         <p>
           If you have any questions or wish to arrange a club for your school,
-          please contact us or email <a href="mailto: admin@proridecoaching.co.uk">admin@proridecoaching.co.uk</a>.
+          please contact us or email{" "}
+          <a href="mailto: admin@proridecoaching.co.uk">
+            admin@proridecoaching.co.uk
+          </a>
+          .
         </p>
       </>
     ),
@@ -467,9 +546,12 @@ const servicesData = [
       "We provide everything from a School-based KS2 Competition with race training prior to competition, to fully organised Trust-wide or regional inter-school competitions and -tournaments.",
     flyer: fileName(flyers, "INTER-SCHOOL COMPETITIONS flyer.pdf"),
     flyer2: fileName(flyers, "Training & Competition Day flyer.pdf"),
+    dropdown1: "School Competitions",
+    dropdown2: "How is it run?",
+    dropdown3: "KS2 Training & Competition Day",
+    dropdown4: "Get in touch",
     text1: (
       <>
-        <h3>School Competitions</h3>
         <p>
           Pro-Ride provide two programs aimed at competitive cycle racing, these
           are:
@@ -478,16 +560,19 @@ const servicesData = [
           <li>KS2 training and competition days, and</li>
           <li>KS2 inter-school competition.</li>
         </ul>
-        <p>
-          Both programs can be run on an inidual or team basis and are offered
-          as road, track or off-road options depending on facilities and time of
-          year.
-        </p>
       </>
     ),
     text2: (
       <>
-        <h4>KS2 Training & Competition Day</h4>​
+        <p>
+          Both programs can be run on an individual or team basis and are
+          offered as road, track or off-road options depending on facilities and
+          time of year.
+        </p>
+      </>
+    ),
+    text3: (
+      <>
         <p>
           This one-day event is designed for one KS2 class (usually year 5 or 6)
           and is split into a morning training session which is spent coaching
@@ -500,6 +585,18 @@ const servicesData = [
         </p>
       </>
     ),
+    text4: (
+      <>
+        <p>
+          If you have any questions or wish to arrange a competition day, please
+          contact us or email{" "}
+          <a href="mailto: admin@proridecoaching.co.uk">
+            admin@proridecoaching.co.uk
+          </a>
+          .
+        </p>
+      </>
+    ),
     img: fileName(specificServiceImages, "awarding_certificate.jpg"),
     img2: fileName(specificServiceImages, "medal_award.jpg"),
   },
@@ -509,7 +606,14 @@ const servicesData = [
     header:
       "Our Road Safety program covers basic traffic awareness and road safety for children in years 5 and 6. The 2-day course is part on-site and part on local roads and delivered by qualified Bikeability instructors.",
     flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
-    text1: "",
+    dropdown1: "Description to follow soon",
+    dropdown2: "Description to follow soon",
+    dropdown3: "Description to follow soon",
+    dropdown4: "Description to follow soon",
+    text1: "Description to follow soon. In the meantime please download our printable pdf",
+    text2: "Description to follow soon. In the meantime please download our printable pdf",
+    text3: "Description to follow soon. In the meantime please download our printable pdf",
+    text4: "Description to follow soon. In the meantime please download our printable pdf",
     img: fileName(specificServiceImages, "cones_two_kids.jpg"),
     img2: fileName(specificServiceImages, "phil_coaching_hat.jpg"),
   },

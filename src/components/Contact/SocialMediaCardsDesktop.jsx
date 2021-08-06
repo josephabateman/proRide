@@ -15,7 +15,7 @@ function SocialMediaCardsDesktop() {
         {socialMediaData.map((service, key) => (
           <Col key={key}>
             <a href={service.link}>
-              <Card style={cardStyle}>
+              <Card style={cardStyle} className="mx-auto my-3">
                 <Card.Body>
                   <i className={service.icon}></i>
 

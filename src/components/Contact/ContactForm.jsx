@@ -7,25 +7,26 @@ function ContactForm(props) {
 
   return (
     <>
-        <Form onSubmit={props.onSubmit}>
+     <Form onSubmit={props.onSubmit}>
+
           <InputGroup>
-            <InputGroup.Prepend>
+            {/* <InputGroup.Prepend> */}
               <InputGroup.Text>First and last name</InputGroup.Text>
-            </InputGroup.Prepend>
-            <Form.Control name="name" type="text" />
+            {/* </InputGroup.Prepend> */}
+            <FormControl name="name" type="text" />
           </InputGroup>
 
           <InputGroup className={customStyling.contactFormStyles.emailInput}>
-            <InputGroup.Prepend>
+            {/* <InputGroup.Prepend> */}
               <InputGroup.Text>Email address</InputGroup.Text>
-            </InputGroup.Prepend>
-            <Form.Control name="email" type="email" />
+            {/* </InputGroup.Prepend> */}
+            <FormControl name="email" type="email" />
           </InputGroup>
 
           <InputGroup>
-            <InputGroup.Prepend>
+            {/* <InputGroup.Prepend> */}
               <InputGroup.Text>Message</InputGroup.Text>
-            </InputGroup.Prepend>
+            {/* </InputGroup.Prepend> */}
             <FormControl
               name="message"
               as="textarea"
@@ -44,6 +45,7 @@ function ContactForm(props) {
           </div>
         </Form>
     </>
+        
   );
 }
 

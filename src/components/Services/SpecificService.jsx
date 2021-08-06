@@ -1,7 +1,8 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Accordion, Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 import customStyling from "../../styles/custom-styling";
 
 function SpecificService(props) {
@@ -15,53 +16,85 @@ function SpecificService(props) {
       />
 
       <Container className={customStyling.specificServicePage.container}>
-        <Row>
-          <Col xs={12}>
+        <Row className="m-auto">
+          <Col xs={12} className="mb-5">
             <h1 className={customStyling.specificServicePage.title}>
               {props.header}
             </h1>
           </Col>
-          <Col xs={12} className={customStyling.specificServicePage.text1}>
-            {props.text1}
-          </Col>
-          <Col xs={12} className={customStyling.specificServicePage.flyer1Col}>
-            <a
-              href={props.flyer}
-              target="_blank"
-              className={customStyling.specificServicePage.flyer1Style}
-            >
-              Info (printable pdf)
-            </a>
-            {props.flyer2 ? (
+
+          <Row className="m-auto">
+            <Col xs={12} lg={5}>
+              <div className="rotatated-bg-green mb-4">
+                <Image src={props.img} />
+              </div>
+
               <a
-                href={props.flyer2}
+                href={props.flyer}
                 target="_blank"
-                className={customStyling.specificServicePage.flyer2Style}
+                className={customStyling.specificServicePage.flyer1Style}
               >
-                Further info (printable pdf)
+                Info (printable pdf)
               </a>
-            ) : (
-              ""
-            )}
-          </Col>
+              {props.flyer2 ? (
+                <a
+                  href={props.flyer2}
+                  target="_blank"
+                  className={customStyling.specificServicePage.flyer2Style}
+                >
+                  Further info (printable pdf)
+                </a>
+              ) : (
+                ""
+              )}
+            </Col>
+            <Col xs={12} lg={7} className="p-0 p-md-4">
+              <Accordion defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header className="m-lg-3 p-1">
+                    <span className="text-center m-auto d-block">{props.dropdown1}</span>
+                  </Accordion.Header>
+                  <Accordion.Body className="p-0">{props.text1}</Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header className="m-lg-3 p-1">
+                  <span className="text-center m-auto d-block">{props.dropdown2}</span>
+                  </Accordion.Header>
+                  <Accordion.Body className="p-0">{props.text2}</Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
 
-          <Col xs={10} md={5} className="rotatated-bg-green mb-5 ml-auto mr-auto m-md-auto">
-              <Image src={props.img} rounded />
-
-          </Col>
-          <Col xs={10} md={5} className="rotatated-bg-blue m-auto">
-              <Image src={props.img2} rounded />
-          </Col>
-
-
-          <Col className={customStyling.specificServicePage.text2} xs={12}>
-            {props.text2}
-          </Col>
+          <Row className="m-auto mt-lg-5">
+            <Col xs={12} lg={5}  className="order-lg-2">
+              <div className="rotatated-bg-blue m-auto mb-4">
+                <Image src={props.img2} />
+              </div>
+              <Link to="/contact" className="button">
+                Get in touch
+              </Link>
+            </Col>
+            <Col xs={12} lg={7} className="m-auto p-0 p-md-4">
+              <Accordion className="mx-lg-5" defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header className="m-lg-3 p-1">
+                  <span className="text-center m-auto d-block">{props.dropdown3}</span>
+                  </Accordion.Header>
+                  <Accordion.Body className="p-0">{props.text3}</Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header className="m-lg-3 p-1">
+                  <span className="text-center m-auto d-block">{props.dropdown4}</span>
+                  </Accordion.Header>
+                  <Accordion.Body className="p-0">{props.text4}</Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+       
+            </Col>
+          </Row>
         </Row>
       </Container>
-      <Link to="/contact" className="button">
-        Get in touch
-      </Link>
     </div>
   );
 }

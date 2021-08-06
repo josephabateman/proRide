@@ -91,6 +91,37 @@ img {
   );
 }
 
+ul li {
+  list-style-type: none;
+}
+
+.accordion-button::after {
+  margin: 0;
+}
+
+.accordion-button {
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  background: linear-gradient(
+    108deg,
+    rgba(91, 153, 254, 0.9) 0%,
+    rgba(39, 196, 111, 0.9) 0%,
+    rgba(0, 212, 255, 0.9) 100%
+  );
+  border: none;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+  color: black;
+  box-shadow: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
 /* button */
 .button {
   margin: 0 10px 10px 0;
@@ -148,6 +179,16 @@ a.button:hover {
 .rotatated-bg-green img, .rotatated-bg-blue img {
   transform: rotate(5deg);
 }
+
+/* .accordion-button::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f106"; font-style: normal;
+}
+.accordion-button.collapsed::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107"; font-style: normal;
+  transition: .3s transform ease-in-out;
+} */
+
+
 
 /* mobile */
 @media only screen and (max-width: 768px) {

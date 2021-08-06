@@ -30,7 +30,7 @@ function Home() {
       <Container fluid className="pt-1">
         <Row>
           {collapsingBanners.map((data, key) => (
-            <Col lg={6} className="p-0 pb-1 pr-sm-1" key={key}>
+            <Col lg={6} className="p-0 pb-1" key={key}>
               <CollapsingBanners
                 cardContainerPreferences={data.color}
                 title={data.title}
@@ -43,8 +43,11 @@ function Home() {
               />
             </Col>
           ))}
-          <Col lg={6} className="p-0 pb-1 pl-sm-1">
-            <PromoVideo src={customStyling.promoVideo.src} />
+
+          <Col lg={6} className="p-0 pb-1">
+            <div className="ml-lg-1">
+              <PromoVideo src={customStyling.promoVideo.src} />
+            </div>
           </Col>
         </Row>
       </Container>
