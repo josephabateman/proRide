@@ -2,8 +2,8 @@ import React from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { Accordion, Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import customStyling from "../../styles/custom-styling";
+import { HashLink } from "react-router-hash-link";
 
 function SpecificService(props) {
   return (
@@ -49,25 +49,38 @@ function SpecificService(props) {
               )}
             </Col>
             <Col xs={12} lg={7} className="p-0 p-md-4">
-              <Accordion defaultActiveKey="0" flush>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header className="m-lg-3 p-1">
-                    <span className="text-center m-auto d-block">{props.dropdown1}</span>
-                  </Accordion.Header>
-                  <Accordion.Body className="p-0">{props.text1}</Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header className="m-lg-3 p-1">
-                  <span className="text-center m-auto d-block">{props.dropdown2}</span>
-                  </Accordion.Header>
-                  <Accordion.Body className="p-0">{props.text2}</Accordion.Body>
-                </Accordion.Item>
+              <Accordion id="acc1" defaultActiveKey="0" flush>
+                <HashLink to="#acc1">
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header className="m-lg-3 p-1">
+                      <span className="text-center m-auto d-block">
+                        {props.dropdown1}
+                      </span>
+                    </Accordion.Header>
+                    <Accordion.Body className="p-0">
+                      {props.text1}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </HashLink>
+
+                <HashLink to="#acc1">
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header className="m-lg-3 p-1">
+                      <span className="text-center m-auto d-block">
+                        {props.dropdown2}
+                      </span>
+                    </Accordion.Header>
+                    <Accordion.Body className="p-0">
+                      {props.text2}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </HashLink>
               </Accordion>
             </Col>
           </Row>
 
           <Row className="m-auto mt-lg-5">
-            <Col xs={12} lg={5}  className="order-lg-2">
+            <Col xs={12} lg={5} className="order-lg-2">
               <div className="rotatated-bg-blue m-auto mb-4">
                 <Image src={props.img2} />
               </div>
@@ -76,21 +89,33 @@ function SpecificService(props) {
               </Link>
             </Col>
             <Col xs={12} lg={7} className="m-auto p-0 p-md-4">
-              <Accordion className="mx-lg-5" defaultActiveKey="0" flush>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header className="m-lg-3 p-1">
-                  <span className="text-center m-auto d-block">{props.dropdown3}</span>
-                  </Accordion.Header>
-                  <Accordion.Body className="p-0">{props.text3}</Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header className="m-lg-3 p-1">
-                  <span className="text-center m-auto d-block">{props.dropdown4}</span>
-                  </Accordion.Header>
-                  <Accordion.Body className="p-0">{props.text4}</Accordion.Body>
-                </Accordion.Item>
+              <Accordion id="acc2" defaultActiveKey="0" flush>
+                <HashLink to="#acc2">
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header className="m-lg-3 p-1">
+                      <span className="text-center m-auto d-block">
+                        {props.dropdown3}
+                      </span>
+                    </Accordion.Header>
+                    <Accordion.Body className="p-0">
+                      {props.text3}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </HashLink>
+
+                <HashLink to="#acc2">
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header className="m-lg-3 p-1">
+                      <span className="text-center m-auto d-block">
+                        {props.dropdown4}
+                      </span>
+                    </Accordion.Header>
+                    <Accordion.Body className="p-0">
+                      {props.text4}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </HashLink>
               </Accordion>
-       
             </Col>
           </Row>
         </Row>
