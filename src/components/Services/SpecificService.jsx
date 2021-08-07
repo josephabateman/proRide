@@ -50,31 +50,27 @@ function SpecificService(props) {
             </Col>
             <Col xs={12} lg={7} className="p-0 p-md-4">
               <Accordion id="acc1" defaultActiveKey="0" flush>
-                <HashLink to="#acc1">
-                  <Accordion.Item eventKey="0">
+                <Accordion.Item eventKey="0">
+                  <HashLink to="#acc1">
                     <Accordion.Header className="m-lg-3 p-1">
                       <span className="text-center m-auto d-block">
                         {props.dropdown1}
                       </span>
                     </Accordion.Header>
-                    <Accordion.Body className="p-0">
-                      {props.text1}
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </HashLink>
+                  </HashLink>
+                  <Accordion.Body className="p-0">{props.text1}</Accordion.Body>
+                </Accordion.Item>
 
-                <HashLink to="#acc1">
-                  <Accordion.Item eventKey="1">
+                <Accordion.Item eventKey="1">
+                  <HashLink to="#acc1">
                     <Accordion.Header className="m-lg-3 p-1">
                       <span className="text-center m-auto d-block">
                         {props.dropdown2}
                       </span>
                     </Accordion.Header>
-                    <Accordion.Body className="p-0">
-                      {props.text2}
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </HashLink>
+                  </HashLink>
+                  <Accordion.Body className="p-0">{props.text2}</Accordion.Body>
+                </Accordion.Item>
               </Accordion>
             </Col>
           </Row>
@@ -90,31 +86,27 @@ function SpecificService(props) {
             </Col>
             <Col xs={12} lg={7} className="m-auto p-0 p-md-4">
               <Accordion id="acc2" defaultActiveKey="0" flush>
-                <HashLink to="#acc2">
-                  <Accordion.Item eventKey="0">
+                <Accordion.Item eventKey="0">
+                  <HashLink to="#acc2">
                     <Accordion.Header className="m-lg-3 p-1">
                       <span className="text-center m-auto d-block">
                         {props.dropdown3}
                       </span>
                     </Accordion.Header>
-                    <Accordion.Body className="p-0">
-                      {props.text3}
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </HashLink>
+                  </HashLink>
+                  <Accordion.Body className="p-0">{props.text3}</Accordion.Body>
+                </Accordion.Item>
 
-                <HashLink to="#acc2">
-                  <Accordion.Item eventKey="1">
+                <Accordion.Item eventKey="1">
+                  <HashLink to="#acc2">
                     <Accordion.Header className="m-lg-3 p-1">
                       <span className="text-center m-auto d-block">
                         {props.dropdown4}
                       </span>
                     </Accordion.Header>
-                    <Accordion.Body className="p-0">
-                      {props.text4}
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </HashLink>
+                  </HashLink>
+                  <Accordion.Body className="p-0">{props.text4}</Accordion.Body>
+                </Accordion.Item>
               </Accordion>
             </Col>
           </Row>
