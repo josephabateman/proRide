@@ -35,8 +35,8 @@ const servicesData = [
     header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
     //wrong flyer
     flyer: fileName(flyers, "taster days brochure.pdf"),
-    dropdown1: "About",
-    dropdown2: "What happens at a Taster Day...?",
+    dropdown1: "About the day",
+    dropdown2: "What happens at a Taster Day?",
     dropdown3: "How does the day look?",
     dropdown4: "Whole School Taster Days",
     text1: (

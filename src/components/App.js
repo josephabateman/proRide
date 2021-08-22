@@ -7,6 +7,8 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // import ServicesPage from "./Services/ServicesPage";
 import NavBar from "./NavBar";
 import servicesData from "../data/services";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/App.css";
 
 // import SpecificService from "./Services/SpecificService";
 
@@ -18,8 +20,7 @@ const ServicesPage = React.lazy(() => import("./Services/ServicesPage"));
 // const NavBar = React.lazy(() => import("./NavBar"));
 const SpecificService = React.lazy(() => import("./Services/SpecificService"));
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/App.css";
+
 
 function Footer() {
   const date = new Date();
