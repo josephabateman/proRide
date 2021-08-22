@@ -36,7 +36,7 @@ const servicesData = [
     //wrong flyer
     flyer: fileName(flyers, "taster days brochure.pdf"),
     dropdown1: "About",
-    dropdown2: "What happens at a Taster Day?",
+    dropdown2: "What happens at a Taster Day...?",
     dropdown3: "How does the day look?",
     dropdown4: "Whole School Taster Days",
     text1: (
