@@ -111,7 +111,7 @@ const servicesData = [
     //the ks1 and ks2 flyer is same
   },
   {
-    name: "Balance Biking Days",
+    name: "Balance Bike Days",
     svg: fileName(svg, "1.svg"),
     header:
       "A fun way to help early years children develop coordination, concentration and balance skills",
