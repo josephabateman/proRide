@@ -20,7 +20,7 @@ const fullScreenBanners = [
   {
     title: "ProRide Coaching",
     color: "blue-gradient text-white pt-2",
-    description: "Making cycling in school fun!",
+    description: "Making cycling in school fun",
     imageDescription: "phil bateman coaching in schools",
     imageSrc: fileName(proRideImages, "proride-kids-1.png"),
   },
