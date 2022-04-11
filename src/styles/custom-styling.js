@@ -44,7 +44,8 @@ const servicesCardsCollection = {
   },
   secondRow: {
     row: "justify-content-center",
-    containerStyle: "blue-gradient service-card-img-taller",
+    // containerStyle: "blue-gradient service-card-img-taller",
+    containerStyle: "service-card-img blue-gradient shadow bg-white rounded font-weight-light",
   },
   thirdRow: {
     row: "justify-content-center",

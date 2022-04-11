@@ -61,7 +61,7 @@ function ServicesCardsCollection() {
             )
           )}
         </Row>
-        <hr />
+        {/* <hr />
         <Row className={customStyling.servicesCardsCollection.thirdRow.row}>
           <Col
             className={customStyling.servicesCardsCollection.thirdRow.column}
@@ -74,7 +74,7 @@ function ServicesCardsCollection() {
             />
           </Col>
         </Row>
-        <hr />
+        <hr /> */}
         <h2 className={customStyling.servicesCardsCollection.subHeaderText}>
           Specialist services
         </h2>

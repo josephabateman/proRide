@@ -31,7 +31,7 @@ const servicesData = [
     name: "KS1 Days",
     svg: fileName(svg, "2.svg"),
     header:
-      "Fun interactive sessions for KS1 to stimulate interest, develop confidence and gain new skills through games and challenges.",
+      "Fun interactive sessions for KS1 and nursery to stimulate interest, develop confidence and gain new skills through games and challenges.",
     header2: "Get your kids pedaling with a ProRide Cycling Day",
     //wrong flyer
     flyer: fileName(flyers, "taster days brochure.pdf"),
@@ -253,69 +253,6 @@ const servicesData = [
     img2: fileName(specificServiceImages, "group_on_ramp.jpg"),
   },
   {
-    name: "Staff Training (CPD)",
-    svg: fileName(svg, "4.svg"),
-    header:
-      "Our CPD workshops are designed to support teachers and other staff who want to run their own sessions and programs in their school. We provide one-day courses for EYFS, KS1 and KS2.",
-    flyer: fileName(
-      flyers,
-      "CPD Course Title- Pro Ride Cycling Instructor Workshop (1 day) flyer.pdf"
-    ),
-    flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
-    dropdown1:
-      "Run your own sessions with our one-day CDP Instructor courses...",
-    dropdown2: "What happens on the day?",
-    dropdown3: "What do trainees learn?",
-    dropdown4: "How do you deliver the course?",
-    text1: (
-      <>
-        <p>
-          Our one-day training courses are designed for teachers and school
-          staff who want to run their own sessions in school for
-          curriculum-based activities or after-school clubs and competitions.
-          Three courses are currently available, one for EYFS and the others for
-          KS1 and KS2. All are delivered on-site by arrangement and incorporate
-          multiple sessions.
-        </p>
-      </>
-    ),
-    text2: (
-      <>
-        <p>
-          The workshop-style courses use a practical, hands-on approach to
-          demonstrate how to set up a range of different cycling circuits and
-          deliver a wide range of activities including games, challenges and
-          races.
-        </p>
-      </>
-    ),
-    text3: (
-      <>
-        <p>
-          Trainees learn how to tailor the program to different group sizes and
-          abilities and how to prepare for and organise sessions on the school
-          site. Live sessions using children from the host school help trainees
-          to see the program in action and enable them to get alongside the
-          trainer first hand.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          The KS1/2 workshops are delivered mainly outdoors with short classroom
-          sessions covering elements of health & safety and risk assessment, the
-          EYFS course can be delivered in or outdoors or a combination of both.
-          A detailed training manual containing sample session plans, activity
-          text1s and lots of helpful hints and tips is delivered with each
-          course.
-        </p>
-      </>
-    ),
-    img: fileName(specificServiceImages, "finishing_line.jpg"),
-    img2: fileName(specificServiceImages, "starting_line_six_boys.jpg"),
-  },
-  {
     name: "Whole School Days",
     svg: fileName(svg, "5.svg"),
     header:
@@ -397,72 +334,135 @@ const servicesData = [
     img2: fileName(specificServiceImages, "kids_podium.jpg"),
   },
   {
-    name: "Learn-to-Ride Program (Freewheelerz)",
-    svg: fileName(svg, "6.svg"),
+    name: "Staff Training (CPD)",
+    svg: fileName(svg, "4.svg"),
     header:
-      "Our Learn to ride program, Freewheelers is designed to teach kids to ride a bike in 10 weeks using special convertible bikes. The course can be delivered by one of our instructors or by your own staff after training.",
-    flyer: fileName(flyers, "Freewheelerz flyer.pdf"),
-    dropdown1: "Our new Freewheelerz Learn to Ride program for EYFS.",
-    dropdown2: "Tell me more!",
-    dropdown3: "About the course",
-    dropdown4: "What will the kids learn?",
+      "Our CPD workshops are designed to support teachers and other staff who want to run their own sessions and programs in their school. We provide one-day courses for EYFS, KS1 and KS2.",
+    flyer: fileName(
+      flyers,
+      "CPD Course Title- Pro Ride Cycling Instructor Workshop (1 day) flyer.pdf"
+    ),
+    flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
+    dropdown1:
+      "Run your own sessions with our one-day CDP Instructor courses...",
+    dropdown2: "What happens on the day?",
+    dropdown3: "What do trainees learn?",
+    dropdown4: "How do you deliver the course?",
     text1: (
       <>
         <p>
-          Think how amazing it would be if every child in your school could be
-          taught how to ride a bike in the first couple of years of them
-          joining! Well, now they can with Freewheelerz, our latest program for
-          EYFS.
-        </p>
-        <p>
-          The drive behind this new program came about as a result of the
-          positive feedback we have been getting from our Balance Bike Taster
-          Days. Almost without exception, schools tell us how quickly the
-          children take to the activity and want to continue with more sessions.
+          Our one-day training courses are designed for teachers and school
+          staff who want to run their own sessions in school for
+          curriculum-based activities or after-school clubs and competitions.
+          Three courses are currently available, one for EYFS and the others for
+          KS1 and KS2. All are delivered on-site by arrangement and incorporate
+          multiple sessions.
         </p>
       </>
     ),
     text2: (
       <>
         <p>
-          For this reason, we have designed a program that uses the successful
-          format and methods used in the taster days but builds progressively
-          into a full 10-week course resulting in most children being able to
-          ride independently by the end.
+          The workshop-style courses use a practical, hands-on approach to
+          demonstrate how to set up a range of different cycling circuits and
+          deliver a wide range of activities including games, challenges and
+          races.
         </p>
       </>
     ),
     text3: (
       <>
         <p>
-          The course follows a structured program that each week sees the
-          children progress steadily from initially sitting and walking to
-          pushing and stepping, followed by striding and steering, ducking and
-          weaving, and eventually confidently freewheeling - at which point we
-          add pedals (the Strider 14X bike used for the course converts from
-          balance bike to pedal bike) to continue the course on a conventional
-          pedal bike.
+          Trainees learn how to tailor the program to different group sizes and
+          abilities and how to prepare for and organise sessions on the school
+          site. Live sessions using children from the host school help trainees
+          to see the program in action and enable them to get alongside the
+          trainer first hand.
         </p>
       </>
     ),
     text4: (
       <>
         <p>
-          The program encourages the children to learn through play and fun,
-          exploring and learning at their own pace - there is no pressure to
-          keep up with other children, instead, they learn the skills they need
-          through taking part in lots of fun games and challenges that they love
-          and want to practice and repeat.
-        </p>
-        <p>
-          For more information on getting started with the program, choose one
-          of the options below to continue.
+          The KS1/2 workshops are delivered mainly outdoors with short classroom
+          sessions covering elements of health & safety and risk assessment, the
+          EYFS course can be delivered in or outdoors or a combination of both.
+          A detailed training manual containing sample session plans, activity
+          text1s and lots of helpful hints and tips is delivered with each
+          course.
         </p>
       </>
     ),
-    img: fileName(specificServiceImages, "girl_ramp_young.jpg"),
-    img2: fileName(specificServiceImages, "older_kid_action.jpg"),
+    img: fileName(specificServiceImages, "finishing_line.jpg"),
+    img2: fileName(specificServiceImages, "starting_line_six_boys.jpg"),
   },
+  // {
+  //   name: "Learn-to-Ride Program (Freewheelerz)",
+  //   svg: fileName(svg, "6.svg"),
+  //   header:
+  //     "Our Learn to ride program, Freewheelers is designed to teach kids to ride a bike in 10 weeks using special convertible bikes. The course can be delivered by one of our instructors or by your own staff after training.",
+  //   flyer: fileName(flyers, "Freewheelerz flyer.pdf"),
+  //   dropdown1: "Our new Freewheelerz Learn to Ride program for EYFS.",
+  //   dropdown2: "Tell me more!",
+  //   dropdown3: "About the course",
+  //   dropdown4: "What will the kids learn?",
+  //   text1: (
+  //     <>
+  //       <p>
+  //         Think how amazing it would be if every child in your school could be
+  //         taught how to ride a bike in the first couple of years of them
+  //         joining! Well, now they can with Freewheelerz, our latest program for
+  //         EYFS.
+  //       </p>
+  //       <p>
+  //         The drive behind this new program came about as a result of the
+  //         positive feedback we have been getting from our Balance Bike Taster
+  //         Days. Almost without exception, schools tell us how quickly the
+  //         children take to the activity and want to continue with more sessions.
+  //       </p>
+  //     </>
+  //   ),
+  //   text2: (
+  //     <>
+  //       <p>
+  //         For this reason, we have designed a program that uses the successful
+  //         format and methods used in the taster days but builds progressively
+  //         into a full 10-week course resulting in most children being able to
+  //         ride independently by the end.
+  //       </p>
+  //     </>
+  //   ),
+  //   text3: (
+  //     <>
+  //       <p>
+  //         The course follows a structured program that each week sees the
+  //         children progress steadily from initially sitting and walking to
+  //         pushing and stepping, followed by striding and steering, ducking and
+  //         weaving, and eventually confidently freewheeling - at which point we
+  //         add pedals (the Strider 14X bike used for the course converts from
+  //         balance bike to pedal bike) to continue the course on a conventional
+  //         pedal bike.
+  //       </p>
+  //     </>
+  //   ),
+  //   text4: (
+  //     <>
+  //       <p>
+  //         The program encourages the children to learn through play and fun,
+  //         exploring and learning at their own pace - there is no pressure to
+  //         keep up with other children, instead, they learn the skills they need
+  //         through taking part in lots of fun games and challenges that they love
+  //         and want to practice and repeat.
+  //       </p>
+  //       <p>
+  //         For more information on getting started with the program, choose one
+  //         of the options below to continue.
+  //       </p>
+  //     </>
+  //   ),
+  //   img: fileName(specificServiceImages, "girl_ramp_young.jpg"),
+  //   img2: fileName(specificServiceImages, "older_kid_action.jpg"),
+  // },
   {
     name: "After-School Clubs",
     svg: fileName(svg, "7.svg"),
