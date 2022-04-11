@@ -45,7 +45,8 @@ const servicesCardsCollection = {
   secondRow: {
     row: "justify-content-center",
     // containerStyle: "blue-gradient service-card-img-taller",
-    containerStyle: "service-card-img blue-gradient shadow bg-white rounded font-weight-light",
+    containerStyle:
+      "service-card-img blue-gradient shadow bg-white rounded font-weight-light",
   },
   thirdRow: {
     row: "justify-content-center",
@@ -55,7 +56,7 @@ const servicesCardsCollection = {
     row: "justify-content-center",
     column: "my-3",
     containerStyle:
-      "service-card-img blue-gradient shadow bg-white rounded font-weight-light",
+      "service-card-img green-gradient shadow bg-white rounded font-weight-light",
   },
 };
 
@@ -75,7 +76,7 @@ const specificServicePage = {
   text2: "mt-5 text-left",
   flyer1Col: "mb-5",
   flyer1Style: "button mr-3",
-  flyer2Style: "button"
+  flyer2Style: "button",
 };
 
 //about Pages (about Phil & about ProRide)

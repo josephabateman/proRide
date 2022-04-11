@@ -29,13 +29,18 @@ function SpecificService(props) {
                 <Image src={props.img} />
               </div>
 
-              <a
-                href={props.flyer}
-                target="_blank"
-                className={customStyling.specificServicePage.flyer1Style}
-              >
-                Info (printable pdf)
-              </a>
+              {props.flyer ? (
+                <a
+                  href={props.flyer}
+                  target="_blank"
+                  className={customStyling.specificServicePage.flyer1Style}
+                >
+                  Info (printable pdf)
+                </a>
+              ) : (
+                ""
+              )}
+
               {props.flyer2 ? (
                 <a
                   href={props.flyer2}

@@ -17,8 +17,9 @@ function HeaderText() {
           </Col>
           <Col md={7} lg={4} className={customStyling.servicesPage.h5Column}>
             <h5 className={customStyling.servicesPage.h5}>
-              We offer a wide range of services to meet the needs of of teachers
-              and students. Browse below for further information
+              We offer a range of services to meet the needs of all ages and
+              abilities. Browse below to see our programs for Nursery, KS1 and
+              KS2.
             </h5>
           </Col>
         </Row>

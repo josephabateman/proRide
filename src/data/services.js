@@ -28,13 +28,74 @@ function fileName(folder, fileName) {
 
 const servicesData = [
   {
+    name: "Balance Bike Days",
+    svg: fileName(svg, "1.svg"),
+    header:
+      "A fun way to help early years children develop coordination, concentration and balance skills",
+    header2: "Develop confidence and coordination with a Balance Bike Day",
+    flyer: fileName(flyers, "balance bike days flyer.pdf"),
+    img: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
+    img2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
+    dropdown1: "About the day",
+    dropdown2: "More info",
+    dropdown3: "Where does it take place?",
+    dropdown4: "Who's it for?",
+    text1: (
+      <>
+        <p>
+          Our Balance Bike days are a great way to see how Early Years children
+          respond to balance biking and how quickly they develop their
+          confidence and coordination. Within minutes children who have never
+          been on a bike before are walking confidently, sat on the saddle. Soon
+          they are weaving in and out of cones, ducking under limbos and flying
+          over ramps. Before long and within the session the same children are
+          beginning to balance and freewheel as they continue to grow in
+          confidence.
+        </p>
+      </>
+    ),
+    text2: (
+      <>
+        <p>
+          Each Balance Bike Day offers multiple sessions (4-6 in a school day)
+          catering for up to 60 children in 30-45 minute sessions. Under the
+          watchful eye of a qualified instructor, each child as young as three
+          learns the basics of stepping, striding, balancing, starting and
+          stopping, and turning through a series of fun activities in an
+          action-packed session.
+        </p>
+      </>
+    ),
+    text3: (
+      <>
+        <p>
+          Sessions can take place indoors or out depending on weather and are
+          suitable for all levels of ability from absolute beginners to
+          confident pedlers. All equipment is provided including Strider balance
+          bikes and helmets.
+        </p>
+      </>
+    ),
+    text4: (
+      <>
+        <p>
+          Balance bike days are designed as a stand-alone activity day and as
+          such are suitable for use as a one-off experience but can be used to
+          trial balance biking as a regular activity, perhaps prior to starting
+          a school club or investing in equipment and training or running a
+          Freewheelerz Learn to Ride Course.
+        </p>
+      </>
+    ),
+  },
+  {
     name: "KS1 Days",
     svg: fileName(svg, "2.svg"),
     header:
       "Fun interactive sessions for KS1 and nursery to stimulate interest, develop confidence and gain new skills through games and challenges.",
     header2: "Get your kids pedaling with a ProRide Cycling Day",
     //wrong flyer
-    flyer: fileName(flyers, "taster days brochure.pdf"),
+    // flyer: fileName(flyers, "taster days brochure.pdf"),
     dropdown1: "About the day",
     dropdown2: "What happens at a KS1 Day?",
     dropdown3: "How does the day look?",
@@ -109,67 +170,6 @@ const servicesData = [
     img: fileName(specificServiceImages, "girl_2_ramp_young.jpg"),
     img2: fileName(specificServiceImages, "ramp_young_kids.jpg"),
     //the ks1 and ks2 flyer is same
-  },
-  {
-    name: "Balance Bike Days",
-    svg: fileName(svg, "1.svg"),
-    header:
-      "A fun way to help early years children develop coordination, concentration and balance skills",
-    header2: "Develop confidence and coordination with a Balance Bike Day",
-    flyer: fileName(flyers, "balance bike days flyer.pdf"),
-    img: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
-    img2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
-    dropdown1: "About the day",
-    dropdown2: "More info",
-    dropdown3: "Where does it take place?",
-    dropdown4: "Who's it for?",
-    text1: (
-      <>
-        <p>
-          Our Balance Bike days are a great way to see how Early Years children
-          respond to balance biking and how quickly they develop their
-          confidence and coordination. Within minutes children who have never
-          been on a bike before are walking confidently, sat on the saddle. Soon
-          they are weaving in and out of cones, ducking under limbos and flying
-          over ramps. Before long and within the session the same children are
-          beginning to balance and freewheel as they continue to grow in
-          confidence.
-        </p>
-      </>
-    ),
-    text2: (
-      <>
-        <p>
-          Each Balance Bike Day offers multiple sessions (4-6 in a school day)
-          catering for up to 60 children in 30-45 minute sessions. Under the
-          watchful eye of a qualified instructor, each child as young as three
-          learns the basics of stepping, striding, balancing, starting and
-          stopping, and turning through a series of fun activities in an
-          action-packed session.
-        </p>
-      </>
-    ),
-    text3: (
-      <>
-        <p>
-          Sessions can take place indoors or out depending on weather and are
-          suitable for all levels of ability from absolute beginners to
-          confident pedlers. All equipment is provided including Strider balance
-          bikes and helmets.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          Balance bike days are designed as a stand-alone activity day and as
-          such are suitable for use as a one-off experience but can be used to
-          trial balance biking as a regular activity, perhaps prior to starting
-          a school club or investing in equipment and training or running a
-          Freewheelerz Learn to Ride Course.
-        </p>
-      </>
-    ),
   },
   {
     name: "KS2 Days",
@@ -258,7 +258,7 @@ const servicesData = [
     header:
       "Ideal for smaller schools, our Whole School Program ensures every child gets to take part in all inclusive, age related fun session",
     header2: "Get your kids pedaling with a ProRide Cycling Day",
-    flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
+    // flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
     dropdown1: "About the day...",
     dropdown2: 'What happens at a "Whole School" Day?',
     dropdown3: 'More on "Whole School" Days...',
@@ -334,6 +334,81 @@ const servicesData = [
     img2: fileName(specificServiceImages, "kids_podium.jpg"),
   },
   {
+    name: "After-School Clubs",
+    svg: fileName(svg, "7.svg"),
+    header:
+      "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
+    flyer: fileName(flyers, "School Clubs flyer.pdf"),
+    dropdown1: "School Clubs",
+    dropdown2: "Who is it for?",
+    dropdown3: "How does it work?",
+    dropdown4: "How do I book on?",
+    text1: (
+      <>
+        <p>
+          We offer clubs for all ages and abilities, from Early Years balance
+          bike clubs for those who just want to have fun on two wheels (or learn
+          to ride a pedal bike) to those older, perhaps more competitive
+          children who want to try out cycle racing for the first time or
+          develop their hobby and improve their technical skills.
+        </p>
+      </>
+    ),
+    text2: (
+      <>
+        <p>
+          Our clubs can run independently for just one age group or be offered
+          to the whole school as 3 consecutive key stage sessions on one day of
+          the week. Clubs run all year round (weather permitting) and usually
+          last between 45 minutes to an hour depending on age. Smaller schools
+          may prefer a mixed-age club where sessions can be split into higher
+          and lower abilities or by age with a coach working in each group.
+        </p>
+      </>
+    ),
+    text3: (
+      <>
+        <p>
+          Bookings are usually made by parents/guardians using our online
+          booking and payment system and where possible encouraged to set up a
+          monthly direct debit payment which can be cancelled with one month
+          notice. We are also able to take bookings on a block basis if
+          preferred. This is usually for 6-7 week blocks paid at the start of a
+          half term. On occasion, schools provide clubs free of charge to their
+          students, in this case, we agree to charge the school a fixed amount
+          to deliver a set number of sessions and places over a specific period.
+          An invoice is then issued to the school following the last club
+          session - as we do for most of our other programs.
+        </p>
+        <p>
+          To help schools promote their clubs internally, we design and deliver
+          posters and flyers (as electronic artwork) and provide a registration
+          form for schools to print and use to minimise administration if
+          required.
+        </p>
+      </>
+    ),
+    text4: (
+      <>
+        <p>
+          Parents/Carers are required to complete an application form detailing
+          any special needs or medical conditions together with the arrangements
+          for pick up after the club.
+        </p>
+        <p>
+          If you have any questions or wish to arrange a club for your school,
+          please contact us or email{" "}
+          <a href="mailto: admin@proridecoaching.co.uk">
+            admin@proridecoaching.co.uk
+          </a>
+          .
+        </p>
+      </>
+    ),
+    img: fileName(specificServiceImages, "limbo_boy_2.jpg"),
+    img2: fileName(specificServiceImages, "limbo_rear_shot_young.jpg"),
+  },
+  {
     name: "Staff Training (CPD)",
     svg: fileName(svg, "4.svg"),
     header:
@@ -342,7 +417,7 @@ const servicesData = [
       flyers,
       "CPD Course Title- Pro Ride Cycling Instructor Workshop (1 day) flyer.pdf"
     ),
-    flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
+    // flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
     dropdown1:
       "Run your own sessions with our one-day CDP Instructor courses...",
     dropdown2: "What happens on the day?",
@@ -463,88 +538,14 @@ const servicesData = [
   //   img: fileName(specificServiceImages, "girl_ramp_young.jpg"),
   //   img2: fileName(specificServiceImages, "older_kid_action.jpg"),
   // },
-  {
-    name: "After-School Clubs",
-    svg: fileName(svg, "7.svg"),
-    header:
-      "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
-    flyer: fileName(flyers, "School Clubs flyer.pdf"),
-    dropdown1: "School Clubs",
-    dropdown2: "Who is it for?",
-    dropdown3: "How does it work?",
-    dropdown4: "How do I book on?",
-    text1: (
-      <>
-        <p>
-          We offer clubs for all ages and abilities, from Early Years balance
-          bike clubs for those who just want to have fun on two wheels (or learn
-          to ride a pedal bike) to those older, perhaps more competitive
-          children who want to try out cycle racing for the first time or
-          develop their hobby and improve their technical skills.
-        </p>
-      </>
-    ),
-    text2: (
-      <>
-        <p>
-          Our clubs can run independently for just one age group or be offered
-          to the whole school as 3 consecutive key stage sessions on one day of
-          the week. Clubs run all year round (weather permitting) and usually
-          last between 45 minutes to an hour depending on age. Smaller schools
-          may prefer a mixed-age club where sessions can be split into higher
-          and lower abilities or by age with a coach working in each group.
-        </p>
-      </>
-    ),
-    text3: (
-      <>
-        <p>
-          Bookings are usually made by parents/guardians using our online
-          booking and payment system and where possible encouraged to set up a
-          monthly direct debit payment which can be cancelled with one month
-          notice. We are also able to take bookings on a block basis if
-          preferred. This is usually for 6-7 week blocks paid at the start of a
-          half term. On occasion, schools provide clubs free of charge to their
-          students, in this case, we agree to charge the school a fixed amount
-          to deliver a set number of sessions and places over a specific period.
-          An invoice is then issued to the school following the last club
-          session - as we do for most of our other programs.
-        </p>
-        <p>
-          To help schools promote their clubs internally, we design and deliver
-          posters and flyers (as electronic artwork) and provide a registration
-          form for schools to print and use to minimise administration if
-          required.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          Parents/Carers are required to complete an application form detailing
-          any special needs or medical conditions together with the arrangements
-          for pick up after the club.
-        </p>
-        <p>
-          If you have any questions or wish to arrange a club for your school,
-          please contact us or email{" "}
-          <a href="mailto: admin@proridecoaching.co.uk">
-            admin@proridecoaching.co.uk
-          </a>
-          .
-        </p>
-      </>
-    ),
-    img: fileName(specificServiceImages, "limbo_boy_2.jpg"),
-    img2: fileName(specificServiceImages, "limbo_rear_shot_young.jpg"),
-  },
+  
   {
     name: "Competition Days",
     svg: fileName(svg, "8.svg"),
     header:
       "We provide everything from a School-based KS2 Competition with race training prior to competition, to fully organised Trust-wide or regional inter-school competitions and -tournaments.",
-    flyer: fileName(flyers, "INTER-SCHOOL COMPETITIONS flyer.pdf"),
-    flyer2: fileName(flyers, "Training & Competition Day flyer.pdf"),
+    flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
+    flyer2: fileName(flyers, "INTER-SCHOOL COMPETITIONS flyer.pdf"),
     dropdown1: "School Competitions",
     dropdown2: "How is it run?",
     dropdown3: "KS2 Training & Competition Day",
@@ -604,7 +605,7 @@ const servicesData = [
     svg: fileName(svg, "1.svg"),
     header:
       "Our Road Safety program covers basic traffic awareness and road safety for children in years 5 and 6. The 2-day course is part on-site and part on local roads and delivered by qualified Bikeability instructors.",
-    flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
+    // flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
     dropdown1: "Description to follow soon",
     dropdown2: "Description to follow soon",
     dropdown3: "Description to follow soon",

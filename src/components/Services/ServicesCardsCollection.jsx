@@ -75,13 +75,13 @@ function ServicesCardsCollection() {
           </Col>
         </Row>
         <hr /> */}
-        <h2 className={customStyling.servicesCardsCollection.subHeaderText}>
+        {/* <h2 className={customStyling.servicesCardsCollection.subHeaderText}>
           Specialist services
-        </h2>
+        </h2> */}
 
         <Row className={customStyling.servicesCardsCollection.fourthRow.row}>
           {servicesData.map((service, key) =>
-            key > 5 ? (
+            key >= 5 ? (
               <Col
                 lg={4}
                 md={6}
