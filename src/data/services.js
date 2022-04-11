@@ -34,8 +34,8 @@ const servicesData = [
       "A fun way to help early years children develop coordination, concentration and balance skills",
     header2: "Develop confidence and coordination with a Balance Bike Day",
     flyer: fileName(flyers, "balance bike days flyer.pdf"),
-    img: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
-    img2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
+    img: fileName(specificServiceImages, "phil_balance_bike_kids.jpeg"),
+    img2: fileName(specificServiceImages, "balance_bike_limbo.jpeg"),
     dropdown1: "About the day",
     dropdown2: "More info",
     dropdown3: "Where does it take place?",
@@ -249,7 +249,7 @@ const servicesData = [
         </p>
       </>
     ),
-    img: fileName(specificServiceImages, "full_class_field.jpg"),
+    img: fileName(specificServiceImages, "limbo_boy_2.jpg"),
     img2: fileName(specificServiceImages, "group_on_ramp.jpg"),
   },
   {
@@ -538,7 +538,7 @@ const servicesData = [
   //   img: fileName(specificServiceImages, "girl_ramp_young.jpg"),
   //   img2: fileName(specificServiceImages, "older_kid_action.jpg"),
   // },
-  
+
   {
     name: "Competition Days",
     svg: fileName(svg, "8.svg"),
@@ -597,7 +597,7 @@ const servicesData = [
         </p>
       </>
     ),
-    img: fileName(specificServiceImages, "awarding_certificate.jpg"),
+    img: fileName(specificServiceImages, "full_class_field.jpg"),
     img2: fileName(specificServiceImages, "medal_award.jpg"),
   },
   {
