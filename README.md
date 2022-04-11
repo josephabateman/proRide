@@ -2,3 +2,5 @@
 2. npm run build
 3. commit git changes
 4. npm run deploy (hosted on github pages)
+
+if downloading from repo, make sure to install node modules (npm install)
