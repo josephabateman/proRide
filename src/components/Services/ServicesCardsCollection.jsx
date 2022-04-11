@@ -35,9 +35,7 @@ function ServicesCardsCollection() {
             )
           )}
         </Row>
-        <h2 className={customStyling.servicesCardsCollection.subHeaderText}>
-          -
-        </h2>
+        {/* <h2 className={customStyling.servicesCardsCollection.subHeaderText}>there was a title here</h2> */}
         <Row className={customStyling.servicesCardsCollection.secondRow.row}>
           {servicesData.map((service, key) =>
             key >= 3 && key <= 4 ? (

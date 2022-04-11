@@ -28,29 +28,29 @@ function fileName(folder, fileName) {
 
 const servicesData = [
   {
-    name: "KS1 Taster Days",
+    name: "KS1 Days",
     svg: fileName(svg, "2.svg"),
     header:
       "Fun interactive sessions for KS1 to stimulate interest, develop confidence and gain new skills through games and challenges.",
-    header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
+    header2: "Get your kids pedaling with a ProRide Cycling Day",
     //wrong flyer
     flyer: fileName(flyers, "taster days brochure.pdf"),
     dropdown1: "About the day",
-    dropdown2: "What happens at a Taster Day?",
+    dropdown2: "What happens at a KS1 Day?",
     dropdown3: "How does the day look?",
-    dropdown4: "Whole School Taster Days",
+    dropdown4: "Whole School KS1 Days",
     text1: (
       <>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
-          skills is difficult. Now, with a Pro-Ride Taster day, they can do just
+          skills is difficult. Now, with a Pro-Ride KS1 day, they can do just
           that in the safety and security of their own school playground under
           the supervision of a qualified coach.
         </p>
         <p>
-          Pro-Ride Taster days comprise multiple sessions in a day (usually 4)
-          that offer children in KS1 or KS2 the chance to learn new skills, gain
+          Pro-Ride KS1 days comprise multiple sessions in a day (usually 4) that
+          offer children in KS1 or KS2 the chance to learn new skills, gain
           confidence and have fun with their friends. Prices depend on the
           number of children taking part in the day which can vary from one
           class to four.
@@ -60,18 +60,18 @@ const servicesData = [
     text2: (
       <>
         <p>
-          Once you have booked a date for your Taster Day, we get in touch 2
-          weeks prior to the vist to find out more about your school and who
-          will be taking part. Based on this information, we put together a plan
-          for the day for your approval.
+          Once you have booked a date for your KS1 Day, we get in touch 2 weeks
+          prior to the vist to find out more about your school and who will be
+          taking part. Based on this information, we put together a plan for the
+          day for your approval.
         </p>
       </>
     ),
     text3: (
       <>
         <p>
-          Taster days usually consist of 4 sessions - 2 in the morning and 2 in
-          the afternoon. The sessions vary in content depending on the age and
+          KS1 days usually consist of 4 sessions - 2 in the morning and 2 in the
+          afternoon. The sessions vary in content depending on the age and
           ability of those taking part but a typical session will start with a
           bike and helmet check, then get underway by developing basic riding
           skills on a track set up on the playground or, in summer, on the
@@ -115,8 +115,7 @@ const servicesData = [
     svg: fileName(svg, "1.svg"),
     header:
       "A fun way to help early years children develop coordination, concentration and balance skills",
-    header2:
-      "Develop confidence and coordination with a Balance Bike Taster Day",
+    header2: "Develop confidence and coordination with a Balance Bike Day",
     flyer: fileName(flyers, "balance bike days flyer.pdf"),
     img: fileName(specificServiceImages, "two_kids_blue_tarmac.jpg"),
     img2: fileName(specificServiceImages, "girl_pink_bike.jpg"),
@@ -127,8 +126,8 @@ const servicesData = [
     text1: (
       <>
         <p>
-          Our Balance Bike Taster days are a great way to see how Early Years
-          children respond to balance biking and how quickly they develop their
+          Our Balance Bike days are a great way to see how Early Years children
+          respond to balance biking and how quickly they develop their
           confidence and coordination. Within minutes children who have never
           been on a bike before are walking confidently, sat on the saddle. Soon
           they are weaving in and out of cones, ducking under limbos and flying
@@ -141,7 +140,7 @@ const servicesData = [
     text2: (
       <>
         <p>
-          Each Taster Day offers multiple sessions (4-6 in a school day)
+          Each Balance Bike Day offers multiple sessions (4-6 in a school day)
           catering for up to 60 children in 30-45 minute sessions. Under the
           watchful eye of a qualified instructor, each child as young as three
           learns the basics of stepping, striding, balancing, starting and
@@ -163,38 +162,38 @@ const servicesData = [
     text4: (
       <>
         <p>
-          Taster days are designed as a stand-alone activity day and as such are
-          suitable for use as a one-off experience but can be used to trial
-          balance biking as a regular activity, perhaps prior to starting a
-          school club or investing in equipment and training or running a
+          Balance bike days are designed as a stand-alone activity day and as
+          such are suitable for use as a one-off experience but can be used to
+          trial balance biking as a regular activity, perhaps prior to starting
+          a school club or investing in equipment and training or running a
           Freewheelerz Learn to Ride Course.
         </p>
       </>
     ),
   },
   {
-    name: "KS2 Taster Days",
+    name: "KS2 Days",
     svg: fileName(svg, "3.svg"),
     header:
       "A great way to encourage children to cycle more and sample cycle racing in a safe, controlled environment.",
     flyer:
       "https://ea67bc9c-a6b0-438e-82a8-d0e4df398e62.filesusr.com/ugd/0583da_5af40c0aa624483ea7edd16ef5eec163.pdf",
-    dropdown1: "Get your kids pedaling with a ProRide Cycling Taster Day",
-    dropdown2: "What happens at a Taster Day?",
+    dropdown1: "Get your kids pedaling with a ProRide Cycling KS2 Day",
+    dropdown2: "What happens at a KS2 Day?",
     dropdown3: "Tell me more!",
-    dropdown4: "Whole School Taster Days",
+    dropdown4: "Whole School KS2 Days",
     text1: (
       <>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
-          skills is difficult. Now, with a Pro-Ride Taster day, they can do just
+          skills is difficult. Now, with a Pro-Ride KS2 day, they can do just
           that in the safety and security of their own school playground under
           the supervision of a qualified coach.
         </p>
         <p>
-          Pro-Ride Taster days comprise multiple sessions in a day (usually 4)
-          that offer children in KS1 or KS2 the chance to learn new skills, gain
+          Pro-Ride KS2 days comprise multiple sessions in a day (usually 4) that
+          offer children in KS1 or KS2 the chance to learn new skills, gain
           confidence and have fun with their friends. Prices depend on the
           number of children taking part in the day which can vary from one
           class to four.
@@ -204,18 +203,18 @@ const servicesData = [
     text2: (
       <>
         <p>
-          Once you have booked a date for your Taster Day, we get in touch 2
-          weeks prior to the vist to find out more about your school and who
-          will be taking part. Based on this information, we put together a plan
-          for the day for your approval.
+          Once you have booked a date for your KS2 Day, we get in touch 2 weeks
+          prior to the vist to find out more about your school and who will be
+          taking part. Based on this information, we put together a plan for the
+          day for your approval.
         </p>
       </>
     ),
     text3: (
       <>
         <p>
-          Taster days usually consist of 4 sessions - 2 in the morning and 2 in
-          the afternoon. The sessions vary in content depending on the age and
+          KS2 days usually consist of 4 sessions - 2 in the morning and 2 in the
+          afternoon. The sessions vary in content depending on the age and
           ability of those taking part but a typical session will start with a
           bike and helmet check, then get underway by developing basic riding
           skills on a track set up on the playground or, in summer, on the
@@ -241,7 +240,7 @@ const servicesData = [
       <>
         <p>
           For smaller schools, we operate a program that combines the above
-          program with our balance bike taster. This enables every child in the
+          program with our balance bike program. This enables every child in the
           school from Nursery to Year 6 to take part in a session. Days are
           usually split into 3 with 2 sessions in the morning and one all
           afternoon. The older children bring in their bikes, whilst the younger
@@ -276,7 +275,7 @@ const servicesData = [
           curriculum-based activities or after-school clubs and competitions.
           Three courses are currently available, one for EYFS and the others for
           KS1 and KS2. All are delivered on-site by arrangement and incorporate
-          taster sessions.
+          multiple sessions.
         </p>
       </>
     ),
@@ -295,9 +294,9 @@ const servicesData = [
         <p>
           Trainees learn how to tailor the program to different group sizes and
           abilities and how to prepare for and organise sessions on the school
-          site. Live "Taster" sessions using children from the host school help
-          trainees to see the program in action and enable them to get alongside
-          the trainer first hand.
+          site. Live sessions using children from the host school help trainees
+          to see the program in action and enable them to get alongside the
+          trainer first hand.
         </p>
       </>
     ),
@@ -321,35 +320,35 @@ const servicesData = [
     svg: fileName(svg, "5.svg"),
     header:
       "Ideal for smaller schools, our Whole School Program ensures every child gets to take part in all inclusive, age related fun session",
-    header2: "Get your kids pedaling with a ProRide Cycling Taster Day",
+    header2: "Get your kids pedaling with a ProRide Cycling Day",
     flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
     dropdown1: "About the day...",
-    dropdown2: "What happens at a Taster Day?",
-    dropdown3: "More on Taster Days...",
-    dropdown4: "Whole School Taster Days",
+    dropdown2: 'What happens at a "Whole School" Day?',
+    dropdown3: 'More on "Whole School" Days...',
+    dropdown4: "Whole School Days",
     text1: (
       <>
         <p>
           Cycling is a great activity for children in so many ways, yet for
           many, finding somewhere safe and fun to ride their bikes and learn new
-          skills is difficult. Now, with a Pro-Ride Taster day, they can do just
-          that in the safety and security of their own school playground under
-          the supervision of a qualified coach.
+          skills is difficult. Now, with a Pro-Ride Whole School day, they can
+          do just that in the safety and security of their own school playground
+          under the supervision of a qualified coach.
         </p>
         <p>
-          Pro-Ride Taster days comprise multiple sessions in a day (usually 4)
-          that offer children in KS1 or KS2 the chance to learn new skills, gain
-          confidence and have fun with their friends. Prices depend on the
-          number of children taking part in the day which can vary from one
-          class to four.
+          Pro-Ride Whole School days comprise multiple sessions in a day
+          (usually 4) that offer children in KS1 or KS2 the chance to learn new
+          skills, gain confidence and have fun with their friends. Prices depend
+          on the number of children taking part in the day which can vary from
+          one class to four.
         </p>
       </>
     ),
     text2: (
       <>
         <p>
-          Once you have booked a date for your Taster Day, we get in touch 2
-          weeks prior to the visit to find out more about your school and who
+          Once you have booked a date for your Whole School Day, we get in touch
+          2 weeks prior to the visit to find out more about your school and who
           will be taking part. Based on this information, we put together a plan
           for the day for your approval.
         </p>
@@ -358,10 +357,10 @@ const servicesData = [
     text3: (
       <>
         <p>
-          Taster days usually consist of 4 sessions - 2 in the morning and 2 in
-          the afternoon. The sessions vary in content depending on the age and
-          ability of those taking part but a typical session will start with a
-          bike and helmet check, then get underway by developing basic riding
+          Whole School days usually consist of 4 sessions - 2 in the morning and
+          2 in the afternoon. The sessions vary in content depending on the age
+          and ability of those taking part but a typical session will start with
+          a bike and helmet check, then get underway by developing basic riding
           skills on a track set up on the playground or, in summer, on the
           grass.
         </p>
@@ -385,8 +384,8 @@ const servicesData = [
       <>
         <p>
           For smaller schools, we operate a program that combines the above
-          program with our balance bike taster. This enables every child in the
-          school from Nursery to Year 6 to take part in a session. Days are
+          program with our balance bike sessions. This enables every child in
+          the school from Nursery to Year 6 to take part in a session. Days are
           usually split into 3 with 2 sessions in the morning and one all
           afternoon. The older children bring in their bikes, whilst the younger
           one's can either borrow one of our balance/pedal bikes or bring in
@@ -610,10 +609,14 @@ const servicesData = [
     dropdown2: "Description to follow soon",
     dropdown3: "Description to follow soon",
     dropdown4: "Description to follow soon",
-    text1: "Description to follow soon. In the meantime please download our printable pdf",
-    text2: "Description to follow soon. In the meantime please download our printable pdf",
-    text3: "Description to follow soon. In the meantime please download our printable pdf",
-    text4: "Description to follow soon. In the meantime please download our printable pdf",
+    text1:
+      "Description to follow soon. In the meantime please download our printable pdf",
+    text2:
+      "Description to follow soon. In the meantime please download our printable pdf",
+    text3:
+      "Description to follow soon. In the meantime please download our printable pdf",
+    text4:
+      "Description to follow soon. In the meantime please download our printable pdf",
     img: fileName(specificServiceImages, "cones_two_kids.jpg"),
     img2: fileName(specificServiceImages, "phil_coaching_hat.jpg"),
   },
