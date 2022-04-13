@@ -7,11 +7,9 @@ import customStyling from "../../styles/custom-styling";
 function FAQ() {
   return (
     <>
-      <h1 className="my-4">
-        FAQs
-      </h1>
+      <h1 className="my-4">FAQs</h1>
       <div id="balance_bike_faqs">
-        <Accordion className="m-lg-5 container-lg bg-light p-3">
+        <Accordion className="container-lg bg-light p-3">
           <h3 className="">Balance Bike Session FAQs</h3>
           <Accordion.Item eventKey="0" className="border-0">
             <Accordion.Header>

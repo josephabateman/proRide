@@ -11,8 +11,8 @@ function importAll(r) {
 const flyers = importAll(
   require.context("../static/flyers", false, /\.(pdf)$/)
 );
-const svg = importAll(
-  require.context("../static/images/svg", false, /\.(png|jpe?g|svg)$/)
+const tile = importAll(
+  require.context("../static/images/tiles", false, /\.(png|jpe?g|svg)$/)
 );
 const specificServiceImages = importAll(
   require.context(
@@ -29,7 +29,7 @@ function fileName(folder, fileName) {
 const servicesData = [
   {
     name: "Balance Bike Days",
-    svg: fileName(svg, "1.svg"),
+    svg: fileName(tile, "balance bike days.jpeg"),
     header:
       "A fun way to help early years children develop coordination, concentration and balance skills",
     header2: "Develop confidence and coordination with a Balance Bike Day",
@@ -90,7 +90,7 @@ const servicesData = [
   },
   {
     name: "KS1 Days",
-    svg: fileName(svg, "2.svg"),
+    svg: fileName(tile, "KS1 days.jpg"),
     header:
       "Fun interactive sessions for KS1 and nursery to stimulate interest, develop confidence and gain new skills through games and challenges.",
     header2: "Get your kids pedaling with a ProRide Cycling Day",
@@ -173,7 +173,7 @@ const servicesData = [
   },
   {
     name: "KS2 Days",
-    svg: fileName(svg, "3.svg"),
+    svg: fileName(tile, "ks2 day.jpg"),
     header:
       "A great way to encourage children to cycle more and sample cycle racing in a safe, controlled environment.",
     flyer:
@@ -254,7 +254,7 @@ const servicesData = [
   },
   {
     name: "Whole School Days",
-    svg: fileName(svg, "5.svg"),
+    svg: fileName(tile, "whole school day.jpg"),
     header:
       "Ideal for smaller schools, our Whole School Program ensures every child gets to take part in all inclusive, age related fun session",
     header2: "Get your kids pedaling with a ProRide Cycling Day",
@@ -335,7 +335,7 @@ const servicesData = [
   },
   {
     name: "After-School Clubs",
-    svg: fileName(svg, "7.svg"),
+    svg: fileName(tile, "after school clubs.jpg"),
     header:
       "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
     flyer: fileName(flyers, "School Clubs flyer.pdf"),
@@ -410,7 +410,7 @@ const servicesData = [
   },
   {
     name: "Staff Training (CPD)",
-    svg: fileName(svg, "4.svg"),
+    svg: fileName(tile, "CPD.jpg"),
     header:
       "Our CPD workshops are designed to support teachers and other staff who want to run their own sessions and programs in their school. We provide one-day courses for EYFS, KS1 and KS2.",
     flyer: fileName(
@@ -541,7 +541,7 @@ const servicesData = [
 
   {
     name: "Competition Days",
-    svg: fileName(svg, "8.svg"),
+    svg: fileName(tile, "competition days.jpg"),
     header:
       "We provide everything from a School-based KS2 Competition with race training prior to competition, to fully organised Trust-wide or regional inter-school competitions and -tournaments.",
     flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
@@ -602,7 +602,7 @@ const servicesData = [
   },
   {
     name: "Road Safety Training",
-    svg: fileName(svg, "1.svg"),
+    svg: fileName(tile, "road safety.jpg"),
     header:
       "Our Road Safety program covers basic traffic awareness and road safety for children in years 5 and 6. The 2-day course is part on-site and part on local roads and delivered by qualified Bikeability instructors.",
     // flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),

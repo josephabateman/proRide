@@ -23,7 +23,7 @@ function NavBar() {
               <NavDropdown.Item href="#aboutPhil">About Phil</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#/faq">FAQ</Nav.Link>
-            {/* <Nav.Link href="#/jobs">Jobs</Nav.Link> */}
+            <Nav.Link href="#/jobs">Jobs</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
