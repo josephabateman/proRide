@@ -19,7 +19,8 @@ const ContactPage = React.lazy(() => import("./Contact/ContactPage"));
 const ServicesPage = React.lazy(() => import("./Services/ServicesPage"));
 // const NavBar = React.lazy(() => import("./NavBar"));
 const SpecificService = React.lazy(() => import("./Services/SpecificService"));
-
+const Jobs = React.lazy(() => import("./Jobs/Jobs"));
+const FAQ = React.lazy(() => import("./FAQ/FAQ"));
 
 
 function Footer() {
@@ -51,6 +52,8 @@ function App() {
               <Route exact path="/contact" component={ContactPage} />
               <Route exact path="/aboutProRide" component={AboutProRide} />
               <Route exact path="/aboutPhil" component={AboutPhil} />
+              <Route exact path="/jobs" component={Jobs} />
+              <Route exact path="/faq" component={FAQ} />
 
               {servicesData.map((service, key) => {
                 return (

@@ -30,7 +30,7 @@ a {
 }
 p {
   font-size: large;
-  line-height: 2;
+  line-height: 1.3;
 }
 
 /* general image styles */
@@ -95,9 +95,9 @@ ul li {
   list-style-type: none;
 }
 
-.accordion-button::after {
-  margin: 0;
-}
+/* .accordion-button::after {
+   margin: auto;
+} */
 
 .accordion-button {
   font-size: 1.3rem;

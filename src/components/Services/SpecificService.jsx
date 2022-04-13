@@ -58,7 +58,7 @@ function SpecificService(props) {
                 <Accordion.Item eventKey="0">
                   <HashLink to="#acc1">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="text-center m-auto d-block">
+                      <span className="ml-auto d-block">
                         {props.dropdown1}
                       </span>
                     </Accordion.Header>
@@ -69,7 +69,7 @@ function SpecificService(props) {
                 <Accordion.Item eventKey="1">
                   <HashLink to="#acc1">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="text-center m-auto d-block">
+                      <span className="ml-auto d-block">
                         {props.dropdown2}
                       </span>
                     </Accordion.Header>
@@ -94,7 +94,7 @@ function SpecificService(props) {
                 <Accordion.Item eventKey="0">
                   <HashLink to="#acc2">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="text-center m-auto d-block">
+                      <span className="ml-auto d-block">
                         {props.dropdown3}
                       </span>
                     </Accordion.Header>
@@ -105,7 +105,7 @@ function SpecificService(props) {
                 <Accordion.Item eventKey="1">
                   <HashLink to="#acc2">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="text-center m-auto d-block">
+                      <span className="ml-auto d-block">
                         {props.dropdown4}
                       </span>
                     </Accordion.Header>
