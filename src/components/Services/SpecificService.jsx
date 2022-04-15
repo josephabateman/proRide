@@ -54,7 +54,7 @@ function SpecificService(props) {
                   target="_blank"
                   className={customStyling.specificServicePage.flyer2Style}
                 >
-                  {props.dropdown2 ? `${props.dropdown2} PDF` : ``}
+                  {props.dropdown2 ? `${props.dropdown2} PDF` : "Further info PDF"}
                 </a>
               ) : (
                 ""
