@@ -65,18 +65,19 @@ function App() {
                     <SpecificService
                       key={key}
                       img={service.img}
-                      img2={service.img2}
+                      // img2={service.img2}
                       svg={service.svg}
-                      header={service.name}
-                      header2={service.header2}
+                      title={service.name}
+                      header={service.header}
+                      // title2={service.header2}
                       dropdown1={service.dropdown1}
                       dropdown2={service.dropdown2}
                       dropdown3={service.dropdown3}
                       dropdown4={service.dropdown4}
                       text1={service.text1}
                       text2={service.text2}
-                      text3={service.text3}
-                      text4={service.text4}
+                      // text3={service.text3}
+                      // text4={service.text4}
                       flyer={service.flyer}
                       flyer2={service.flyer2}
                     />

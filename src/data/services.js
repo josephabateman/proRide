@@ -99,168 +99,175 @@ const servicesData = [
     // ),
   },
   {
-    name: "Key Stage 1 Days",
-    svg: fileName(tile, "KS1 days.jpg"),
-    header:
-      "Fun interactive sessions for KS1 and nursery to stimulate interest, develop confidence and gain new skills through games and challenges.",
-    header2: "Get your kids pedaling with a ProRide Cycling Day",
+    name: "Key Stage 1 Fun Days",
+    svg: fileName(tile, "ks1_fun_day_tile.jpg"),
+    header: "Professionally coached fun cycling day for Key Stage 1 classes",
     //wrong flyer
-    // flyer: fileName(flyers, "taster days brochure.pdf"),
-    dropdown1: "About the day",
-    dropdown2: "What happens at a KS1 Day?",
-    dropdown3: "How does the day look?",
-    dropdown4: "Whole School KS1 Days",
+    flyer: fileName(flyers, "Fun Cycling Days flyer.pdf"),
+    // dropdown1: "About the day",
+    // dropdown2: "What happens at a KS1 Day?",
+    // dropdown3: "How does the day look?",
+    // dropdown4: "Whole School KS1 Days",
     text1: (
       <>
         <p>
-          Cycling is a great activity for children in so many ways, yet for
-          many, finding somewhere safe and fun to ride their bikes and learn new
-          skills is difficult. Now, with a Pro-Ride KS1 day, they can do just
-          that in the safety and security of their own school playground under
-          the supervision of a qualified coach.
-        </p>
-        <p>
-          Pro-Ride KS1 days comprise multiple sessions in a day (usually 4) that
-          offer children in KS1 or KS2 the chance to learn new skills, gain
-          confidence and have fun with their friends. Prices depend on the
-          number of children taking part in the day which can vary from one
-          class to four.
-        </p>
-      </>
-    ),
-    text2: (
-      <>
-        <p>
-          Once you have booked a date for your KS1 Day, we get in touch 2 weeks
-          prior to the vist to find out more about your school and who will be
-          taking part. Based on this information, we put together a plan for the
-          day for your approval.
-        </p>
-      </>
-    ),
-    text3: (
-      <>
-        <p>
-          KS1 days usually consist of 4 sessions - 2 in the morning and 2 in the
-          afternoon. The sessions vary in content depending on the age and
-          ability of those taking part but a typical session will start with a
-          bike and helmet check, then get underway by developing basic riding
-          skills on a track set up on the playground or, in summer, on the
-          grass.
-        </p>
-        <p>
-          Skills such as starting, stopping, cornering, riding close to others,
-          overtaking, riding in single file, in pairs, and in small groups are
-          all covered here. The focus then switches to developing bike handling
-          skills by using a series of activity stations where the children
-          tackle different obstacles such as slalom, limbo, and ramps. Finally,
-          the children get their chance to take on their friends in a series of
-          fun races tailored to the age and ability of the group and the space
-          available.
-        </p>
-        <p>
-          Children bring in their own bikes and helmets, but spares can be
-          provided by prior arrangement. Helmets can be supplied.
+          Our KS1 Cycling Fun Days are a great way for Key Stage 1 children of
+          all abilities to develop coordination, balance and control, preparing
+          them for a lifetime of confident cycling.
+          <br></br>
+          <br></br>
+          Each day delivers a series of small group sessions lasting about an
+          hour (depending on age and number of sessions) where we cover basic
+          bike handling, starting, stopping, cornering, riding in a line, riding
+          in pairs and various team activities, fun games, challenges and
+          obstacle activities.
+          <br></br>
+          <br></br>
+          Balance bikes can be provided for younger and small children, with
+          older children encouraged to bring in their own bikes (larger pedal
+          bikes can be hired if required). No special clothing or preparation is
+          necessary as we take care of all risk assessments and planning. We can
+          cater for up to 90 children a day with options 60, 75 or 90 places.
+          Sessions usually take place outdoors but can be switched indoors in
+          unsuitable weather.
+          <br></br>
+          <br></br>
+          To book a day for your school or to check availability and prices,
+          please feel free to get in touch or check the website for details.
         </p>
       </>
     ),
-    text4: (
-      <>
-        <p>
-          For smaller schools, we operate a program that combines the above
-          program with our balance bike taster. This enables every child in the
-          school from Nursery to Year 6 to take part in a session. Days are
-          usually split into 3 with 2 sessions in the morning and one all
-          afternoon. The older children bring in their bikes, whilst the younger
-          one's can either borrow one of our balance/pedal bikes or bring in
-          their own.
-        </p>
-      </>
-    ),
-    img: fileName(specificServiceImages, "girl_2_ramp_young.jpg"),
-    img2: fileName(specificServiceImages, "ramp_young_kids.jpg"),
+    // text2: (
+    //   <>
+    //     <p>
+    //       Once you have booked a date for your KS1 Day, we get in touch 2 weeks
+    //       prior to the vist to find out more about your school and who will be
+    //       taking part. Based on this information, we put together a plan for the
+    //       day for your approval.
+    //     </p>
+    //   </>
+    // ),
+    // text3: (
+    //   <>
+    //     <p>
+    //       KS1 days usually consist of 4 sessions - 2 in the morning and 2 in the
+    //       afternoon. The sessions vary in content depending on the age and
+    //       ability of those taking part but a typical session will start with a
+    //       bike and helmet check, then get underway by developing basic riding
+    //       skills on a track set up on the playground or, in summer, on the
+    //       grass.
+    //     </p>
+    //     <p>
+    //       Skills such as starting, stopping, cornering, riding close to others,
+    //       overtaking, riding in single file, in pairs, and in small groups are
+    //       all covered here. The focus then switches to developing bike handling
+    //       skills by using a series of activity stations where the children
+    //       tackle different obstacles such as slalom, limbo, and ramps. Finally,
+    //       the children get their chance to take on their friends in a series of
+    //       fun races tailored to the age and ability of the group and the space
+    //       available.
+    //     </p>
+    //     <p>
+    //       Children bring in their own bikes and helmets, but spares can be
+    //       provided by prior arrangement. Helmets can be supplied.
+    //     </p>
+    //   </>
+    // ),
+    // text4: (
+    //   <>
+    //     <p>
+    //       For smaller schools, we operate a program that combines the above
+    //       program with our balance bike taster. This enables every child in the
+    //       school from Nursery to Year 6 to take part in a session. Days are
+    //       usually split into 3 with 2 sessions in the morning and one all
+    //       afternoon. The older children bring in their bikes, whilst the younger
+    //       one's can either borrow one of our balance/pedal bikes or bring in
+    //       their own.
+    //     </p>
+    //   </>
+    // ),
+    img: fileName(specificServiceImages, "ks1_fun_day.jpg"),
+    // img2: fileName(specificServiceImages, "ramp_young_kids.jpg"),
     //the ks1 and ks2 flyer is same
   },
   {
-    name: "Key Stage 2 Days",
-    svg: fileName(tile, "ks2 day.jpg"),
+    name: "Key Stage 2 Cyclesport Days",
+    svg: fileName(tile, "cycle_sport_ks2_tile.jpg"),
     header:
-      "A great way to encourage children to cycle more and sample cycle racing in a safe, controlled environment.",
-    flyer:
-      "https://ea67bc9c-a6b0-438e-82a8-d0e4df398e62.filesusr.com/ugd/0583da_5af40c0aa624483ea7edd16ef5eec163.pdf",
-    dropdown1: "Get your kids pedaling with a ProRide Cycling KS2 Day",
-    dropdown2: "What happens at a KS2 Day?",
-    dropdown3: "Tell me more!",
-    dropdown4: "Whole School KS2 Days",
+      "A great way to introduce KS2 children to the exciting sport of cycling in a child-safe environment",
+    flyer: fileName(flyers, "CycleSport flyer.pdf"),
+    // dropdown1: "Get your kids pedaling with a ProRide Cycling KS2 Day",
+    // dropdown2: "What happens at a KS2 Day?",
+    // dropdown3: "Tell me more!",
+    // dropdown4: "Whole School KS2 Days",
     text1: (
       <>
         <p>
-          Cycling is a great activity for children in so many ways, yet for
-          many, finding somewhere safe and fun to ride their bikes and learn new
-          skills is difficult. Now, with a Pro-Ride KS2 day, they can do just
-          that in the safety and security of their own school playground under
-          the supervision of a qualified coach.
-        </p>
-        <p>
-          Pro-Ride KS2 days comprise multiple sessions in a day (usually 4) that
-          offer children in KS1 or KS2 the chance to learn new skills, gain
-          confidence and have fun with their friends. Prices depend on the
-          number of children taking part in the day which can vary from one
-          class to four.
-        </p>
-      </>
-    ),
-    text2: (
-      <>
-        <p>
-          Once you have booked a date for your KS2 Day, we get in touch 2 weeks
-          prior to the vist to find out more about your school and who will be
-          taking part. Based on this information, we put together a plan for the
-          day for your approval.
+          Each day offers up to four sessions of fast, fun action and can cater
+          for 2, 3 or 4 classes. Activities take place around a circuit and
+          obstacle course marked out on your school playground or field where
+          the children learn technical skills and take part in a series of fun
+          challenges, games, and mini competitions.
+          <br></br>
+          <br></br>
+          All activities are risk assessed and suitable for all KS2 classes,
+          with sessions adapted to suit the range of abilities ofo each group or
+          class. Children bring their own bikes and helmets (spares can be made
+          available upon request)
         </p>
       </>
     ),
-    text3: (
-      <>
-        <p>
-          KS2 days usually consist of 4 sessions - 2 in the morning and 2 in the
-          afternoon. The sessions vary in content depending on the age and
-          ability of those taking part but a typical session will start with a
-          bike and helmet check, then get underway by developing basic riding
-          skills on a track set up on the playground or, in summer, on the
-          grass.
-        </p>
-        <p>
-          Skills such as starting, stopping, cornering, riding close to others,
-          overtaking, riding in single file, in pairs, and in small groups are
-          all covered here. The focus then switches to developing bike handling
-          skills by using a series of activity stations where the children
-          tackle different obstacles such as slalom, limbo, and ramps. Finally,
-          the children get their chance to take on their friends in a series of
-          fun races tailored to the age and ability of the group and the space
-          available.
-        </p>
-        <p>
-          Children bring in their own bikes and helmets, but spares can be
-          provided by prior arrangement. Helmets can be supplied.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          For smaller schools, we operate a program that combines the above
-          program with our balance bike program. This enables every child in the
-          school from Nursery to Year 6 to take part in a session. Days are
-          usually split into 3 with 2 sessions in the morning and one all
-          afternoon. The older children bring in their bikes, whilst the younger
-          one's can either borrow one of our balance/pedal bikes or bring in
-          their own.
-        </p>
-      </>
-    ),
-    img: fileName(specificServiceImages, "limbo_boy_2.jpg"),
-    img2: fileName(specificServiceImages, "group_on_ramp.jpg"),
+    // text2: (
+    //   <>
+    //     <p>
+    //       Once you have booked a date for your KS2 Day, we get in touch 2 weeks
+    //       prior to the vist to find out more about your school and who will be
+    //       taking part. Based on this information, we put together a plan for the
+    //       day for your approval.
+    //     </p>
+    //   </>
+    // ),
+    // text3: (
+    //   <>
+    //     <p>
+    //       KS2 days usually consist of 4 sessions - 2 in the morning and 2 in the
+    //       afternoon. The sessions vary in content depending on the age and
+    //       ability of those taking part but a typical session will start with a
+    //       bike and helmet check, then get underway by developing basic riding
+    //       skills on a track set up on the playground or, in summer, on the
+    //       grass.
+    //     </p>
+    //     <p>
+    //       Skills such as starting, stopping, cornering, riding close to others,
+    //       overtaking, riding in single file, in pairs, and in small groups are
+    //       all covered here. The focus then switches to developing bike handling
+    //       skills by using a series of activity stations where the children
+    //       tackle different obstacles such as slalom, limbo, and ramps. Finally,
+    //       the children get their chance to take on their friends in a series of
+    //       fun races tailored to the age and ability of the group and the space
+    //       available.
+    //     </p>
+    //     <p>
+    //       Children bring in their own bikes and helmets, but spares can be
+    //       provided by prior arrangement. Helmets can be supplied.
+    //     </p>
+    //   </>
+    // ),
+    // text4: (
+    //   <>
+    //     <p>
+    //       For smaller schools, we operate a program that combines the above
+    //       program with our balance bike program. This enables every child in the
+    //       school from Nursery to Year 6 to take part in a session. Days are
+    //       usually split into 3 with 2 sessions in the morning and one all
+    //       afternoon. The older children bring in their bikes, whilst the younger
+    //       one's can either borrow one of our balance/pedal bikes or bring in
+    //       their own.
+    //     </p>
+    //   </>
+    // ),
+    img: fileName(specificServiceImages, "cycle_sport_ks2.jpg"),
+    // img2: fileName(specificServiceImages, "group_on_ramp.jpg"),
   },
   {
     name: "Whole School Days",
@@ -420,66 +427,75 @@ const servicesData = [
   },
   {
     name: "Staff Training (CPD)",
-    svg: fileName(tile, "CPD.jpg"),
+    svg: fileName(tile, "cpd_tile.jpg"),
     header:
-      "Our CPD workshops are designed to support teachers and other staff who want to run their own sessions and programs in their school. We provide one-day courses for EYFS, KS1 and KS2.",
-    flyer: fileName(
-      flyers,
-      "CPD Course Title- Pro Ride Cycling Instructor Workshop (1 day) flyer.pdf"
-    ),
+      "One day practical workshop to enable school staff to run balance bike sessions in school",
+    flyer: fileName(flyers, "Cycling Instructor Course.pdf"),
+    flyer2: fileName(flyers, "CPD Advertising Flyer.pdf"),
     // flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
-    dropdown1:
-      "Run your own sessions with our one-day CDP Instructor courses...",
-    dropdown2: "What happens on the day?",
-    dropdown3: "What do trainees learn?",
-    dropdown4: "How do you deliver the course?",
+    // dropdown1:
+    //   "Run your own sessions with our one-day CDP Instructor courses...",
+    // dropdown2: "What happens on the day?",
+    // dropdown3: "What do trainees learn?",
+    // dropdown4: "How do you deliver the course?",
     text1: (
       <>
         <p>
-          Our one-day training courses are designed for teachers and school
-          staff who want to run their own sessions in school for
-          curriculum-based activities or after-school clubs and competitions.
-          Three courses are currently available, one for EYFS and the others for
-          KS1 and KS2. All are delivered on-site by arrangement and incorporate
-          multiple sessions.
+          This one-day course delivered by Pro-Ride Founder and Director, Phil
+          Bateman is an ideal way to train your staff to run progressive cycling
+          sessions for children in Key Stage One.
+          <br></br>
+          <br></br>
+          Suitable for up to 5 members of staff (teaching or non-teaching), the
+          course covers everything you need to know to run sessions for PE
+          lessons, after-school clubs, or occasional activities in school.
+          <br></br>
+          <br></br>
+          The course requires no prior learning or experience of cycling and
+          includes a comprehensive instruction manual, example lesson plans, and
+          printable activity card pack covering a wide variety of fun games,
+          challenges, and mini-races.
+          <br></br>
+          <br></br>
+          No special equipment or clothing is required to attend the course.
         </p>
       </>
     ),
-    text2: (
-      <>
-        <p>
-          The workshop-style courses use a practical, hands-on approach to
-          demonstrate how to set up a range of different cycling circuits and
-          deliver a wide range of activities including games, challenges and
-          races.
-        </p>
-      </>
-    ),
-    text3: (
-      <>
-        <p>
-          Trainees learn how to tailor the program to different group sizes and
-          abilities and how to prepare for and organise sessions on the school
-          site. Live sessions using children from the host school help trainees
-          to see the program in action and enable them to get alongside the
-          trainer first hand.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          The KS1/2 workshops are delivered mainly outdoors with short classroom
-          sessions covering elements of health & safety and risk assessment, the
-          EYFS course can be delivered in or outdoors or a combination of both.
-          A detailed training manual containing sample session plans, activity
-          text1s and lots of helpful hints and tips is delivered with each
-          course.
-        </p>
-      </>
-    ),
-    img: fileName(specificServiceImages, "finishing_line.jpg"),
-    img2: fileName(specificServiceImages, "starting_line_six_boys.jpg"),
+    // text2: (
+    //   <>
+    //     <p>
+    //       The workshop-style courses use a practical, hands-on approach to
+    //       demonstrate how to set up a range of different cycling circuits and
+    //       deliver a wide range of activities including games, challenges and
+    //       races.
+    //     </p>
+    //   </>
+    // ),
+    // text3: (
+    //   <>
+    //     <p>
+    //       Trainees learn how to tailor the program to different group sizes and
+    //       abilities and how to prepare for and organise sessions on the school
+    //       site. Live sessions using children from the host school help trainees
+    //       to see the program in action and enable them to get alongside the
+    //       trainer first hand.
+    //     </p>
+    //   </>
+    // ),
+    // text4: (
+    //   <>
+    //     <p>
+    //       The KS1/2 workshops are delivered mainly outdoors with short classroom
+    //       sessions covering elements of health & safety and risk assessment, the
+    //       EYFS course can be delivered in or outdoors or a combination of both.
+    //       A detailed training manual containing sample session plans, activity
+    //       text1s and lots of helpful hints and tips is delivered with each
+    //       course.
+    //     </p>
+    //   </>
+    // ),
+    img: fileName(specificServiceImages, "cpd.jpg"),
+    // img2: fileName(specificServiceImages, "starting_line_six_boys.jpg"),
   },
   // {
   //   name: "Learn-to-Ride Program (Freewheelerz)",
@@ -551,64 +567,83 @@ const servicesData = [
 
   {
     name: "Competition Days",
-    svg: fileName(tile, "competition days.jpg"),
+    svg: fileName(tile, "competition_day_tile.jpg"),
     header:
-      "We provide everything from a School-based KS2 Competition with race training prior to competition, to fully organised Trust-wide or regional inter-school competitions and -tournaments.",
+      "A full day of racing including a mini tournament for one Key Stage 2 class",
     flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
-    flyer2: fileName(flyers, "INTER-SCHOOL COMPETITIONS flyer.pdf"),
-    dropdown1: "School Competitions",
-    dropdown2: "How is it run?",
-    dropdown3: "KS2 Training & Competition Day",
-    dropdown4: "Get in touch",
+    flyer2: fileName(flyers, "Inter-school Competition flyer.pdf"),
+    dropdown1: "Competition Day",
+    dropdown2: "Inter-School Cycling Tournament",
+    // dropdown3: "KS2 Training & Competition Day",
+    // dropdown4: "Get in touch",
     text1: (
       <>
         <p>
-          Pro-Ride provide two programs aimed at competitive cycle racing, these
-          are:
+          Our Training & Competition Day is a unique opportunity for up to 30
+          children in Years 5 or 6 to be trained in different forms of cycle
+          racing and prepare for open competition.
+          <br></br>
+          <br></br>
+          The one-day event is delivered by Pro-Ride founder and former Olympic
+          cyclist, Phil Bateman and consists of an introduction to the various
+          forms of racing with specific training in road, track and off-road
+          techniques, followed by a series of races where riders gain points
+          towards a mini-competition and selection for a an inter-school
+          competition at a later date.
         </p>
-        <ul>
-          <li>KS2 training and competition days, and</li>
-          <li>KS2 inter-school competition.</li>
-        </ul>
       </>
     ),
     text2: (
       <>
         <p>
-          Both programs can be run on an individual or team basis and are
-          offered as road, track or off-road options depending on facilities and
-          time of year.
+          Following successful events in West and North Yorkshire in recent
+          years, we are now offereing school partnerships, trusts and local
+          auhtorities the opportunity to run similar events in their area.
+          <br></br>
+          <br></br>
+          Our service is fully managed, providing everything from planning and
+          contacting schools, to developing the program, providing equipment and
+          delivering the event at a selected school location.
+          <br></br>
+          <br></br>
+          We are happy to work with individual schools as well as sports
+          partnerships, clusters or trusts wanting to introduce a cycling
+          element to their competitive school's sport provision. We are also
+          happpy to help organise and run area-wide qualifying and inter-school
+          events. (see our. Competiton & Training Days) We can also provide
+          training for schools planning on entering team into the Sainsbury's
+          School Games festivals and regional qualifying events.
         </p>
       </>
     ),
-    text3: (
-      <>
-        <p>
-          This one-day event is designed for one KS2 class (usually year 5 or 6)
-          and is split into a morning training session which is spent coaching
-          the basic skills needed for racing such as starting, cornering,
-          climbing, group riding, and sprinting, followed by a mini-tournament
-          in the afternoon which introduces the children to some of the
-          different kinds of races found in the sport. Points are awarded for
-          each race and totaled at the end where the winners are presented with
-          certificates, medals, and/or a trophy.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          If you have any questions or wish to arrange a competition day, please
-          contact us or email{" "}
-          <a href="mailto: admin@proridecoaching.co.uk">
-            admin@proridecoaching.co.uk
-          </a>
-          .
-        </p>
-      </>
-    ),
-    img: fileName(specificServiceImages, "full_class_field.jpg"),
-    img2: fileName(specificServiceImages, "medal_award.jpg"),
+    // text3: (
+    //   <>
+    //     <p>
+    //       This one-day event is designed for one KS2 class (usually year 5 or 6)
+    //       and is split into a morning training session which is spent coaching
+    //       the basic skills needed for racing such as starting, cornering,
+    //       climbing, group riding, and sprinting, followed by a mini-tournament
+    //       in the afternoon which introduces the children to some of the
+    //       different kinds of races found in the sport. Points are awarded for
+    //       each race and totaled at the end where the winners are presented with
+    //       certificates, medals, and/or a trophy.
+    //     </p>
+    //   </>
+    // ),
+    // text4: (
+    //   <>
+    //     <p>
+    //       If you have any questions or wish to arrange a competition day, please
+    //       contact us or email{" "}
+    //       <a href="mailto: admin@proridecoaching.co.uk">
+    //         admin@proridecoaching.co.uk
+    //       </a>
+    //       .
+    //     </p>
+    //   </>
+    // ),
+    img: fileName(specificServiceImages, "competition_day.jpg"),
+    // img2: fileName(specificServiceImages, "medal_award.jpg"),
   },
   {
     name: "Road Safety Training",

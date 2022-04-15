@@ -19,8 +19,13 @@ function SpecificService(props) {
         <Row className="m-auto">
           <Col xs={12} className="mb-5">
             <h1 className={customStyling.specificServicePage.title}>
-              {props.header}
+              {props.title}
             </h1>
+          </Col>
+          <Col xs={12} className="mb-5">
+            <h4 className={customStyling.specificServicePage.header}>
+              {props.header}
+            </h4>
           </Col>
 
           <Row className="m-auto">
@@ -35,7 +40,9 @@ function SpecificService(props) {
                   target="_blank"
                   className={customStyling.specificServicePage.flyer1Style}
                 >
-                  Info (printable pdf)
+                  {props.dropdown1
+                    ? `${props.dropdown1} PDF`
+                    : `${props.title} PDF`}
                 </a>
               ) : (
                 ""
@@ -47,37 +54,51 @@ function SpecificService(props) {
                   target="_blank"
                   className={customStyling.specificServicePage.flyer2Style}
                 >
-                  Further info (printable pdf)
+                  {props.dropdown2 ? `${props.dropdown2} PDF` : ``}
                 </a>
               ) : (
                 ""
               )}
             </Col>
             <Col xs={12} lg={7} className="p-0 p-md-4">
-              <span className="ml-auto d-block">{props.text1}</span>
+              {/* here */}
+              {props.dropdown1 && props.dropdown2 ? (
+                <Accordion id="acc1" defaultActiveKey="0" flush>
+                  <Accordion.Item eventKey="0">
+                    <HashLink to="#acc1">
+                      <Accordion.Header className="m-lg-3 p-1">
+                        <span className="ml-auto d-block">
+                          {props.dropdown1}
+                        </span>
+                      </Accordion.Header>
+                    </HashLink>
+                    <Accordion.Body className="p-0">
+                      {props.text1}
+                    </Accordion.Body>
+                  </Accordion.Item>
+
+                  <Accordion.Item eventKey="1">
+                    <HashLink to="#acc1">
+                      <Accordion.Header className="m-lg-3 p-1">
+                        <span className="ml-auto d-block">
+                          {props.dropdown2}
+                        </span>
+                      </Accordion.Header>
+                    </HashLink>
+                    <Accordion.Body className="p-0">
+                      {props.text2}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              ) : (
+                <span className="ml-auto d-block">{props.text1}</span>
+              )}
+
+              {/* here */}
+
               <Link to="/contact" className="button">
                 Get in touch
               </Link>
-
-              {/* <Accordion id="acc1" defaultActiveKey="0" flush>
-                <Accordion.Item eventKey="0">
-                  <HashLink to="#acc1">
-                    <Accordion.Header className="m-lg-3 p-1">
-                      <span className="ml-auto d-block">{props.dropdown1}</span>
-                    </Accordion.Header>
-                  </HashLink>
-                  <Accordion.Body className="p-0">{props.text1}</Accordion.Body>
-                </Accordion.Item>
-
-                <Accordion.Item eventKey="1">
-                  <HashLink to="#acc1">
-                    <Accordion.Header className="m-lg-3 p-1">
-                      <span className="ml-auto d-block">{props.dropdown2}</span>
-                    </Accordion.Header>
-                  </HashLink>
-                  <Accordion.Body className="p-0">{props.text2}</Accordion.Body>
-                </Accordion.Item>
-              </Accordion> */}
             </Col>
           </Row>
 
