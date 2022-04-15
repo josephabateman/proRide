@@ -1,7 +1,4 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import customStyling from "../../styles/custom-styling";
 
 function Jobs() {
   return (
@@ -27,6 +24,7 @@ function Jobs() {
         </svg>
         &nbsp; Coach Information Form
       </a>
+
     </>
   );
 }

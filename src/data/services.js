@@ -29,67 +29,77 @@ function fileName(folder, fileName) {
 const servicesData = [
   {
     name: "Balance Bike Days",
-    svg: fileName(tile, "balance bike days.jpeg"),
+    svg: fileName(tile, "balance_bike_tile.jpg"),
     header:
-      "A fun way to help early years children develop coordination, concentration and balance skills",
-    header2: "Develop confidence and coordination with a Balance Bike Day",
-    flyer: fileName(flyers, "balance bike days flyer.pdf"),
-    img: fileName(specificServiceImages, "phil_balance_bike_kids.jpeg"),
-    img2: fileName(specificServiceImages, "balance_bike_limbo.jpeg"),
-    dropdown1: "About the day",
-    dropdown2: "More info",
-    dropdown3: "Where does it take place?",
-    dropdown4: "Who's it for?",
+      "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
+    flyer: fileName(flyers, "Balance Bike Day flyer.pdf"),
+    img: fileName(specificServiceImages, "balance_bike.jpg"),
+    // img2: fileName(specificServiceImages, "balance_bike_limbo.jpeg"),
+    // dropdown1: "About the day",
+    // dropdown2: "More info",
+    // dropdown3: "Where does it take place?",
+    // dropdown4: "Who's it for?",
     text1: (
       <>
         <p>
-          Our Balance Bike days are a great way to see how Early Years children
-          respond to balance biking and how quickly they develop their
-          confidence and coordination. Within minutes children who have never
-          been on a bike before are walking confidently, sat on the saddle. Soon
-          they are weaving in and out of cones, ducking under limbos and flying
-          over ramps. Before long and within the session the same children are
-          beginning to balance and freewheel as they continue to grow in
-          confidence.
+          Our balance bike fun days are a great way for Early Years and Key
+          Stage 1 children of all abilities to develop coordination, balance and
+          control, preparing them for a lifetime of confident cycling.
+          <br></br>
+          <br></br>
+          Each day delivers a series of small group sessions lasting 45 minutes
+          to an hour (depending on age and number of sessions) where we cover
+          basic bike handling, stopping, turning and of course, balancing
+          through a program of fun games, challenges and obstacle activities.{" "}
+          <br></br>
+          <br></br>
+          All equipment is provided so no special clothing or preparation is
+          necessary. We can cater for up to 90 children a day with options 60,
+          75 or 90 places. Sessions usually take place outdoors but can be
+          switched indoors in unsuitable weather.
+          <br></br>
+          <br></br>
+          To book a day for your school or to check availability and prices,
+          please feel free to get in touch or check the website for details.
         </p>
       </>
     ),
-    text2: (
-      <>
-        <p>
-          Each Balance Bike Day offers multiple sessions (4-6 in a school day)
-          catering for up to 60 children in 30-45 minute sessions. Under the
-          watchful eye of a qualified instructor, each child as young as three
-          learns the basics of stepping, striding, balancing, starting and
-          stopping, and turning through a series of fun activities in an
-          action-packed session.
-        </p>
-      </>
-    ),
-    text3: (
-      <>
-        <p>
-          Sessions can take place indoors or out depending on weather and are
-          suitable for all levels of ability from absolute beginners to
-          confident pedlers. All equipment is provided including Strider balance
-          bikes and helmets.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          Balance bike days are designed as a stand-alone activity day and as
-          such are suitable for use as a one-off experience but can be used to
-          trial balance biking as a regular activity, perhaps prior to starting
-          a school club or investing in equipment and training or running a
-          Freewheelerz Learn to Ride Course.
-        </p>
-      </>
-    ),
+    // text2: (
+    //   <>
+    //     <p>
+    //       All equipment is provided so no special clothing or preparation is
+    //       necessary. We can cater for up to 90 children a day with options 60,
+    //       75 or 90 places. Sessions usually take place outdoors but can be
+    //       switched indoors in unsuitable weather. To book a day for your school
+    //       or to check availability and prices, please feel free to get in touch
+    //       or check the website for details.
+    //     </p>
+    //   </>
+    // ),
+    // text3: (
+    //   <>
+    //     <p>
+    //       Sessions can take place indoors or out depending on weather and are
+    //       suitable for all levels of ability from absolute beginners to
+    //       confident pedlers. All equipment is provided including Strider balance
+    //       bikes and helmets.
+    //     </p>
+    //   </>
+    // ),
+    // text4: (
+    //   <>
+    //     <p>
+    //       Balance bike days are designed as a stand-alone activity day and as
+    //       such are suitable for use as a one-off experience but can be used to
+    //       trial balance biking as a regular activity, perhaps prior to starting
+    //       a school club or investing in equipment and training or running a
+    //       Freewheelerz Learn to Ride Course.
+    //     </p>
+    //   </>
+    // ),
   },
   {
-    name: "KS1 Days",
+    name: "Key Stage 1 Days",
     svg: fileName(tile, "KS1 days.jpg"),
     header:
       "Fun interactive sessions for KS1 and nursery to stimulate interest, develop confidence and gain new skills through games and challenges.",
@@ -172,7 +182,7 @@ const servicesData = [
     //the ks1 and ks2 flyer is same
   },
   {
-    name: "KS2 Days",
+    name: "Key Stage 2 Days",
     svg: fileName(tile, "ks2 day.jpg"),
     header:
       "A great way to encourage children to cycle more and sample cycle racing in a safe, controlled environment.",

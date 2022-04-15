@@ -54,13 +54,16 @@ function SpecificService(props) {
               )}
             </Col>
             <Col xs={12} lg={7} className="p-0 p-md-4">
-              <Accordion id="acc1" defaultActiveKey="0" flush>
+              <span className="ml-auto d-block">{props.text1}</span>
+              <Link to="/contact" className="button">
+                Get in touch
+              </Link>
+
+              {/* <Accordion id="acc1" defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
                   <HashLink to="#acc1">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="ml-auto d-block">
-                        {props.dropdown1}
-                      </span>
+                      <span className="ml-auto d-block">{props.dropdown1}</span>
                     </Accordion.Header>
                   </HashLink>
                   <Accordion.Body className="p-0">{props.text1}</Accordion.Body>
@@ -69,18 +72,16 @@ function SpecificService(props) {
                 <Accordion.Item eventKey="1">
                   <HashLink to="#acc1">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="ml-auto d-block">
-                        {props.dropdown2}
-                      </span>
+                      <span className="ml-auto d-block">{props.dropdown2}</span>
                     </Accordion.Header>
                   </HashLink>
                   <Accordion.Body className="p-0">{props.text2}</Accordion.Body>
                 </Accordion.Item>
-              </Accordion>
+              </Accordion> */}
             </Col>
           </Row>
 
-          <Row className="m-auto mt-lg-5">
+          {/* <Row className="m-auto mt-lg-5">
             <Col xs={12} lg={5} className="order-lg-2">
               <div className="rotatated-bg-blue m-auto mb-4">
                 <Image src={props.img2} />
@@ -94,9 +95,7 @@ function SpecificService(props) {
                 <Accordion.Item eventKey="0">
                   <HashLink to="#acc2">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="ml-auto d-block">
-                        {props.dropdown3}
-                      </span>
+                      <span className="ml-auto d-block">{props.dropdown3}</span>
                     </Accordion.Header>
                   </HashLink>
                   <Accordion.Body className="p-0">{props.text3}</Accordion.Body>
@@ -105,16 +104,14 @@ function SpecificService(props) {
                 <Accordion.Item eventKey="1">
                   <HashLink to="#acc2">
                     <Accordion.Header className="m-lg-3 p-1">
-                      <span className="ml-auto d-block">
-                        {props.dropdown4}
-                      </span>
+                      <span className="ml-auto d-block">{props.dropdown4}</span>
                     </Accordion.Header>
                   </HashLink>
                   <Accordion.Body className="p-0">{props.text4}</Accordion.Body>
                 </Accordion.Item>
               </Accordion>
             </Col>
-          </Row>
+          </Row> */}
         </Row>
       </Container>
     </div>
