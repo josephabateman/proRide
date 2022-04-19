@@ -69,7 +69,7 @@ const servicesPage = {
 
 //Specific Services Pages
 const specificServicePage = {
-  svgImageStyle: "service-card-img green-gradient",
+  tileImageStyle: "service-card-img green-gradient",
   container: "pl-2",
   title: "py-3 display-5",
   text1: "text-left",

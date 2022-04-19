@@ -21,7 +21,7 @@ function ServicesCardsCollection() {
                 key={key}
               >
                 <ServiceCardSmall
-                  img={service.svg}
+                  img={service.tile}
                   className={
                     customStyling.servicesCardsCollection.firstRow
                       .containerStyle
@@ -47,7 +47,7 @@ function ServicesCardsCollection() {
                 key={key}
               >
                 <ServiceCardSmall
-                  img={service.svg}
+                  img={service.tile}
                   className={
                     customStyling.servicesCardsCollection.secondRow
                       .containerStyle
@@ -91,7 +91,7 @@ function ServicesCardsCollection() {
                 key={key}
               >
                 <ServiceCardSmall
-                  img={service.svg}
+                  img={service.tile}
                   className={
                     customStyling.servicesCardsCollection.fourthRow
                       .containerStyle

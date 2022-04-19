@@ -66,7 +66,7 @@ function App() {
                       key={key}
                       img={service.img}
                       // img2={service.img2}
-                      svg={service.svg}
+                      tile={service.tile}
                       title={service.name}
                       header={service.header}
                       // title2={service.header2}

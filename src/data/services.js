@@ -12,13 +12,13 @@ const flyers = importAll(
   require.context("../static/flyers", false, /\.(pdf)$/)
 );
 const tile = importAll(
-  require.context("../static/images/tiles", false, /\.(png|jpe?g|svg)$/)
+  require.context("../static/images/tiles", false, /\.(png|jpe?g|tile)$/)
 );
 const specificServiceImages = importAll(
   require.context(
     "../static/images/specific_service_images",
     false,
-    /\.(png|jpe?g|jpg|svg)$/
+    /\.(png|jpe?g|jpg|tile)$/
   )
 );
 
@@ -29,7 +29,7 @@ function fileName(folder, fileName) {
 const servicesData = [
   {
     name: "Balance Bike Days",
-    svg: fileName(tile, "balance_bike_tile.jpg"),
+    tile: fileName(tile, "balance_bike_tile.jpg"),
     header:
       "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
     flyer: fileName(flyers, "Balance Bike Day flyer.pdf"),
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     name: "Key Stage 1 Fun Days",
-    svg: fileName(tile, "ks1_fun_day_tile.jpg"),
+    tile: fileName(tile, "ks1_fun_day_tile.jpg"),
     header: "Professionally coached fun cycling day for Key Stage 1 classes",
     //wrong flyer
     flyer: fileName(flyers, "Fun Cycling Days flyer.pdf"),
@@ -192,7 +192,7 @@ const servicesData = [
   },
   {
     name: "Key Stage 2 Cyclesport Days",
-    svg: fileName(tile, "cycle_sport_ks2_tile.jpg"),
+    tile: fileName(tile, "cycle_sport_ks2_tile.jpg"),
     header:
       "A great way to introduce KS2 children to the exciting sport of cycling in a child-safe environment",
     flyer: fileName(flyers, "CycleSport flyer.pdf"),
@@ -271,163 +271,191 @@ const servicesData = [
   },
   {
     name: "Whole School Days",
-    svg: fileName(tile, "whole school day.jpg"),
+    tile: fileName(tile, "whole_school_day_tile.jpg"),
     header:
-      "Ideal for smaller schools, our Whole School Program ensures every child gets to take part in all inclusive, age related fun session",
-    header2: "Get your kids pedaling with a ProRide Cycling Day",
-    // flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
-    dropdown1: "About the day...",
-    dropdown2: 'What happens at a "Whole School" Day?',
-    dropdown3: 'More on "Whole School" Days...',
-    dropdown4: "Whole School Days",
+      "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
+    flyer: fileName(flyers, "Whole School Day flyer.pdf"),
+    // dropdown1: "About the day...",
+    // dropdown2: 'What happens at a "Whole School" Day?',
+    // dropdown3: 'More on "Whole School" Days...',
+    // dropdown4: "Whole School Days",
     text1: (
       <>
         <p>
-          Cycling is a great activity for children in so many ways, yet for
-          many, finding somewhere safe and fun to ride their bikes and learn new
-          skills is difficult. Now, with a Pro-Ride Whole School day, they can
-          do just that in the safety and security of their own school playground
-          under the supervision of a qualified coach.
-        </p>
-        <p>
-          Pro-Ride Whole School days comprise multiple sessions in a day
-          (usually 4) that offer children in KS1 or KS2 the chance to learn new
-          skills, gain confidence and have fun with their friends. Prices depend
-          on the number of children taking part in the day which can vary from
-          one class to four.
-        </p>
-      </>
-    ),
-    text2: (
-      <>
-        <p>
-          Once you have booked a date for your Whole School Day, we get in touch
-          2 weeks prior to the visit to find out more about your school and who
-          will be taking part. Based on this information, we put together a plan
-          for the day for your approval.
+          Whole School Days are designed for small schools usually with less
+          than 60 students across the primary age range. During the day, every
+          child in the school takes part in an age related session with their
+          class mates where sessions are tailored to age and ability of the
+          group and use a combination of other Pro-Ride programs to deliver a
+          fun-filled memorable cycling experience.
+          <br></br>
+          <br></br>A program is put together based on the number of children and
+          age range of the classes. A typical program for a school with 40
+          children for example, might start with a 45 min session for 10-12
+          nursery/reception using balance bikes (we provide). Next, two KS1
+          sessions with 8- 10 children in each session would be delivered mainly
+          using their own bikes (we provide spares), and a final session for
+          approx 15 children on their own bikes would run in the afternoon
+          (again, we can provide spares if needed).
+          <br></br>
+          <br></br>
+          To book a day for your school or to check availability and prices,
+          please feel free to get in touch or check the website for details.
         </p>
       </>
     ),
-    text3: (
-      <>
-        <p>
-          Whole School days usually consist of 4 sessions - 2 in the morning and
-          2 in the afternoon. The sessions vary in content depending on the age
-          and ability of those taking part but a typical session will start with
-          a bike and helmet check, then get underway by developing basic riding
-          skills on a track set up on the playground or, in summer, on the
-          grass.
-        </p>
-        <p>
-          Skills such as starting, stopping, cornering, riding close to others,
-          overtaking, riding in single file, in pairs, and in small groups are
-          all covered here. The focus then switches to developing bike handling
-          skills by using a series of activity stations where the children
-          tackle different obstacles such as slalom, limbo, and ramps. Finally,
-          the children get their chance to take on their friends in a series of
-          fun races tailored to the age and ability of the group and the space
-          available.
-        </p>
-        <p>
-          Children bring in their own bikes and helmets, but spares can be
-          provided by prior arrangement. Helmets can be supplied.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          For smaller schools, we operate a program that combines the above
-          program with our balance bike sessions. This enables every child in
-          the school from Nursery to Year 6 to take part in a session. Days are
-          usually split into 3 with 2 sessions in the morning and one all
-          afternoon. The older children bring in their bikes, whilst the younger
-          one's can either borrow one of our balance/pedal bikes or bring in
-          their own.
-        </p>
-      </>
-    ),
-    img: fileName(specificServiceImages, "assembly.jpg"),
-    img2: fileName(specificServiceImages, "kids_podium.jpg"),
+    // text2: (
+    //   <>
+    //     <p>
+    //       Once you have booked a date for your Whole School Day, we get in touch
+    //       2 weeks prior to the visit to find out more about your school and who
+    //       will be taking part. Based on this information, we put together a plan
+    //       for the day for your approval.
+    //     </p>
+    //   </>
+    // ),
+    // text3: (
+    //   <>
+    //     <p>
+    //       Whole School days usually consist of 4 sessions - 2 in the morning and
+    //       2 in the afternoon. The sessions vary in content depending on the age
+    //       and ability of those taking part but a typical session will start with
+    //       a bike and helmet check, then get underway by developing basic riding
+    //       skills on a track set up on the playground or, in summer, on the
+    //       grass.
+    //     </p>
+    //     <p>
+    //       Skills such as starting, stopping, cornering, riding close to others,
+    //       overtaking, riding in single file, in pairs, and in small groups are
+    //       all covered here. The focus then switches to developing bike handling
+    //       skills by using a series of activity stations where the children
+    //       tackle different obstacles such as slalom, limbo, and ramps. Finally,
+    //       the children get their chance to take on their friends in a series of
+    //       fun races tailored to the age and ability of the group and the space
+    //       available.
+    //     </p>
+    //     <p>
+    //       Children bring in their own bikes and helmets, but spares can be
+    //       provided by prior arrangement. Helmets can be supplied.
+    //     </p>
+    //   </>
+    // ),
+    // text4: (
+    //   <>
+    //     <p>
+    //       For smaller schools, we operate a program that combines the above
+    //       program with our balance bike sessions. This enables every child in
+    //       the school from Nursery to Year 6 to take part in a session. Days are
+    //       usually split into 3 with 2 sessions in the morning and one all
+    //       afternoon. The older children bring in their bikes, whilst the younger
+    //       one's can either borrow one of our balance/pedal bikes or bring in
+    //       their own.
+    //     </p>
+    //   </>
+    // ),
+    img: fileName(specificServiceImages, "whole_school_day.jpg"),
+    // img2: fileName(specificServiceImages, "kids_podium.jpg"),
   },
   {
-    name: "After-School Clubs",
-    svg: fileName(tile, "after school clubs.jpg"),
+    name: "School clubs",
+    tile: fileName(tile, "after school clubs.jpg"),
     header:
-      "Our clubs are not only great for those who want to fuel their interest and develop new skills, but also for those who just want to hang out on their bikes with friends.",
+      "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
     flyer: fileName(flyers, "School Clubs flyer.pdf"),
-    dropdown1: "School Clubs",
-    dropdown2: "Who is it for?",
-    dropdown3: "How does it work?",
-    dropdown4: "How do I book on?",
+    // dropdown1: "School Clubs",
+    // dropdown2: "Who is it for?",
+    // dropdown3: "How does it work?",
+    // dropdown4: "How do I book on?",
     text1: (
       <>
         <p>
-          We offer clubs for all ages and abilities, from Early Years balance
-          bike clubs for those who just want to have fun on two wheels (or learn
-          to ride a pedal bike) to those older, perhaps more competitive
-          children who want to try out cycle racing for the first time or
-          develop their hobby and improve their technical skills.
+          Our School Clubs are designed for children of all ages and abilities
+          from those who just want to have fun cycling with friends in a safe,
+          inclusive environment to those keen to learn new skills and get more
+          involved.
+        </p>
+        <br></br>
+        <h3>After school clubs</h3>
+        <p>
+          Our qualified coaches twill visit your school each week o run your
+          club sessions on-site for up to 25 children. The program is tailored
+          to the age and ability of the group and can be changed from term to
+          term if required. The weekly format is similar to our day programs but
+          with a more relaxed feel and focus on play and friendships. Children
+          bring their own bike and helmet to school each week.
+        </p>
+
+        <h3>Holiday Clubs</h3>
+        <p>
+          Our holiday clubs are based on a 4 or 5-day program offering mornings
+          or afternoons. Clubs follow a similar style to our weekly club
+          sessions with lots of games and fun activities where children can try
+          out different activities and learn new skills under the supervision of
+          a qualified instructor. Our service includes session plans together
+          with a pre-club risk assessment and certificates and medals options
+          for each attendee To book a club for your school or to check
+          availability and prices, please feel free to get in touch or check the
+          website for details.
         </p>
       </>
     ),
-    text2: (
-      <>
-        <p>
-          Our clubs can run independently for just one age group or be offered
-          to the whole school as 3 consecutive key stage sessions on one day of
-          the week. Clubs run all year round (weather permitting) and usually
-          last between 45 minutes to an hour depending on age. Smaller schools
-          may prefer a mixed-age club where sessions can be split into higher
-          and lower abilities or by age with a coach working in each group.
-        </p>
-      </>
-    ),
-    text3: (
-      <>
-        <p>
-          Bookings are usually made by parents/guardians using our online
-          booking and payment system and where possible encouraged to set up a
-          monthly direct debit payment which can be cancelled with one month
-          notice. We are also able to take bookings on a block basis if
-          preferred. This is usually for 6-7 week blocks paid at the start of a
-          half term. On occasion, schools provide clubs free of charge to their
-          students, in this case, we agree to charge the school a fixed amount
-          to deliver a set number of sessions and places over a specific period.
-          An invoice is then issued to the school following the last club
-          session - as we do for most of our other programs.
-        </p>
-        <p>
-          To help schools promote their clubs internally, we design and deliver
-          posters and flyers (as electronic artwork) and provide a registration
-          form for schools to print and use to minimise administration if
-          required.
-        </p>
-      </>
-    ),
-    text4: (
-      <>
-        <p>
-          Parents/Carers are required to complete an application form detailing
-          any special needs or medical conditions together with the arrangements
-          for pick up after the club.
-        </p>
-        <p>
-          If you have any questions or wish to arrange a club for your school,
-          please contact us or email{" "}
-          <a href="mailto: admin@proridecoaching.co.uk">
-            admin@proridecoaching.co.uk
-          </a>
-          .
-        </p>
-      </>
-    ),
+    // text2: (
+    //   <>
+    //     <p>
+    //       Our clubs can run independently for just one age group or be offered
+    //       to the whole school as 3 consecutive key stage sessions on one day of
+    //       the week. Clubs run all year round (weather permitting) and usually
+    //       last between 45 minutes to an hour depending on age. Smaller schools
+    //       may prefer a mixed-age club where sessions can be split into higher
+    //       and lower abilities or by age with a coach working in each group.
+    //     </p>
+    //   </>
+    // ),
+    // text3: (
+    //   <>
+    //     <p>
+    //       Bookings are usually made by parents/guardians using our online
+    //       booking and payment system and where possible encouraged to set up a
+    //       monthly direct debit payment which can be cancelled with one month
+    //       notice. We are also able to take bookings on a block basis if
+    //       preferred. This is usually for 6-7 week blocks paid at the start of a
+    //       half term. On occasion, schools provide clubs free of charge to their
+    //       students, in this case, we agree to charge the school a fixed amount
+    //       to deliver a set number of sessions and places over a specific period.
+    //       An invoice is then issued to the school following the last club
+    //       session - as we do for most of our other programs.
+    //     </p>
+    //     <p>
+    //       To help schools promote their clubs internally, we design and deliver
+    //       posters and flyers (as electronic artwork) and provide a registration
+    //       form for schools to print and use to minimise administration if
+    //       required.
+    //     </p>
+    //   </>
+    // ),
+    // text4: (
+    //   <>
+    //     <p>
+    //       Parents/Carers are required to complete an application form detailing
+    //       any special needs or medical conditions together with the arrangements
+    //       for pick up after the club.
+    //     </p>
+    //     <p>
+    //       If you have any questions or wish to arrange a club for your school,
+    //       please contact us or email{" "}
+    //       <a href="mailto: admin@proridecoaching.co.uk">
+    //         admin@proridecoaching.co.uk
+    //       </a>
+    //       .
+    //     </p>
+    //   </>
+    // ),
     img: fileName(specificServiceImages, "limbo_boy_2.jpg"),
-    img2: fileName(specificServiceImages, "limbo_rear_shot_young.jpg"),
+    // img2: fileName(specificServiceImages, "limbo_rear_shot_young.jpg"),
   },
   {
     name: "Staff Training (CPD)",
-    svg: fileName(tile, "cpd_tile.jpg"),
+    tile: fileName(tile, "cpd_tile.jpg"),
     header:
       "One day practical workshop to enable school staff to run balance bike sessions in school",
     flyer: fileName(flyers, "Cycling Instructor Course.pdf"),
@@ -499,7 +527,7 @@ const servicesData = [
   },
   // {
   //   name: "Learn-to-Ride Program (Freewheelerz)",
-  //   svg: fileName(svg, "6.svg"),
+  //   tile: fileName(tile, "6.tile"),
   //   header:
   //     "Our Learn to ride program, Freewheelers is designed to teach kids to ride a bike in 10 weeks using special convertible bikes. The course can be delivered by one of our instructors or by your own staff after training.",
   //   flyer: fileName(flyers, "Freewheelerz flyer.pdf"),
@@ -567,7 +595,7 @@ const servicesData = [
 
   {
     name: "Competition Days",
-    svg: fileName(tile, "competition_day_tile.jpg"),
+    tile: fileName(tile, "competition_day_tile.jpg"),
     header:
       "A full day of racing including a mini tournament for one Key Stage 2 class",
     flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
@@ -647,24 +675,45 @@ const servicesData = [
   },
   {
     name: "Road Safety Training",
-    svg: fileName(tile, "road safety.jpg"),
+    tile: fileName(tile, "road_safety_training_tile.jpg"),
     header:
-      "Our Road Safety program covers basic traffic awareness and road safety for children in years 5 and 6. The 2-day course is part on-site and part on local roads and delivered by qualified Bikeability instructors.",
-    // flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
-    dropdown1: "Description to follow soon",
-    dropdown2: "Description to follow soon",
-    dropdown3: "Description to follow soon",
-    dropdown4: "Description to follow soon",
-    text1:
-      "Description to follow soon. In the meantime please download our printable pdf",
-    text2:
-      "Description to follow soon. In the meantime please download our printable pdf",
-    text3:
-      "Description to follow soon. In the meantime please download our printable pdf",
-    text4:
-      "Description to follow soon. In the meantime please download our printable pdf",
-    img: fileName(specificServiceImages, "cones_two_kids.jpg"),
-    img2: fileName(specificServiceImages, "phil_coaching_hat.jpg"),
+      "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
+    flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
+    // dropdown1: "Description to follow soon",
+    // dropdown2: "Description to follow soon",
+    // dropdown3: "Description to follow soon",
+    // dropdown4: "Description to follow soon",
+    text1: (
+      <p>
+        Our one day and two day road safety training courses are designed for
+        full classes of approx 30 children in Years 5 or 6.
+        <br></br>
+        <br></br>
+        Led by qualified Bikeability instructors, the training consists of basic
+        skills training in the playground (known as Level 1) where skills are
+        observed and developed with an assessment for suitability to go on to
+        the next phase.
+        <br></br>
+        <br></br>
+        Following on from Level 1, children are split into groups and taken out
+        onto quiet roads where they work on hazard awareness and taught how to
+        carry out maneuvers at key junctions (level 2). Further input is
+        provided by preparing school staff to deliver classroom theory sessions
+        and supervise additional fun skill-games sessions in the playground.
+        <br></br>
+        <br></br>
+        All support materials, risk assessment and staff instructions together
+        with student certificates are included.
+      </p>
+    ),
+    // text2:
+    //   "Description to follow soon. In the meantime please download our printable pdf",
+    // text3:
+    //   "Description to follow soon. In the meantime please download our printable pdf",
+    // text4:
+    //   "Description to follow soon. In the meantime please download our printable pdf",
+    img: fileName(specificServiceImages, "road_safety_training.jpg"),
+    // img2: fileName(specificServiceImages, "phil_coaching_hat.jpg"),
   },
 ];
 

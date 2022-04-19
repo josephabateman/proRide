@@ -11,8 +11,8 @@ function SpecificService(props) {
       {window.scrollTo(0, 0)}
       <ScrollToTop smooth />
       <img
-        src={props.svg}
-        className={customStyling.specificServicePage.svgImageStyle}
+        src={props.tile}
+        className={customStyling.specificServicePage.tileImageStyle}
       />
 
       <Container className={customStyling.specificServicePage.container}>
