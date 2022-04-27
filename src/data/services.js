@@ -53,10 +53,13 @@ const servicesData = [
           through a program of fun games, challenges and obstacle activities.{" "}
           <br></br>
           <br></br>
-          All equipment is provided so no special clothing or preparation is
+          {/* All equipment is provided so no special clothing or preparation is
           necessary. We can cater for up to 90 children a day with options 60,
           75 or 90 places. Sessions usually take place outdoors but can be
-          switched indoors in unsuitable weather.
+          switched indoors in unsuitable weather. */}
+          We usually cater for up to 60 children a day in 4 half class sessions
+          but extra sessions can be added to accommodate larger numbers if
+          needed.
           <br></br>
           <br></br>
           To book a day for your school or to check availability and prices,
@@ -126,10 +129,14 @@ const servicesData = [
           Balance bikes can be provided for younger and small children, with
           older children encouraged to bring in their own bikes (larger pedal
           bikes can be hired if required). No special clothing or preparation is
-          necessary as we take care of all risk assessments and planning. We can
+          necessary as we take care of all risk assessments and planning.
+          {/* We can
           cater for up to 90 children a day with options 60, 75 or 90 places.
           Sessions usually take place outdoors but can be switched indoors in
-          unsuitable weather.
+          unsuitable weather. */}
+          We usually cater for up to 60 children a day in 4 half class sessions
+          but extra sessions can be added to accommodate larger numbers if
+          needed.
           <br></br>
           <br></br>
           To book a day for your school or to check availability and prices,
@@ -273,7 +280,7 @@ const servicesData = [
     name: "Whole School Days",
     tile: fileName(tile, "whole_school_day_tile.jpg"),
     header:
-      "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
+      "Have fun developing new skills, confidence and friendships through a Pro Ride club program",
     flyer: fileName(flyers, "Whole School Day flyer.pdf"),
     // dropdown1: "About the day...",
     // dropdown2: 'What happens at a "Whole School" Day?',
@@ -457,7 +464,7 @@ const servicesData = [
     name: "Staff Training (CPD)",
     tile: fileName(tile, "cpd_tile.jpg"),
     header:
-      "One day practical workshop to enable school staff to run balance bike sessions in school",
+      "One day practical workshop to enable schools to run their own sessions",
     flyer: fileName(flyers, "Cycling Instructor Course.pdf"),
     flyer2: fileName(flyers, "CPD Advertising Flyer.pdf"),
     // flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
