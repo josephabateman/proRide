@@ -50,16 +50,16 @@ const servicesData = [
           Each day delivers a series of small group sessions lasting 45 minutes
           to an hour (depending on age and number of sessions) where we cover
           basic bike handling, stopping, turning and of course, balancing
-          through a program of fun games, challenges and obstacle activities.{" "}
+          through a program of fun games, challenges and obstacle activities.
           <br></br>
           <br></br>
+          We usually cater for up to 60 children a day in 4 half class sessions
+          but extra sessions can be added to accommodate larger numbers if
+          needed.
           {/* All equipment is provided so no special clothing or preparation is
           necessary. We can cater for up to 90 children a day with options 60,
           75 or 90 places. Sessions usually take place outdoors but can be
           switched indoors in unsuitable weather. */}
-          We usually cater for up to 60 children a day in 4 half class sessions
-          but extra sessions can be added to accommodate larger numbers if
-          needed.
           <br></br>
           <br></br>
           To book a day for your school or to check availability and prices,
@@ -129,14 +129,13 @@ const servicesData = [
           Balance bikes can be provided for younger and small children, with
           older children encouraged to bring in their own bikes (larger pedal
           bikes can be hired if required). No special clothing or preparation is
-          necessary as we take care of all risk assessments and planning.
+          necessary as we take care of all risk assessments and planning. We
+          usually cater for up to 60 children a day in 4 half class sessions but
+          extra sessions can be added to accommodate larger numbers if needed.
           {/* We can
           cater for up to 90 children a day with options 60, 75 or 90 places.
           Sessions usually take place outdoors but can be switched indoors in
           unsuitable weather. */}
-          We usually cater for up to 60 children a day in 4 half class sessions
-          but extra sessions can be added to accommodate larger numbers if
-          needed.
           <br></br>
           <br></br>
           To book a day for your school or to check availability and prices,
