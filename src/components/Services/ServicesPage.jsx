@@ -12,15 +12,15 @@ function HeaderText() {
 
       <Container>
         <Row className={customStyling.servicesPage.container}>
-          <Col md={5} lg={7}>
+          {/* <Col md={5} lg={7}>
             <h1 className={customStyling.servicesPage.title}>Our Services</h1>
-          </Col>
-          <Col md={7} lg={4} className={customStyling.servicesPage.h5Column}>
-            <h5 className={customStyling.servicesPage.h5}>
+          </Col> */}
+          <Col md={7} lg={6} className={customStyling.servicesPage.h5Column}>
+            <p className={customStyling.servicesPage.h5}>
               We offer a range of services to meet the needs of all ages and
               abilities. Browse below to see our programs for Nursery, KS1 and
               KS2.
-            </h5>
+            </p>
           </Col>
         </Row>
       </Container>

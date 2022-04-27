@@ -53,8 +53,13 @@ img {
 
 /* home page */
 .logo {
+  margin: auto;
   max-width: 80%;
   width: 10em;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
 }
 
 /* services */

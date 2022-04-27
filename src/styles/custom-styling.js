@@ -63,7 +63,7 @@ const servicesCardsCollection = {
 const servicesPage = {
   container: "mt-3",
   title: "display-5",
-  h5Column: "text-left",
+  h5Column: "m-auto",
   h5: "font-weight-light",
 };
 

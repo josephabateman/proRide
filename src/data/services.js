@@ -279,7 +279,7 @@ const servicesData = [
     name: "Whole School Days",
     tile: fileName(tile, "whole_school_day_tile.jpg"),
     header:
-      "Have fun developing new skills, confidence and friendships through a Pro Ride club program",
+      "Increase awareness, interest new skills in cycling with a pro ride whole school day",
     flyer: fileName(flyers, "Whole School Day flyer.pdf"),
     // dropdown1: "About the day...",
     // dropdown2: 'What happens at a "Whole School" Day?',
@@ -366,7 +366,7 @@ const servicesData = [
     name: "School clubs",
     tile: fileName(tile, "after school clubs.jpg"),
     header:
-      "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
+      "Have fun developing new skills, confidence and friendships through a Pro Ride club program",
     flyer: fileName(flyers, "School Clubs flyer.pdf"),
     // dropdown1: "School Clubs",
     // dropdown2: "Who is it for?",
@@ -683,8 +683,8 @@ const servicesData = [
     name: "Road Safety Training",
     tile: fileName(tile, "road_safety_training_tile.jpg"),
     header:
-      "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
-    flyer: fileName(flyers, "Training & Competition Day flyer.pdf"),
+      "Develop road safety skills and awareness through our KS2 Road Safety Program",
+    flyer: fileName(flyers, "Road Safety Training flyer.pdf"),
     // dropdown1: "Description to follow soon",
     // dropdown2: "Description to follow soon",
     // dropdown3: "Description to follow soon",
