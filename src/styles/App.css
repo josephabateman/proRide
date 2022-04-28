@@ -58,6 +58,11 @@ img {
   width: 10em;
 }
 
+.input-group-text {
+  min-width: 100px;
+}
+
+
 .navbar-light .navbar-toggler {
   border: none;
 }

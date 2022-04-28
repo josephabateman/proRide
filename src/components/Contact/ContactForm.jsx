@@ -7,23 +7,59 @@ function ContactForm(props) {
     <>
       <Form onSubmit={props.onSubmit}>
         <p className="text-left py-3">
-          To make an enquiry about a booking or to check availability, please
-          complete the sections below and someone will be in touch asap
+          To make an enquiry, a booking or to check availability, please
+          complete the form below and we will be in touch asap
         </p>
 
-        <InputGroup>
+        {/* Name:
+          Job title:
+          School:
+          Postcode
+          Email:
+          Message: */}
+
+        <InputGroup className={customStyling.contactFormStyles.emailInput}>
           {/* <InputGroup.Prepend> */}
-          <InputGroup.Text>First and last name</InputGroup.Text>
+          <InputGroup.Text>Name</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="name" type="text" />
         </InputGroup>
 
         <InputGroup className={customStyling.contactFormStyles.emailInput}>
           {/* <InputGroup.Prepend> */}
-          <InputGroup.Text>Email address</InputGroup.Text>
+          <InputGroup.Text>School</InputGroup.Text>
+          {/* </InputGroup.Prepend> */}
+          <FormControl name="school" type="text" />
+        </InputGroup>
+
+        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+          {/* <InputGroup.Prepend> */}
+          <InputGroup.Text>Postcode</InputGroup.Text>
+          {/* </InputGroup.Prepend> */}
+          <FormControl name="postcode" type="text" />
+        </InputGroup>
+
+        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+          {/* <InputGroup.Prepend> */}
+          <InputGroup.Text>Email</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="email" type="email" />
         </InputGroup>
+
+        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+          {/* <InputGroup.Prepend> */}
+          <InputGroup.Text>Total number of children taking part (all classes)</InputGroup.Text>
+          {/* </InputGroup.Prepend> */}
+          <FormControl name="total_number_of_children_taking_part" type="number" />
+        </InputGroup>
+
+        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+          {/* <InputGroup.Prepend> */}
+          <InputGroup.Text>Approximate number of children per class:</InputGroup.Text>
+          {/* </InputGroup.Prepend> */}
+          <FormControl name="num_in_each_class" type="number" />
+        </InputGroup>
+
 
         <InputGroup>
           {/* <InputGroup.Prepend> */}

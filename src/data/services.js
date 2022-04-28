@@ -209,11 +209,12 @@ const servicesData = [
     text1: (
       <>
         <p>
-          Each day offers up to four sessions of fast, fun action and can cater
-          for 2, 3 or 4 classes. Activities take place around a circuit and
-          obstacle course marked out on your school playground or field where
-          the children learn technical skills and take part in a series of fun
-          challenges, games, and mini competitions.
+          Each day offers up to 4 sessions of fast fun action for up to 60
+          children (larger numbers can be accommodated subject to site
+          conditions and price supplements). Activities take place around a
+          circuit and obstacle course marked out on your school playground or
+          field where the children learn technical skills and take part in a
+          series of fun challenges, games, and mini competitions.
           <br></br>
           <br></br>
           All activities are risk assessed and suitable for all KS2 classes,
@@ -383,7 +384,7 @@ const servicesData = [
         <br></br>
         <h3>After school clubs</h3>
         <p>
-          Our qualified coaches twill visit your school each week o run your
+          Our qualified coaches will visit your school each week or run your
           club sessions on-site for up to 25 children. The program is tailored
           to the age and ability of the group and can be changed from term to
           term if required. The weekly format is similar to our day programs but
@@ -465,7 +466,7 @@ const servicesData = [
     header:
       "One day practical workshop to enable schools to run their own sessions",
     flyer: fileName(flyers, "Cycling Instructor Course.pdf"),
-    flyer2: fileName(flyers, "CPD Advertising Flyer.pdf"),
+    // flyer2: fileName(flyers, "CPD Advertising Flyer.pdf"),
     // flyer2: fileName(flyers, "View Draft Agenda pdf.pdf"),
     // dropdown1:
     //   "Run your own sessions with our one-day CDP Instructor courses...",
@@ -477,7 +478,7 @@ const servicesData = [
         <p>
           This one-day course delivered by Pro-Ride Founder and Director, Phil
           Bateman is an ideal way to train your staff to run progressive cycling
-          sessions for children in Key Stage One.
+          sessions.
           <br></br>
           <br></br>
           Suitable for up to 5 members of staff (teaching or non-teaching), the
