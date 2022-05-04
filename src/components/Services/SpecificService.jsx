@@ -17,7 +17,7 @@ function SpecificService(props) {
 
       <Container className={customStyling.specificServicePage.container}>
         <Row className="m-auto">
-          <Col xs={12} className="mb-5">
+          <Col xs={12} className="">
             <h1 className={customStyling.specificServicePage.title}>
               {props.title}
             </h1>
