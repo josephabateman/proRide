@@ -18,50 +18,74 @@ function ContactForm(props) {
           Email:
           Message: */}
 
-        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+        <InputGroup
+          size="sm"
+          className={customStyling.contactFormStyles.emailInput}
+        >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>Name</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="name" type="text" />
         </InputGroup>
 
-        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+        <InputGroup
+          size="sm"
+          className={customStyling.contactFormStyles.emailInput}
+        >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>School</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="school" type="text" />
         </InputGroup>
 
-        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+        <InputGroup
+          size="sm"
+          className={customStyling.contactFormStyles.emailInput}
+        >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>Postcode</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="postcode" type="text" />
         </InputGroup>
 
-        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+        <InputGroup
+          size="sm"
+          className={customStyling.contactFormStyles.emailInput}
+        >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>Email</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="email" type="email" />
         </InputGroup>
 
-        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+        <InputGroup
+          size="sm"
+          className={customStyling.contactFormStyles.emailInput}
+        >
           {/* <InputGroup.Prepend> */}
-          <InputGroup.Text>Total number of children taking part (all classes)</InputGroup.Text>
+          <InputGroup.Text style={{ flexShrink: 1 }}>
+            Total number of children taking part (all classes)
+          </InputGroup.Text>
           {/* </InputGroup.Prepend> */}
-          <FormControl name="total_number_of_children_taking_part" type="number" />
+          <FormControl
+            name="total_number_of_children_taking_part"
+            type="number"
+          />
         </InputGroup>
 
-        <InputGroup className={customStyling.contactFormStyles.emailInput}>
+        <InputGroup
+          size="sm"
+          className={customStyling.contactFormStyles.emailInput}
+        >
           {/* <InputGroup.Prepend> */}
-          <InputGroup.Text>Approximate number of children per class:</InputGroup.Text>
+          <InputGroup.Text>
+            Approximate number of children per class:
+          </InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="num_in_each_class" type="number" />
         </InputGroup>
 
-
-        <InputGroup>
+        <InputGroup size="sm">
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>Message</InputGroup.Text>
           {/* </InputGroup.Prepend> */}

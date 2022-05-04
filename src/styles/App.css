@@ -59,7 +59,8 @@ img {
 }
 
 .input-group-text {
-  min-width: 100px;
+  /* min-width: 100px; */
+  white-space: nowrap;
 }
 
 
