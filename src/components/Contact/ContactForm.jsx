@@ -64,7 +64,7 @@ function ContactForm(props) {
         >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text style={{ flexShrink: 1 }}>
-            Total number of children taking part
+            Total number of children taking part (all classes)
           </InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl
@@ -79,7 +79,7 @@ function ContactForm(props) {
         >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>
-            Approximate number of children per class
+            Approximate number of children per class:
           </InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="num_in_each_class" type="number" />
