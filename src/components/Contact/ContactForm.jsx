@@ -6,7 +6,7 @@ function ContactForm(props) {
   return (
     <>
       <Form onSubmit={props.onSubmit}>
-        <p className="text-left py-3">
+        <p className="py-3">
           To make an enquiry, a booking or to check availability, please
           complete the form below and we will be in touch asap
         </p>
@@ -106,6 +106,11 @@ function ContactForm(props) {
           </Button>
         </div>
       </Form>
+
+      <p className="py-3">
+        Alternatively, feel free to get in touch on{" "}
+        <a href="tel:+447960534012">07960 534 012</a>
+      </p>
     </>
   );
 }

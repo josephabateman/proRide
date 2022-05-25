@@ -16,6 +16,12 @@ const socialMediaData = [
         text: 'Post your Pro Ride pictures on twitter',
         link: 'https://twitter.com/proridecoaching',
         icon: "fab fa-lg fa-twitter"
+    },
+    {
+        name: 'Phone',
+        text: 'Prefer to speak to us? Feel free to call on 07960 534012',
+        link: 'tel:07960534012',
+        icon: "fa fa-phone"
     }
 ]
 
