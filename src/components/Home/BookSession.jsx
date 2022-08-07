@@ -9,7 +9,7 @@ function BookSession() {
       <h3 className="font-weight-light">Book on to a club</h3>
       <Dropdown className="green-gradient">
         <Dropdown.Toggle variant="primary" id="dropdown-basic">
-          Choose a club location
+          Choose club location
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
