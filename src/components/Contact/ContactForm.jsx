@@ -45,13 +45,12 @@ function ContactForm(props) {
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>Your preferred date</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
-         
-            <FormControl
-              name="school"
-              type="text"
-              placeholder="Any week day commencing 25/03/23"
-            />
-       
+
+          <FormControl
+            name="date"
+            type="text"
+            placeholder="Any week day commencing 25/03/23"
+          />
         </InputGroup>
 
         <InputGroup
