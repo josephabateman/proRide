@@ -6,17 +6,26 @@ function ContactForm(props) {
   return (
     <>
       <Form onSubmit={props.onSubmit}>
-        <p className="py-3">
-          To make an enquiry, a booking or to check availability, please
-          complete the form below and we will be in touch asap
+        <p className="py-3 col-lg-6 m-auto">
+          To make a provisional booking for your school, please fill out the
+          following form. If you want to send a general email, please fill out
+          the contact form at the bottom of the page.
         </p>
 
-        {/* Name:
-          Job title:
-          School:
-          Postcode
-          Email:
-          Message: */}
+        <div className="container-fluid">
+          <iframe
+            src="https://forms.wix.com/073b9b2a-1e02-42b9-b998-1e132637fa88:3f570baf-e0a4-42b9-b024-e82047047b67"
+            title="Provisional Booking Form"
+            height="2360px"
+            width="100%"
+          ></iframe>
+        </div>
+
+        <p className="py-3 col-lg-6 m-auto">
+          For general enquiries, please fill out the following contact form. If
+          you would like to request a date for your school, please fill out the
+          provisional booking form above.
+        </p>
 
         <InputGroup
           size="sm"
