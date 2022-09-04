@@ -43,6 +43,22 @@ function ContactForm(props) {
           className={customStyling.contactFormStyles.emailInput}
         >
           {/* <InputGroup.Prepend> */}
+          <InputGroup.Text>Your preferred date</InputGroup.Text>
+          {/* </InputGroup.Prepend> */}
+         
+            <FormControl
+              name="school"
+              type="text"
+              placeholder="Any week day commencing 25/03/23"
+            />
+       
+        </InputGroup>
+
+        <InputGroup
+          size="sm"
+          className={customStyling.contactFormStyles.emailInput}
+        >
+          {/* <InputGroup.Prepend> */}
           <InputGroup.Text>Postcode</InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl name="postcode" type="text" />
@@ -64,12 +80,12 @@ function ContactForm(props) {
         >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text style={{ flexShrink: 1 }}>
-            Total number of children taking part (all classes)
+            Total number of children taking part on the day
           </InputGroup.Text>
           {/* </InputGroup.Prepend> */}
           <FormControl
             name="total_number_of_children_taking_part"
-            type="number"
+            placeholder="Approximately 60"
           />
         </InputGroup>
 
@@ -79,10 +95,13 @@ function ContactForm(props) {
         >
           {/* <InputGroup.Prepend> */}
           <InputGroup.Text>
-            Approximate number of children per class:
+            Which classes and how many children are taking part
           </InputGroup.Text>
           {/* </InputGroup.Prepend> */}
-          <FormControl name="num_in_each_class" type="number" />
+          <FormControl
+            name="num_in_each_class"
+            placeholder="18 in Nursery, 21 in Reception, 30 in year 1"
+          />
         </InputGroup>
 
         <InputGroup size="sm">
