@@ -96,7 +96,7 @@ const contactFormStyles = {
 
 const contactPageStyles = {
   firstRow: "mt-3 mb-3 justify-content-md-center d-none d-lg-block",
-  secondRow: "d-lg-none justify-content-center mt-3 mb-3",
+  secondRow: "d-lg-none justify-content-center my-3",
 };
 
 const socialMediaCardsStyles = {

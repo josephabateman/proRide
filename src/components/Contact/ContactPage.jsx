@@ -34,12 +34,12 @@ function ContactPage() {
       {window.scrollTo(0, 0)}
 
       <Container>
-        <Row className={customStyling.contactPageStyles.firstRow}>
+        {/* <Row className={customStyling.contactPageStyles.firstRow}>
           <SocialMediaCardsDesktop />
-        </Row>
-        <Row className={customStyling.contactPageStyles.secondRow}>
-          <SocialMediaCardsMobile />
-        </Row>
+        </Row> */}
+        {/* <Row className={customStyling.contactPageStyles.secondRow}> */}
+          <SocialMediaCardsMobile  />
+        {/* </Row> */}
         <Row>
           <Col>
             {" "}
