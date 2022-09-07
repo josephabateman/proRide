@@ -2,7 +2,7 @@ const socialMediaData = [
   {
     name: "Email",
     text: "Want to book? Get in touch",
-    link: "mailto:proridecoaching@gmail.com",
+    link: "mailto:admin@proridecoaching.co.uk",
     icon: "far fa-lg fa-envelope",
   },
   {
