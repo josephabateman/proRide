@@ -19,8 +19,8 @@ const socialMediaData = [
   },
   {
     name: "Phone",
-    text: "Prefer to speak to us? Feel free to call on 07506 914631",
-    link: "tel: 07506914631",
+    text: "Prefer to speak to us? Feel free to call on 07960 534012",
+    link: "tel: 07960534012",
     icon: "fa fa-phone",
   },
 ];
