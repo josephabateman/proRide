@@ -10,7 +10,7 @@ function ContactForm(props) {
         following form or get in touch through one of the methods above.
       </p>
 
-      <div className="container-fluid" onclick="window.scrollTo(0, 0);">
+      {/* <div className="container-fluid" onclick="window.scrollTo(0, 0);">
         <iframe
           onclick="window.scrollTo(0, 0);"
           src="https://forms.wix.com/073b9b2a-1e02-42b9-b998-1e132637fa88:3f570baf-e0a4-42b9-b024-e82047047b67"
@@ -18,9 +18,9 @@ function ContactForm(props) {
           height="2360px"
           width="100%"
         ></iframe>
-      </div>
+      </div> */}
 
-      {/* <Form onSubmit={props.onSubmit}>
+      <Form onSubmit={props.onSubmit}>
         <p className="py-3 col-lg-6 m-auto">
           For general enquiries, please fill out the following contact form. If
           you would like to request a date for your school, please fill out the
@@ -52,7 +52,7 @@ function ContactForm(props) {
           <FormControl
             name="date"
             type="text"
-            placeholder="Any week day commencing 25/03/23"
+            placeholder="e.g. Any week day commencing 25/03/23"
           />
         </InputGroup>
 
@@ -81,7 +81,7 @@ function ContactForm(props) {
           </InputGroup.Text>
           <FormControl
             name="total_number_of_children_taking_part"
-            placeholder="Approximately 60"
+            placeholder="e.g. Approximately 60"
           />
         </InputGroup>
 
@@ -94,7 +94,7 @@ function ContactForm(props) {
           </InputGroup.Text>
           <FormControl
             name="num_in_each_class"
-            placeholder="18 in Nursery, 21 in Reception, 30 in year 1"
+            placeholder="e.g. 18 in Nursery, 21 in Reception, 30 in year 1"
           />
         </InputGroup>
 
@@ -121,7 +121,7 @@ function ContactForm(props) {
       <p className="py-3">
         Alternatively, feel free to get in touch on{" "}
         <a href="tel:+447960534012">07960 534 012</a>
-      </p> */}
+      </p>
     </>
   );
 }
