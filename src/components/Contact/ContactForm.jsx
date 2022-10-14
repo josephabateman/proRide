@@ -5,10 +5,10 @@ import customStyling from "../../styles/custom-styling";
 function ContactForm(props) {
   return (
     <>
-      <p className="py-3 col-lg-6 m-auto">
+      {/* <p className="py-3 col-lg-6 m-auto">
         To make a provisional booking for your school, please fill out the
         following form or get in touch through one of the methods above.
-      </p>
+      </p> */}
 
       {/* <div className="container-fluid" onclick="window.scrollTo(0, 0);">
         <iframe
@@ -21,11 +21,11 @@ function ContactForm(props) {
       </div> */}
 
       <Form onSubmit={props.onSubmit}>
-        <p className="py-3 col-lg-6 m-auto">
+        {/* <p className="py-3 col-lg-6 m-auto">
           For general enquiries, please fill out the following contact form. If
           you would like to request a date for your school, please fill out the
           provisional booking form above.
-        </p>
+        </p> */}
 
         <InputGroup
           size="sm"
