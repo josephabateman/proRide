@@ -6,6 +6,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // import ContactPage from "./Contact/ContactPage";
 // import ServicesPage from "./Services/ServicesPage";
 import NavBar from "./NavBar";
+import XLogo from "./XLogo";
 import servicesData from "../data/services";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
@@ -27,15 +28,78 @@ function Footer() {
   const date = new Date();
 
   return (
-    <div className="mt-auto">
-      <footer className="footer pt-5 pb-2 bg-light">
-        <div className="container">
-          <span className="text-muted text-center">
-            © ProRide Coaching {date.getFullYear()}
-          </span>
+    <footer className="site-footer">
+      <div className="container">
+        <div className="row text-start gy-4">
+          <div className="col-lg-5 col-md-12">
+            <h4 className="site-footer__brand">
+              Pro<span>Ride</span> Coaching
+            </h4>
+            <p className="site-footer__blurb">
+              Professional cycling coaching and fun biking days for schools
+              across West Yorkshire — from balance bikes to KS2 cycle sport.
+            </p>
+            <div className="site-footer__social">
+              <a
+                href="https://www.facebook.com/proridecoaching"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://x.com/proridecoaching"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (formerly Twitter)"
+              >
+                <XLogo size={15} />
+              </a>
+              <a href="mailto:admin@proridecoaching.co.uk" aria-label="Email">
+                <i className="far fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-6">
+            <h5 className="site-footer__heading">Explore</h5>
+            <ul className="site-footer__links">
+              <li><a href="#/">Home</a></li>
+              <li><a href="#/services">Services</a></li>
+              <li><a href="#/faq">FAQ</a></li>
+              <li><a href="#/aboutProRide">About</a></li>
+              <li><a href="#/jobs">Jobs</a></li>
+            </ul>
+          </div>
+
+          <div className="col-lg-4 col-6">
+            <h5 className="site-footer__heading">Get in touch</h5>
+            <ul className="site-footer__links">
+              <li>
+                <a href="tel:+447960534012">
+                  <i className="fas fa-phone me-2"></i>07960 534 012
+                </a>
+              </li>
+              <li>
+                <a href="mailto:admin@proridecoaching.co.uk">
+                  <i className="far fa-envelope me-2"></i>admin@proridecoaching.co.uk
+                </a>
+              </li>
+              <li>
+                <a href="#/contact">
+                  <i className="fas fa-paper-plane me-2"></i>Send us a message
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </footer>
-    </div>
+
+        <div className="site-footer__bottom">
+          © ProRide Coaching {date.getFullYear()} · Cycling for Schools
+        </div>
+      </div>
+    </footer>
   );
 }
 

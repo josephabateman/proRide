@@ -12,10 +12,10 @@ const socialMediaData = [
     icon: "fab fa-lg fa-facebook-f",
   },
   {
-    name: "Twitter",
-    text: "Post your Pro Ride pictures on twitter",
-    link: "https://twitter.com/proridecoaching",
-    icon: "fab fa-lg fa-twitter",
+    name: "X",
+    text: "Post your Pro Ride pictures on X",
+    link: "https://x.com/proridecoaching",
+    icon: "fab fa-lg fa-x-twitter",
   },
   {
     name: "Phone",

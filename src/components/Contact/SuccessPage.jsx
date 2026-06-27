@@ -2,9 +2,16 @@ import React from "react";
 
 function SuccessPage() {
   return (
-    <>
-      <h2>Thank you for your message. We'll be in touch shortly</h2>
-    </>
+    <div className="contact-success">
+      <div className="contact-success__icon">
+        <i className="fas fa-check"></i>
+      </div>
+      <h2>Message sent!</h2>
+      <p>
+        Thanks for getting in touch — we've received your message and will be
+        back to you shortly.
+      </p>
+    </div>
   );
 }
 

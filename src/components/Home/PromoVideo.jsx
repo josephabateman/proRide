@@ -3,9 +3,9 @@ import React from "react";
 function PromoVideo(props) {
   return (
     <>
-      <div className="embed-responsive embed-responsive-16by9 equal-height">
+      <div className="ratio ratio-16x9 home-video">
         <iframe
-          className="embed-responsive-item"
+          title="ProRide promo video"
           src={props.src}
           allowFullScreen
         ></iframe>
