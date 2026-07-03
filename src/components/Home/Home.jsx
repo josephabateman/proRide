@@ -9,24 +9,24 @@ import customStyling from "../../styles/custom-styling";
 
 const features = [
   {
-    icon: "fas fa-medal",
-    title: "Founded by a Team GB rider",
-    text: "Led by former Team GB & Olympic cyclist Phil Bateman.",
+    icon: "fas fa-shield-alt",
+    title: "Fully Insured & Risk Assessed",
+    text: "Public liability cover, DBS-checked coaches and risk assessments provided — everything sorted before we arrive.",
   },
   {
-    icon: "fas fa-bicycle",
-    title: "All equipment provided",
-    text: "Bikes and helmets supplied — children just turn up and ride.",
+    icon: "fas fa-truck",
+    title: "Zero Prep for Staff",
+    text: "We bring and run everything — bikes, helmets, equipment. Your teachers just turn up with the kids.",
   },
   {
-    icon: "fas fa-child",
-    title: "Nursery to KS2",
-    text: "Fun, progressive sessions for every age and ability.",
+    icon: "fas fa-hand-holding-heart",
+    title: "Fully Inclusive",
+    text: "From wobbly first-timers to confident riders, every child improves and leaves with a smile — all ages and abilities, including SEND.",
   },
   {
-    icon: "fas fa-users",
-    title: "Small-group coaching",
-    text: "Qualified coaches keep groups small so everyone improves.",
+    icon: "fas fa-award",
+    title: "Expertly Delivered",
+    text: "Experienced, fully qualified coaches who are friendly, patient and genuinely enthusiastic about getting kids riding well.",
   },
 ];
 

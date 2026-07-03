@@ -24,3 +24,6 @@ yarn-error.log*
 
 # Claude Code local settings
 .claude/
+
+# Flyer editing scratch files (local only)
+_flyer_work/
