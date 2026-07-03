@@ -57,8 +57,15 @@ try {
     git add "SITE-CONTENT.md" "src/data/siteContent.json" 2>$null
     $changes = git status --porcelain "SITE-CONTENT.md" "src/data/siteContent.json"
     if ($changes) {
-        $stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
-        git commit -m "Content update via publish button ($stamp)" | Out-Null
+        $stamp = Get-Date -Format "yyyy-MM-dd"
+        # auto-incrementing version: count previous button commits ("Site update <date> ...") + 1
+        $count = 0
+        $c = git rev-list --count --grep="Site update [0-9]" HEAD 2>$null
+        if ($c) { $count = [int]$c }
+        $ver = $count + 1
+        $msg = "Site update $stamp v$ver"
+        git commit -m $msg | Out-Null
+        Say "      Saved as: $msg" "Green"
         & git push origin main
         if ($LASTEXITCODE -ne 0) { Fail "Couldn't push to GitHub. Check your internet connection and try again." }
     } else {
@@ -68,7 +75,7 @@ try {
     # --- 4. Deploy the built site live ---
     Say ""
     Say "[4/4] Publishing live to proridecoaching.co.uk..." "White"
-    & npx gh-pages -d build
+    & npx gh-pages -d build --dotfiles
     if ($LASTEXITCODE -ne 0) { Fail "Deploy step failed. Try again in a minute." }
 
     Say ""
