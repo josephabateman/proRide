@@ -1,0 +1,180 @@
+{
+  "contact": {
+    "phone": "07960 534 012",
+    "email": "admin@proridecoaching.co.uk",
+    "facebook": "https://www.facebook.com/proridecoaching",
+    "x": "https://x.com/proridecoaching"
+  },
+  "home": {
+    "heroButton1": "Book your school in",
+    "heroButton2": "Explore our services",
+    "whyHeading": "Why schools choose ProRide",
+    "whySubtitle": "Professionally coached cycling days that get every child riding, smiling and building confidence for life.",
+    "cards": [
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Fully Insured & Risk Assessed",
+        "body": "Public liability cover, DBS-checked coaches and risk assessments provided — everything sorted before we arrive."
+      },
+      {
+        "icon": "fas fa-truck",
+        "title": "Zero Prep for Staff",
+        "body": "We bring and run everything — bikes, helmets, equipment. Your teachers just turn up with the kids."
+      },
+      {
+        "icon": "fas fa-hand-holding-heart",
+        "title": "Fully Inclusive",
+        "body": "From wobbly first-timers to confident riders, every child improves and leaves with a smile — all ages and abilities, including SEND."
+      },
+      {
+        "icon": "fas fa-award",
+        "title": "Expertly Delivered",
+        "body": "Experienced, fully qualified coaches who are friendly, patient and genuinely enthusiastic about getting kids riding well."
+      }
+    ],
+    "actionHeading": "See ProRide in action",
+    "actionSubtitle": "Take a look at what a Pro Ride day looks like — then explore the full range of sessions we bring to schools.",
+    "promoVideo": "https://www.youtube.com/embed/KPvxQjljIgo",
+    "ctaHeading": "Ready to get your school riding?",
+    "ctaText": "Tell us your preferred dates and we'll plan a brilliant cycling day around your school.",
+    "ctaButton": "Get in touch"
+  },
+  "services": [
+    {
+      "name": "Balance Bike Days",
+      "header": "Develop control, balance and confidence with a Pro-Ride Balance Bike Fun Day",
+      "body": "Our balance bike fun days are a great way for Early Years and Key Stage 1 children of all abilities to develop coordination, balance and control, preparing them for a lifetime of confident cycling.\n\nEach day delivers a series of small group sessions lasting 45 minutes to an hour (depending on age and number of sessions) where we cover basic bike handling, stopping, turning and of course, balancing through a program of fun games, challenges and obstacle activities.\n\nWe usually cater for up to 60 children a day in 4 half class sessions but extra sessions can be added to accommodate larger numbers if needed.\n\nTo book a day for your school or to check availability and prices, please feel free to get in touch or check the website for details.",
+      "body2": null
+    },
+    {
+      "name": "Key Stage 1 Fun Days",
+      "header": "Professionally coached fun cycling day for Key Stage 1 classes",
+      "body": "Our KS1 Cycling Fun Days are a great way for Key Stage 1 children of all abilities to develop coordination, balance and control, preparing them for a lifetime of confident cycling.\n\nEach day delivers a series of small group sessions lasting about an hour (depending on age and number of sessions) where we cover basic bike handling, starting, stopping, cornering, riding in a line, riding in pairs and various team activities, fun games, challenges and obstacle activities.\n\nBalance bikes can be provided for younger and small children, with older children encouraged to bring in their own bikes (larger pedal bikes can be hired if required). No special clothing or preparation is necessary as we take care of all risk assessments and planning. We usually cater for up to 60 children a day in 4 half class sessions but extra sessions can be added to accommodate larger numbers if needed.\n\nTo book a day for your school or to check availability and prices, please feel free to get in touch or check the website for details.",
+      "body2": null
+    },
+    {
+      "name": "Key Stage 2 Cyclesport Days",
+      "header": "A great way to introduce KS2 children to the exciting sport of cycling in a child-safe environment",
+      "body": "Each day offers up to 4 sessions of fast fun action for up to 60 children (larger numbers can be accommodated subject to site conditions and price supplements). Activities take place around a circuit and obstacle course marked out on your school playground or field where the children learn technical skills and take part in a series of fun challenges, games, and mini competitions.\n\nAll activities are risk assessed and suitable for all KS2 classes, with sessions adapted to suit the range of abilities of each group or class. Children bring their own bikes and helmets (spares can be made available upon request)",
+      "body2": null
+    },
+    {
+      "name": "Whole School Days",
+      "header": "Increase awareness, interest new skills in cycling with a pro ride whole school day",
+      "body": "Whole School Days are designed for small schools usually with less than 60 students across the primary age range. During the day, every child in the school takes part in an age related session with their class mates where sessions are tailored to age and ability of the group and use a combination of other Pro-Ride programs to deliver a fun-filled memorable cycling experience.\n\nA program is put together based on the number of children and age range of the classes. A typical program for a school with 40 children for example, might start with a 45 min session for 10-12 nursery/reception using balance bikes (we provide). Next, two KS1 sessions with 8-10 children in each session would be delivered mainly using their own bikes (we provide spares), and a final session for approx 15 children on their own bikes would run in the afternoon (again, we can provide spares if needed).\n\nTo book a day for your school or to check availability and prices, please feel free to get in touch or check the website for details.",
+      "body2": null
+    },
+    {
+      "name": "School clubs",
+      "header": "Have fun developing new skills, confidence and friendships through a Pro Ride club program",
+      "body": "Our School Clubs are designed for children of all ages and abilities from those who just want to have fun cycling with friends in a safe, inclusive environment to those keen to learn new skills and get more involved.\n\n### After school clubs\n\nOur qualified coaches will visit your school each week or run your club sessions on-site for up to 25 children. The program is tailored to the age and ability of the group and can be changed from term to term if required. The weekly format is similar to our day programs but with a more relaxed feel and focus on play and friendships. Children bring their own bike and helmet to school each week.\n\n### Holiday Clubs\n\nOur holiday clubs are based on a 4 or 5-day program offering mornings or afternoons. Clubs follow a similar style to our weekly club sessions with lots of games and fun activities where children can try out different activities and learn new skills under the supervision of a qualified instructor. Our service includes session plans together with a pre-club risk assessment and certificates and medals options for each attendee. To book a club for your school or to check availability and prices, please feel free to get in touch or check the website for details.",
+      "body2": null
+    },
+    {
+      "name": "Staff Training (CPD)",
+      "header": "One day practical workshop to enable schools to run their own sessions",
+      "body": "This one-day course delivered by Pro-Ride Founder and Director, Phil Bateman is an ideal way to train your staff to run progressive cycling sessions.\n\nSuitable for up to 5 members of staff (teaching or non-teaching), the course covers everything you need to know to run sessions for PE lessons, after-school clubs, or occasional activities in school.\n\nThe course requires no prior learning or experience of cycling and includes a comprehensive instruction manual, example lesson plans, and printable activity card pack covering a wide variety of fun games, challenges, and mini-races.\n\nNo special equipment or clothing is required to attend the course.",
+      "body2": null
+    },
+    {
+      "name": "Competition Days",
+      "header": "A full day of racing including a mini tournament for one Key Stage 2 class",
+      "body": "Our Training & Competition Day is a unique opportunity for up to 30 children in Years 5 or 6 to be trained in different forms of cycle racing and prepare for open competition.\n\nThe one-day event is delivered by Pro-Ride founder and former Olympic cyclist, Phil Bateman and consists of an introduction to the various forms of racing with specific training in road, track and off-road techniques, followed by a series of races where riders gain points towards a mini-competition and selection for an inter-school competition at a later date.",
+      "body2": "Following successful events in West and North Yorkshire in recent years, we are now offering school partnerships, trusts and local authorities the opportunity to run similar events in their area.\n\nOur service is fully managed, providing everything from planning and contacting schools, to developing the program, providing equipment and delivering the event at a selected school location.\n\nWe are happy to work with individual schools as well as sports partnerships, clusters or trusts wanting to introduce a cycling element to their competitive school's sport provision. We are also happy to help organise and run area-wide qualifying and inter-school events. We can also provide training for schools planning on entering a team into the School Games festivals and regional qualifying events."
+    },
+    {
+      "name": "Road Safety Training",
+      "header": "Develop road safety skills and awareness through our KS2 Road Safety Program",
+      "body": "Our one day and two day road safety training courses are designed for full classes of approx 30 children in Years 5 or 6.\n\nLed by qualified Bikeability instructors, the training consists of basic skills training in the playground (known as Level 1) where skills are observed and developed with an assessment for suitability to go on to the next phase.\n\nFollowing on from Level 1, children are split into groups and taken out onto quiet roads where they work on hazard awareness and taught how to carry out maneuvers at key junctions (level 2). Further input is provided by preparing school staff to deliver classroom theory sessions and supervise additional fun skill-games sessions in the playground.\n\nAll support materials, risk assessment and staff instructions together with student certificates are included.",
+      "body2": null
+    }
+  ],
+  "aboutProRide": {
+    "heading": "About ProRide",
+    "body": "Pro-Ride Coaching was set up in 2014 by ex-teacher and former Olympic cyclist, Phil Bateman in response to the growing popularity of cycling thanks to the visit of the Tour de France and the success of a growing number of British cyclists such as Chris Froome, Mark Cavendish and Bradley Wiggins.\n\nAimed at giving school children a taste of bike racing and access to the sport rather than a road safety course, the program was a huge success with both children and staff and by the end of the year over 3,000 children had taken part in a Pro-Ride session.",
+    "body2": "Based in Yorkshire, Phil expanded the service to include the whole of the north of England the following year and expanded the range of services to include after-school clubs and a one-day CPD training course for schools wanting to continue running similar sessions as part of the curriculum. This also proved popular with over 20 schools requesting the training and Durham CC commissioning their own course.\n\nIn 2016 more services were added including competitions where schools ran a range of day, half day and inter-school events. Phil is a qualified teacher, British Cycling level 2 coach, and registered Bikeability instructor. His experience extends over 25 years and includes coaching at all levels from absolute beginners to elite athletes."
+  },
+  "aboutPhil": {
+    "heading": "About Phil",
+    "body": "Phil started racing as a junior in 1977 winning his first one road race in Beverley near Hull. Following other local success, including winning the Yorkshire Junior Championships in Halifax, Phil began to compete nationally finishing second in the Junior national time trial championships (BBAR) and later represented GB for the first time in the Junior World Championships in Mexico.",
+    "body2": "Success at national and international level followed with strong performances in the Tour of Britain a bronze medal at the National Road Race Championships and a win against top professionals in the 1988 Pro-am Tour of Lancashire.\n\nDuring his career, Phil won over 50 road races, five Yellow Jerseys and represented Team GB at three world championships and the 1988 Olympic Games in Seoul, Korea.\n\nToday Phil lives in Bradford where he continues to ride locally as much as possible whilst coaching full time for Pro-Ride."
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "subtitle": "Everything schools usually want to know about booking a Pro Ride cycling day. Can't find your answer? We're happy to help.",
+    "general": [
+      {
+        "q": "What does Pro Ride Coaching offer schools?",
+        "a": "We run fun, professionally coached cycling days for primary schools — from balance bike days for Early Years and KS1 to cycle sport, competitions and whole-school days for KS2. Every session is designed to build confidence, skills and a lifelong love of cycling."
+      },
+      {
+        "q": "What areas do you cover?",
+        "a": "We're based in West Yorkshire and bring our cycling days to primary schools right across the region."
+      },
+      {
+        "q": "What ages and year groups do you work with?",
+        "a": "Everyone from Nursery and Reception through to KS1 and KS2. Every session is tailored to the age group and ability of the children taking part."
+      },
+      {
+        "q": "Do you provide the bikes and equipment?",
+        "a": "Yes — we bring everything needed for the day, including bikes and helmets. Children simply turn up ready to ride, and no special clothing or footwear is required."
+      },
+      {
+        "q": "Who runs the sessions?",
+        "a": "Pro Ride was founded by former Team GB and Olympic cyclist Phil Bateman. Our friendly, qualified coaches keep groups small so every child gets plenty of attention."
+      },
+      {
+        "q": "How do we book a cycling day for our school?",
+        "a": "Head to our contact page to send a booking request with your preferred dates, or call us on 07960 534 012. We'll plan your sessions and send a suggested outline for your visit."
+      }
+    ],
+    "balanceBike": [
+      {
+        "q": "How many children can take part in a day?",
+        "a": "Our usual day caters for up to 60 children in four one-hour sessions, however extra sessions can be added by reducing the duration of sessions. Our standard charges cater for up to 60, 75 or 90 children. Please see the current price list."
+      },
+      {
+        "q": "What ages are catered for?",
+        "a": "We run balance bike sessions for all FS/KS1 classes from Nursery to Year Two. All equipment is provided for up to and including year one, whilst year 2 bring in their own bikes. We can provide larger balance bikes that convert to pedal bikes for year 2 if they are needed, but these are subject to availability and carry an additional hire charge."
+      },
+      {
+        "q": "Some of our children can already ride a pedal bike, can they take part in the sessions?",
+        "a": "Yes, absolutely. Those who have recently learned to pedal still enjoy taking part in the sessions and always develop new skills and greater confidence that can then be applied to their riding once they return to their pedal bike."
+      },
+      {
+        "q": "Do you provide the bikes or do the children need to bring their own?",
+        "a": "Yes, we provide everything needed for the sessions so children simply rock-up to their sessions and we take it from there. No special clothing or footwear is needed. In particularly cold weather we do however advise the children wear gloves if possible."
+      },
+      {
+        "q": "Do you run sessions for children that can already ride a bike?",
+        "a": "Yes, our \"Beginner\" sessions are designed specifically for this purpose. We offer a one-day beginner program for up to 60 children aimed at helping them transition from balance bike to pedal bike. Intended for Years 1 and 2, the day is split into groups of 10 where the children are taught how to control, balance and pedal using special convertible bikes."
+      },
+      {
+        "q": "How do I book a balance bike day for my school?",
+        "a": "You can check availability and reserve a date online by going to the contact page on this website and filling out a booking request form. Once your form is received, we will plan your sessions and send you a booking form with a suggested outline for your visit. You will then have two weeks to sign and return or amend your booking. No payment is taken prior to the visit, but late cancellations will incur a penalty, details of which are outlined in the terms attached to your booking confirmation."
+      },
+      {
+        "q": "Can I change my date once I've booked?",
+        "a": "If you are unable to go ahead with your planned visit, we will try to arrange an alternative date providing we have at least 30 days notice. Last minute cancellations will usually incur penalty charges as it may not be possible to fill your booking."
+      }
+    ],
+    "ctaHeading": "Still have a question?",
+    "ctaText": "Drop us a message or give us a call — we'd love to hear from you.",
+    "ctaButton": "Get in touch"
+  },
+  "contactPage": {
+    "heading": "Get in touch",
+    "subtitle": "Want to book a cycling day, ask a question, or check availability? Send us a message and we'll get right back to you.",
+    "sidebarHeading": "Let's plan your day",
+    "sidebarText": "Based in West Yorkshire and coaching across the region — from balance bikes to KS2 cycle sport."
+  },
+  "jobs": {
+    "heading": "Join the team",
+    "text": "We're always on the lookout for enthusiastic cycling coaches and would love to hear from you. Download the form below, fill it out and return it to admin@proridecoaching.co.uk to be considered. Thank you!",
+    "button": "Download Coach Information Form"
+  },
+  "footer": {
+    "blurb": "Professional cycling coaching and fun biking days for schools across West Yorkshire — from balance bikes to KS2 cycle sport.",
+    "bottomLine": "Cycling for Schools"
+  }
+}

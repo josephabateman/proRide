@@ -6,29 +6,9 @@ import { Link } from "react-router-dom";
 import PromoVideo from "./PromoVideo";
 import Seo from "../Seo";
 import customStyling from "../../styles/custom-styling";
+import content from "../../data/siteContent.json";
 
-const features = [
-  {
-    icon: "fas fa-shield-alt",
-    title: "Fully Insured & Risk Assessed",
-    text: "Public liability cover, DBS-checked coaches and risk assessments provided — everything sorted before we arrive.",
-  },
-  {
-    icon: "fas fa-truck",
-    title: "Zero Prep for Staff",
-    text: "We bring and run everything — bikes, helmets, equipment. Your teachers just turn up with the kids.",
-  },
-  {
-    icon: "fas fa-hand-holding-heart",
-    title: "Fully Inclusive",
-    text: "From wobbly first-timers to confident riders, every child improves and leaves with a smile — all ages and abilities, including SEND.",
-  },
-  {
-    icon: "fas fa-award",
-    title: "Expertly Delivered",
-    text: "Experienced, fully qualified coaches who are friendly, patient and genuinely enthusiastic about getting kids riding well.",
-  },
-];
+const features = content.home.cards;
 
 function Home() {
   return (
@@ -54,21 +34,18 @@ function Home() {
       {/* Hero call-to-action */}
       <div className="hero-cta">
         <Link to="/contact" className="button">
-          Book your school in
+          {content.home.heroButton1}
         </Link>
         <Link to="/services" className="button button--ghost">
-          Explore our services
+          {content.home.heroButton2}
         </Link>
       </div>
 
       {/* Why ProRide — trust / features band */}
       <section className="feature-band">
         <Container>
-          <h2 className="section-heading">Why schools choose ProRide</h2>
-          <p className="section-sub">
-            Professionally coached cycling days that get every child riding,
-            smiling and building confidence for life.
-          </p>
+          <h2 className="section-heading">{content.home.whyHeading}</h2>
+          <p className="section-sub">{content.home.whySubtitle}</p>
           <Row className="justify-content-center">
             {features.map((f, key) => (
               <Col md={6} lg={3} className="mb-4" key={key}>
@@ -77,7 +54,7 @@ function Home() {
                     <i className={f.icon}></i>
                   </div>
                   <h3 className="feature-card__title">{f.title}</h3>
-                  <p className="feature-card__text">{f.text}</p>
+                  <p className="feature-card__text">{f.body}</p>
                 </div>
               </Col>
             ))}
@@ -88,11 +65,8 @@ function Home() {
       {/* Services teaser + promo video */}
       <section className="home-action">
         <Container>
-          <h2 className="section-heading">See ProRide in action</h2>
-          <p className="section-sub">
-            Take a look at what a Pro Ride day looks like — then explore the full
-            range of sessions we bring to schools.
-          </p>
+          <h2 className="section-heading">{content.home.actionHeading}</h2>
+          <p className="section-sub">{content.home.actionSubtitle}</p>
           <Row className="g-3 align-items-stretch">
             {collapsingBanners.map((data, key) => (
               <Col lg={6} key={key}>
@@ -113,7 +87,7 @@ function Home() {
 
             <Col lg={6}>
               <div className="home-tile home-tile--video h-100">
-                <PromoVideo src={customStyling.promoVideo.src} />
+                <PromoVideo src={content.home.promoVideo} />
               </div>
             </Col>
           </Row>
@@ -123,13 +97,10 @@ function Home() {
       {/* Closing call-to-action */}
       <section className="cta-band">
         <Container>
-          <h2 className="cta-band__title">Ready to get your school riding?</h2>
-          <p className="cta-band__text">
-            Tell us your preferred dates and we'll plan a brilliant cycling day
-            around your school.
-          </p>
+          <h2 className="cta-band__title">{content.home.ctaHeading}</h2>
+          <p className="cta-band__text">{content.home.ctaText}</p>
           <Link to="/contact" className="button">
-            Get in touch
+            {content.home.ctaButton}
           </Link>
         </Container>
       </section>

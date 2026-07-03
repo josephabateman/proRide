@@ -8,8 +8,12 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import XLogo from "./XLogo";
 import servicesData from "../data/services";
+import content from "../data/siteContent.json";
+import { phoneParts } from "../data/renderContent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
+
+const phone = phoneParts(content.contact.phone);
 
 // import SpecificService from "./Services/SpecificService";
 
@@ -35,13 +39,10 @@ function Footer() {
             <h4 className="site-footer__brand">
               Pro<span>Ride</span> Coaching
             </h4>
-            <p className="site-footer__blurb">
-              Professional cycling coaching and fun biking days for schools
-              across West Yorkshire — from balance bikes to KS2 cycle sport.
-            </p>
+            <p className="site-footer__blurb">{content.footer.blurb}</p>
             <div className="site-footer__social">
               <a
-                href="https://www.facebook.com/proridecoaching"
+                href={content.contact.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -49,14 +50,14 @@ function Footer() {
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a
-                href="https://x.com/proridecoaching"
+                href={content.contact.x}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X (formerly Twitter)"
               >
                 <XLogo size={15} />
               </a>
-              <a href="mailto:admin@proridecoaching.co.uk" aria-label="Email">
+              <a href={`mailto:${content.contact.email}`} aria-label="Email">
                 <i className="far fa-envelope"></i>
               </a>
             </div>
@@ -77,13 +78,13 @@ function Footer() {
             <h5 className="site-footer__heading">Get in touch</h5>
             <ul className="site-footer__links">
               <li>
-                <a href="tel:+447960534012">
-                  <i className="fas fa-phone me-2"></i>07960 534 012
+                <a href={`tel:${phone.intl}`}>
+                  <i className="fas fa-phone me-2"></i>{phone.display}
                 </a>
               </li>
               <li>
-                <a href="mailto:admin@proridecoaching.co.uk">
-                  <i className="far fa-envelope me-2"></i>admin@proridecoaching.co.uk
+                <a href={`mailto:${content.contact.email}`}>
+                  <i className="far fa-envelope me-2"></i>{content.contact.email}
                 </a>
               </li>
               <li>
@@ -96,7 +97,7 @@ function Footer() {
         </div>
 
         <div className="site-footer__bottom">
-          © ProRide Coaching {date.getFullYear()} · Cycling for Schools
+          © ProRide Coaching {date.getFullYear()} · {content.footer.bottomLine}
         </div>
       </div>
     </footer>
