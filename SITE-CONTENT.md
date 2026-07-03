@@ -1,12 +1,15 @@
 # ProRide — Website Text
 
-**This is the one file you edit to change wording on the website.**
+> ⚠️ **This file is now a READ-ONLY BACKUP.**
+> Edit your website in the web CMS instead: **https://proridecoaching.co.uk/admin**
+> (works on your phone or computer — change text, tap **Publish live**, done).
+> The live content lives in `src/data/siteContent.json`; this file is just a
+> human-readable copy for reference and is no longer used to publish.
 
-## How to use it
+## (Old workflow — kept for reference)
 1. Change any text **to the right of a `:` or inside a text block** below.
 2. **Save the file.**
-3. Tell Claude: **"implement the site content"** (optionally add "and publish" to push it live).
-4. Claude reads this file, applies only what you changed to the real site code, and (if asked) deploys it.
+3. Tell Claude: **"implement the site content"** to apply the changes.
 
 ## Rules that keep things working
 - Only change the **wording**. Don't rename the **LABELS** (the bits in `[SQUARE BRACKETS]` or before a `:`), and don't delete the `--- ... ---` separator lines.

@@ -1,9 +1,8 @@
 # ============================================================
-#  Publish ProRide website
-#  1. Turn SITE-CONTENT.md into the site's data (siteContent.json)
-#  2. Build the site  (SAFETY GATE - stops here if anything is broken)
-#  3. Commit + push, then deploy live to proridecoaching.co.uk
-#  (Launched by the desktop button via publish.cmd, which keeps the window open.)
+#  Publish ProRide website (desktop)
+#  Content now lives in src/data/siteContent.json (edited via the /admin CMS).
+#  This button is the desktop path: build-check, then push so GitHub Actions
+#  deploys it live. Most of the time you'll just use the web CMS instead.
 # ============================================================
 
 $repo = Split-Path -Parent $PSScriptRoot
@@ -25,40 +24,29 @@ try {
     Say "=====================================================" "Cyan"
     Say ""
 
-    # --- Make sure node / npm are found ---
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
     $env:NODE_OPTIONS = "--openssl-legacy-provider"
-    $env:CI = "false"   # don't treat build warnings as errors
+    $env:CI = "false"
 
-    # --- Find Python ---
-    $python = Get-ChildItem "$env:LOCALAPPDATA\Programs\Python\Python*\python.exe" -ErrorAction SilentlyContinue |
-        Sort-Object FullName -Descending | Select-Object -First 1 -ExpandProperty FullName
-    if (-not $python) {
-        if (Get-Command py -ErrorAction SilentlyContinue) { $python = "py" } else { $python = "python" }
-    }
+    # --- Get any changes made in the web CMS first ---
+    Say "[1/3] Syncing with GitHub..." "White"
+    git pull --ff-only 2>&1 | Out-Host
 
-    # --- 1. SITE-CONTENT.md  ->  siteContent.json ---
-    Say "[1/4] Reading your text changes..." "White"
-    & $python "scripts\apply_content.py"
-    if ($LASTEXITCODE -ne 0) { Fail "Couldn't read SITE-CONTENT.md. Check you didn't delete any of the LABELS or separator lines, then try again." }
-
-    # --- 2. Build (safety gate) ---
+    # --- Build (safety gate) ---
     Say ""
-    Say "[2/4] Building the site (checking nothing is broken)..." "White"
+    Say "[2/3] Building the site (checking nothing is broken)..." "White"
     & npm run build
     if ($LASTEXITCODE -ne 0) {
-        git checkout -- "src/data/siteContent.json" 2>$null
-        Fail "The site failed to build, so it was NOT published. Your SITE-CONTENT.md edits are still saved - fix the flagged text (often a stray bracket) and try again."
+        Fail "The site failed to build, so it was NOT published. Fix the flagged issue and try again."
     }
 
-    # --- 3. Commit + push the change ---
+    # --- Commit + push (GitHub Actions then deploys live) ---
     Say ""
-    Say "[3/4] Saving the change to GitHub..." "White"
-    git add "SITE-CONTENT.md" "src/data/siteContent.json" 2>$null
-    $changes = git status --porcelain "SITE-CONTENT.md" "src/data/siteContent.json"
+    Say "[3/3] Saving to GitHub (it will publish live automatically)..." "White"
+    git add "src/data/siteContent.json" 2>$null
+    $changes = git status --porcelain "src/data/siteContent.json"
     if ($changes) {
         $stamp = Get-Date -Format "yyyy-MM-dd"
-        # auto-incrementing version: count previous button commits ("Site update <date> ...") + 1
         $count = 0
         $c = git rev-list --count --grep="Site update [0-9]" HEAD 2>$null
         if ($c) { $count = [int]$c }
@@ -69,18 +57,13 @@ try {
         & git push origin main
         if ($LASTEXITCODE -ne 0) { Fail "Couldn't push to GitHub. Check your internet connection and try again." }
     } else {
-        Say "      (no text changes since last publish - re-deploying current site)" "DarkGray"
+        Say "      No local content changes to publish." "DarkGray"
+        Say "      (If you edited in the web CMS, it already published itself.)" "DarkGray"
     }
-
-    # --- 4. Deploy the built site live ---
-    Say ""
-    Say "[4/4] Publishing live to proridecoaching.co.uk..." "White"
-    & npx gh-pages -d build --dotfiles
-    if ($LASTEXITCODE -ne 0) { Fail "Deploy step failed. Try again in a minute." }
 
     Say ""
     Say "=====================================================" "Green"
-    Say "   DONE - your changes are published!" "Green"
+    Say "   DONE - GitHub is building and publishing your site." "Green"
     Say "=====================================================" "Green"
     Say ""
     Say "The live site updates in a minute or two." "White"

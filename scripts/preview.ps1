@@ -35,17 +35,9 @@ try {
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
     $env:NODE_OPTIONS = "--openssl-legacy-provider"
 
-    # --- Find Python ---
-    $python = Get-ChildItem "$env:LOCALAPPDATA\Programs\Python\Python*\python.exe" -ErrorAction SilentlyContinue |
-        Sort-Object FullName -Descending | Select-Object -First 1 -ExpandProperty FullName
-    if (-not $python) {
-        if (Get-Command py -ErrorAction SilentlyContinue) { $python = "py" } else { $python = "python" }
-    }
-
-    # --- 1. SITE-CONTENT.md -> siteContent.json ---
-    Say "[1/3] Reading your text changes..." "White"
-    & $python "scripts\apply_content.py"
-    if ($LASTEXITCODE -ne 0) { Fail "Couldn't read SITE-CONTENT.md. Check you didn't delete any of the LABELS or separator lines, then try again." }
+    # --- 1. Get the latest content (incl. anything saved in the web CMS) ---
+    Say "[1/3] Syncing latest content from GitHub..." "White"
+    git pull --ff-only 2>&1 | Out-Host
 
     # --- 2. Start the preview server if needed ---
     Say ""
