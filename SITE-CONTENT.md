@@ -62,7 +62,7 @@ Body: From wobbly first-timers to confident riders, every child improves and lea
 [CARD 4]
 Icon: award
 Title: Expertly Delivered
-Body: Experienced, fully qualified coaches who are friendly, patient and genuinely enthusiastic about getting kids riding well.
+Body: Experienced, fully qualified coaches who are friendly, patient and genuinely enthusiastic about getting kids riding.
 
 ## "See ProRide in action" section
 <!-- map: Home.jsx home-action heading/sub -->
