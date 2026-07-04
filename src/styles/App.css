@@ -950,6 +950,18 @@ ul li { list-style-type: none; }
     object-fit: cover;
     transform-origin: 38% 50%;
   }
+  /* Blue hero only: scale the photo up so it fills more of the gradient on
+     mobile (keeps the people whole — it's a cut-out — and crops the outer
+     edges instead of heads/legs). */
+  .blue-gradient.text-white .img-large-mobile { padding-top: 1.2rem; }
+  .blue-gradient.text-white .img-large-mobile img {
+    transform: none;
+    width: 150%;
+    max-width: none;
+    height: auto;
+    margin-left: -25%;
+    object-fit: initial;
+  }
   .img-large-mobile h5, .img-large-mobile h1 {
     position: relative;
     z-index: 1;
