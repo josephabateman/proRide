@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { Accordion, Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Seo from "../Seo";
 
 function SpecificService(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="service-detail-page">
       <Seo
         title={`${props.title} for Schools | Pro Ride Coaching`}
         description={`${props.header} ${props.title} from Pro Ride Coaching — fun, professionally coached cycling sessions for schools across West Yorkshire. All equipment provided.`}
       />
-      {window.scrollTo(0, 0)}
       <ScrollToTop smooth />
 
       {/* Hero */}

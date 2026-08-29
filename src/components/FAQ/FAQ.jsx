@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -25,6 +25,10 @@ function FaqSection({ title, faqs, startKey }) {
 }
 
 function FAQ() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -37,7 +41,6 @@ function FAQ() {
 
   return (
     <Container className="faq-page">
-      {window.scrollTo(0, 0)}
       <Seo
         title="School Cycling Days — FAQs | Pro Ride Coaching"
         description="Answers to common questions from schools about Pro Ride cycling days — what we offer, areas covered, ages, equipment, who runs the sessions and how to book your school's day."

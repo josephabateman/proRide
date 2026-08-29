@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ContactForm from "./ContactForm";
 import SuccessPage from "./SuccessPage";
@@ -12,6 +12,10 @@ const phone = phoneParts(content.contact.phone);
 
 function ContactPage() {
   const [form, formSubmitted] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const service_id = "proridecoaching";
   const template_id = "proridetemplate";
@@ -34,8 +38,6 @@ function ContactPage() {
 
   return (
     <>
-      {window.scrollTo(0, 0)}
-
       <Seo
         title="Book a School Cycling Day | Contact Pro Ride Coaching"
         description="Get in touch to book a fun, professional cycling day for your school in West Yorkshire. Send your preferred dates or call 07960 534 012 — balance bikes to KS2 cycle sport, all equipment provided."

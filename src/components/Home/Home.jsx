@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CollapsingBanners from "./CollapsingBanners";
 import { fullScreenBanners, collapsingBanners } from "../../data/homePageData";
 import { Container, Row, Col } from "react-bootstrap";
@@ -11,13 +11,16 @@ import content from "../../data/siteContent.json";
 const features = content.home.cards;
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Seo
         title="Pro Ride Coaching | Fun Cycling Days for Schools in West Yorkshire"
         description="Pro Ride Coaching brings fun, professional cycling days to primary schools across West Yorkshire. Balance bike days, learn-to-ride, KS1 & KS2 cycle sport and whole-school days — all equipment provided. Founded by former Team GB cyclist Phil Bateman."
       />
-      {window.scrollTo(0, 0)}
       {fullScreenBanners.map((data, key) => (
         <CollapsingBanners
           key={key}
