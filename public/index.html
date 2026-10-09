@@ -3,56 +3,89 @@
 
 <head>
   <meta charset="utf-8" />
+  <script>
+    // Old links used hash URLs (e.g. /#/services or /#/BalanceBikeDays).
+    // Send them to the matching real page before anything else loads.
+    (function () {
+      var h = location.hash;
+      var m = h.match(/^#\/(.*)$/) || h.match(/^#(aboutProRide|aboutPhil)$/i);
+      if (!m) return;
+      var map = {
+        "": "/", services: "/services/", faq: "/faq/", contact: "/contact/", jobs: "/jobs/",
+        aboutproride: "/about/", aboutphil: "/about/phil-bateman/",
+        balancebikedays: "/services/balance-bike-days/",
+        keystage1fundays: "/services/key-stage-1-fun-days/",
+        keystage2cyclesportdays: "/services/key-stage-2-cyclesport-days/",
+        wholeschooldays: "/services/whole-school-days/",
+        schoolclubs: "/services/school-clubs/",
+        stafftrainingcpd: "/services/staff-training-cpd/",
+        competitiondays: "/services/competition-days/",
+        roadsafetytraining: "/services/road-safety-training/"
+      };
+      var key = m[1].split(/[?#]/)[0].toLowerCase().replace(/[^a-z0-9]/g, "");
+      var target = map[key] || "/" + m[1].replace(/^\/+/, "");
+      if (target === location.pathname) {
+        history.replaceState(null, "", target + location.search);
+      } else {
+        location.replace(target + location.search);
+      }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pro Ride Coaching | Cycling Days &amp; Coaching for Schools in West Yorkshire</title>
-  <link rel="icon" href="icon.png" />
-  <link rel="apple-touch-icon" href="icon.png" />
+  <title>Pro Ride Coaching | Cycling Days &amp; Coaching for Primary Schools</title>
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="canonical" href="https://proridecoaching.co.uk/" />
   <meta name="theme-color" content="#1b8fd6" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
 
   <meta name="description"
-    content="Pro Ride Coaching brings fun, professional cycling days to primary schools across West Yorkshire. Balance bike days, learn-to-ride, KS1 &amp; KS2 cycle sport, competitions and whole-school days — all bikes and equipment provided. Founded by former Team GB cyclist Phil Bateman. Book your school's cycling day today." />
-  <meta name="keywords"
-    content="cycling coaching for schools, cycling days for schools, balance bike days, learn to ride, bikeability, school cycling instructor, fun cycling days primary school, KS1 cycling, KS2 cycle sport, cycling coach West Yorkshire, school cycling Bradford, Leeds, Yorkshire, Pro Ride Coaching, ProRide" />
+    content="Fun, professionally coached cycling days for primary schools across the UK: balance bikes, learn-to-ride, KS1 &amp; KS2 cycle sport. Founded by Olympic cyclist Phil Bateman." />
   <meta name="author" content="Phil Bateman" />
 
-  <!-- Local / geo -->
-  <meta name="geo.region" content="GB-WYK" />
-  <meta name="geo.placename" content="West Yorkshire" />
+  <!-- Fonts (preconnect so they start downloading straight away) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Fredoka:wght@500;600;700&family=Quicksand:wght@500;600&display=swap" />
 
   <!-- Open Graph / social sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Pro Ride Coaching" />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:url" content="https://proridecoaching.co.uk/" />
-  <meta property="og:title" content="Pro Ride Coaching | Cycling Days for Schools in West Yorkshire" />
+  <meta property="og:title" content="Pro Ride Coaching | Cycling Days &amp; Coaching for Primary Schools" />
   <meta property="og:description"
-    content="Fun, professional cycling days for primary schools — balance bikes to KS2 cycle sport. All equipment provided. Founded by former Team GB cyclist Phil Bateman." />
-  <meta property="og:image" content="https://proridecoaching.co.uk/icon.png" />
+    content="Fun, professional cycling days for primary schools — balance bikes to KS2 cycle sport. Founded by former Team GB cyclist Phil Bateman." />
+  <meta property="og:image" content="https://proridecoaching.co.uk/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Pro Ride Coaching — cycling days for primary schools" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pro Ride Coaching | Cycling Days for Schools" />
+  <meta name="twitter:title" content="Pro Ride Coaching | Cycling Days for Primary Schools" />
   <meta name="twitter:description"
-    content="Fun, professional cycling days for primary schools across West Yorkshire. All equipment provided." />
-  <meta name="twitter:image" content="https://proridecoaching.co.uk/icon.png" />
+    content="Fun, professional cycling days for primary schools across the UK." />
+  <meta name="twitter:image" content="https://proridecoaching.co.uk/og-image.jpg" />
 
-  <!-- Structured data: local business -->
+  <!-- Structured data: business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "SportsActivityLocation"],
     "name": "Pro Ride Coaching",
-    "alternateName": "ProRide Coaching",
-    "description": "Professional cycling coaching and fun biking days for primary schools across West Yorkshire — balance bike days, learn-to-ride, KS1 and KS2 cycle sport, competitions and whole-school days. All bikes and equipment provided.",
+    "alternateName": ["ProRide Coaching", "Pro-Ride Coaching"],
+    "legalName": "Pro-Ride Coaching Limited",
+    "description": "Professional cycling coaching and fun cycling days for primary schools across the UK — balance bike days, learn-to-ride, KS1 and KS2 cycle sport, competitions and whole-school days. Based in Yorkshire.",
     "url": "https://proridecoaching.co.uk/",
-    "logo": "https://proridecoaching.co.uk/icon.png",
-    "image": "https://proridecoaching.co.uk/icon.png",
+    "logo": "https://proridecoaching.co.uk/icon-512.png",
+    "image": "https://proridecoaching.co.uk/og-image.jpg",
     "telephone": "+447960534012",
     "email": "admin@proridecoaching.co.uk",
     "slogan": "Cycling for Schools",
     "founder": { "@type": "Person", "name": "Phil Bateman" },
-    "areaServed": { "@type": "AdministrativeArea", "name": "West Yorkshire, United Kingdom" },
-    "address": { "@type": "PostalAddress", "addressRegion": "West Yorkshire", "addressCountry": "GB" },
+    "areaServed": { "@type": "Country", "name": "United Kingdom" },
+    "address": { "@type": "PostalAddress", "addressRegion": "Yorkshire", "addressCountry": "GB" },
     "sameAs": [
       "https://www.facebook.com/proridecoaching",
       "https://x.com/proridecoaching"
@@ -66,7 +99,7 @@
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Key Stage 1 Fun Days" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Key Stage 2 Cyclesport Days" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole School Days" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "After School Clubs" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "School Clubs" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Competition Days" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Road Safety Training" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Staff Training (CPD)" } }
@@ -74,13 +107,10 @@
     }
   }
   </script>
-
-  <!-- Font Awesome (icons used across the site) -->
-  <script src="https://kit.fontawesome.com/56162477b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to view this site.</noscript>
+  <noscript>You need to enable JavaScript to use the contact form and menus on this site.</noscript>
   <div id="root"></div>
 </body>
 

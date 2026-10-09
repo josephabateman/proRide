@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function ServiceCardSmall(props) {
-  const to = `/${props.title.replace(/[()\s+]/g, "")}`;
-
   return (
-    <Link className="service-tile" to={to}>
+    <Link className="service-tile" to={props.to}>
       <div className="service-tile__media">
         <img
           src={props.img}

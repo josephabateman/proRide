@@ -27,8 +27,9 @@ const aboutData = {
   text1: renderContent(content.aboutProRide.body),
   text2: renderContent(content.aboutProRide.body2),
   img: fileName(aboutProRide, "phil_with_three_kids.jpg"),
+  imgAlt: "Phil Bateman with three pupils on their bikes on the school field",
   img2: fileName(aboutProRide, "starting_line.jpg"),
-  imgDescription: "kid on bike",
+  img2Alt: "Children on their bikes at the start line during a Pro Ride cycling day",
 };
 
 export default aboutData;

@@ -18,8 +18,8 @@ function Home() {
   return (
     <div>
       <Seo
-        title="Pro Ride Coaching | Fun Cycling Days for Schools in West Yorkshire"
-        description="Pro Ride Coaching brings fun, professional cycling days to primary schools across West Yorkshire. Balance bike days, learn-to-ride, KS1 & KS2 cycle sport and whole-school days — all equipment provided. Founded by former Team GB cyclist Phil Bateman."
+        title="Pro Ride Coaching | Cycling Days & Coaching for Primary Schools"
+        description="Fun, professionally coached cycling days for primary schools across the UK: balance bikes, learn-to-ride, KS1 & KS2 cycle sport. Founded by Olympic cyclist Phil Bateman."
       />
       {fullScreenBanners.map((data, key) => (
         <CollapsingBanners

@@ -1,46 +1,54 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import emailjs from "@emailjs/browser";
 import ContactForm from "./ContactForm";
 import SuccessPage from "./SuccessPage";
 import XLogo from "../XLogo";
 import Seo from "../Seo";
-import emailjs from "emailjs-com";
 import content from "../../data/siteContent.json";
 import { phoneParts } from "../../data/renderContent";
 
 const phone = phoneParts(content.contact.phone);
 
+const SERVICE_ID = "proridecoaching";
+const TEMPLATE_ID = "proridetemplate";
+const PUBLIC_KEY = "user_rhsl2oZqwgrD38edYovoz";
+
 function ContactPage() {
-  const [form, formSubmitted] = useState(false);
+  // "idle" | "sending" | "sent" | "error"
+  const [status, setStatus] = useState("idle");
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const service_id = "proridecoaching";
-  const template_id = "proridetemplate";
-  const user_id = "user_rhsl2oZqwgrD38edYovoz";
-
   function sendEmail(e) {
     e.preventDefault();
+    const form = e.target;
 
-    emailjs.sendForm(service_id, template_id, e.target, user_id).then(
-      (result) => {
-        console.log(result.text);
-      },
+    // Spam trap filled in: pretend it worked but don't send anything.
+    if (form.elements.company_website && form.elements.company_website.value) {
+      setStatus("sent");
+      return;
+    }
+
+    setStatus("sending");
+    // Only show "Message sent!" once EmailJS confirms delivery; on failure the
+    // form (and everything the visitor typed) stays put with an error message.
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, { publicKey: PUBLIC_KEY }).then(
+      () => setStatus("sent"),
       (error) => {
-        console.log(error.text);
+        console.error("Contact form failed to send", error);
+        setStatus("error");
       }
     );
-    formSubmitted(true);
-    e.target.reset();
   }
 
   return (
     <>
       <Seo
         title="Book a School Cycling Day | Contact Pro Ride Coaching"
-        description="Get in touch to book a fun, professional cycling day for your school in West Yorkshire. Send your preferred dates or call 07960 534 012 — balance bikes to KS2 cycle sport, all equipment provided."
+        description={`Book a fun, professionally coached cycling day for your primary school. Send us your preferred dates or call ${phone.display}.`}
       />
       <Container className="contact-page">
         <div className="text-center">
@@ -99,7 +107,17 @@ function ContactPage() {
           {/* Form card */}
           <Col lg={7}>
             <div className="contact-card">
-              {!form ? <ContactForm onSubmit={sendEmail} /> : <SuccessPage />}
+              {status === "sent" ? (
+                <SuccessPage />
+              ) : (
+                <ContactForm
+                  onSubmit={sendEmail}
+                  sending={status === "sending"}
+                  failed={status === "error"}
+                  phone={phone}
+                  email={content.contact.email}
+                />
+              )}
             </div>
           </Col>
         </Row>

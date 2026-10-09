@@ -14,7 +14,7 @@ function HeaderText() {
       <ScrollToTop smooth />
       <Seo
         title="Our Cycling Services for Schools | Pro Ride Coaching"
-        description="Explore Pro Ride's cycling sessions for schools: balance bike days, KS1 fun days, KS2 cyclesport, whole-school days, after-school clubs, competition days, road safety training and staff CPD. Serving West Yorkshire schools."
+        description="Cycling sessions for primary schools across the UK: balance bike days, KS1 fun days, KS2 cyclesport, whole-school days, school clubs, competitions, road safety and staff CPD."
       />
 
       <Container className="text-center pt-4">

@@ -75,8 +75,18 @@ const assets = [
   },
 ];
 
+// "Staff Training (CPD)" -> "staff-training-cpd"
+export function serviceSlug(name) {
+  return String(name)
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 const servicesData = content.services.map((s, i) => ({
   name: s.name,
+  path: `/services/${serviceSlug(s.name)}`,
   header: s.header,
   text1: renderContent(s.body),
   text2: s.body2 ? renderContent(s.body2) : undefined,

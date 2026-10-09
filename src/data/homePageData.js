@@ -9,7 +9,7 @@ function importAll(r) {
 }
 
 const proRideImages = importAll(
-  require.context("../static/images", false, /\.(png|jpe?g|JPEG|svg)$/)
+  require.context("../static/images", false, /\.(png|jpe?g|JPEG|svg|webp)$/)
 );
 
 function fileName(folder, fileName) {
@@ -22,7 +22,7 @@ const fullScreenBanners = [
     color: "blue-gradient text-white pt-2",
     description: "Developing Cycling in Schools",
     imageDescription: "phil bateman coaching in schools",
-    imageSrc: fileName(proRideImages, "proride-kids-1.png"),
+    imageSrc: fileName(proRideImages, "proride-kids-1.webp"),
   },
 ];
 
@@ -34,7 +34,7 @@ const collapsingBanners = [
     buttonText: "Learn More",
     buttonLink: "/services",
     imageDescription: "Range of services",
-    imageSrc: fileName(proRideImages, "proride-kids-2.png"),
+    imageSrc: fileName(proRideImages, "proride-kids-2.webp"),
   },
 ];
 

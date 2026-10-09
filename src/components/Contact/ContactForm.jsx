@@ -1,44 +1,75 @@
 import React from "react";
-import { Form, Row, Col, FloatingLabel } from "react-bootstrap";
+import { Form, Row, Col, FloatingLabel, Alert } from "react-bootstrap";
 
-function ContactForm(props) {
+function ContactForm({ onSubmit, sending, failed, phone, email }) {
   return (
-    <Form onSubmit={props.onSubmit} className="contact-form text-start">
+    <Form onSubmit={onSubmit} className="contact-form text-start">
+      {failed ? (
+        <Alert variant="danger" className="contact-form__error">
+          <strong>Sorry, your message didn't send.</strong> Please try again, or
+          contact us directly on <a href={`tel:${phone.intl}`}>{phone.display}</a>{" "}
+          or <a href={`mailto:${email}`}>{email}</a>.
+        </Alert>
+      ) : null}
+
       <Row className="g-3">
         <Col md={6}>
-          <FloatingLabel label="Your name">
-            <Form.Control name="name" type="text" placeholder="Your name" />
-          </FloatingLabel>
-        </Col>
-        <Col md={6}>
-          <FloatingLabel label="School">
-            <Form.Control name="school" type="text" placeholder="School" />
-          </FloatingLabel>
-        </Col>
-
-        <Col md={6}>
-          <FloatingLabel label="Email">
-            <Form.Control name="email" type="email" placeholder="Email" />
-          </FloatingLabel>
-        </Col>
-        <Col md={6}>
-          <FloatingLabel label="Postcode">
-            <Form.Control name="postcode" type="text" placeholder="Postcode" />
-          </FloatingLabel>
-        </Col>
-
-        <Col xs={12}>
-          <FloatingLabel label="Preferred date(s)">
+          <FloatingLabel controlId="contact-name" label="Your name *">
             <Form.Control
-              name="date"
+              name="name"
               type="text"
-              placeholder="e.g. Any week day commencing 25/03/23"
+              placeholder="Your name"
+              autoComplete="name"
+              required
+            />
+          </FloatingLabel>
+        </Col>
+        <Col md={6}>
+          <FloatingLabel controlId="contact-school" label="School *">
+            <Form.Control
+              name="school"
+              type="text"
+              placeholder="School"
+              autoComplete="organization"
+              required
             />
           </FloatingLabel>
         </Col>
 
         <Col md={6}>
-          <FloatingLabel label="Total children taking part">
+          <FloatingLabel controlId="contact-email" label="Email *">
+            <Form.Control
+              name="email"
+              type="email"
+              placeholder="Email"
+              autoComplete="email"
+              required
+            />
+          </FloatingLabel>
+        </Col>
+        <Col md={6}>
+          <FloatingLabel controlId="contact-postcode" label="Postcode">
+            <Form.Control
+              name="postcode"
+              type="text"
+              placeholder="Postcode"
+              autoComplete="postal-code"
+            />
+          </FloatingLabel>
+        </Col>
+
+        <Col xs={12}>
+          <FloatingLabel controlId="contact-date" label="Preferred date(s)">
+            <Form.Control
+              name="date"
+              type="text"
+              placeholder="e.g. Any weekday in the week of 2 March"
+            />
+          </FloatingLabel>
+        </Col>
+
+        <Col md={6}>
+          <FloatingLabel controlId="contact-total" label="Total children taking part">
             <Form.Control
               name="total_number_of_children_taking_part"
               type="text"
@@ -47,7 +78,7 @@ function ContactForm(props) {
           </FloatingLabel>
         </Col>
         <Col md={6}>
-          <FloatingLabel label="Classes & numbers">
+          <FloatingLabel controlId="contact-classes" label="Classes & numbers">
             <Form.Control
               name="num_in_each_class"
               type="text"
@@ -57,7 +88,7 @@ function ContactForm(props) {
         </Col>
 
         <Col xs={12}>
-          <FloatingLabel label="Message">
+          <FloatingLabel controlId="contact-message" label="Message">
             <Form.Control
               name="message"
               as="textarea"
@@ -68,15 +99,32 @@ function ContactForm(props) {
         </Col>
 
         <Col xs={12}>
-          <button id="submit-button" className="button w-100" type="submit">
-            Send message
+          <button
+            id="submit-button"
+            className="button w-100"
+            type="submit"
+            disabled={sending}
+          >
+            {sending ? "Sending…" : "Send message"}
           </button>
         </Col>
       </Row>
 
+      {/* Spam trap: hidden from people and screen readers, so only bots fill it in. */}
+      <div className="contact-form__hp" aria-hidden="true">
+        <label htmlFor="contact-company-website">Leave this field empty</label>
+        <input
+          id="contact-company-website"
+          name="company_website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
       <p className="contact-form__alt">
         Prefer to talk? Call us on{" "}
-        <a href="tel:+447960534012">07960 534 012</a>
+        <a href={`tel:${phone.intl}`}>{phone.display}</a>
       </p>
     </Form>
   );

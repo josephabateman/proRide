@@ -7,7 +7,7 @@ function Jobs() {
     <>
       <Seo
         title="Cycling Coach Jobs | Join Pro Ride Coaching"
-        description="We're always looking for enthusiastic cycling coaches to deliver fun cycling days in West Yorkshire schools. Download our coach information form and get in touch."
+        description="We're always looking for enthusiastic cycling coaches to deliver fun cycling days in primary schools. Download our coach information form and get in touch."
       />
       <h1 className="my-4">{content.jobs.heading}</h1>
       <hr />

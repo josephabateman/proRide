@@ -27,9 +27,9 @@ const aboutData = {
   text1: renderContent(content.aboutPhil.body),
   text2: renderContent(content.aboutPhil.body2),
   img: fileName(aboutPhil, "phil_profile_pic.jpeg"),
-  imgDescription: "Phil Bateman Sports Article 1988",
-  img2: fileName(aboutPhil, "cycling_weekly.png"),
-  img2Description: "Phil Bateman 2021",
+  imgAlt: "Phil Bateman, founder of Pro Ride Coaching",
+  img2: fileName(aboutPhil, "cycling_weekly.jpg"),
+  img2Alt: "Phil Bateman racing on the front cover of Cycling Weekly in 1988",
 };
 
 export default aboutData;

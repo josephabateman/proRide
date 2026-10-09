@@ -20,7 +20,7 @@ function PromoVideo(props) {
           Your browser does not support the video tag.
         </video>
       ) : (
-        <iframe title="ProRide promo video" src={src} allowFullScreen></iframe>
+        <iframe title="Pro Ride Coaching promo video" src={src} allowFullScreen></iframe>
       )}
     </div>
   );

@@ -14,7 +14,7 @@ function AboutTemplate(props) {
         <Row>
           <Col>
             <div className="rotatated-bg-green about-img mb-5 float-md-left mx-md-5 d-block mx-auto ">
-              <Image src={props.img} />
+              <Image src={props.img} alt={props.imgAlt} />
             </div>
 
             <div className="text-center">
@@ -44,7 +44,7 @@ function AboutTemplate(props) {
             className={customStyling.aboutTemplateStyles.img2AndText2Section}
           >
             <div className="rotatated-bg-blue about-img mb-5 float-md-right mx-md-5 d-block mx-auto">
-              <Image src={props.img2} />
+              <Image src={props.img2} alt={props.img2Alt} />
             </div>
 
             <div className="about-text p-2">{props.text2}</div>

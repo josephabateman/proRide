@@ -10,6 +10,7 @@ function ServicesCardsCollection() {
         {servicesData.map((service, key) => (
           <Col xs={12} sm={6} lg={4} className="d-flex" key={key}>
             <ServiceCardSmall
+              to={service.path}
               img={service.tile}
               title={service.name}
               text={service.header}

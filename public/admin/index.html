@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex" />
-<title>ProRide — Website Editor</title>
+<title>Pro Ride — Website Editor</title>
 <style>
   :root{
     --navy:#16263A; --teal:#26D183; --cyan:#1CA9E5; --ink:#27384A;
@@ -67,7 +67,7 @@
 </head>
 <body>
 <header>
-  <h1>ProRide — Website Editor</h1>
+  <h1>Pro Ride — Website Editor</h1>
   <span class="status" id="status"></span>
 </header>
 
@@ -79,6 +79,7 @@
     <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → fine-grained token</a> (log in if asked).</li>
     <li>Set <b>Repository access</b> → <b>Only select repositories</b> → <code>josephabateman/proRide</code>.</li>
     <li>Under <b>Permissions → Repository permissions</b>, set <b>Contents</b> to <b>Read and write</b>.</li>
+    <li>Set an <b>Expiration</b> (e.g. 90 days) so a lost or leaked token stops working on its own. When it expires, just make a new one here.</li>
     <li>Click <b>Generate token</b>, copy it, and paste below.</li>
   </ol>
   <input id="tokenInput" type="password" placeholder="Paste your token here (starts with github_pat_...)" />
@@ -167,8 +168,8 @@ function setPath(obj, path, val){
 // ---------- labels ----------
 const SECTION_LABELS = {
   contact:"Contact details", home:"Home page", services:"Services",
-  aboutProRide:"About ProRide page", aboutPhil:"About Phil page", faq:"FAQ page",
-  contactPage:"Contact page", jobs:"Jobs page", footer:"Footer",
+  aboutProRide:"About Pro Ride page", aboutPhil:"About Phil page", faq:"FAQ page",
+  contactPage:"Contact page", jobs:"Jobs page", footer:"Footer", settings:"Settings",
 };
 const KEY_LABELS = {
   phone:"Phone", email:"Email", facebook:"Facebook URL", x:"X (Twitter) URL",
@@ -182,6 +183,7 @@ const KEY_LABELS = {
   ctaHeading2:"Box heading", q:"Question", a:"Answer",
   sidebarHeading:"Sidebar heading", sidebarText:"Sidebar text", text:"Text",
   button:"Button", blurb:"Blurb", bottomLine:"Bottom line",
+  cloudflareAnalyticsToken:"Cloudflare Web Analytics token (leave blank to turn analytics off)",
 };
 function prettify(k){
   if(KEY_LABELS[k]) return KEY_LABELS[k];

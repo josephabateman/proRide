@@ -9,18 +9,24 @@ function SpecificService(props) {
     window.scrollTo(0, 0);
   }, []);
 
+  // "Whole School Days" already says "school", so skip the " for Schools" suffix.
+  const seoTitle = /school/i.test(props.title)
+    ? `${props.title} | Pro Ride Coaching`
+    : `${props.title} for Schools | Pro Ride Coaching`;
+
   return (
     <div className="service-detail-page">
       <Seo
-        title={`${props.title} for Schools | Pro Ride Coaching`}
-        description={`${props.header} ${props.title} from Pro Ride Coaching — fun, professionally coached cycling sessions for schools across West Yorkshire. All equipment provided.`}
+        title={seoTitle}
+        description={`${props.header}. ${props.title} from Pro Ride Coaching — fun, professionally coached cycling sessions for primary schools across the UK.`}
+        image={props.tile}
       />
       <ScrollToTop smooth />
 
       {/* Hero */}
       <div
         className="service-hero"
-        style={{ backgroundImage: `url(${props.tile})` }}
+        style={{ backgroundImage: `url("${props.tile}")` }}
       >
         <div className="service-hero__overlay">
           <h1 className="service-hero__title">{props.title}</h1>
@@ -50,7 +56,7 @@ function SpecificService(props) {
                   </Accordion.Item>
                 </Accordion>
               ) : (
-                <p className="service-detail__text">{props.text1}</p>
+                <div className="service-detail__text">{props.text1}</div>
               )}
             </div>
 
