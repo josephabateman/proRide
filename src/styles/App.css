@@ -386,37 +386,24 @@ button.button:hover,
 /* ============================================================
    SERVICE DETAIL PAGE
    ============================================================ */
-.service-hero {
-  position: relative;
-  min-height: 230px;
+/* Photo shown in its true colours (no dark overlay); the title sits in a
+   blue band underneath so it stays readable. */
+.service-hero { text-align: center; }
+.service-hero__photo {
+  /* same shape as the wide banner photos, so the whole picture shows */
+  aspect-ratio: 1388 / 400;
+  max-height: 460px;
   background-size: cover;
-  background-position: center 28%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
-}
-.service-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(15, 26, 36, 0.15) 0%,
-    rgba(15, 26, 36, 0.78) 100%
-  );
+  background-position: center;
 }
 .service-hero__overlay {
-  position: relative;
-  z-index: 1;
-  padding: 2rem 1.2rem 2.4rem;
-  max-width: 820px;
+  background: var(--pr-hero-gradient);
+  padding: 1.5rem 1.2rem 1.7rem;
 }
 .service-hero__title {
   color: #fff;
   font-weight: 800;
   font-size: clamp(2rem, 5vw, 3.2rem);
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
   margin: 0;
 }
 .service-hero__sub {
@@ -985,20 +972,67 @@ ul li { list-style-type: none; }
 }
 
 /* ============================================================
-   HOME — SERVICES CARD PHOTO (full photo, not a cut-out)
+   HOME — SERVICES PANEL (blue, list of service links + photo)
    ============================================================ */
-.home-tile .green-gradient .img-large-mobile { padding-bottom: 0; }
-.home-tile .green-gradient .img-large-mobile img {
-  -webkit-mask-image: none;
-  mask-image: none;
+.home-services {
+  display: flex;
+  flex-direction: column;
+  background: var(--pr-blue-gradient);
+  color: #fff;
+}
+.home-services__body { padding: 1.8rem 1.2rem 0.4rem; }
+.home-services__title {
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+  color: #fff;
+  margin-bottom: 1.1rem;
+}
+.home-services__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+}
+.home-services__list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: left;
+  text-decoration: none;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.home-services__list a i { font-size: 0.75rem; opacity: 0.8; }
+.home-services__list a:hover,
+.home-services__list a:focus-visible {
+  background: #fff;
+  color: var(--pr-blue-deep);
+  transform: translateY(-2px);
+}
+.home-services__img {
   display: block;
-  width: calc(100% + 2rem);
+  /* larger than the panel so the people fill it; the sides are cropped */
+  width: 140%;
   max-width: none;
-  margin: 1rem -1rem 0;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: 50% 40%;
-  transform: none;
+  height: auto;
+  margin: auto 0 0 -20%;
+  padding-top: 0;
+  /* cut-out photo: fade its top edge into the blue, like the home hero */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 16%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 16%);
+}
+@media (max-width: 400px) {
+  .home-services__list { grid-template-columns: 1fr; }
 }
 
 /* ============================================================

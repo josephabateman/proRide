@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 // Pages are imported eagerly (not React.lazy) so each pre-rendered page can
 // hydrate straight away instead of flashing a "Loading..." fallback.
 import Home from "./Home/Home";
@@ -125,6 +125,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/services" component={ServicesPage} />
+          {/* Old address before the KS2 page was renamed */}
+          <Redirect exact from="/services/key-stage-2-cyclesport-days" to="/services/ks2-cyclesport-days" />
           {servicesData.map((service) => (
             <Route key={service.path} exact path={service.path}>
               <SpecificService

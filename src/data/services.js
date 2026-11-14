@@ -46,7 +46,7 @@ const assets = [
     img: fileName(specificServiceImages, "cycle_sport_ks2.jpg"),
   },
   {
-    tile: fileName(tile, "whole_school_day_tile.jpg"),
+    tile: fileName(tile, "whole_school_race_banner.jpg"),
     flyer: fileName(flyers, "Whole School Day flyer.pdf"),
     img: fileName(specificServiceImages, "whole_school_day.jpg"),
   },
@@ -56,7 +56,7 @@ const assets = [
     img: fileName(specificServiceImages, "limbo_boy_2.jpg"),
   },
   {
-    tile: fileName(tile, "cpd_tile.jpg"),
+    tile: fileName(tile, "staff_training_banner.jpg"),
     flyer: fileName(flyers, "Cycling Instructor Course.pdf"),
     img: fileName(specificServiceImages, "cpd.jpg"),
   },
@@ -69,7 +69,7 @@ const assets = [
     img: fileName(specificServiceImages, "competition_day.jpg"),
   },
   {
-    tile: fileName(tile, "road_safety_training_tile.jpg"),
+    tile: fileName(tile, "road_safety_banner.jpg"),
     flyer: fileName(flyers, "Road Safety Training flyer.pdf"),
     img: fileName(specificServiceImages, "road_safety_training.jpg"),
   },

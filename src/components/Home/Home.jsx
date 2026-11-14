@@ -7,6 +7,7 @@ import PromoVideo from "./PromoVideo";
 import Seo from "../Seo";
 import customStyling from "../../styles/custom-styling";
 import content from "../../data/siteContent.json";
+import servicesData from "../../data/services";
 
 const features = content.home.cards;
 
@@ -73,16 +74,24 @@ function Home() {
           <Row className="g-3 align-items-stretch">
             {collapsingBanners.map((data, key) => (
               <Col lg={6} key={key}>
-                <div className="home-tile h-100">
-                  <CollapsingBanners
-                    cardContainerPreferences={data.color}
-                    title={data.title}
-                    description={data.description}
-                    buttonText={data.buttonText}
-                    buttonLink={data.buttonLink}
-                    videoSrc={data.videoSrc}
-                    imageDescription={data.imageDescription}
-                    imageSrc={data.imageSrc}
+                <div className="home-tile home-services h-100">
+                  <div className="home-services__body">
+                    <h3 className="home-services__title">{data.description}</h3>
+                    <ul className="home-services__list">
+                      {servicesData.map((s) => (
+                        <li key={s.path}>
+                          <Link to={s.path}>
+                            <span>{s.name}</span>
+                            <i className="fas fa-chevron-right"></i>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <img
+                    className="home-services__img"
+                    src={data.imageSrc}
+                    alt={data.imageDescription}
                   />
                 </div>
               </Col>

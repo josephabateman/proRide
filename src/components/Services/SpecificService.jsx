@@ -24,10 +24,13 @@ function SpecificService(props) {
       <ScrollToTop smooth />
 
       {/* Hero */}
-      <div
-        className="service-hero"
-        style={{ backgroundImage: `url("${props.tile}")` }}
-      >
+      <div className="service-hero">
+        <div
+          className="service-hero__photo"
+          role="img"
+          aria-label={`${props.title} — Pro Ride Coaching`}
+          style={{ backgroundImage: `url("${props.tile}")` }}
+        ></div>
         <div className="service-hero__overlay">
           <h1 className="service-hero__title">{props.title}</h1>
           {props.header ? (

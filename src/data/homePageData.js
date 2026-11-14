@@ -28,13 +28,9 @@ const fullScreenBanners = [
 
 const collapsingBanners = [
   {
-    description: "View Our Range Of Services",
-    color: "green-gradient text-white pt-2",
-    // description: "Making cycling in school fun",
-    buttonText: "Learn More",
-    buttonLink: "/services",
-    imageDescription: "A smiling boy riding a balance bike in his school hall during a Pro Ride session",
-    imageSrc: require("../static/images/cpd/happy-hall.webp").default,
+    description: "View our range of services",
+    imageDescription: "Phil Bateman with a class of smiling primary school children",
+    imageSrc: fileName(proRideImages, "proride-kids-1.webp"),
   },
 ];
 
