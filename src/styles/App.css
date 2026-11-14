@@ -145,7 +145,7 @@ img { width: 100%; height: auto; }
   color: var(--pr-blue);
 }
 .logo { margin: 0; padding: 0; display: inline-flex; align-items: center; }
-.logo svg { display: block; height: 52px; width: auto; max-width: 100%; }
+.logo img { display: block; height: 52px; width: auto; max-width: 100%; }
 
 /* ============================================================
    HERO  (first full-screen banner)
@@ -982,4 +982,221 @@ ul li { list-style-type: none; }
     position: relative;
     z-index: 1;
   }
+}
+
+/* ============================================================
+   HOME HERO PHOTO — full page width, edge to edge, no fade.
+   ============================================================ */
+.blue-gradient.text-white .img-large-mobile { padding-bottom: 0; }
+.blue-gradient.text-white .img-large-mobile img {
+  display: block;
+  width: calc(100% + 2rem);
+  max-width: none;
+  height: auto;
+  aspect-ratio: 1600 / 885;
+  margin: 0.6rem -1rem 0;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+@media only screen and (max-width: 768px) {
+  .blue-gradient.text-white .img-large-mobile img {
+    transform: none;
+    width: calc(100% + 2rem);
+    max-width: none;
+    margin: 0.6rem -1rem 0;
+    object-fit: cover;
+  }
+}
+
+/* ============================================================
+   HOME — SERVICES CARD PHOTO (full photo, not a cut-out)
+   ============================================================ */
+.home-tile .green-gradient .img-large-mobile { padding-bottom: 0; }
+.home-tile .green-gradient .img-large-mobile img {
+  -webkit-mask-image: none;
+  mask-image: none;
+  display: block;
+  width: calc(100% + 2rem);
+  max-width: none;
+  margin: 1rem -1rem 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: 50% 40%;
+  transform: none;
+}
+
+/* ============================================================
+   CPD & EQUIPMENT PAGE
+   ============================================================ */
+.cpd-hero {
+  background: var(--pr-hero-gradient);
+  color: #fff;
+  padding-top: 2.4rem;
+}
+.cpd-tag {
+  display: inline-block;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.cpd-hero__title {
+  font-size: clamp(2.1rem, 5.2vw, 3.6rem);
+  font-weight: 800;
+  color: #fff;
+  margin: 0.9rem 0 0.5rem;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+}
+.cpd-hero__sub {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: clamp(1.02rem, 2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.94);
+}
+.cpd-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  justify-content: center;
+  padding: 1.6rem 0 2rem;
+}
+.cpd-hero__cta .button { margin: 0; }
+.cpd-hero__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: 50% 45%;
+}
+.cpd-body { max-width: 1140px; padding: 0 1rem 1rem; }
+.cpd-section { margin-top: 3.6rem; }
+.cpd-intro { margin-top: 2.6rem; }
+.cpd-intro p { color: var(--pr-muted); line-height: 1.75; font-size: 1.05rem; }
+.cpd-intro p:first-child { color: var(--pr-ink); font-weight: 600; font-size: 1.2rem; }
+.cpd-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.cpd-photos img, .cpd-rounded-img {
+  width: 100%;
+  border-radius: var(--pr-radius);
+  box-shadow: var(--pr-shadow);
+  object-fit: cover;
+}
+.cpd-photos img { aspect-ratio: 3 / 4; }
+.cpd-rounded-img { aspect-ratio: 4 / 3; }
+
+/* PE premium band */
+.cpd-premium {
+  margin-top: 3.6rem;
+  background: #fff;
+  border: 1px solid var(--pr-line);
+  border-top: 6px solid var(--pr-green);
+  border-radius: var(--pr-radius);
+  box-shadow: var(--pr-shadow-sm);
+  padding: 2.2rem 1.4rem 1.4rem;
+  text-align: left;
+}
+.cpd-premium__head { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem; }
+.cpd-premium__head i {
+  width: 46px; height: 46px; flex: none;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--pr-green-gradient);
+  color: #fff; font-size: 1.2rem;
+}
+.cpd-premium__head h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; margin: 0; }
+.cpd-premium__intro { color: var(--pr-muted); line-height: 1.7; max-width: 820px; margin-bottom: 1.4rem; }
+.cpd-quote {
+  height: 100%;
+  margin: 0;
+  background: var(--pr-bg);
+  border-left: 5px solid var(--pr-blue);
+  border-radius: var(--pr-radius-sm);
+  padding: 1.1rem 1.2rem;
+}
+.cpd-quote blockquote {
+  margin: 0 0 0.6rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--pr-ink);
+  line-height: 1.5;
+}
+.cpd-quote figcaption { color: var(--pr-muted); font-size: 0.95rem; }
+.cpd-premium__source { margin: 1.2rem 0 0; font-size: 0.88rem; color: var(--pr-muted); }
+
+/* steps */
+.cpd-step {
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-radius);
+  box-shadow: var(--pr-shadow-sm);
+  padding: 2rem 1.3rem 1.4rem;
+}
+.cpd-step__num {
+  display: inline-grid; place-items: center;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--pr-blue-gradient);
+  color: #fff; font-weight: 800; font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+.cpd-step h3 { font-size: 1.2rem; font-weight: 700; }
+.cpd-step p { color: var(--pr-muted); margin: 0; }
+
+/* packages */
+.cpd-package {
+  position: relative;
+  height: 100%;
+  display: flex; flex-direction: column;
+  background: #fff;
+  border: 2px solid var(--pr-line);
+  border-radius: var(--pr-radius);
+  box-shadow: var(--pr-shadow-sm);
+  padding: 2rem 1.5rem 1.6rem;
+}
+.cpd-package--featured { border-color: var(--pr-blue); box-shadow: var(--pr-shadow); }
+.cpd-package__ribbon {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--pr-sun); color: var(--pr-ink);
+  font-weight: 700; font-size: 0.85rem;
+  padding: 0.3rem 0.9rem; border-radius: 999px;
+}
+.cpd-package h3 { font-size: 1.25rem; font-weight: 700; }
+.cpd-package__price { font-size: 2.6rem; font-weight: 800; color: var(--pr-blue-deep); line-height: 1.1; }
+.cpd-package__badge { color: #148a4c; font-weight: 600; margin: 0.4rem 0 1rem; }
+.cpd-package ul, .cpd-ticks { list-style: none; padding: 0; margin: 0 0 1.4rem; text-align: left; }
+.cpd-package li, .cpd-ticks li {
+  display: flex; gap: 0.7rem; align-items: flex-start;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--pr-line);
+}
+.cpd-package li i, .cpd-ticks li i { color: var(--pr-green); margin-top: 0.25rem; }
+.cpd-package .button { margin: auto auto 0; }
+
+/* equipment */
+.cpd-kit { margin: 0; background: #fff; border-radius: var(--pr-radius-sm); box-shadow: var(--pr-shadow-sm); overflow: hidden; height: 100%; }
+.cpd-kit img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.cpd-kit figcaption { padding: 0.7rem 0.6rem; font-weight: 600; font-size: 0.95rem; }
+
+/* testimonials */
+.cpd-testimonial {
+  height: 100%; margin: 0; text-align: left;
+  background: #fff;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-radius);
+  box-shadow: var(--pr-shadow-sm);
+  padding: 1.4rem 1.4rem 1.2rem;
+}
+.cpd-testimonial i { color: var(--pr-cyan); font-size: 1.4rem; }
+.cpd-testimonial blockquote { margin: 0.6rem 0; color: var(--pr-ink); line-height: 1.6; }
+.cpd-testimonial figcaption { color: var(--pr-muted); font-weight: 600; font-size: 0.92rem; }
+
+.cpd-faq, .cpd-cta { max-width: 860px; margin-left: auto; margin-right: auto; }
+.cpd-faq { margin-top: 3.6rem; }
+
+@media only screen and (max-width: 768px) {
+  .cpd-hero__img { aspect-ratio: 4 / 3; }
+  .cpd-premium { padding: 1.6rem 1rem 1rem; }
 }

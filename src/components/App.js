@@ -10,6 +10,7 @@ import ServicesPage from "./Services/ServicesPage";
 import SpecificService from "./Services/SpecificService";
 import Jobs from "./Jobs/Jobs";
 import FAQ from "./FAQ/FAQ";
+import CPDEquipment from "./CPD/CPDEquipment";
 import NotFound from "./NotFound";
 import NavBar from "./NavBar";
 import XLogo from "./XLogo";
@@ -77,6 +78,7 @@ function Footer() {
             <ul className="site-footer__links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/services">Services</Link></li>
+              <li><Link to="/cpd-equipment">CPD &amp; Equipment</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/jobs">Jobs</Link></li>
@@ -144,6 +146,7 @@ function App() {
           <Route exact path="/about/phil-bateman" component={AboutPhil} />
           <Route exact path="/jobs" component={Jobs} />
           <Route exact path="/faq" component={FAQ} />
+          <Route exact path="/cpd-equipment" component={CPDEquipment} />
           <Route component={NotFound} />
         </Switch>
       </div>

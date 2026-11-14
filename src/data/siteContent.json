@@ -177,6 +177,131 @@
     "text": "We're always on the lookout for enthusiastic cycling coaches and would love to hear from you. Download the form below, fill it out and return it to admin@proridecoaching.co.uk to be considered. Thank you!",
     "button": "Download Coach Information Form"
   },
+  "cpdEquipment": {
+    "tag": "CPD & Equipment · Nursery to Year 2",
+    "heading": "Balance Bike CPD for Schools",
+    "subtitle": "Run your own balance bike sessions in school. We train your staff, supply everything you need, and leave you able to keep delivering long after we've gone.",
+    "intro": "Your staff can now deliver their own balance bike and learn-to-ride sessions with our one-day CPD package.\n\nMake balance biking a regular activity by having us train your staff to deliver your own sessions. Book the full CPD, bikes and sessions package, or combine CPD with sessions for the children using your own bikes.",
+    "premiumHeading": "Built for your PE and sport premium",
+    "premiumIntro": "The Department for Education's guidance asks schools to use the PE and sport premium to build staff skills and make improvements that last. That is exactly what this package does: your staff learn alongside us, then carry on teaching balance biking year after year.",
+    "quotes": [
+      {
+        "text": "You should prioritise spending the PE and sport premium funding on CPD.",
+        "note": "Our one-day CPD is the heart of the package."
+      },
+      {
+        "text": "increase all staff’s confidence, knowledge and skills in teaching PE and sporting activities",
+        "note": "Key indicator 1. Your staff train hands-on with real classes."
+      },
+      {
+        "text": "Coach-led activity should include staff development, so improvements in provision are sustainable.",
+        "note": "Our sessions are delivered with your staff, not instead of them."
+      },
+      {
+        "text": "build capacity and capability in the school",
+        "note": "You keep the manual, video, scheme of work and activity cards."
+      }
+    ],
+    "sourceText": "Quotes from the DfE guidance “PE and sport premium for primary schools”, updated September 2026.",
+    "sourceUrl": "https://www.gov.uk/government/publications/pe-and-sport-premium-for-primary-schools/pe-and-sport-premium-guidance-for-primary-schools",
+    "packagesHeading": "Choose your package",
+    "packages": [
+      {
+        "name": "CPD, Bikes & Sessions Package",
+        "price": "£1,499",
+        "badge": "Save up to £350 on buying bikes and training separately",
+        "items": [
+          "10 aluminium balance bikes",
+          "10 hardshell helmets",
+          "Equipment starter kit",
+          "Sessions for 3 classes",
+          "CPD for your staff",
+          "Video & manual",
+          "Materials & activity cards"
+        ]
+      },
+      {
+        "name": "CPD & Sessions Only",
+        "price": "£525",
+        "badge": "Use your own bikes",
+        "items": [
+          "CPD for your staff",
+          "CPD video & manual",
+          "Materials & activity cards",
+          "Sessions for 3 classes",
+          "Suitable for Nursery, Reception, Year 1 and Year 2"
+        ]
+      }
+    ],
+    "stepsHeading": "How it works",
+    "steps": [
+      {
+        "title": "We train your staff",
+        "body": "A one-day CPD in your school. Your staff learn how to set up, run and progress balance bike sessions safely."
+      },
+      {
+        "title": "We teach your classes",
+        "body": "We deliver sessions for three classes with your staff alongside, so they see every activity working with your own children."
+      },
+      {
+        "title": "You keep going",
+        "body": "With the bikes, kit, manual, video and activity cards, your staff run balance biking as a regular activity long after we've gone."
+      }
+    ],
+    "takeawayHeading": "Everything your staff take away",
+    "takeaways": [
+      "Balance bike training manual",
+      "CPD video to refresh skills and train new staff",
+      "12-week scheme of work",
+      "Session plans and track layouts",
+      "Games and activity cards",
+      "Attainment checklist to track progress",
+      "Session equipment list"
+    ],
+    "equipmentHeading": "Quality equipment that lasts",
+    "equipmentText": "We use Strider balance bikes in our own sessions every week. They're light, tough and built for busy playgrounds. We can also supply Strider 12 Sport bikes for Nursery and Reception and Strider 14X bikes, which convert to pedal bikes, for Years 1 and 2.",
+    "testimonialsHeading": "What school staff say about our training",
+    "testimonials": [
+      {
+        "quote": "Thank you for an excellent day. Everything was straightforward and the course was well run. We can easily create a cycling club now thanks to a brilliant course.",
+        "who": "J. Cant, Head of PE, Vane Road Primary"
+      },
+      {
+        "quote": "The best training I have had in ages! Thank you so much.",
+        "who": "Amy Crisp, Class Teacher, Ravensworth Primary"
+      },
+      {
+        "quote": "Clear advice on how to use the program in practice.",
+        "who": "K. Parker, PE Coordinator, Horndale Infants"
+      },
+      {
+        "quote": "Thank you so much for a wonderful day. You made us feel very at ease and the children had a fantastic time.",
+        "who": "J. Wheetley, Teacher, Broom Cottages Primary"
+      }
+    ],
+    "faqHeading": "Questions from headteachers",
+    "faqs": [
+      {
+        "q": "Which year groups is it for?",
+        "a": "Nursery, Reception, Year 1 and Year 2. Balance bikes are the quickest, safest way for young children to learn to ride."
+      },
+      {
+        "q": "Can we use our PE and sport premium?",
+        "a": "The DfE asks schools to prioritise CPD that builds staff confidence and makes improvements sustainable, which is what this package is designed for. Check with your school business manager how you fund each part, as the guidance has rules on equipment and capital spending."
+      },
+      {
+        "q": "What happens after the CPD day?",
+        "a": "Your staff keep the manual, video, scheme of work and activity cards, so they can run regular sessions and train new colleagues. You're always welcome to get in touch with questions."
+      },
+      {
+        "q": "Do we need our own bikes?",
+        "a": "No. The full package includes 10 bikes, 10 helmets and a starter kit. If you already have bikes, choose CPD & Sessions Only."
+      }
+    ],
+    "ctaHeading": "Give your staff the skills to keep children riding",
+    "ctaText": "Tell us about your school and preferred dates and we'll get your CPD day booked.",
+    "ctaButton": "Book your CPD day"
+  },
   "footer": {
     "blurb": "Professional cycling coaching and fun biking programs for all ages and abilities.",
     "bottomLine": "Pro-Ride Coaching Limited · Registered in England and Wales, company no. 10028610 · Registered office: Sidings House, Sidings Court, Lakeside, Doncaster, South Yorkshire, DN4 5NU"

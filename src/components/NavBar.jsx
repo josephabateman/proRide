@@ -16,6 +16,7 @@ function NavBar() {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/" eventKey="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/services" eventKey="/services">Services</Nav.Link>
+            <Nav.Link as={Link} to="/cpd-equipment" eventKey="/cpd-equipment">CPD &amp; Equipment</Nav.Link>
             <Nav.Link as={Link} to="/contact" eventKey="/contact">Contact</Nav.Link>
             <NavDropdown title="About" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/about" eventKey="/about">
