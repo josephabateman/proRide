@@ -18,9 +18,9 @@ function fileName(folder, fileName) {
 
 const fullScreenBanners = [
   {
-    title: "Pro Ride Coaching",
+    title: "Get every child riding",
     color: "blue-gradient text-white pt-2",
-    description: "Developing Cycling in Schools",
+    description: "Fun, expert-led cycling days and staff training for primary schools.",
     imageDescription: "phil bateman coaching in schools",
     imageSrc: fileName(proRideImages, "proride-kids-1.webp"),
   },
