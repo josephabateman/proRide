@@ -21,8 +21,8 @@ const fullScreenBanners = [
     title: "Pro Ride Coaching",
     color: "blue-gradient text-white pt-2",
     description: "Developing Cycling in Schools",
-    imageDescription: "Phil Bateman with a class of smiling primary school children on bikes",
-    imageSrc: fileName(proRideImages, "proride-front.webp"),
+    imageDescription: "phil bateman coaching in schools",
+    imageSrc: fileName(proRideImages, "proride-kids-1.webp"),
   },
 ];
 
@@ -33,8 +33,8 @@ const collapsingBanners = [
     // description: "Making cycling in school fun",
     buttonText: "Learn More",
     buttonLink: "/services",
-    imageDescription: "Reception children lined up on Strider balance bikes at a Pro Ride session",
-    imageSrc: require("../static/images/cpd/session-line-up.webp").default,
+    imageDescription: "A smiling boy riding a balance bike in his school hall during a Pro Ride session",
+    imageSrc: require("../static/images/cpd/happy-hall.webp").default,
   },
 ];
 

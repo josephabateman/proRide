@@ -985,30 +985,6 @@ ul li { list-style-type: none; }
 }
 
 /* ============================================================
-   HOME HERO PHOTO — full page width, edge to edge, no fade.
-   ============================================================ */
-.blue-gradient.text-white .img-large-mobile { padding-bottom: 0; }
-.blue-gradient.text-white .img-large-mobile img {
-  display: block;
-  width: calc(100% + 2rem);
-  max-width: none;
-  height: auto;
-  aspect-ratio: 1600 / 885;
-  margin: 0.6rem -1rem 0;
-  -webkit-mask-image: none;
-  mask-image: none;
-}
-@media only screen and (max-width: 768px) {
-  .blue-gradient.text-white .img-large-mobile img {
-    transform: none;
-    width: calc(100% + 2rem);
-    max-width: none;
-    margin: 0.6rem -1rem 0;
-    object-fit: cover;
-  }
-}
-
-/* ============================================================
    HOME — SERVICES CARD PHOTO (full photo, not a cut-out)
    ============================================================ */
 .home-tile .green-gradient .img-large-mobile { padding-bottom: 0; }
@@ -1068,7 +1044,7 @@ ul li { list-style-type: none; }
   width: 100%;
   aspect-ratio: 16 / 7;
   object-fit: cover;
-  object-position: 50% 45%;
+  object-position: 50% 30%;
 }
 .cpd-body { max-width: 1140px; padding: 0 1rem 1rem; }
 .cpd-section { margin-top: 3.6rem; }

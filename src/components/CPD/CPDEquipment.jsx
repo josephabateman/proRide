@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Seo from "../Seo";
 import content from "../../data/siteContent.json";
 import { renderContent } from "../../data/renderContent";
-import heroImg from "../../static/images/cpd/session-line-up.webp";
+import heroImg from "../../static/images/cpd/happy-boys.webp";
 import riderImg from "../../static/images/cpd/rider-portrait.webp";
 import rampImg from "../../static/images/cpd/coach-ramp.webp";
 import groupImg from "../../static/images/cpd/group-coach.webp";
@@ -56,7 +56,7 @@ function CPDEquipment() {
         </Container>
         <img
           src={heroImg}
-          alt="A line of Reception children ready to ride on Strider balance bikes during a Pro Ride session"
+          alt="Two smiling boys on balance bikes during a Pro Ride session"
           className="cpd-hero__img"
         />
       </section>
