@@ -180,30 +180,7 @@
   "cpdEquipment": {
     "tag": "CPD & Equipment · Nursery to Year 2",
     "heading": "Balance Bike CPD for Schools",
-    "subtitle": "Run your own balance bike sessions in school. We train your staff, supply everything you need, and leave you able to keep delivering long after we've gone.",
-    "intro": "Your staff can now deliver their own balance bike and learn-to-ride sessions with our one-day CPD package.\n\nMake balance biking a regular activity by having us train your staff to deliver your own sessions. Book the full CPD, bikes and sessions package, or combine CPD with sessions for the children using your own bikes.",
-    "premiumHeading": "Built for your PE and sport premium",
-    "premiumIntro": "The Department for Education's guidance asks schools to use the PE and sport premium to build staff skills and make improvements that last. That is exactly what this package does: your staff learn alongside us, then carry on teaching balance biking year after year.",
-    "quotes": [
-      {
-        "text": "You should prioritise spending the PE and sport premium funding on CPD.",
-        "note": "Our one-day CPD is the heart of the package."
-      },
-      {
-        "text": "increase all staff’s confidence, knowledge and skills in teaching PE and sporting activities",
-        "note": "Key indicator 1. Your staff train hands-on with real classes."
-      },
-      {
-        "text": "Coach-led activity should include staff development, so improvements in provision are sustainable.",
-        "note": "Our sessions are delivered with your staff, not instead of them."
-      },
-      {
-        "text": "build capacity and capability in the school",
-        "note": "You keep the manual, video, scheme of work and activity cards."
-      }
-    ],
-    "sourceText": "Quotes from the DfE guidance “PE and sport premium for primary schools”, updated September 2026.",
-    "sourceUrl": "https://www.gov.uk/government/publications/pe-and-sport-premium-for-primary-schools/pe-and-sport-premium-guidance-for-primary-schools",
+    "subtitle": "We train your staff and supply the kit, so your school keeps delivering balance bike sessions long after we've gone.",
     "packagesHeading": "Choose your package",
     "packages": [
       {
@@ -233,34 +210,20 @@
         ]
       }
     ],
-    "stepsHeading": "How it works",
-    "steps": [
+    "premiumHeading": "Ideal for your PE and sport premium",
+    "premiumIntro": "The DfE asks schools to spend the premium on CPD that builds staff skills and lasts. Your staff train alongside us and keep the manual, video, 12-week scheme of work and activity cards.",
+    "quotes": [
       {
-        "title": "We train your staff",
-        "body": "A one-day CPD in your school. Your staff learn how to set up, run and progress balance bike sessions safely."
+        "text": "You should prioritise spending the PE and sport premium funding on CPD.",
+        "note": "Our one-day CPD is the heart of the package."
       },
       {
-        "title": "We teach your classes",
-        "body": "We deliver sessions for three classes with your staff alongside, so they see every activity working with your own children."
-      },
-      {
-        "title": "You keep going",
-        "body": "With the bikes, kit, manual, video and activity cards, your staff run balance biking as a regular activity long after we've gone."
+        "text": "Coach-led activity should include staff development, so improvements in provision are sustainable.",
+        "note": "Our sessions are delivered with your staff, not instead of them."
       }
     ],
-    "takeawayHeading": "Everything your staff take away",
-    "takeaways": [
-      "Balance bike training manual",
-      "CPD video to refresh skills and train new staff",
-      "12-week scheme of work",
-      "Session plans and track layouts",
-      "Games and activity cards",
-      "Attainment checklist to track progress",
-      "Session equipment list"
-    ],
-    "equipmentHeading": "Quality equipment that lasts",
-    "equipmentText": "We use Strider balance bikes in our own sessions every week. They're light, tough and built for busy playgrounds. We can also supply Strider 12 Sport bikes for Nursery and Reception and Strider 14X bikes, which convert to pedal bikes, for Years 1 and 2.",
-    "testimonialsHeading": "What school staff say about our training",
+    "sourceText": "Quotes from the DfE guidance “PE and sport premium for primary schools”, updated September 2026.",
+    "sourceUrl": "https://www.gov.uk/government/publications/pe-and-sport-premium-for-primary-schools/pe-and-sport-premium-guidance-for-primary-schools",
     "testimonials": [
       {
         "quote": "Thank you for an excellent day. Everything was straightforward and the course was well run. We can easily create a cycling club now thanks to a brilliant course.",
@@ -269,33 +232,6 @@
       {
         "quote": "The best training I have had in ages! Thank you so much.",
         "who": "Amy Crisp, Class Teacher, Ravensworth Primary"
-      },
-      {
-        "quote": "Clear advice on how to use the program in practice.",
-        "who": "K. Parker, PE Coordinator, Horndale Infants"
-      },
-      {
-        "quote": "Thank you so much for a wonderful day. You made us feel very at ease and the children had a fantastic time.",
-        "who": "J. Wheetley, Teacher, Broom Cottages Primary"
-      }
-    ],
-    "faqHeading": "Questions from headteachers",
-    "faqs": [
-      {
-        "q": "Which year groups is it for?",
-        "a": "Nursery, Reception, Year 1 and Year 2. Balance bikes are the quickest, safest way for young children to learn to ride."
-      },
-      {
-        "q": "Can we use our PE and sport premium?",
-        "a": "The DfE asks schools to prioritise CPD that builds staff confidence and makes improvements sustainable, which is what this package is designed for. Check with your school business manager how you fund each part, as the guidance has rules on equipment and capital spending."
-      },
-      {
-        "q": "What happens after the CPD day?",
-        "a": "Your staff keep the manual, video, scheme of work and activity cards, so they can run regular sessions and train new colleagues. You're always welcome to get in touch with questions."
-      },
-      {
-        "q": "Do we need our own bikes?",
-        "a": "No. The full package includes 10 bikes, 10 helmets and a starter kit. If you already have bikes, choose CPD & Sessions Only."
       }
     ],
     "ctaHeading": "Give your staff the skills to keep children riding",

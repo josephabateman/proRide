@@ -1176,3 +1176,13 @@ ul li { list-style-type: none; }
   .cpd-hero__img { aspect-ratio: 4 / 3; }
   .cpd-premium { padding: 1.6rem 1rem 1rem; }
 }
+
+/* CPD page — compact layout: short header, packages overlap it */
+.cpd-hero { padding: 2rem 0 5.5rem; }
+.cpd-hero__title { margin-top: 0.7rem; }
+.cpd-packages { margin-top: -4rem; position: relative; }
+.cpd-package h2 { font-size: 1.25rem; font-weight: 700; }
+.cpd-premium__title { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; }
+.cpd-premium__intro { color: var(--pr-muted); line-height: 1.7; }
+.cpd-quote { height: auto; margin-bottom: 0.8rem; }
+.cpd-section { margin-top: 3rem; }
