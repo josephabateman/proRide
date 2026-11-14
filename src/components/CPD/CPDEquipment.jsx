@@ -42,6 +42,7 @@ function CPDEquipment() {
                   {i === 0 && <span className="cpd-package__ribbon">Best value</span>}
                   <h2>{p.name}</h2>
                   <div className="cpd-package__price">{p.price}</div>
+                  {p.priceNote && <div className="cpd-package__vat">{p.priceNote}</div>}
                   <p className="cpd-package__badge">{p.badge}</p>
                   <ul>
                     {p.items.map((item, j) => (

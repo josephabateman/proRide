@@ -1186,3 +1186,4 @@ ul li { list-style-type: none; }
 .cpd-premium__intro { color: var(--pr-muted); line-height: 1.7; }
 .cpd-quote { height: auto; margin-bottom: 0.8rem; }
 .cpd-section { margin-top: 3rem; }
+.cpd-package__vat { color: var(--pr-muted); font-size: 0.9rem; font-weight: 600; margin-top: 0.15rem; }

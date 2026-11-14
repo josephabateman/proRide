@@ -186,6 +186,7 @@
       {
         "name": "CPD, Bikes & Sessions Package",
         "price": "£1,499",
+        "priceNote": "including VAT",
         "badge": "Save up to £350 on buying bikes and training separately",
         "items": [
           "10 aluminium balance bikes",
@@ -200,12 +201,14 @@
       {
         "name": "CPD & Sessions Only",
         "price": "£525",
-        "badge": "Use your own bikes",
+        "priceNote": "including VAT",
+        "badge": "We bring the bikes and train your staff",
         "items": [
-          "CPD for your staff",
+          "Balance bikes, helmets and equipment provided",
+          "Up to 6 sessions for 3 different classes",
+          "CPD training for your staff",
           "CPD video & manual",
           "Materials & activity cards",
-          "Sessions for 3 classes",
           "Suitable for Nursery, Reception, Year 1 and Year 2"
         ]
       }
