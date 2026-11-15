@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Seo from "../Seo";
 import content from "../../data/siteContent.json";
-import photo from "../../static/images/cpd/happy-boys.webp";
+import photo from "../../static/images/cpd/strider-lineup.webp";
 import striderImg from "../../static/images/cpd/strider-14x.webp";
 import striderFlyer from "../../static/flyers/Strider 14x Balance Bike flyer.pdf";
 
@@ -110,7 +110,7 @@ function CPDEquipment() {
           <Col lg={5}>
             <img
               src={photo}
-              alt="Two smiling boys on balance bikes during a Pro Ride session"
+              alt="A line of young children in helmets ready to ride yellow Strider balance bikes"
               className="cpd-rounded-img"
             />
           </Col>
