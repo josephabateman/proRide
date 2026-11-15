@@ -96,7 +96,9 @@ function SpecificService(props) {
                   className="button button--ghost me-2"
                 >
                   <i className="fas fa-file-pdf me-2"></i>
-                  {props.dropdown1
+                  {props.flyerLabel
+                    ? props.flyerLabel
+                    : props.dropdown1
                     ? `${props.dropdown1} PDF`
                     : `${props.title} PDF`}
                 </a>

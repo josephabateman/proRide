@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Seo from "../Seo";
 import content from "../../data/siteContent.json";
 import photo from "../../static/images/cpd/happy-boys.webp";
+import striderImg from "../../static/images/cpd/strider-14x.webp";
+import striderFlyer from "../../static/flyers/Strider 14x Balance Bike flyer.pdf";
 
 const c = content.cpdEquipment;
 
@@ -15,8 +17,8 @@ function CPDEquipment() {
   return (
     <div className="cpd-page">
       <Seo
-        title="Balance Bike CPD & Equipment for Schools | Pro Ride Coaching"
-        description="One-day balance bike CPD for EYFS and KS1 staff, with bikes, helmets, kit, sessions for 3 classes, manual and video. From £525. Ideal for the PE and sport premium."
+        title="Balance Bikes & CPD for Schools | Pro Ride Coaching"
+        description="One-day balance bike CPD for Reception to Year 2 staff, with demo sessions, manual, game cards and video, plus your own fleet of Strider 14x bikes. From £525. Ideal for the PE and sport premium."
         image={photo}
       />
 
@@ -58,6 +60,48 @@ function CPDEquipment() {
                 </div>
               </Col>
             ))}
+          </Row>
+        </section>
+
+        {/* Strider 14x offer */}
+        <section className="cpd-strider">
+          <Row className="g-0 align-items-stretch">
+            <Col md={5}>
+              <img
+                src={striderImg}
+                alt="A Strider 14x balance bike"
+                className="cpd-strider__img"
+              />
+            </Col>
+            <Col md={7}>
+              <div className="cpd-strider__body text-start">
+                <span className="cpd-strider__tag">Offer</span>
+                <h2>{c.striderHeading}</h2>
+                <p>{c.striderText}</p>
+                <ul className="cpd-ticks">
+                  {c.striderFeatures.map((f, i) => (
+                    <li key={i}>
+                      <i className="fas fa-check-circle"></i>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="cpd-strider__price">
+                  <span>{c.striderPriceLead}</span> <strong>{c.striderPrice}</strong>{" "}
+                  <span>{c.striderPriceNote}</span>
+                  <div className="cpd-strider__discount">{c.striderDiscount}</div>
+                </div>
+                <a
+                  href={striderFlyer}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >
+                  <i className="fas fa-file-pdf me-2"></i>
+                  {c.striderButton}
+                </a>
+              </div>
+            </Col>
           </Row>
         </section>
 

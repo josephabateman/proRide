@@ -72,8 +72,8 @@
     },
     {
       "name": "Staff Training (CPD)",
-      "header": "One-day balance bike CPD so your staff can run their own sessions",
-      "body": "Our one-day CPD, led by Pro Ride founder and former Olympic cyclist Phil Bateman, trains your staff to run fun, progressive balance bike and learn-to-ride sessions for Nursery to Year 2.\n\nYour staff learn alongside us while we deliver sessions with your classes, so they see every activity working with your own children. Afterwards they keep the training manual, CPD video, 12-week scheme of work and activity cards, so balance biking carries on long after we've gone. No previous cycling experience is needed.\n\n### Two packages\n\nCPD & Sessions (£525 including VAT): we bring the bikes and equipment, deliver up to 6 sessions for 3 different classes and train your staff.\n\nCPD, Bikes & Sessions (£1,499 including VAT): everything above plus 10 aluminium balance bikes, 10 hardshell helmets and an equipment starter kit for your school to keep.\n\nBoth are ideal for the PE and sport premium, which the DfE asks schools to prioritise on CPD that builds staff skills and lasts.",
+      "header": "Run your own balance bike sessions in your playground or hall",
+      "body": "Our one-day CPD, led by Pro Ride founder and former Olympic cyclist Phil Bateman, trains your staff to set up and run fun, progressive balance bike and learn-to-ride sessions for Reception, Year 1 and Year 2, in your playground or hall.\n\nYour staff learn alongside us while we deliver demo sessions with your classes, so they see every activity working with your own children. Afterwards they keep the training manual, game cards and CPD video, so balance biking carries on long after we've gone. No previous cycling experience is needed.\n\n### Your own fleet of Strider 14x bikes\n\nThe Strider 14x is built to help children learn balance and quickly master all the skills they need to begin pedalling confidently. It's lightweight and durable, with front and rear brakes, real air-filled 14\" tyres, easy seat and handlebar adjustment, and it converts to a pedal bike as children progress.\n\nStrider 14x bikes: 1 to 4 bikes £79 per bike (incl VAT). Discounts on 5 or more, please ask for a quote.\n\n### Two packages\n\nCPD, Strider Bikes & Sessions (£1,399 including VAT): 10 Strider 14x bikes for your school to keep, CPD for your staff and 6 demo sessions, a saving of £350 on buying bikes and training separately.\n\nCPD & Sessions (£525 including VAT): we bring the bikes and equipment, deliver up to 6 sessions for 3 different classes and train your staff.\n\nBoth are ideal for the PE and sport premium, which the DfE asks schools to prioritise on CPD that builds staff skills and lasts.",
       "body2": null
     },
     {
@@ -179,23 +179,22 @@
   },
   "cpdEquipment": {
     "tag": "CPD & Equipment · Nursery to Year 2",
-    "heading": "Balance Bike CPD for Schools",
+    "heading": "Balance Bikes & CPD for Schools",
     "subtitle": "We train your staff and supply the kit, so your school keeps delivering balance bike sessions long after we've gone.",
     "packagesHeading": "Choose your package",
     "packages": [
       {
-        "name": "CPD, Bikes & Sessions Package",
-        "price": "£1,499",
+        "name": "CPD, Strider Bikes & Sessions",
+        "price": "£1,399",
         "priceNote": "including VAT",
-        "badge": "Save up to £350 on buying bikes and training separately",
+        "badge": "Save £350 on buying bikes and training separately",
         "items": [
-          "10 aluminium balance bikes",
-          "10 hardshell helmets",
-          "Equipment starter kit",
-          "Sessions for 3 classes",
-          "CPD for your staff",
-          "Video & manual",
-          "Materials & activity cards"
+          "10 Strider 14x balance bikes for your school to keep",
+          "One-day CPD for your staff",
+          "6 demo sessions delivered with your classes",
+          "Training manual & game cards",
+          "CPD video",
+          "Suitable for Reception, Year 1 and Year 2"
         ]
       },
       {
@@ -213,6 +212,20 @@
         ]
       }
     ],
+    "striderHeading": "The Strider 14x Balance Bike",
+    "striderText": "Built to help children learn balance and quickly master all the skills they need to begin pedalling confidently. Deliver balance bike and cycling sessions in school with your own fleet of Strider bikes.",
+    "striderFeatures": [
+      "Lightweight & durable",
+      "Front & rear brakes",
+      "Real (air-filled) 14\" tyres",
+      "Easy seat and handlebar adjustment",
+      "Converts to a pedal bike"
+    ],
+    "striderPriceLead": "1 to 4 bikes",
+    "striderPrice": "£79",
+    "striderPriceNote": "per bike (incl VAT).",
+    "striderDiscount": "Discounts on 5 or more, please ask for a quote.",
+    "striderButton": "Download the Strider 14x flyer (PDF)",
     "premiumHeading": "Ideal for your PE and sport premium",
     "premiumIntro": "The DfE asks schools to spend the premium on CPD that builds staff skills and lasts. Your staff train alongside us and keep the manual, video, 12-week scheme of work and activity cards.",
     "quotes": [

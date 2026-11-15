@@ -148,6 +148,7 @@ function App() {
                 flyer={service.flyer}
                 flyer2={service.flyer2}
                 extraLink={service.extraLink}
+                flyerLabel={service.flyerLabel}
               />
             </Route>
           ))}

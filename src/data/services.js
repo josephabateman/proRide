@@ -58,6 +58,8 @@ const assets = [
   {
     tile: fileName(tile, "staff_training_banner.jpg"),
     extraLink: { to: "/cpd-equipment", label: "See packages & prices" },
+    flyer: fileName(flyers, "Strider 14x Balance Bike flyer.pdf"),
+    flyerLabel: "Download the Strider 14x flyer (PDF)",
     img: fileName(specificServiceImages, "cpd.jpg"),
   },
   {
