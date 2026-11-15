@@ -63,39 +63,42 @@ function CPDEquipment() {
           </Row>
         </section>
 
-        {/* Strider 14x offer */}
-        <section className="cpd-strider">
-          <Row className="g-0 align-items-stretch">
-            <Col md={5}>
+        {/* Strider 14x offer + PE premium: one panel in the flyer's style */}
+        <section className="cpd-flyer">
+          <Row className="g-0 align-items-stretch cpd-flyer__row">
+            <Col md={4} className="cpd-flyer__media">
               <img
                 src={striderImg}
                 alt="A Strider 14x balance bike"
-                className="cpd-strider__img"
+                className="cpd-flyer__img"
               />
             </Col>
-            <Col md={7}>
-              <div className="cpd-strider__body text-start">
-                <span className="cpd-strider__tag">Offer</span>
-                <h2>{c.striderHeading}</h2>
-                <p>{c.striderText}</p>
-                <ul className="cpd-ticks">
-                  {c.striderFeatures.map((f, i) => (
-                    <li key={i}>
-                      <i className="fas fa-check-circle"></i>
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="cpd-strider__price">
-                  <span>{c.striderPriceLead}</span> <strong>{c.striderPrice}</strong>{" "}
-                  <span>{c.striderPriceNote}</span>
-                  <div className="cpd-strider__discount">{c.striderDiscount}</div>
+            <Col md={8} className="text-start cpd-flyer__body">
+              <span className="cpd-flyer__tag">Offer</span>
+              <h2 className="cpd-flyer__title">{c.striderHeading}</h2>
+              <p className="cpd-flyer__lead">{c.striderText}</p>
+              <ul className="cpd-flyer__ticks">
+                {c.striderFeatures.map((f, i) => (
+                  <li key={i}>
+                    <i className="fas fa-check-circle"></i>
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="cpd-flyer__deal">
+                <div className="cpd-flyer__price">
+                  <span className="cpd-flyer__price-label">{c.striderPriceLead}</span>
+                  <span className="cpd-flyer__price-line">
+                    <strong>{c.striderPrice}</strong>
+                    <span>{c.striderPriceNote}</span>
+                  </span>
+                  <span className="cpd-flyer__discount">{c.striderDiscount}</span>
                 </div>
                 <a
                   href={striderFlyer}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button"
+                  className="cpd-flyer__button"
                 >
                   <i className="fas fa-file-pdf me-2"></i>
                   {c.striderButton}
@@ -103,34 +106,34 @@ function CPDEquipment() {
               </div>
             </Col>
           </Row>
-        </section>
 
-        {/* PE and sport premium */}
-        <Row className="g-4 align-items-center cpd-section">
-          <Col lg={5}>
-            <img
-              src={photo}
-              alt="A line of young children in helmets ready to ride yellow Strider balance bikes"
-              className="cpd-rounded-img"
-            />
-          </Col>
-          <Col lg={7} className="text-start">
-            <h2 className="cpd-premium__title">{c.premiumHeading}</h2>
-            <p className="cpd-premium__intro">{c.premiumIntro}</p>
-            {c.quotes.map((q, i) => (
-              <figure className="cpd-quote" key={i}>
-                <blockquote>“{q.text}”</blockquote>
-                <figcaption>{q.note}</figcaption>
-              </figure>
-            ))}
-            <p className="cpd-premium__source">
-              {c.sourceText}{" "}
-              <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer">
-                Read it on GOV.UK
-              </a>
-            </p>
-          </Col>
-        </Row>
+
+          <Row className="g-0 align-items-stretch cpd-flyer__row">
+            <Col md={4} className="order-md-2 cpd-flyer__media">
+              <img
+                src={photo}
+                alt="A line of young children in helmets ready to ride yellow Strider balance bikes"
+                className="cpd-flyer__img"
+              />
+            </Col>
+            <Col md={8} className="order-md-1 text-start cpd-flyer__body">
+              <h2 className="cpd-flyer__title">{c.premiumHeading}</h2>
+              <p className="cpd-flyer__lead">{c.premiumIntro}</p>
+              {c.quotes.map((q, i) => (
+                <figure className="cpd-flyer__quote" key={i}>
+                  <blockquote>“{q.text}”</blockquote>
+                  <figcaption>{q.note}</figcaption>
+                </figure>
+              ))}
+              <p className="cpd-flyer__source">
+                {c.sourceText}{" "}
+                <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer">
+                  Read it on GOV.UK
+                </a>
+              </p>
+            </Col>
+          </Row>
+        </section>
 
         {/* Testimonials */}
         <Row className="g-3 cpd-section">

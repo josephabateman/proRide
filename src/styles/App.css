@@ -1331,3 +1331,152 @@ ul li { list-style-type: none; }
 @media (max-width: 640px) {
   .home-why__list { grid-template-columns: 1fr; }
 }
+
+/* CPD page: Strider offer + PE premium in one panel, styled like the
+   Strider 14x flyer (teal-blue, white text, yellow highlights) */
+.cpd-flyer {
+  --flyer-blue: #049ac2;
+  --flyer-yellow: #ffde59;
+  margin-top: 3rem;
+  background: linear-gradient(160deg, #049ac2 0%, #0587ab 100%);
+  color: #fff;
+  border-radius: var(--pr-radius);
+  box-shadow: var(--pr-shadow);
+  padding: 2rem 1.6rem;
+}
+.cpd-flyer__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 55%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 14px 30px rgba(0, 40, 60, 0.28);
+}
+/* playful yellow block offset behind each photo, like the flyer's accents */
+.cpd-flyer__frame { position: relative; margin: 0 14px 14px 0; }
+.cpd-flyer__frame::before {
+  content: "";
+  position: absolute;
+  inset: 14px -14px -14px 14px;
+  background: var(--flyer-yellow);
+  border-radius: 20px;
+}
+.order-md-2 .cpd-flyer__frame { margin: 0 0 14px 14px; }
+.order-md-2 .cpd-flyer__frame::before { inset: 14px 14px -14px -14px; }
+.cpd-flyer__tag {
+  display: inline-block;
+  background: var(--flyer-yellow);
+  color: #12324a;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+}
+.cpd-flyer__title {
+  color: #fff;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  font-weight: 800;
+  margin: 0.6rem 0 0.5rem;
+}
+.cpd-flyer__lead { color: rgba(255, 255, 255, 0.92); line-height: 1.7; }
+.cpd-flyer__ticks { list-style: none; padding: 0; margin: 0 0 1.1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem 1rem; }
+.cpd-flyer__ticks li { display: flex; gap: 0.55rem; align-items: flex-start; font-weight: 600; }
+.cpd-flyer__ticks i { color: var(--flyer-yellow); margin-top: 0.22rem; }
+.cpd-flyer__price { margin-bottom: 1.1rem; color: rgba(255, 255, 255, 0.92); }
+.cpd-flyer__price strong { color: var(--flyer-yellow); font-size: 2.2rem; font-weight: 800; margin: 0 0.2rem; }
+.cpd-flyer__discount { margin-top: 0.2rem; font-weight: 700; color: var(--flyer-yellow); }
+.cpd-flyer__button {
+  display: inline-block;
+  background: var(--flyer-yellow);
+  color: #12324a;
+  font-weight: 700;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform .2s ease, background .2s ease;
+}
+.cpd-flyer__button:hover { background: #fff; color: #12324a; transform: translateY(-2px); }
+.cpd-flyer__rule { border: 0; border-top: 2px dashed rgba(255, 255, 255, 0.35); margin: 1.6rem 0; opacity: 1; }
+.cpd-flyer__quote {
+  margin: 0 0 0.8rem;
+  background: rgba(255, 255, 255, 0.12);
+  border-left: 5px solid var(--flyer-yellow);
+  border-radius: var(--pr-radius-sm);
+  padding: 0.9rem 1.1rem;
+}
+.cpd-flyer__quote blockquote { margin: 0 0 0.4rem; font-style: italic; font-weight: 600; color: #fff; }
+.cpd-flyer__quote figcaption { color: rgba(255, 255, 255, 0.85); font-size: 0.93rem; }
+.cpd-flyer__source { font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); margin: 0.6rem 0 0; }
+.cpd-flyer__source a { color: var(--flyer-yellow); }
+@media (max-width: 767px) {
+  .cpd-flyer__img { aspect-ratio: 16 / 9; max-height: 220px; }
+}
+@media (max-width: 575px) {
+  .cpd-flyer { padding: 1.4rem 1rem; }
+  .cpd-flyer__ticks { grid-template-columns: 1fr; }
+}
+
+/* Photos run edge to edge in the flyer panel (no frames) */
+.cpd-flyer { padding: 0; overflow: hidden; }
+.cpd-flyer__row + .cpd-flyer__row { border-top: 2px solid rgba(255, 255, 255, 0.25); }
+.cpd-flyer__body { padding: 1.8rem 1.8rem; }
+.cpd-flyer__media { position: relative; min-height: 240px; }
+.cpd-flyer__media .cpd-flyer__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+.cpd-flyer__frame::before { display: none; }
+@media (max-width: 767px) {
+  .cpd-flyer__media { min-height: 0; }
+  .cpd-flyer__media .cpd-flyer__img { position: static; height: auto; aspect-ratio: 16 / 9; max-height: none; }
+  .cpd-flyer__body { padding: 1.4rem 1.1rem; }
+}
+
+/* Offer text: tidier, consistent rhythm */
+.cpd-flyer__tag { margin-bottom: 0.2rem; }
+.cpd-flyer__title { line-height: 1.15; margin: 0.55rem 0 0.6rem; }
+.cpd-flyer__lead { font-size: 1rem; line-height: 1.65; max-width: 46ch; margin-bottom: 1.1rem; }
+.cpd-flyer__ticks {
+  gap: 0.55rem 1.4rem;
+  margin: 0 0 1.4rem;
+  padding: 0.9rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  max-width: 560px;
+}
+.cpd-flyer__ticks li { font-weight: 500; font-size: 0.97rem; line-height: 1.35; align-items: center; }
+.cpd-flyer__ticks i { margin-top: 0; font-size: 1rem; }
+.cpd-flyer__deal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.4rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  max-width: 560px;
+}
+.cpd-flyer__price { margin: 0; display: flex; flex-direction: column; gap: 0.15rem; }
+.cpd-flyer__price-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+.cpd-flyer__price-line { display: flex; align-items: baseline; gap: 0.45rem; }
+.cpd-flyer__price-line strong { font-size: 2.3rem; line-height: 1; margin: 0; color: var(--flyer-yellow); font-weight: 800; }
+.cpd-flyer__price-line span { font-size: 0.95rem; color: #fff; }
+.cpd-flyer__discount { margin: 0; font-size: 0.9rem; font-weight: 600; color: var(--flyer-yellow); }
+.cpd-flyer__deal { flex-direction: column; align-items: flex-start; gap: 1rem; }
+.cpd-flyer__button { white-space: nowrap; }
+@media (max-width: 400px) { .cpd-flyer__button { font-size: 0.92rem; padding: 0.7rem 1.1rem; } }
