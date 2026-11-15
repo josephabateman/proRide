@@ -21,8 +21,8 @@ const fullScreenBanners = [
     title: "Get every child riding",
     color: "blue-gradient text-white pt-2",
     description: "Fun, expert-led cycling days and staff training for primary schools.",
-    imageDescription: "phil bateman coaching in schools",
-    imageSrc: fileName(proRideImages, "proride-kids-1.webp"),
+    imageDescription: "Phil Bateman with a class of smiling pupils on their bikes",
+    imageSrc: fileName(proRideImages, "proride-hero-cutout.webp"),
   },
 ];
 

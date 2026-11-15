@@ -64,7 +64,15 @@ function SpecificService(props) {
             </div>
 
             <div className="text-center text-lg-start">
-              <Link to="/contact" className="button">
+              {props.extraLink ? (
+                <Link to={props.extraLink.to} className="button">
+                  {props.extraLink.label}
+                </Link>
+              ) : null}
+              <Link
+                to="/contact"
+                className={props.extraLink ? "button button--ghost" : "button"}
+              >
                 Get in touch
               </Link>
             </div>

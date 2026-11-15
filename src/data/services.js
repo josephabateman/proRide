@@ -57,7 +57,7 @@ const assets = [
   },
   {
     tile: fileName(tile, "staff_training_banner.jpg"),
-    flyer: fileName(flyers, "Cycling Instructor Course.pdf"),
+    extraLink: { to: "/cpd-equipment", label: "See packages & prices" },
     img: fileName(specificServiceImages, "cpd.jpg"),
   },
   {

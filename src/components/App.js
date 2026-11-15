@@ -14,6 +14,7 @@ import CPDEquipment from "./CPD/CPDEquipment";
 import NotFound from "./NotFound";
 import NavBar from "./NavBar";
 import XLogo from "./XLogo";
+import footerLogo from "../static/images/logo-light.png";
 import servicesData from "../data/services";
 import content from "../data/siteContent.json";
 import { phoneParts } from "../data/renderContent";
@@ -46,9 +47,14 @@ function Footer() {
       <div className="container">
         <div className="row text-start gy-4">
           <div className="col-lg-5 col-md-12">
-            <h4 className="site-footer__brand">
-              Pro <span>Ride</span> Coaching
-            </h4>
+            <Link to="/" className="site-footer__logo">
+              <img
+                src={footerLogo}
+                alt="Pro Ride Coaching — Cycle Coaching for Schools"
+                width="170"
+                height="42"
+              />
+            </Link>
             <p className="site-footer__blurb">{content.footer.blurb}</p>
             <div className="site-footer__social">
               <a
@@ -125,7 +131,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/services" component={ServicesPage} />
-          {/* Old address before the KS2 page was renamed */}
+          {/* Old addresses from before the KS1 and KS2 pages were renamed */}
+          <Redirect exact from="/services/key-stage-1-fun-days" to="/services/ks1-fun-days" />
           <Redirect exact from="/services/key-stage-2-cyclesport-days" to="/services/ks2-cyclesport-days" />
           {servicesData.map((service) => (
             <Route key={service.path} exact path={service.path}>
@@ -140,6 +147,7 @@ function App() {
                 text2={service.text2}
                 flyer={service.flyer}
                 flyer2={service.flyer2}
+                extraLink={service.extraLink}
               />
             </Route>
           ))}

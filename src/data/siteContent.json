@@ -19,7 +19,7 @@
       {
         "icon": "fas fa-truck",
         "title": "Zero Prep for Staff",
-        "body": "We bring and run everything — bikes, helmets, equipment. Your teachers just turn up with the kids."
+        "body": "We plan, set up and run every session and bring all the equipment, including bikes and helmets for balance bike sessions and spares for older riders."
       },
       {
         "icon": "fas fa-hand-holding-heart",
@@ -47,7 +47,7 @@
       "body2": null
     },
     {
-      "name": "Key Stage 1 Fun Days",
+      "name": "KS1 Fun Days",
       "header": "Professionally coached fun cycling day for Key Stage 1 classes",
       "body": "Our KS1 Cycling Fun Days are a great way for Key Stage 1 children of all abilities to develop coordination, balance and control, preparing them for a lifetime of confident cycling.\n\nEach day delivers a series of small group sessions lasting about an hour (depending on age and number of sessions) where we cover basic bike handling, starting, stopping, cornering, riding in a line, riding in pairs and various team activities, fun games, challenges and obstacle activities.\n\nBalance bikes can be provided for younger and small children, with older children encouraged to bring in their own bikes (larger pedal bikes can be hired if required). No special clothing or preparation is necessary as we take care of all risk assessments and planning. We usually cater for up to 60 children a day in 4 half class sessions but extra sessions can be added to accommodate larger numbers if needed.\n\nTo book a day for your school or to check availability and prices, please get in touch.",
       "body2": null
@@ -72,8 +72,8 @@
     },
     {
       "name": "Staff Training (CPD)",
-      "header": "One day practical workshop to enable schools to run their own sessions",
-      "body": "This one-day course delivered by Pro Ride Founder and Director, Phil Bateman is an ideal way to train your staff to run progressive cycling sessions.\n\nSuitable for up to 5 members of staff (teaching or non-teaching), the course covers everything you need to know to run sessions for PE lessons, after-school clubs, or occasional activities in school.\n\nThe course requires no prior learning or experience of cycling and includes a comprehensive instruction manual, example lesson plans, and printable activity card pack covering a wide variety of fun games, challenges, and mini-races.\n\nNo special equipment or clothing is required to attend the course.",
+      "header": "One-day balance bike CPD so your staff can run their own sessions",
+      "body": "Our one-day CPD, led by Pro Ride founder and former Olympic cyclist Phil Bateman, trains your staff to run fun, progressive balance bike and learn-to-ride sessions for Nursery to Year 2.\n\nYour staff learn alongside us while we deliver sessions with your classes, so they see every activity working with your own children. Afterwards they keep the training manual, CPD video, 12-week scheme of work and activity cards, so balance biking carries on long after we've gone. No previous cycling experience is needed.\n\n### Two packages\n\nCPD & Sessions (£525 including VAT): we bring the bikes and equipment, deliver up to 6 sessions for 3 different classes and train your staff.\n\nCPD, Bikes & Sessions (£1,499 including VAT): everything above plus 10 aluminium balance bikes, 10 hardshell helmets and an equipment starter kit for your school to keep.\n\nBoth are ideal for the PE and sport premium, which the DfE asks schools to prioritise on CPD that builds staff skills and lasts.",
       "body2": null
     },
     {
@@ -105,7 +105,7 @@
     "general": [
       {
         "q": "What does Pro Ride Coaching offer schools?",
-        "a": "We run fun, professionally coached cycling days for primary schools — from balance bike days for Early Years and KS1 to cycle sport, competitions and whole-school days for KS2. Every session is designed to build confidence, skills and a lifelong love of cycling."
+        "a": "We run fun, professionally coached cycling days for primary schools, from balance bike days for Early Years and KS1 to cycle sport, competitions and whole-school days for KS2. We also train your staff through our CPD & Equipment packages, so your school can keep running balance bike sessions long after we've gone. Every session is designed to build confidence, skills and a lifelong love of cycling."
       },
       {
         "q": "What areas do you cover?",
@@ -117,7 +117,7 @@
       },
       {
         "q": "Do you provide the bikes and equipment?",
-        "a": "Yes — we bring everything needed for the day, including bikes and helmets. Children simply turn up ready to ride, and no special clothing or footwear is required."
+        "a": "For balance bike sessions, yes: we bring the bikes, helmets and all the equipment, so children simply turn up ready to ride. For KS1 and KS2 days, children usually bring their own bikes and helmets, and we bring spares plus all the course equipment. No special clothing or footwear is needed."
       },
       {
         "q": "Who runs the sessions?",
@@ -174,8 +174,8 @@
   },
   "jobs": {
     "heading": "Join the team",
-    "text": "We're always on the lookout for enthusiastic cycling coaches and would love to hear from you. Download the form below, fill it out and return it to admin@proridecoaching.co.uk to be considered. Thank you!",
-    "button": "Download Coach Information Form"
+    "text": "We're always on the lookout for enthusiastic cycling coaches and would love to hear from you. Fill in the form below and we'll be in touch.",
+    "button": "Send my details"
   },
   "cpdEquipment": {
     "tag": "CPD & Equipment · Nursery to Year 2",
