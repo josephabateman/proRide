@@ -50,6 +50,19 @@ function Home() {
         <Container>
           <h2 className="section-heading">{content.home.whyHeading}</h2>
           <div className="home-why__text">{renderContent(content.home.whyBody)}</div>
+          <ul className="home-why__list">
+            {content.home.cards.map((f, i) => (
+              <li key={i}>
+                <span className="home-why__icon">
+                  <i className={f.icon}></i>
+                </span>
+                <span>
+                  <strong>{f.title}</strong>
+                  <span>{f.body}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
         </Container>
       </section>
 

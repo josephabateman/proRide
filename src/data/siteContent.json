@@ -9,7 +9,29 @@
     "heroButton1": "Book a day for your school",
     "heroButton2": "Explore our services",
     "whyHeading": "Why schools choose us",
-    "whyBody": "At Pro Ride Coaching, we partner with primary schools to deliver fun, inclusive, professionally coached cycling programmes that build children's confidence, physical literacy, road safety awareness and a lifelong love of cycling. From wobbly first-timers to confident riders, every child improves and leaves with a smile, whatever their age or ability, including SEND.\n\nOur friendly, fully qualified coaches plan, set up and run every session and bring all the equipment, including bikes and helmets for balance bike sessions and spares for older riders, so there's zero prep for your staff. We're fully insured, every coach is DBS-checked, and risk assessments are sorted before we arrive.",
+    "whyBody": "We partner with primary schools to deliver fun, inclusive, professionally coached cycling that builds confidence, physical literacy, road safety awareness and a lifelong love of riding.",
+    "cards": [
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Fully insured & risk assessed",
+        "body": "DBS-checked coaches, public liability cover and risk assessments, all sorted before we arrive."
+      },
+      {
+        "icon": "fas fa-truck",
+        "title": "Zero prep for staff",
+        "body": "We plan, set up and run every session and bring all the equipment."
+      },
+      {
+        "icon": "fas fa-hand-holding-heart",
+        "title": "Fully inclusive",
+        "body": "From wobbly first-timers to confident riders, all ages and abilities, including SEND."
+      },
+      {
+        "icon": "fas fa-award",
+        "title": "Expertly delivered",
+        "body": "Friendly, fully qualified coaches led by Olympic cyclist Phil Bateman."
+      }
+    ],
     "promoVideo": "/media/balance-biking.mp4",
     "ctaHeading": "Ready to get your school riding?",
     "ctaText": "Tell us your preferred dates and we'll plan a brilliant cycling day around your school's needs.",
