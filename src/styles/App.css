@@ -1480,3 +1480,8 @@ ul li { list-style-type: none; }
 .cpd-flyer__deal { flex-direction: column; align-items: flex-start; gap: 1rem; }
 .cpd-flyer__button { white-space: nowrap; }
 @media (max-width: 400px) { .cpd-flyer__button { font-size: 0.92rem; padding: 0.7rem 1.1rem; } }
+
+/* Offer panel now sits first, overlapping the hero like the packages did */
+.cpd-flyer--offer { margin-top: -4rem; position: relative; margin-bottom: 2.5rem; }
+.cpd-flyer--offer + .cpd-packages { margin-top: 0; }
+.cpd-packages + .cpd-flyer { margin-top: 2.5rem; }

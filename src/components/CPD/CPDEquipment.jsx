@@ -35,36 +35,8 @@ function CPDEquipment() {
       </section>
 
       <Container className="cpd-body">
-        {/* Packages — first thing after the header */}
-        <section className="cpd-packages" id="packages">
-          <Row className="g-4 justify-content-center">
-            {c.packages.map((p, i) => (
-              <Col md={6} lg={5} key={i}>
-                <div className={"cpd-package" + (i === 0 ? " cpd-package--featured" : "")}>
-                  {i === 0 && <span className="cpd-package__ribbon">Best value</span>}
-                  <h2>{p.name}</h2>
-                  <div className="cpd-package__price">{p.price}</div>
-                  {p.priceNote && <div className="cpd-package__vat">{p.priceNote}</div>}
-                  <p className="cpd-package__badge">{p.badge}</p>
-                  <ul>
-                    {p.items.map((item, j) => (
-                      <li key={j}>
-                        <i className="fas fa-check-circle"></i>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link to="/contact" className="button">
-                    {c.ctaButton}
-                  </Link>
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </section>
-
-        {/* Strider 14x offer + PE premium: one panel in the flyer's style */}
-        <section className="cpd-flyer">
+        {/* Strider 14x autumn offer */}
+        <section className="cpd-flyer cpd-flyer--offer">
           <Row className="g-0 align-items-stretch cpd-flyer__row">
             <Col md={4} className="cpd-flyer__media">
               <img
@@ -106,8 +78,38 @@ function CPDEquipment() {
               </div>
             </Col>
           </Row>
+        </section>
 
+        {/* Packages — first thing after the header */}
+        <section className="cpd-packages" id="packages">
+          <Row className="g-4 justify-content-center">
+            {c.packages.map((p, i) => ({ p, i })).reverse().map(({ p, i }) => (
+              <Col md={6} lg={5} key={i}>
+                <div className={"cpd-package" + (i === 0 ? " cpd-package--featured" : "")}>
+                  {i === 0 && <span className="cpd-package__ribbon">Best value</span>}
+                  <h2>{p.name}</h2>
+                  <div className="cpd-package__price">{p.price}</div>
+                  {p.priceNote && <div className="cpd-package__vat">{p.priceNote}</div>}
+                  <p className="cpd-package__badge">{p.badge}</p>
+                  <ul>
+                    {p.items.map((item, j) => (
+                      <li key={j}>
+                        <i className="fas fa-check-circle"></i>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link to="/contact" className="button">
+                    {c.ctaButton}
+                  </Link>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </section>
 
+        {/* PE premium */}
+        <section className="cpd-flyer">
           <Row className="g-0 align-items-stretch cpd-flyer__row">
             <Col md={4} className="order-md-2 cpd-flyer__media">
               <img
