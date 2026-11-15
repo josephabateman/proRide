@@ -74,7 +74,7 @@ function CPDEquipment() {
               />
             </Col>
             <Col md={8} className="text-start cpd-flyer__body">
-              <span className="cpd-flyer__tag">Offer</span>
+              <span className="cpd-flyer__tag">Autumn Offer</span>
               <h2 className="cpd-flyer__title">{c.striderHeading}</h2>
               <p className="cpd-flyer__lead">{c.striderText}</p>
               <ul className="cpd-flyer__ticks">
