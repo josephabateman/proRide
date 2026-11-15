@@ -9,31 +9,7 @@
     "heroButton1": "Book a day for your school",
     "heroButton2": "Explore our services",
     "whyHeading": "Why schools choose us",
-    "whySubtitle": "Professionally coached service that helps schools develop children's confidence, physical literacy, road safety awareness and lifelong cycling skills and passion.",
-    "cards": [
-      {
-        "icon": "fas fa-shield-alt",
-        "title": "Fully Insured & Risk Assessed",
-        "body": "Public liability cover, DBS-checked coaches and risk assessments provided — everything sorted before we arrive."
-      },
-      {
-        "icon": "fas fa-truck",
-        "title": "Zero Prep for Staff",
-        "body": "We plan, set up and run every session and bring all the equipment, including bikes and helmets for balance bike sessions and spares for older riders."
-      },
-      {
-        "icon": "fas fa-hand-holding-heart",
-        "title": "Fully Inclusive",
-        "body": "From wobbly first-timers to confident riders, every child improves and leaves with a smile — all ages and abilities, including SEND."
-      },
-      {
-        "icon": "fas fa-award",
-        "title": "Expertly Delivered",
-        "body": "Experienced, fully qualified coaches who are friendly, patient and genuinely enthusiastic about getting kids riding better and more often."
-      }
-    ],
-    "actionHeading": "See who we are",
-    "actionSubtitle": "At Pro Ride Coaching, we partner with primary schools to deliver engaging, inclusive cycling programmes that inspire every child to succeed. From first pedal strokes to developing safe riding skills, our qualified coaches create fun, structured sessions that build confidence, resilience and independence. Schools increasingly value cycling programmes that help children gain confidence, practical skills and healthier habits.",
+    "whyBody": "At Pro Ride Coaching, we partner with primary schools to deliver fun, inclusive, professionally coached cycling programmes that build children's confidence, physical literacy, road safety awareness and a lifelong love of cycling. From wobbly first-timers to confident riders, every child improves and leaves with a smile, whatever their age or ability, including SEND.\n\nOur friendly, fully qualified coaches plan, set up and run every session and bring all the equipment, including bikes and helmets for balance bike sessions and spares for older riders, so there's zero prep for your staff. We're fully insured, every coach is DBS-checked, and risk assessments are sorted before we arrive.",
     "promoVideo": "/media/balance-biking.mp4",
     "ctaHeading": "Ready to get your school riding?",
     "ctaText": "Tell us your preferred dates and we'll plan a brilliant cycling day around your school's needs.",
@@ -71,9 +47,9 @@
       "body2": null
     },
     {
-      "name": "Staff Training (CPD)",
-      "header": "Run your own balance bike sessions in your playground or hall",
-      "body": "Our one-day CPD, led by Pro Ride founder and former Olympic cyclist Phil Bateman, trains your staff to set up and run fun, progressive balance bike and learn-to-ride sessions for Reception, Year 1 and Year 2, in your playground or hall.\n\nYour staff learn alongside us while we deliver demo sessions with your classes, so they see every activity working with your own children. Afterwards they keep the training manual, game cards and CPD video, so balance biking carries on long after we've gone. No previous cycling experience is needed.\n\n### Your own fleet of Strider 14x bikes\n\nThe Strider 14x is built to help children learn balance and quickly master all the skills they need to begin pedalling confidently. It's lightweight and durable, with front and rear brakes, real air-filled 14\" tyres, easy seat and handlebar adjustment, and it converts to a pedal bike as children progress.\n\nStrider 14x bikes: 1 to 4 bikes £79 per bike (incl VAT). Discounts on 5 or more, please ask for a quote.\n\n### Two packages\n\nCPD, Strider Bikes & Sessions (£1,399 including VAT): 10 Strider 14x bikes for your school to keep, CPD for your staff and 6 demo sessions, a saving of £350 on buying bikes and training separately.\n\nCPD & Sessions (£525 including VAT): we bring the bikes and equipment, deliver up to 6 sessions for 3 different classes and train your staff.\n\nBoth are ideal for the PE and sport premium, which the DfE asks schools to prioritise on CPD that builds staff skills and lasts.",
+      "name": "Balance Bikes & CPD",
+      "header": "Train your staff and get your own Strider bikes, so balance biking carries on long after we've gone",
+      "body": "This service now has its own page: see Balance Bikes & CPD for Schools.",
       "body2": null
     },
     {

@@ -133,8 +133,9 @@ function App() {
           <Route exact path="/services" component={ServicesPage} />
           {/* Old addresses from before the KS1 and KS2 pages were renamed */}
           <Redirect exact from="/services/key-stage-1-fun-days" to="/services/ks1-fun-days" />
+          <Redirect exact from="/services/staff-training-cpd" to="/cpd-equipment" />
           <Redirect exact from="/services/key-stage-2-cyclesport-days" to="/services/ks2-cyclesport-days" />
-          {servicesData.map((service) => (
+          {servicesData.filter((service) => !service.noPage).map((service) => (
             <Route key={service.path} exact path={service.path}>
               <SpecificService
                 img={service.img}

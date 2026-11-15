@@ -8,8 +8,8 @@ import Seo from "../Seo";
 import customStyling from "../../styles/custom-styling";
 import content from "../../data/siteContent.json";
 import servicesData from "../../data/services";
+import { renderContent } from "../../data/renderContent";
 
-const features = content.home.cards;
 
 function Home() {
   useEffect(() => {
@@ -45,32 +45,17 @@ function Home() {
         </Link>
       </div>
 
-      {/* Why ProRide — trust / features band */}
-      <section className="feature-band">
+      {/* Why ProRide — short intro */}
+      <section className="home-why">
         <Container>
           <h2 className="section-heading">{content.home.whyHeading}</h2>
-          <p className="section-sub">{content.home.whySubtitle}</p>
-          <Row className="justify-content-center">
-            {features.map((f, key) => (
-              <Col md={6} lg={3} className="mb-4" key={key}>
-                <div className="feature-card">
-                  <div className="feature-card__icon">
-                    <i className={f.icon}></i>
-                  </div>
-                  <h3 className="feature-card__title">{f.title}</h3>
-                  <p className="feature-card__text">{f.body}</p>
-                </div>
-              </Col>
-            ))}
-          </Row>
+          <div className="home-why__text">{renderContent(content.home.whyBody)}</div>
         </Container>
       </section>
 
       {/* Services teaser + promo video */}
       <section className="home-action">
         <Container>
-          <h2 className="section-heading">{content.home.actionHeading}</h2>
-          <p className="section-sub">{content.home.actionSubtitle}</p>
           <Row className="g-3 align-items-stretch">
             {collapsingBanners.map((data, key) => (
               <Col lg={6} key={key}>

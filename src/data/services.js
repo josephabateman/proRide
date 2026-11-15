@@ -56,11 +56,10 @@ const assets = [
     img: fileName(specificServiceImages, "limbo_boy_2.jpg"),
   },
   {
-    tile: fileName(tile, "staff_training_banner.jpg"),
-    extraLink: { to: "/cpd-equipment", label: "See packages & prices" },
-    flyer: fileName(flyers, "Strider 14x Balance Bike flyer.pdf"),
-    flyerLabel: "Download the Strider 14x flyer (PDF)",
-    img: fileName(specificServiceImages, "cpd.jpg"),
+    // No page of its own: links straight to the CPD & Equipment page.
+    tile: require("../static/images/cpd/strider-lineup.webp").default,
+    path: "/cpd-equipment",
+    noPage: true,
   },
   {
     tile: fileName(tile, "competition_day_tile.jpg"),
@@ -89,6 +88,7 @@ export function serviceSlug(name) {
 const servicesData = content.services.map((s, i) => ({
   name: s.name,
   path: `/services/${serviceSlug(s.name)}`,
+  // (an asset entry may override path, e.g. to link to another page)
   header: s.header,
   text1: renderContent(s.body),
   text2: s.body2 ? renderContent(s.body2) : undefined,
